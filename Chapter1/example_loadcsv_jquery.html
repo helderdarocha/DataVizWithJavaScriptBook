@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let files =  ['PlanetDay.csv','PlanetYear.csv']
+
+    Promise.all(files.map(file => new Promise( (resolve,reject) => )))
+    .then(
+            function (results) {
+                console.log(results[0]) // log result from file 1
+                console.log(results[1]) // log result from file 2
+            }
+    )
+            .catch(//log the error
+                    err=>console.warn("Something went wrong:",err)
+    )
+
+    let httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', 'file.csv');
+    httpRequest.send();
+
+    let dataArray = [];
+    httpRequest.onreadystatechange = function(){
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+            if (httpRequest.status === 200) {
+                let values = httpRequest.responseText.split("\n")[1].split(",");
+                for(let i = 0; i < values.length; i++) {
+                    dataArray.push(+values[i]);
+                }
+            }
+            showData(dataArray);
+        }
+    }
+
+    function showData(array) {
+        console.log(array);
+    }
+
+
+</script>
+
+</body>
+</html>
