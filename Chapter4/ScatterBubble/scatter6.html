@@ -17,7 +17,7 @@
     let year2 = "2015";
 
     // load file
-    fetch('WPP2017_UN.csv')
+    fetch('../Data/WPP2017_UN.csv')
             .then(response => response.text())
     .then((csv) => {
         let data = Papa.parse(csv, {header: true}).data;

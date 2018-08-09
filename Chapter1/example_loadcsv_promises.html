@@ -10,7 +10,7 @@
 <script>
     let dataArray = [];
     $.ajax({
-        url: 'file.csv',
+        url: 'Data/file.csv',
         success: function(data){
             let values = data.split("\n")[1].split(",");
             for(let i = 0; i < values.length; i++) {
@@ -26,6 +26,10 @@
 
 
 </script>
+
+
+<h1>File loading example using ES2015 Promises</h1>
+<p>Open a JavaScript console to see the results.</p>
 
 </body>
 </html>

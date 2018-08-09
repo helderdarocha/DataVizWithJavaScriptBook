@@ -13,7 +13,7 @@ body.appendChild(p);
 
 const div = document.createElement("div");
 const divImg = document.createElement("img");
-divImg.setAttribute("src", "pluto.jpg");
+divImg.setAttribute("src", "images/pluto.jpg");
 divImg.setAttribute("width", "100");
 div.appendChild(divImg);
 

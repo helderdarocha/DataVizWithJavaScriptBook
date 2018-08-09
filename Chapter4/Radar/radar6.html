@@ -15,7 +15,7 @@
 <script>
     let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-    fetch('monthly_json.json')
+    fetch('../Data/monthly_json.json')
         .then(response => response.text())
         .then((json) => {
             draw(parseCoords(json));

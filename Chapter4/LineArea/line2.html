@@ -13,7 +13,7 @@
 <canvas id="my-line-chart" width="200" height="200"></canvas>
 
 <script>
-    fetch('annual_json.json')
+    fetch('../Data/annual_json.json')
         .then(response => response.text())
         .then((json) => {
             draw(parseCoords(json));

@@ -15,7 +15,7 @@
 <script>
     let numberOfDatasets = 6;
 
-    fetch('WorldBankCO2kt.csv')
+    fetch('../Data/WorldBankCO2kt.csv')
             .then(response => response.text())
             .then((csv) => {
         let parsed = parseCO2CSV(csv);

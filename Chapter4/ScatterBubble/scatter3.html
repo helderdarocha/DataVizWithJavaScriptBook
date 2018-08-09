@@ -14,7 +14,7 @@
     var canvas = document.getElementById("my-scatter-chart");
 
     // load files
-    let files = ['annual_json.json', 'co2_annmean_mlo.csv'];
+    let files = ['../Data/annual_json.json', '../Data/co2_annmean_mlo.csv'];
     var promises = files.map(file => fetch(file).then(resp => resp.text()));
     Promise.all(promises).then(results => {
         let temperatures = JSON.parse(results[0]);

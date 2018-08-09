@@ -13,7 +13,7 @@
 <canvas id="my-radar-chart" width="400" height="200"></canvas>
 
 <script>
-    fetch('monthly_json.json')
+    fetch('../Data/monthly_json.json')
         .then(response => response.text())
         .then((json) => {
             draw(parseCoords(json));

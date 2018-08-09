@@ -15,7 +15,7 @@
 
     let numberOfEntries = 100;
 
-    fetch('cities15000.csv')
+    fetch('../Data/cities15000.csv')
             .then(response => response.text())
     .then((csv) => {
         let data = Papa.parse(csv, {header: true}).data;

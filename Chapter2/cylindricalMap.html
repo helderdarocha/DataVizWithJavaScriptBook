@@ -8,7 +8,7 @@
             border: solid 1px blue;
         }
     </style>
-    <script src="canvasmap.js" ></script>
+    <script src="JavaScript/canvasmap.js" ></script>
 </head>
 <body>
 
@@ -28,7 +28,7 @@
     ctx.fillStyle = 'rgb(50,50,160';
 
     // load and draw map
-    fetch('world.geojson')
+    fetch('Data/world.geojson')
     .then(response => response.text())
     .then((jsonData) => {
         let object = JSON.parse(jsonData);

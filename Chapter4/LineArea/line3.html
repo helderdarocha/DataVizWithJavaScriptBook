@@ -16,7 +16,7 @@
     // make one dataset of months for each year
     // filter each 10th year
 
-    fetch('monthly_json.json')
+    fetch('../Data/monthly_json.json')
         .then(response => response.text())
         .then((json) => {
             let dataMap = new Map();

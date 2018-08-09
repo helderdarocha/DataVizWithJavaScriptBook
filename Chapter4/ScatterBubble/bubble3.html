@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="canvasmap.js" ></script>
+    <script src="../JavaScript/canvasmap.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
     <style>
@@ -33,7 +33,7 @@
     ctx.fillStyle = 'rgb(50,50,160';
 
     // load files
-    let files = ['world.geojson', 'cities15000.csv'];
+    let files = ['../Data/world.geojson', '../Data/cities15000.csv'];
     var promises = files.map(file => fetch(file).then(resp => resp.text()));
     Promise.all(promises).then(results => {
         let object = JSON.parse(results[0]);

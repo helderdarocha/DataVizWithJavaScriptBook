@@ -13,7 +13,7 @@
 <script>
     var canvas = document.getElementById("my-scatter-chart");
 
-    fetch('cities5000.csv')
+    fetch('../Data/cities5000.csv')
             .then(response => response.text())
     .then((csv) => {
         let data = Papa.parse(csv, {header: true});
