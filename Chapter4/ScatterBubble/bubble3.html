@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="canvasmap.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+    <style>
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="map" width="1000" height="500"></canvas>
+<canvas id="my-bubble-chart" width="1000" height="500"></canvas>
+
+<script>
+    var canvas = document.getElementById("map");
+    var ctx = canvas.getContext("2d");
+
+    // Map ocean background
+    ctx.fillStyle = 'rgb(200,200,255)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // countries border and background
+    ctx.lineWidth = .25;
+    ctx.strokeStyle = 'white';
+    ctx.fillStyle = 'rgb(50,50,160';
+
+    // load files
+    let files = ['world.geojson', 'cities15000.csv'];
+    var promises = files.map(file => fetch(file).then(resp => resp.text()));
+    Promise.all(promises).then(results => {
+        let object = JSON.parse(results[0]);
+        drawMap(object.features);
+        let data = Papa.parse(results[1], {header: true});
+        drawData(data.data);
+    });
+
+    function scaleR(value) {
+        let r = Math.floor(value / 100000);
+        return r != 0 ? r/10 : .25;
+    }
+
+    function drawData(datasets) {
+        let coordset = [];
+        datasets.forEach(city => {
+            let obj = {
+                x: scaleX(+city.longitude),
+                y: scaleY(-city.latitude),
+                r: scaleR(city.population),
+                name: city.asciiname
+            };
+            coordset.push(obj);
+        });
+
+        let dataObj = {
+            datasets: [
+                {
+                    data: coordset,
+                    backgroundColor: function(context) {
+                        let value = context.dataset.data[context.dataIndex].r*1.5;
+                        if(value > 30) return 'hsla(300,100%,75%,.7)';
+                        if(value > 20) return 'hsla(0,100%,75%,.7)';
+                        if(value > 10) return 'hsla(30,100%,75%,.7)';
+                        if(value > 5) return 'hsla(60,100%,75%,.7)';
+                        if(value > 1) return 'hsla(120,100%,75%,.7)';
+                        else return 'hsla(0,0%,100%,1)';
+                    }
+                }
+            ]
+        }
+
+        let chartObj = {
+            type: "bubble",
+            data: dataObj,
+            options: {
+                tooltips: {
+                    filter: function(tooltipItem, data) {
+                        let r = data.datasets[0].data[tooltipItem.index].r
+                        return r > 1;
+                    },
+
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            let item = data.datasets[0].data[tooltipItem.index];
+                            var label = item.name || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            label += Math.round(item.r) + " million";
+                            return label;
+                        }
+                    }
+                },
+                animation: {
+                    duration: 0
+                },
+                responsive: false,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [
+                        {
+                            display: false,
+                            ticks: {
+                                min: scaleX(-180),
+                                max: scaleX(180)
+                            }
+                        }
+                    ],
+                    yAxes: [
+                        {
+                            display: false,
+                            ticks: {
+                                min: scaleY(-90),
+                                max: scaleY(90)
+                            }
+                        }
+                    ]
+                }
+
+            }
+        };
+        new Chart("my-bubble-chart", chartObj);
+    }
+</script>
+
+</body>
+</html>

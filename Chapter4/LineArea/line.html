@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
+    </script>
+
+</head>
+<body>
+<!-- https://datahub.io/core/global-temp -->
+<!-- NASA GISS - radar -->
+<canvas id="my-line-chart" width="200" height="200"></canvas>
+
+<script>
+    fetch('monthly_csv.csv')
+        .then(response => response.text())
+        .then((csv) => {
+            let jsonArray = parseCSV(csv);
+            draw([parseCoords(jsonArray, 1900), parseCoords(jsonArray, 2015)]);
+        });
+
+    function parseCSV(data) {
+        let gistemp = [];
+        let rows = data.split("\n");
+        rows.forEach(r => {
+            let temperature = {};
+            let item = r.split(",");
+            if(item[0] == 'GISTEMP') {
+                temperature.year = item[1].split("-")[0];
+                temperature.month = item[1].split("-")[1];
+                temperature.value = +item[2];
+                gistemp.push(temperature);
+            }
+        });
+        gistemp.shift(); // remove title line
+        return gistemp;
+    }
+
+    function parseCoords(jsonArray, year) {
+        let result = {};
+        result.labels = [];
+        result.values = [];
+        jsonArray.forEach(d => {
+            if(d.year == year) {
+                result.labels.push(d.month);
+                result.values.push(d.value);
+            }
+        });
+        return result;
+    }
+
+    function draw(datasets) {
+        let dataObj = {
+            labels: datasets[0].labels,
+            datasets: [
+                {
+                    label: "1900 temperatures",
+                    data: datasets[0].values
+                },
+                {
+                    label: "2000 temperatures",
+                    data: datasets[1].values
+                }
+            ]
+        }
+
+        let chartObj = {type: "line", data: dataObj};
+        new Chart("my-line-chart", chartObj);
+    }
+</script>
+
+
+</body>
+</html>

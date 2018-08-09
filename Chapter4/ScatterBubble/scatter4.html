@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+</head>
+<body>
+
+<canvas id="my-scatter-chart" width="1000" height="500"></canvas>
+
+<script>
+    var canvas = document.getElementById("my-scatter-chart");
+
+    // load files
+    let files = ['monthly_json.json', 'co2_mm_mlo.csv'];
+    var promises = files.map(file => fetch(file).then(resp => resp.text()));
+    Promise.all(promises).then(results => {
+        let temperatures = JSON.parse(results[0]);
+        let co2emissions = Papa.parse(results[1], {header: true}).data;
+        let data = combine(temperatures, co2emissions);
+        drawData(data);
+    });
+
+    function combine(tempData, co2Data) {
+        let entries = [];
+        co2Data.filter(n => +n.year >= 1959).forEach(measurement => {
+            let year = measurement.year;
+            let month = measurement.month;
+            let temperature = 0;
+            tempData.filter(n => n.Source == 'GISTEMP' && +n.Date.split("-")[0] >= 1959)
+                    .forEach(temp => {
+                        if(+temp.Date.split("-")[0] == year && +temp.Date.split("-")[1] == month){
+                            temperature = temp.Mean;
+                        }
+            });
+            let entry = {
+                co2: measurement.average,
+                temp: temperature
+            }
+            entries.push(entry);
+        });
+        return entries;
+    }
+
+    function drawData(datasets) {
+        let entries = [];
+        datasets.forEach(entry => {
+            let obj = {
+                x: entry.co2,
+                y: entry.temp
+            };
+            entries.push(obj);
+        });
+
+        let dataObj = {
+            datasets: [
+                {
+                    data: entries,
+                    pointRadius: 2,
+                    pointBackgroundColor: 'rgba(255,0,0,.5)'
+                }
+            ]
+        }
+
+        let chartObj = {
+            type: "scatter",
+            data: dataObj,
+            options: {
+                legend: {
+                    display: false
+                },
+            }
+        };
+        new Chart("my-scatter-chart", chartObj);
+    }
+
+</script>
+
+</body>
+</html>

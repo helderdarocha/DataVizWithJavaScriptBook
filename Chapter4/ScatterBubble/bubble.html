@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
+    </script>
+</head>
+<body>
+
+<canvas id="my-bubble-chart" width="400" height="200"></canvas>
+
+<script>
+    let dataObj = {
+        labels: ["Lisbon", "Paris", "Berlin", "Moscow", "Rome", "Barcelona"],
+        datasets: [
+            {
+                label: "Label",
+                data: [
+                    {x: 5, y: 1, r: 60},
+                    {x: 3, y: 1, r: 30},
+                    {x: 1, y: 2, r: 15},
+                    {x: 3, y: 5, r: 90},
+                    {x: 2, y: 4, r: 20}]
+            }
+        ]
+    }
+
+    let chartObj = {
+        type: "bubble",
+        data: dataObj,
+        options: {
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        min: 0,
+                        max: 6
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        min: 0,
+                        max: 8
+                    }
+                }]
+            },
+        }
+    };
+    new Chart("my-bubble-chart", chartObj);
+</script>
+
+</body>
+</html>

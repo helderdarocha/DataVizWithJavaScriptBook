@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
+    </script>
+
+</head>
+<body>
+<!-- https://datahub.io/core/global-temp -->
+<!-- NASA GISS - radar -->
+<canvas id="my-line-chart" width="200" height="200"></canvas>
+
+<script>
+    fetch('annual_json.json')
+        .then(response => response.text())
+        .then((json) => {
+            draw(parseCoords(json));
+        });
+
+    function parseCoords(json) {
+        let result = {};
+        result.labels = [];
+        result.values = [];
+        JSON.parse(json)
+            .reverse()
+            .filter(field => field.Source == 'GISTEMP')
+            .forEach(d => {
+                result.labels.push(d.Year);
+                result.values.push(d.Mean);
+        });
+        return result;
+    }
+
+    function draw(dataset) {
+        let dataObj = {
+            labels: dataset.labels,
+            datasets: [
+                {
+                    label: "1900 temperatures",
+                    data: dataset.values
+                }
+            ]
+        }
+
+        let chartObj = {type: "line", data: dataObj};
+        new Chart("my-line-chart", chartObj);
+    }
+</script>
+
+
+</body>
+</html>

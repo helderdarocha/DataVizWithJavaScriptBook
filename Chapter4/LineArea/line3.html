@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
+    </script>
+
+</head>
+<body>
+<!-- https://datahub.io/core/global-temp -->
+<!-- NASA GISS - radar -->
+<canvas id="my-line-chart" width="400" height="200"></canvas>
+
+<script>
+    // make one dataset of months for each year
+    // filter each 10th year
+
+    fetch('monthly_json.json')
+        .then(response => response.text())
+        .then((json) => {
+            let dataMap = new Map();
+            let obj = JSON.parse(json)
+                .reverse()
+                .filter(field => field.Source == 'GISTEMP');
+            console.log(obj);
+
+            obj.forEach(d => {
+                    let year = d.Date.split("-")[0];
+                    let month = d.Date.split("-")[1];
+                    if(dataMap.get(year)) {
+                        dataMap.get(year).push({year: year, month: month, value: d.Mean});
+                    } else {
+                        dataMap.set(year, [{year: year, month: month, value: d.Mean}]);
+                    }
+                });
+                draw(dataMap);
+        });
+
+    function draw(datasetMap) {
+        let datasets = [];
+        let labels = [];
+        datasetMap.forEach((entry, key) => {
+            let dataset = {
+                label: key,
+                data: entry.map(n => n.value),
+                borderColor: 'hsla('+(key*2)+',50%,50%,0.9)',
+                backgroundColor: 'hsla('+(key*2)+',50%,50%,0.9)',
+                borderWidth: 1,
+                pointRadius: 0
+            };
+            //if(key % 10 == 5) {
+                datasets.push(dataset);
+           // }
+            if(labels.length == 0) {
+                labels = entry.map(n => n.month);
+            }
+        });
+
+        let dataObj = {
+            labels: labels,
+            datasets: datasets
+        }
+
+        Chart.defaults.global.elements.line.fill = false;
+
+        let chartObj = {
+            type: "line",
+            data: dataObj,
+            options:{
+                legend: {
+                    labels: {
+                        filter: function(item, chart) {
+                            return new Number(item.text) % 20 == 0;
+                        }
+                    }
+                }
+
+            }
+        };
+        new Chart("my-line-chart", chartObj);
+    }
+</script>
+
+
+</body>
+</html>
