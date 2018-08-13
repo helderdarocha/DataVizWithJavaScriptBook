@@ -13,7 +13,6 @@
 <script>
     var canvas = document.getElementById("my-scatter-chart");
 
-    // load files
     let files = ['../Data/monthly_json.json', '../Data/co2_mm_mlo.csv'];
     var promises = files.map(file => fetch(file).then(resp => resp.text()));
     Promise.all(promises).then(results => {

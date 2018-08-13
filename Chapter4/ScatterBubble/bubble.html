@@ -12,16 +12,17 @@
 
 <script>
     let dataObj = {
-        labels: ["Lisbon", "Paris", "Berlin", "Moscow", "Rome", "Barcelona"],
         datasets: [
             {
-                label: "Label",
                 data: [
                     {x: 5, y: 1, r: 60},
                     {x: 3, y: 1, r: 30},
                     {x: 1, y: 2, r: 15},
                     {x: 3, y: 5, r: 90},
-                    {x: 2, y: 4, r: 20}]
+                    {x: 2, y: 4, r: 20}],
+                backgroundColor: function(context) {
+                    return 'hsla('+(context.dataset.data[context.dataIndex].r * 4)+',100%,70%,.6)'
+                }
             }
         ]
     }
@@ -33,14 +34,12 @@
             scales: {
                 xAxes: [{
                     ticks: {
-                        min: 0,
-                        max: 6
+                        min: 0, max: 6
                     }
                 }],
                 yAxes: [{
                     ticks: {
-                        min: 0,
-                        max: 8
+                        min: 0, max: 7
                     }
                 }]
             },

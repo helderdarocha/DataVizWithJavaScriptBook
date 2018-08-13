@@ -27,7 +27,6 @@
             let obj = JSON.parse(json)
                 .reverse()
                 .filter(field => field.Source == 'GISTEMP');
-            console.log(obj);
 
             obj.forEach(d => {
                     let year = d.Date.split("-")[0];
@@ -42,6 +41,7 @@
         });
 
     function draw(datasetMap) {
+
         let datasets = [];
         let labels = [];
         datasetMap.forEach((entry, key) => {
@@ -69,16 +69,7 @@
         let chartObj = {
             type: "line",
             data: dataObj,
-            options:{
-                legend: {
-                    labels: {
-                        filter: function(item, chart) {
-                            return new Number(item.text) % 20 == 0;
-                        }
-                    }
-                }
-
-            }
+            options:{}
         };
         new Chart("my-line-chart", chartObj);
     }

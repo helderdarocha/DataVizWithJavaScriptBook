@@ -46,16 +46,10 @@
         return {labels: years, entries: topTen};
     }
 
-    function getColor(seed) {
-        return 'hsla('+(seed*2)+',75%,75%,1)';
-    }
-
-//
     function draw(datasetsObj) {
         let datasets = [];
-        let labels = [];
         datasetsObj.entries.forEach((entry, index) => {
-            let color = getColor((index+5)*25);
+            let color = 'hsla('+(index+5)*50+',75%,75%,1)';
             let dataset = {
                 label: entry.country,
                 data: entry.data,
@@ -73,15 +67,13 @@
             datasets: datasets
         }
 
-        //Chart.defaults.global.elements.line.fill = false;
-
         let chartObj = {
             type: "line",
             data: dataObj,
             options:{
                 scales: {
                     xAxes: [{
-                        stacked: true
+                        //stacked: true
                     }],
                     yAxes: [{
                         stacked: true

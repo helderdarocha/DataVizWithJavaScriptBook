@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+</head>
+<body>
+
+<canvas id="my-chart" width="900" height="500"></canvas>
+
+<script>
+let dataset = [];
+for(let i = 1; i <= 10; i+= 1) {
+    let n = Math.random() * i;
+    let point = {
+        t: '2018-07-' + i<10?'0'+i:i + " 0:0:0",
+        y: n
+    }
+    dataset.push(point);
+}
+
+let dataObj = {
+    labels: ['7-7', '7-8', '7-13', '7-16', '7-20', '7-26', '7-31', '8-4', '8-9', '8-12'],
+    datasets: [
+        {
+            data: dataset,
+            pointRadius: 5,
+            borderColor: 'hsla(0,100%,25%,1)',
+            backgroundColor: 'hsla(0,100%,75%,.5)'
+        }
+    ]
+}
+
+    let chartObj = {
+        type: "scatter",
+        data: dataObj,
+        options: {
+            scales: {
+                yAxes: [{ // linear axis
+                    ticks: {
+                        beginAtZero: true,
+                    }
+                }],
+                xAxes: [{ // time axis
+                    type: 'time',
+                    distribution: 'series',
+                    bounds: 'data',
+                    ticks: {
+                        //source: 'labels',
+                        source: 'auto' // data is default
+                    },
+                    time: {
+                        unit: 'month',
+                        displayFormats: {
+                            month: 'MMMM',
+                        }
+                    }
+                }]
+            }
+        }
+    };
+    new Chart("my-chart", chartObj);
+
+</script>
+
+</body>
+</html>

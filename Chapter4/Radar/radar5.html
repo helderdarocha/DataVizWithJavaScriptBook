@@ -10,7 +10,7 @@
 <body>
 <!-- https://datahub.io/core/global-temp -->
 <!-- NASA GISS - radar -->
-<canvas id="my-radar-chart" width="400" height="200"></canvas>
+<canvas id="my-radar-chart" width="300" height="200"></canvas>
 
 <script>
     fetch('../Data/monthly_json.json')
@@ -45,9 +45,11 @@
             let dataset = {
                 label: key,
                 data: entry.map(n => n.value),
-                borderColor: 'hsla('+(key*2)+',50%,50%,0.9)',
-                backgroundColor: 'hsla('+(key*2)+',50%,50%,0.9)',
-                borderWidth: 1
+                borderColor: 'hsla('+(key*2)+',50%,50%,.9)',
+                backgroundColor: 'hsla('+(key*2)+',50%,50%,0.1)',
+                borderWidth: 1,
+                pointRadius: 0,
+                lineTension: .4
             };
             datasets.push(dataset);
             if(labels.length == 0) {
@@ -64,15 +66,12 @@
             type: "radar",
             data: dataObj,
             options: {
+                animation: {
+                    duration: 0
+                },
                 scale: {
                     ticks: {
-                        beginAtZero: true,
-                        stepSize: 1
-                    }
-                },
-                elements: {
-                    line: {
-                        fill: false
+                        max: 1.5
                     }
                 },
                 legend: {

@@ -46,8 +46,10 @@
             datasets: [
                 {
                     data: entries,
-                    pointRadius: 1,
-                    pointBackgroundColor: 'red'
+                    pointRadius: 4,
+                    pointBorderWidth: .5,
+                    pointBackgroundColor: 'rgba(255,0,0,.2)',
+                    borderWidth: 1,
                 },
                 {
                     data: median,
@@ -73,7 +75,7 @@
             options: {
                 scales: {
                     xAxes: [{
-                        //type: 'logarithmic'
+                        type: 'logarithmic'
                     }],
                     yAxes: [{
                         type: 'logarithmic'

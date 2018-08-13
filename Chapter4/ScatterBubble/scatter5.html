@@ -68,9 +68,26 @@
             type: "scatter",
             data: dataObj,
             options: {
-                legend: {
-                    display: false
+                legend: { display: false},
+                title: {
+                    display: true,
+                    text: 'CO2 emissions vs. Global temperatures',
+                    fontSize: 24
                 },
+                scales: {
+                    xAxes: [{
+                        scaleLabel: {
+                            labelString: 'CO2 emissions (ppm)',
+                            display: true
+                        }
+                    }],
+                    yAxes: [{
+                        scaleLabel: {
+                            labelString: 'Temperature anomaly (Celsius)',
+                            display: true
+                        }
+                    }],
+                }
             }
         };
         new Chart("my-scatter-chart", chartObj);

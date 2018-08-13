@@ -11,8 +11,8 @@
 <canvas id="my-polar-area-chart" width="300" height="200"></canvas>
 
 <script>
-    let labels = ["Arctic", "Southern", "North Atlantic", "South Atlantic", "Indian", "South Pacific", "North Pacific"];
-    let volume = [18750, 71800, 146000, 160000, 264000, 329000, 341000];  // km3 * 10^3
+    let labels = ["Arctic", "", "Southern", "", "North Atlantic", "", "South Atlantic", "", "Indian", "", "South Pacific", "", "North Pacific", ""];
+    let volume = [18750, 0, 71800, 0, 146000, 0,160000, 0,264000, 0,329000, 0,341000,0];  // km3 * 10^3
 
     Chart.defaults.global.elements.rectangle.borderWidth = 1;
 
@@ -22,15 +22,15 @@
             {
                 label: "Volume",
                 data: volume,
-                borderWidth: 2,
+                borderWidth: 0,
                 backgroundColor: [
-                    'hsla(260,100%,75%,.7',
-                    'hsla(245,100%,75%,.7',
-                    'hsla(230,100%,75%,.7',
-                    'hsla(210,100%,75%,.7',
-                    'hsla(195,100%,75%,.7',
-                    'hsla(180,100%,75%,.7',
-                    'hsla(165,100%,75%,.7']
+                    'hsla(260,100%,75%,.7','',
+                    'hsla(245,100%,75%,.7','',
+                    'hsla(230,100%,75%,.7','',
+                    'hsla(210,100%,75%,.7','',
+                    'hsla(195,100%,75%,.7','',
+                    'hsla(180,100%,75%,.7','',
+                    'hsla(165,100%,75%,.7','']
             }
         ]
     }
@@ -46,6 +46,11 @@
                 text: "Volume of water (in 1000 cubic km)"
             },
             legend: {
+                labels: {
+                    filter: function(item, data) {
+                        return item.text.length > 0;
+                    }
+                },
                 position: 'right'
             }
         }
