@@ -30,27 +30,15 @@
             }]
     };
 
-    var c2 = new Chart('chart', {
+    new Chart('chart', {
         type: 'line',
         data: data,
         options: {
             legend: { display: false },
-            hover: {
-                mode: 'index',
-            },
             tooltips: {
-
                 mode: 'index',
-                titleFontSize: 16,
-                titleFontColor: 'pink',
-                bodyFontStyle: 'italic',
-                footerFontColor: 'black',
-                titleSpacing: 10,
-                caretSize: 10,
-                caretPadding: 10,
-                backgroundColor: 'rgba(10,10,60,.5)',
-                borderColor: 'yellow',
-                borderWidth: 3,
+                intersect: false,
+                itemSort: (a,b) => b.y - a.y
             },
             events: ['click']
         }

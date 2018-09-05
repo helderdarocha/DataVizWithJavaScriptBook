@@ -30,29 +30,24 @@
             }]
     };
 
+    Chart.Tooltip.positioners.cursor = function(elements, coords) {
+        return coords;
+    };
+
     var c2 = new Chart('chart', {
         type: 'line',
         data: data,
         options: {
             legend: { display: false },
-            hover: {
-                mode: 'index',
-            },
             tooltips: {
-
-                mode: 'index',
-                titleFontSize: 16,
-                titleFontColor: 'pink',
-                bodyFontStyle: 'italic',
-                footerFontColor: 'black',
-                titleSpacing: 10,
-                caretSize: 10,
-                caretPadding: 10,
-                backgroundColor: 'rgba(10,10,60,.5)',
-                borderColor: 'yellow',
-                borderWidth: 3,
+                mode: 'point',
+                //mode: 'dataset',
+                //mode: 'index',
+                //mode: 'x',
+                //mode: 'y',
+                intersect: false,
+                position: 'average'
             },
-            events: ['click']
         }
     });
 
