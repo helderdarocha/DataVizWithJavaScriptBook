@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2. Data binding 1 - My examples</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #workspace {
+            border: solid 1px red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="workspace">
+    <p/>
+    <p/>
+    <p/>
+</div>
+
+
+<script>
+    // Use d3-dsv and d3-request
+    var workspace = d3.select("#workspace");
+    console.log(workspace);
+
+    var text = d3.request("things.csv").get(function(data) {
+        console.log(data);
+        var things = d3.csvParse(data.responseText);
+        console.log(things);
+
+        var bars = d3.select("div").selectAll("p");
+        bars.data([5, 10, 15]);
+
+        console.log(bars);
+        console.log(bars._groups[0][0].__data__);
+        console.log(bars._groups[0][1].__data__);
+        console.log(bars._groups[0][2].__data__);
+
+        console.log(d3.version);
+    });
+
+    // could be done in shorter way
+
+
+</script>
+</body>
+</html>

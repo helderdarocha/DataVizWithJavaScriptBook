@@ -24,8 +24,7 @@ function drawPolygon(coords) {
 function drawMap(data) {
     data.forEach(obj => {
         if(obj.geometry.type == 'MultiPolygon') {
-        obj.geometry.coordinates.forEach(poly => drawPolygon(poly[0]));
-
+            obj.geometry.coordinates.forEach(poly => drawPolygon(poly[0]));
         } else if(obj.geometry.type == 'Polygon') {
             obj.geometry.coordinates.forEach(poly => drawPolygon(poly));
         }

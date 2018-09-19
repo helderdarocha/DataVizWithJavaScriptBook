@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+</head>
+<body>
+<p>See Console log for results</p>
+<script>
+    let objects = [{label: 'label1', value: 5}, {label: 'label2', value: 3}, {label: 'label3', value: 9}]
+
+    let cross = d3.cross([3,4], [5,6]);
+    console.log("Cross");
+    console.log(cross);
+
+    let crossMultiply = d3.cross([3,4], [5,6], (a,b) => a*b);
+    console.log("Cross Multiply");
+    console.log(crossMultiply);
+
+    let merge = d3.merge([[3,4], [5,6]]);
+    console.log("Merge");
+    console.log(merge);
+
+    let concat = [3,4].concat([5,6]);
+    console.log("Concat");
+    console.log(concat);
+
+    let pairs = d3.pairs([3,4,5,6]);
+    console.log("Pairs");
+    console.log(pairs);
+
+    let pairsAdder = d3.pairs([3,4,5,6], (a,b) => a+b);
+    console.log("Pairs Adder");
+    console.log(pairsAdder);
+
+    let pairsExtracter = d3.pairs(objects, (a,b) => [a.value, b.value]);
+    console.log("Pairs Extracter");
+    console.log(pairsExtracter);
+
+    let permuted = d3.permute([1,2,3,4], [0,3,0,3,0,3]);
+    console.log("Permuter");
+    console.log(permuted);
+
+    let permutedObj = d3.permute( {label: 'label2', value: 3}, ["value", "label"]);
+    console.log("Permuted objects");
+    console.log(permutedObj);
+
+    let shuffled = d3.shuffle([1,2,3,4,5,6,7,8,9]);
+    console.log("Shuffler");
+    console.log(shuffled);
+
+    let shuffledStartStop = d3.shuffle([1,2,3,4,5,6,7,8,9], 2, 7);
+    console.log("Shuffle Middle");
+    console.log(shuffledStartStop);
+
+    let ticks = d3.ticks(-50, 100, 9);
+    console.log("Ticks");
+    console.log(ticks);
+
+    let tickStep = d3.tickStep(-50, 100, 9);
+    console.log("Tick Step");
+    console.log(tickStep);
+
+    let tickInc = d3.tickIncrement(-50, 100, 9);
+    console.log("Tick Increment");
+    console.log(tickInc);
+
+    let range = d3.range(75);
+    console.log("Range 75");
+    console.log(range);
+
+    let rangeBegEnd = d3.range(-25, 75);
+    console.log("Range (-25, 75)");
+    console.log(rangeBegEnd);
+
+    let rangeStep = d3.range(-25, 75, 10);
+    console.log("Range (-25, 75) Step 10");
+    console.log(rangeStep);
+
+    let transpose = d3.transpose([[1,2,3],[4,5,6]]);
+    console.log("Transpose");
+    console.log(transpose);
+
+    let zip = d3.zip([1,2,3],[4,5,6]);
+    console.log("Zip");
+    console.log(zip);
+
+</script>
+</body>
+</html>

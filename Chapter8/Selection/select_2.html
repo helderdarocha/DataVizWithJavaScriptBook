@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Selection 2 - My examples</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #workspace {
+            border: solid 1px red;
+            width: 200px;
+            height: 200px;
+        }
+        .large {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="workspace"></div>
+<p>One</p>
+<p>Two</p>
+<p>Three</p>
+
+<script>
+    // Only d3-selection is necessary for this
+    var workspace = d3.select("#workspace");
+
+    var paras = d3.selectAll("p");
+    paras.style("font-family", "sans-serif");
+    paras.style("color", function(d, i) {
+        if(i % 2 == 0) return "red";
+        console.log(d);
+    });
+
+    // .attr()
+    paras.attr("id", function(d, i) {
+        return "p" + (i + 1);
+    });
+
+    paras.style("font-weight", function(d, i) {
+        console.log(this.id); // using dom
+        if(this.id == "p3") {
+            this.style.color = "blue"; // using dom
+            d3.select(this).classed("large", true); // using d3
+        } else {
+            d3.select(this).html("Something <b>else</b> " + (i+1)); // only in HTML (use text() as well)
+            // same as innerHTML
+        }
+    });
+
+    // explain difference between attr and property
+
+    console.log(d3.version);
+</script>
+</body>
+</html>

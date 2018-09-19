@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+
+<script>
+    let dataset = [5,2,8,2,1];
+    console.log("d3");
+    console.log(d3);
+
+    let body = d3.select("body");
+    console.log("d3.select");
+    console.log(body);
+    // _groups([body]), _parents([html])
+
+    let ghostdiv = body.selectAll("div");
+    console.log("d3.select.selectAll");
+    console.log(ghostdiv);
+    // _groups([NodeList(0)]), _parents([body])
+
+    let data = ghostdiv.data(dataset);
+    console.log("d3.select.selectAll.data");
+    console.log(data);
+    // _groups([[],[],[],[],[]]), _parents([body])
+    // _enter([{...},{...},{...},{...},{...}])
+    // _exit[]
+
+    let enter = data.enter();
+    console.log("d3.select.selectAll.data.enter");
+    console.log(enter);
+    // _groups([{...},{...},{...},{...},{...}]), _parents([body])
+
+    let div = enter.append("div");
+    console.log("d3.select.selectAll.data.enter.append");
+    console.log(div);
+    // _groups([div, div, div, div, div]), _parents([body])
+
+    let text = div.text((d) => d);
+    console.log("d3.select.selectAll.data.enter.append.text");
+    console.log(text);
+    // _groups([div, div, div, div, div]), _parents([body])
+</script>
+</body>
+</html>
