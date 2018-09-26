@@ -2,88 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/gutemberg-common-letters.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/gutemberg-common-words.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/histogram.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/rain.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/wordcloud.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/wordcloud2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Apps/wordstats-common.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/A Tale of Two Cities.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Alice In Wonderland.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Dracula.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Dubliners.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Emma.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Frankenstein.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Great Expectations.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Heart of Darkness.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Jane Eyre.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Moby Dick.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Pride and Prejudice.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Adventures of Tom Sawyer.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Importance of Being Earnest.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Legend of Sleepy Hollow.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Picture of Dorian Gray.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Strange Case of Dr Jekyll and Mr Hyde.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Time Machine.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/The Wonderful Wizard of Oz.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Books/Treasure Island.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Gutemberg/b-22.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Gutemberg/b-43.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Gutemberg/b-46.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/Gutemberg/b-50.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/all-words.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/bookstats.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/common-letters.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/common-words.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/rain_sao_paulo.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/sol_2016.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON/fetching-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON/fetching-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON/fetching-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/JavaScript/commonWords.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/JavaScript/d3.layout.cloud.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-1-update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-2-enter-append.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-3-enter-merge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-3-enter-update.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-4-exit-merge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-4-exit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit-5-transition.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-exit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/moons-9.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Binding/binding5_data.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON/binding4.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Appendixes/FullExamples/asteroid_histogram.html" afterPath="$PROJECT_DIR$/Chapter8/Apps/asteroid_histogram.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Appendixes/FullExamples/moons.html" afterPath="$PROJECT_DIR$/Chapter8/Apps/moons.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Appendixes/FullExamples/planets.html" afterPath="$PROJECT_DIR$/Chapter8/Apps/planets.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter7/SVG_Orbits/svg-1.html" afterPath="$PROJECT_DIR$/Chapter8/SVG_Orbits/svg-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter7/SVG_Orbits/svg-2.html" afterPath="$PROJECT_DIR$/Chapter8/SVG_Orbits/svg-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter7/SVG_Orbits/svg-3.html" afterPath="$PROJECT_DIR$/Chapter8/SVG_Orbits/svg-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter7/SVG_Orbits/svg-4.html" afterPath="$PROJECT_DIR$/Chapter8/SVG_Orbits/svg-4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter7/SVG_Orbits/svg-5.html" afterPath="$PROJECT_DIR$/Chapter8/SVG_Orbits/svg-5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter7/SVG_Orbits/svg-6.html" afterPath="$PROJECT_DIR$/Chapter8/SVG_Orbits/svg-6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Arrays/binding.html" afterPath="$PROJECT_DIR$/Chapter8/Arrays/d3-array-examples.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Binding/enter-update-exit_data.html" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-update-exit_data.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Binding/enter-update-exit_data2.html" afterPath="$PROJECT_DIR$/Chapter8/Selection/enter-update-exit_data2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON/things.csv" afterPath="$PROJECT_DIR$/Chapter8/Data/things.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON/things.json" afterPath="$PROJECT_DIR$/Chapter8/Data/things.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Collections/rain-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Collections/rain-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Collections/rain-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/datum-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/datum-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/datum-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Selection/datum.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Apps/rain.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Collections/binding2.html" afterPath="$PROJECT_DIR$/Chapter8/Collections/binding2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Collections/binding3.html" afterPath="$PROJECT_DIR$/Chapter8/Collections/binding3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Collections/d3-collection-1.html" afterPath="$PROJECT_DIR$/Chapter8/Collections/d3-collection-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Selection/select_2.html" afterPath="$PROJECT_DIR$/Chapter8/Selection/select_2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Selection/select_3.html" afterPath="$PROJECT_DIR$/Chapter8/Selection/select_3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Selection/select_version.html" afterPath="$PROJECT_DIR$/Chapter8/Selection/select_version.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Data/rain_sao_paulo.csv" afterPath="$PROJECT_DIR$/Chapter8/Data/rain_sao_paulo.csv" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,11 +33,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rain.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter8/Apps/rain.html">
+      <file leaf-file-name="rain-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Collections/rain-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rain-3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Collections/rain-3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datum.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datum-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datum-3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum-3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datum-4.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum-4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enter-exit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Selection/enter-exit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rain-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/Collections/rain-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,12 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter8/Data/Books/Jane Eyre.txt" />
-        <option value="$PROJECT_DIR$/Chapter8/Data/Books/The Adventures of Tom Sawyer.txt" />
-        <option value="$PROJECT_DIR$/Chapter8/Data/Books/The Importance of Being Earnest.txt" />
-        <option value="$PROJECT_DIR$/Chapter8/Data/Books/Treasure Island.txt" />
-        <option value="$PROJECT_DIR$/Chapter8/Apps/wordcloud2.html" />
-        <option value="$PROJECT_DIR$/Chapter8/Selection/moons.html" />
         <option value="$PROJECT_DIR$/Chapter8/Selection/moons-7.html" />
         <option value="$PROJECT_DIR$/Chapter8/Selection/moons-8.html" />
         <option value="$PROJECT_DIR$/Chapter8/Selection/moons-6.html" />
@@ -182,6 +174,12 @@
         <option value="$PROJECT_DIR$/Chapter8/Selection/enter-update-exit_data2.html" />
         <option value="$PROJECT_DIR$/Chapter8/Data/rain_sao_paulo.csv" />
         <option value="$PROJECT_DIR$/Chapter8/Apps/rain.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Collections/rain-1.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Collections/rain-3.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Selection/datum.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Selection/datum-2.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Selection/datum-3.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Selection/datum-4.html" />
       </list>
     </option>
   </component>
@@ -195,7 +193,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="259" />
+    <option name="x" value="394" />
     <option name="y" value="71" />
     <option name="width" value="1075" />
     <option name="height" value="792" />
@@ -285,7 +283,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
+              <option name="myItemId" value="Selection" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,6 +302,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Apps" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Data" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,18 +383,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter8/Collections" />
       <recent name="$PROJECT_DIR$/Chapter8/Apps" />
       <recent name="$PROJECT_DIR$/Chapter8/Selection" />
       <recent name="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON" />
       <recent name="$PROJECT_DIR$/Chapter8/Data" />
-      <recent name="$PROJECT_DIR$/Chapter8/Data/Gutemberg" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter8/Selection" />
+      <recent name="$PROJECT_DIR$/Chapter8/Collections" />
       <recent name="$PROJECT_DIR$/Chapter8/Fetch_DSV_JSON" />
       <recent name="$PROJECT_DIR$/Chapter8/Apps" />
-      <recent name="$PROJECT_DIR$/Chapter8/Selection" />
       <recent name="$PROJECT_DIR$/Chapter8/Data" />
-      <recent name="$PROJECT_DIR$/Chapter8/Data/Books" />
     </key>
   </component>
   <component name="RunManager">
@@ -445,15 +475,15 @@
       <workItem from="1537469045666" duration="10433000" />
       <workItem from="1537656350260" duration="9217000" />
       <workItem from="1537714672899" duration="26721000" />
-      <workItem from="1537795852817" duration="69399000" />
+      <workItem from="1537795852817" duration="81964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371801000" />
+    <option name="totallyTimeSpent" value="384366000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="259" y="71" width="1075" height="792" extended-state="0" />
+    <frame x="394" y="71" width="1075" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27008712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -493,60 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter8/Data/Books/The Time Machine.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="3145" column="0" selection-start-line="3145" selection-start-column="0" selection-end-line="3145" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Data/Books/Treasure Island.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="7457" column="52" selection-start-line="7457" selection-start-column="52" selection-end-line="7457" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Data/sol_2016.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="155" column="23" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Apps/wordcloud2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/moons-6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="133" column="43" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/moons-5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/moons-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8/Selection/moons-3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -607,14 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/enter-exit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -735,14 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Apps/histogram.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -875,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Data/rain_sao_paulo.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8/Apps/wordcloud.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -891,10 +843,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Apps/rain.html">
+    <entry file="file://$PROJECT_DIR$/Chapter8/Data/rain_sao_paulo.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Collections/rain-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Collections/rain-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Apps/histogram.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Collections/rain-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/enter-exit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="26" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter1/Data/PlanetDiameters.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/Selection/datum-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding />
         </state>
       </provider>

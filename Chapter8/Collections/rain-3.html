@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        * {
+            font-family: "Yanone Kaffeesatz", "Arial Narrow", sans-serif;
+            font-size: 10pt;
+        }
+        h1 {
+            font-size: 16pt;
+        }
+        p {
+            text-align: right;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: solid 1px darkslategray;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Rainfall in São Paulo, Brazil (in mm) from 1984 to 2017</h1>
+<table></table>
+<p>source: inmet.gov.br</p>
+<script>
+    const format = d3.timeFormat("%b");
+    const color = d3.scalePow().exponent(.75);
+
+    d3.csv("../Data/rain_sao_paulo.csv")
+            .then(function(data) {
+                process(data)
+            });
+
+    function process(data) {
+        // nest by year, and month
+        const entries = d3.nest()
+                .key(function (d) {
+                    return +d.Month;
+                })
+                .key(function (d) {
+                    return +d.Year;
+                })
+                .rollup(function (d) {
+                    return +d[0].Rain_mm;
+                })
+                .entries(data);
+
+        const numbers = d3.merge(entries.map((v,k)=> v.values.map(d=>d.value)));
+        color.domain(d3.extent(numbers));
+        draw(entries);
+    }
+
+    function draw(entries) {
+
+        const table = d3.select("table");
+        const tr = table.selectAll("tr.years")
+                .data(entries)
+                .enter()
+                .append("tr").attr("class", "year")
+                .attr("title", function(d) {
+                    return d.key;
+                });
+
+        const header = table.insert("tr", "tr:first-of-type").attr("class", "header-row");
+
+        const td = tr.selectAll("td.months")
+                .append("td").attr("class", "month-label")
+                .data(function(d) {
+                    return d.values;
+                })
+                .enter()
+                .append("td").attr("class", "month")
+                .attr("title", function(d) {
+                    return d.key;
+                })
+                .text(function(d) {
+                    return d.value;
+                })
+                .style("background-color", function(d) {
+                    return d3.interpolateYlGnBu(color(d.value));
+                })
+                .style("color", function(d) {
+                    return color(d.value) > .5 ? 'white' : 'black';
+                });;
+
+        tr.insert("th", "td:first-of-type").attr("class", "month-label")
+                .text(function(d) {
+                    return format(new Date(2000, d.key-1, 1));
+                });
+
+        header.selectAll("th.year-label")
+                .data(entries[0].values)
+                .enter()
+                .append("th").attr("class", "year-label")
+                .text(function(d) {
+                    return d.key;
+                });
+
+        header.insert("td", "th:first-of-type");
+
+    }
+</script>
+</body>
+</html>
