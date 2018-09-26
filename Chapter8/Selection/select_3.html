@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>1. Selection 2 - My examples</title>
+    <title>Selection examples</title>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <style>
         #workspace {
@@ -23,10 +23,9 @@
 <p>Three</p>
 
 <script>
-    // Only d3-selection is necessary for this
     var workspace = d3.select("#workspace");
 
-    var paras = d3.selectAll("p"); // does illegal nesting!
+    var paras = d3.selectAll("p"); // allows illegal nesting!
     paras.insert("p", "div")
             .text("Clone para");
 
@@ -39,7 +38,6 @@
 
     console.log(workspace.node());
     console.log(paras.node());
-
 
     console.log(d3.version);
 </script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3 fetching & collections</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<p>See console for results.</p>
+<script>
+
+    d3.csv("../Data/things.csv")
+        .then(function(parsed) {
+            console.log(parsed);
+
+            console.log(d3.keys(parsed[0]));
+            console.log(d3.values(parsed[0]));
+            console.log(d3.entries(parsed[0]));
+
+            console.log(d3.nest()
+                    .key(function(d) { return d.flies; })
+                    .entries(parsed));
+
+            console.log(d3.version);
+        });
+
+</script>
+</body>
+</html>

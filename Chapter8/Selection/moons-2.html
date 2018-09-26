@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        svg {
+            border: solid 1px gray;
+        }
+        * {
+            font-family: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+        }
+        text {
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+<h1>The largest moons of Jupiter</h1>
+<div id="container" width="500" height="300">
+    <svg height="100%" width="100%" id="moons"></svg>
+</div>
+<form>
+</form>
+<script>
+    const div = d3.select("#container");
+    const   width = 500,
+            height = 300;
+    const spacingLarge = 10, spacingSmall = 2, marginW = 20, marginH = 50;
+
+    const marginPlanet = 100;
+    let maxDiameter, minDiameter, totalSatellites;
+    let planets, currentPlanet;
+    let largeSatellites = [];
+
+    const scale = d3.scaleLinear();
+
+    const svg = d3.select("#moons")
+            .attr("viewBox", "0 0 " + width + " " + height);
+    const group = svg.append("g")
+            .attr("transform", "translate("+[marginPlanet,height/2]+")");
+
+    d3.json("../Data/sol_2016.json").then(function(data) {
+        planets = data.planets.filter(p => +p.id.substring(1) >= 3 && +p.id.substring(1) <= 8);
+        configPage("p5");
+        draw();
+    });
+
+    function configPage(id) {
+        currentPlanet = planets.filter(p => p.id == id)[0];
+
+        [minDiameter, maxDiameter] = d3.extent(currentPlanet.satellites, function(d) {
+            return d.diameterKm;
+        });
+
+        largeSatellites = currentPlanet.satellites.filter(s => s.diameterKm > maxDiameter/50);
+        largeSatellites.sort((a,b)=>d3.descending(a.diameterKm,b.diameterKm));
+        let largeSum = d3.sum(largeSatellites, function(d) {
+            return d.diameterKm;
+        });
+
+        let horizSpace = width - (marginPlanet + marginW*2 + largeSatellites.length * 10);
+        let vertSpace  = height - marginH*2;
+        let satKmSpace = largeSum;
+
+        scale.range([0, d3.min([vertSpace, horizSpace])]).domain([0, satKmSpace]);
+    }
+
+    function draw() {
+        let planet = group.selectAll(".planet")
+                .data([currentPlanet])
+                .enter()
+                .append("circle").attr("class", "planet")
+                .attr("r", function(d) {
+                    return scale(d.diameterKm)/2;
+                })
+                .attr("cx", function(d, i) {
+                    return -(marginW + scale(d.diameterKm)/2);
+                });
+
+        let moon = group.selectAll(".moon")
+                .data(largeSatellites)
+                .enter()
+                .append("g").attr("class", "moon")
+                .attr("id", function(d,i) {
+                    return "moon_" + i;
+                });
+
+        moon.append("circle")
+                .attr("r", function(d) {
+                    return scale(d.diameterKm)/2;
+                })
+                .attr("cx", function(d, i) {
+                    return positionCenter(d,i);
+                });
+
+        moon.append("text")
+                .text(function(d) {
+                    return d.name;
+                })
+                .attr("transform", function(d,i) {
+                    return positionLabel(this, d,i);
+                });
+    }
+
+    function positionLabel(obj, d, i) {
+        const x = scale(d.diameterKm)/2 + 10;
+        const y = positionCenter(d,i) + obj.getBBox().height/4;
+        return "rotate(-90, 0, 0) translate("+x+", "+y+")";
+    }
+
+    function positionCenter(d, i) {
+        let spacing = 0;
+        if(i > 0) {
+            let previous = d3.select("#moon_"+(i-1) + " circle");
+            spacing = +previous.attr("cx") + +previous.attr("r") + 10;
+        }
+        return spacing + scale(d.diameterKm)/2;
+    }
+</script>
+</body>
+</html>
