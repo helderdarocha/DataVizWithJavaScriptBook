@@ -71,7 +71,8 @@
         planets = data.planets.filter(p => +p.id.substring(1) >= 3 && +p.id.substring(1) <= 8);
         configPanel();
         configPage("p3");
-        draw();
+        drawPlanet();
+        redraw();
     });
 
     function configPanel() {
@@ -222,24 +223,13 @@
         handleTooltips(newMoons);
     }
 
-    function draw() {
+    function drawPlanet() {
         let planet = group.selectAll(".planet")
                 .data([currentPlanet])
                 .enter()
                 .append("circle").attr("class", "planet");
-        updatePlanet(planet);
         handleTooltip(planet);
-
-        let moons = group.selectAll(".moon").data(largeSatellites)
-                .enter()
-                .append("g").attr("class", "moon")
-                .attr("id", function(d,i) {
-                    return "moon_" + i;
-                });
-
-        createCircle(moons);
-        createLabel(moons);
-        handleTooltips(moons);
+        updatePlanet(planet);
     }
 
     function positionLabel(obj, d, i) {

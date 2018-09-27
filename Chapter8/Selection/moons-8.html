@@ -71,7 +71,8 @@
         planets = data.planets.filter(p => +p.id.substring(1) >= 3 && +p.id.substring(1) <= 8);
         configPanel();
         configPage("p3");
-        draw();
+        drawPlanet();
+        redraw();
     });
 
     function configPanel() {
@@ -198,62 +199,11 @@
                 });
     }
 
-    function draw() {
+    function drawPlanet() {
         let planet = group.selectAll(".planet")
                 .data([currentPlanet])
                 .enter()
-                .append("circle").attr("class", "planet")
-                .attr("r", function(d) {
-                    return scale(d.diameterKm)/2;
-                })
-                .attr("cx", function(d, i) {
-                    return -(marginW + scale(d.diameterKm)/2);
-                })
-                .style("fill", function(d) {
-                    return planetColors[d.id.substring(1)-3];
-                });
-
-        let moon = group.selectAll(".moon")
-                .data(largeSatellites)
-                .enter()
-                .append("g").attr("class", "moon")
-                .attr("id", function(d,i) {
-                    return "moon_" + i;
-                });
-
-        moon.append("circle")
-                .attr("r", function(d) {
-                    return scale(d.diameterKm)/2;
-                })
-                .attr("cx", function(d, i) {
-                    return positionCenter(d,i);
-                })
-                .style("fill", function(d,i) {
-                    return colorScale(d.diameterKm);
-                });
-
-        moon.append("text")
-                .text(function(d) {
-                    return d.name;
-                })
-                .attr("transform", function(d,i) {
-                    return positionLabel(this, d,i);
-                });
-
-        moon.on("mouseover", function(d,i) {
-            d3.select(".tooltip")
-                    .attr("transform", function() {
-                        return "translate("+positionCenter(d,i)+","+scale(d.diameterKm/4)+")";
-                    })
-                    .style("opacity", 1)
-                    .select("text")
-                    .text(function() {
-                        return "Diameter: " + d.diameterKm + " km";
-                    });
-        }).on("mouseout", function(d,i) {
-            d3.select(".tooltip")
-                    .style("opacity", 0);
-        });
+                .append("circle").attr("class", "planet");
 
         planet.on("mouseover", function(d,i) {
             d3.select(".tooltip")

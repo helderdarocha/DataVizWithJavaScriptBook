@@ -49,49 +49,30 @@
                 redraw();
             });
 
-    draw();
-
-    function draw() {
-        const step_select = d3.select("#container").selectAll(".letter")
-        const step_bind   = step_select.data(currentWord.split(''))
-        const step_enter  = step_bind.enter();
-        const step_append = step_enter.append("span").attr("class", "letter")
-        const step_update =
-                step_append.style("background-color", d => colorScale(currentWord))
-                           .text(d => d);
-
-        console.log("1) CREATE/ENTER/APPEND");
-
-        console.log(currentWord + ": step_select", step_select._groups[0]);
-
-        console.log(currentWord + ": step_bind", step_bind._groups[0]);
-        console.log(currentWord + ": step_bind: enter", step_bind._enter[0]);
-        console.log(currentWord + ": step_bind: exit",  step_bind._exit[0]);
-
-        console.log(currentWord + ": step_enter", step_enter._groups[0]);
-
-        console.log(currentWord + ": step_append", step_append._groups[0]);
-
-    }
+    redraw();
 
     function redraw() {
-        // update
-        const step_select = d3.select("#container").selectAll(".letter")
-        const step_bind   = step_select.data(currentWord.split(''))
+        // join
+        const step_select = d3.select("#container").selectAll(".letter");
+        const step_bind   = step_select.data(currentWord.split(''));
+
+        // update old elements (if any)
         const step_update =
                 step_bind.style("background-color", d => colorScale(currentWord))
                          .text(d => d);
 
         d3.selectAll("button").property("disabled", d => d == currentWord);
 
-        // enter
+        // enter (create new elements)
         const step_enter  = step_bind.enter();
-        const step_append = step_enter.append("span").attr("class", "letter")
+        const step_append = step_enter.append("span").attr("class", "letter");
+
+        // update new elements
         const step_update_new =
                 step_append.style("background-color", d => colorScale(currentWord))
                             .text(d => d);
 
-        //exit
+        //exit (remove excess elements)
         const step_exit   = step_bind.exit();
         const step_remove = step_exit.remove();
 

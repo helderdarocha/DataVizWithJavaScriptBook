@@ -30,7 +30,12 @@
 <div id="container"/>
 <form/>
 <script>
-    const datasets = ["one", "two", "three", "four"];
+    const datasets = [
+        ["o","n","e"],
+        ["t","w","o"],
+        ["t","h","r","e","e"],
+        ["f","o","u","r"],
+    ];
     let currentWord = datasets[0];
     const colorScale = d3.scaleOrdinal(d3.schemeSet1);
 
@@ -40,33 +45,33 @@
             .enter()
             .append("button")
             .attr("type", "button")
-            .attr("id", d => d)
+            .attr("id", (d,i) => 'w'+i)
             .property("disabled", d => d == currentWord)
             .style("background-color", d => colorScale(d))
-            .text(d => d.toUpperCase())
+            .text(d => d.join("").toUpperCase())
             .on("click", function() {
-                currentWord = d3.select(this).attr("id");
+                currentWord = datasets[d3.select(this).attr("id").substring(1)];
                 redraw();
             });
 
     redraw();
 
     function redraw() {
-        // join data
+        // bind
         const step_select = d3.select("#container").selectAll(".letter")
-        const step_bind   = step_select.data(currentWord.split(''))
+        const step_bind   = step_select.data(currentWord)
 
         d3.selectAll("button").property("disabled", d => d == currentWord);
 
-        //exit - remove excess elements
+        //exit
         const step_exit   = step_bind.exit();
         const step_remove = step_exit.remove();
 
-        // enter - add new elements
+        // enter
         const step_enter  = step_bind.enter();
         const step_append = step_enter.append("span").attr("class", "letter");
 
-        // merge + update all elements
+        // merge + update
         const step_merge = step_append.merge(step_select)
         const step_update =
                 step_merge.style("background-color", d => colorScale(currentWord))
@@ -91,8 +96,6 @@
         console.log(currentWord + ": step_exit", step_exit._groups[0]);
         console.log(currentWord + ": step_remove", step_remove._groups[0]);
     }
-
-
 
 </script>
 </body>
