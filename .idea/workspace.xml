@@ -2,34 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/SolarSystemData.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/ThreeVariablesPlanets.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/cities15000.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/Data/vehicles.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/FetchingParsing/parsing-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-11.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-9.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-1.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-10.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-10.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-2.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-3.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-4.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-5-update.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-5-update.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-6-enter.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-6-enter.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-7-exit.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-7-exit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-8.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-8.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons/moons-9.html" afterPath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-9.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/m-12-code.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-12.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-10.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-5-update.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-6-enter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-7-exit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-9.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Orbits/svg-1.html" afterPath="$PROJECT_DIR$/Appendixes/FullExamples/Example_Orbits/svg-1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Orbits/svg-2.html" afterPath="$PROJECT_DIR$/Appendixes/FullExamples/Example_Orbits/svg-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Orbits/svg-3.html" afterPath="$PROJECT_DIR$/Appendixes/FullExamples/Example_Orbits/svg-3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Orbits/svg-4.html" afterPath="$PROJECT_DIR$/Appendixes/FullExamples/Example_Orbits/svg-4.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Orbits/svg-5.html" afterPath="$PROJECT_DIR$/Appendixes/FullExamples/Example_Orbits/svg-5.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter8/Example_Orbits/svg-6.html" afterPath="$PROJECT_DIR$/Appendixes/FullExamples/Example_Orbits/svg-6.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter8/Selections/append-1.html" afterPath="$PROJECT_DIR$/Chapter8/Selections/append-1.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,98 +41,7 @@
     <favorites_list name="DataVizWithJavaScriptBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="moons-9.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-9.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moons-10.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-10.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="123" column="79" selection-start-line="123" selection-start-column="79" selection-end-line="123" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moons-8.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
-              <caret line="127" column="49" selection-start-line="127" selection-start-column="49" selection-end-line="127" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moons-11.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-11.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="append-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/Selections/append-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="append-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/Selections/append-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="42" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moons-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moons-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="append-3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter8/Selections/append-3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="36" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -157,7 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter8/Selection/enter-exit-7-order-out.html" />
         <option value="$PROJECT_DIR$/Chapter8/Selection/enter-exit-7-order-key.html" />
         <option value="$PROJECT_DIR$/Chapter8/Selection/enter-exit-7-order-index.html" />
         <option value="$PROJECT_DIR$/Chapter8/Selection/enter-exit-7-order-key-1.html" />
@@ -208,6 +107,7 @@
         <option value="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-12.html" />
         <option value="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-9.html" />
         <option value="$PROJECT_DIR$/Chapter8/StepByStepExample/moons-10.html" />
+        <option value="$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-10.html" />
       </list>
     </option>
   </component>
@@ -279,39 +179,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter8" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StepByStepExample" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter8" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Appendixes" />
+              <option name="myItemId" value="Chapter9" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,11 +204,11 @@
       <recent name="$PROJECT_DIR$/Chapter8/Selection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Appendixes/FullExamples" />
+      <recent name="$PROJECT_DIR$/Chapter8/StepByStepExample" />
       <recent name="$PROJECT_DIR$/Chapter8/Data" />
       <recent name="$PROJECT_DIR$/Chapter9/Data" />
       <recent name="$PROJECT_DIR$/Chapter9" />
-      <recent name="$PROJECT_DIR$/Chapter8/Ordering" />
-      <recent name="$PROJECT_DIR$/Chapter8/Collections" />
     </key>
   </component>
   <component name="RunManager">
@@ -427,18 +295,18 @@
       <workItem from="1538395867608" duration="6453000" />
       <workItem from="1538449735942" duration="11805000" />
       <workItem from="1538537246512" duration="1768000" />
-      <workItem from="1538539959381" duration="4942000" />
+      <workItem from="1538539959381" duration="5904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474579000" />
+    <option name="totallyTimeSpent" value="475541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="132" y="78" width="1198" height="785" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26730105" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26730105" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -475,13 +343,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter8/Selections/enter-update-exit_data2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8/Selections/enter-update-exit_data.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30">
@@ -701,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter8/Example_Moons_Old/moons-10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -832,6 +686,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="123" column="79" selection-start-line="123" selection-start-column="79" selection-end-line="123" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/moons-12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/StepByStepExample/m-12-code.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding />
         </state>
       </provider>
