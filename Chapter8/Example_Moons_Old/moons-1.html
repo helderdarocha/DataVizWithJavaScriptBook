@@ -17,21 +17,18 @@
     </style>
 </head>
 <body>
-<h1>The largest moons of Jupiter</h1>
+<h1>The largest moons</h1>
 <div id="container" width="500" height="300">
     <svg height="100%" width="100%" id="moons"></svg>
 </div>
-<form>
-</form>
+<form></form>
 <script>
-    const div = d3.select("#container");
     const   width = 500,
             height = 300;
     const marginW = 20, marginH = 50;
 
     const marginPlanet = 100;
-    let maxDiameter, minDiameter;
-    let planets, currentPlanet;
+    let minDiameter, planets, currentPlanet;
     let largeSatellites = [];
 
     const scale = d3.scaleLinear();
