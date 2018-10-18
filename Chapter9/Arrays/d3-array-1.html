@@ -13,84 +13,52 @@
 
     // D3 ignores, NaN, undefined, null
     let min = d3.min(array);
-    console.log("Min");
-    console.log(min);
+    console.log("Min", min);
 
     let min2 = d3.min(objects, function(d) {
         return d.value;
     });
-    console.log("Min2");
-    console.log(min2);
+    console.log("Min2", min2);
 
     // Does not ignore NaN, null, undefined
     let min3 = Math.min(array);
-    console.log("Min3");
-    console.log(min3);
+    console.log("Min3", min3);
 
     let max = d3.max(array);
-    console.log("Max");
-    console.log(max);
+    console.log("Max", max);
 
     let max2 = d3.max(objects.map(d => d.value));
-    console.log("Max2");
-    console.log(max2);
-
-    let scan = d3.scan(array);
-    console.log("Scan index of min");
-    console.log(scan);
-
-    let scan2 = d3.scan(objects, function(a,b) {
-        return a.value - b.value;
-    });
-    console.log("Scan2 index of min");
-    console.log(scan2);
-
-    let scan3 = d3.scan(array, (a,b) => b-a);
-    console.log("Scan index of max");
-    console.log(scan3);
-
-    let scan4 = d3.scan(objects, (a,b) => b.value - a.value);
-    console.log("Scan2 index of max");
-    console.log(scan4);
+    console.log("Max2", max2);
 
     let extent = d3.extent(array);
-    console.log("Extent");
-    console.log(extent);
+    console.log("Extent", extent);
 
     let sum = d3.sum(array);
-    console.log("Sum");
-    console.log(sum);
+    console.log("Sum", sum);
 
     let mean = d3.mean(array);
-    console.log("Mean");
-    console.log(mean);
+    console.log("Mean", mean);
 
     let median = d3.median(array);
-    console.log("Median");
-    console.log(median);
-
-    array.sort((a,b) => a-b);
-    let quantile50 = d3.quantile(array, .5);
-    console.log("Quantile .5");
-    console.log(quantile50);
-    let quantile25 = d3.quantile(array, .25);
-    console.log("Quantile .25");
-    console.log(quantile25);
-    let quantile75 = d3.quantile(array, .75);
-    console.log("Quantile .75");
-    console.log(quantile75);
+    console.log("Median", median);
 
     let variance = d3.variance(array);
-    console.log("Variance");
-    console.log(variance);
+    console.log("Variance", variance);
 
     let sqrtVariance = Math.sqrt(variance);
-    console.log("Sqrt variance");
-    console.log(sqrtVariance);
+    console.log("Sqrt variance", sqrtVariance);
 
     let deviation = d3.deviation(array);
-    console.log("Deviance");
-    console.log(deviation);
+    console.log("Deviance", deviation);
+
+    let array2 = [4,2,9,12,6,23,9,71,55,49];
+    array2.sort((a,b) => a-b);
+    let quantile50 = d3.quantile(array2, .5);
+    console.log("Quantile .5", quantile50);
+    let quantile25 = d3.quantile(array2, .25);
+    console.log("Quantile .25", quantile25);
+    let quantile75 = d3.quantile(array2, .75);
+    console.log("Quantile .75", quantile75);
 
 </script>
 </body>
