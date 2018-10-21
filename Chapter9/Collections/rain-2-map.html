@@ -15,16 +15,18 @@
 
     function process(data) {
 
-        console.log(data)
         // nest by year, and month
         let entries = d3.nest()
                 .key(function(d) {
-                    return +d.Month;
-                })
-                .key(function(d) {
                     return +d.Year;
                 })
-                .entries(data);
+                .key(function(d) {
+                    return +d.Month;
+                })
+                .rollup(function(d) {
+                    return +d[0].Rain_mm;
+                })
+                .map(data);
 
         console.log(entries);
     }

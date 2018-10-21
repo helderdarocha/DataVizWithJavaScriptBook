@@ -59,51 +59,51 @@
 
     function draw(entries) {
 
-        const table = d3.select("table");
-        const tr = table.selectAll("tr.years")
-                .data(entries)
-                .enter()
-                .append("tr").attr("class", "year")
-                .attr("title", function(d) {
-                    return d.key;
-                });
+const table = d3.select("table");
+const tr = table.selectAll("tr.month")
+        .data(entries)
+        .enter()
+        .append("tr").attr("class", "month")
+        .attr("title", function(d) {
+            return d.key;
+        });
 
-        const header = table.insert("tr", "tr:first-of-type").attr("class", "header-row");
+const header = table.insert("tr", "tr:first-of-type").attr("class", "header-row");
 
-        const td = tr.selectAll("td.months")
-                .append("td").attr("class", "month-label")
-                .data(function(d) {
-                    return d.values;
-                })
-                .enter()
-                .append("td").attr("class", "month")
-                .attr("title", function(d) {
-                    return d.key;
-                })
-                .text(function(d) {
-                    return d.value;
-                })
-                .style("background-color", function(d) {
-                    return d3.interpolateYlGnBu(color(d.value));
-                })
-                .style("color", function(d) {
-                    return color(d.value) > .5 ? 'white' : 'black';
-                });;
+const td = tr.selectAll("td.year")
+        .append("td").attr("class", "month-label")
+        .data(function(d) {
+            return d.values;
+        })
+        .enter()
+        .append("td").attr("class", "year")
+        .attr("title", function(d) {
+            return d.key;
+        })
+        .text(function(d) {
+            return d.value;
+        })
+        .style("background-color", function(d) {
+            return d3.interpolateYlGnBu(color(d.value));
+        })
+        .style("color", function(d) {
+            return color(d.value) > .5 ? 'white' : 'black';
+        });;
 
-        tr.insert("th", "td:first-of-type").attr("class", "month-label")
-                .text(function(d) {
-                    return format(new Date(2000, d.key-1, 1));
-                });
+tr.insert("th", "td:first-of-type").attr("class", "month-label")
+        .text(function(d) {
+            return format(new Date(2000, d.key-1, 1));
+        });
 
-        header.selectAll("th.year-label")
-                .data(entries[0].values)
-                .enter()
-                .append("th").attr("class", "year-label")
-                .text(function(d) {
-                    return d.key;
-                });
+header.selectAll("th.year-label")
+        .data(entries[0].values)
+        .enter()
+        .append("th").attr("class", "year-label")
+        .text(function(d) {
+            return d.key;
+        });
 
-        header.insert("td", "th:first-of-type");
+header.insert("td", "th:first-of-type");
 
     }
 </script>
