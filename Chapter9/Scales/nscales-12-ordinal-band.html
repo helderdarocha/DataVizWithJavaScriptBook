@@ -33,10 +33,6 @@
     console.log("step", bandScale.step());
     console.log("padding", bandScale.padding());
 
-    const axisScale = d3.scaleLinear()
-            .domain(d3.extent(data))
-            .range([0,800]);
-
     d3.select("body").append("svg").attr("height", 650).attr("width", 850);
 
     d3.select("svg").append("g")

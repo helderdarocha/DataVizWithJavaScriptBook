@@ -40,7 +40,7 @@
             .attr("transform","translate(25,25)")
             .call(axis);
 
-    d3.select("svg").append("g").attr("id","grades")
+    d3.select("svg").append("g")
             .selectAll("ellipse")
             .data(data).enter()
             .append("ellipse")

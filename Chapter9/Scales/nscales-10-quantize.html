@@ -11,13 +11,11 @@
 </head>
 <body>
 <script>
-    const sample = [0,910];
-    const data = d3.range(0,910,16);
-    const colors = ['blue','green','red'];
-
     const scaleBuckets = d3.scaleQuantize()
-            .domain(sample)
-            .range(colors);
+            .domain([0,900])
+            .range(['blue','green','red']);
+
+    const data = [0,50,100,200,250,290,300,310,400,550,590,650,700,900];
 
     console.log(4, scaleBuckets(4));
     console.log(5, scaleBuckets(5));
@@ -37,7 +35,7 @@
             .attr("transform","translate(25,25)")
             .call(axis);
 
-    d3.select("svg").append("g").attr("id","grades")
+    d3.select("svg").append("g")
             .selectAll("ellipse")
             .data(data).enter()
             .append("ellipse")
