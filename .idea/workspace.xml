@@ -2,28 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Collections/rain-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-1-diverging.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-2-singleHue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-3-multiHue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-4-cyclical.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-div.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-multi-hue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-single-hue.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-5-identity-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-7-sequential-rainbow.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter9/Scales/scales-12-ordinal-band.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-band.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter9/Scales/scales-12-ordinal-point.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-point.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter9/Scales/scales-12-ordinal.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/CSV_to_JSON.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/Data/America_population2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/Data/Americas_population.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/Data/Americas_population.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/JSON_to_JSON2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/America_population2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/Americas_population.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/monthly_json.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-6-missing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/curves-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/curves.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-5-missing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/SVG/SVG_path.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-area.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-orders-bar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Symbol/symbol-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Symbol/symbols.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/JavaScript/commonWords.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/JavaScript/d3.layout.cloud.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter9/Collections/rain-3.html" afterPath="$PROJECT_DIR$/Chapter9/Collections/rain-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantile.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantize.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantize.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter9/Scales/nscales-11-threshold.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-11-threshold.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter9/Scales/nscales-5-identity.html" afterPath="$PROJECT_DIR$/Chapter9/Scales/nscales-5-identity.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,101 +75,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nscales-10-quantize.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantize.html">
+      <file leaf-file-name="line-6-symbol.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nscales-10-quantile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantile.html">
+      <file leaf-file-name="line-7-curve.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+            <state relative-caret-position="120">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nscales-11-threshold.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-11-threshold.html">
+      <file leaf-file-name="arc-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="180">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="d3-scale-chromatic-5-categorical.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical.html">
+      <file leaf-file-name="arc-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="75">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="d3-scale-chromatic-5-categorical-div.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-div.html">
+      <file leaf-file-name="arc-3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
+            <state relative-caret-position="45">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="d3-scale-chromatic-5-categorical-multi-hue.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-multi-hue.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d3-scale-chromatic-5-categorical-single-hue.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-single-hue.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="83" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nscales-12-ordinal-colors-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nscales-12-ordinal-colors.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nscales-12-ordinal-band.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-band.html">
+      <file leaf-file-name="arc-4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="45" selection-end-column="81" />
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="arc-5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pie-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pie-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pie-3.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -161,57 +191,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter9/Arrays/d3-array-4.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Arrays/d3-array-1.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Arrays/d3-array-2.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Arrays/d3-array-5.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Random/random-1.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/d3-collection-1.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/d3-collection-2.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/rain-1.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/rain-2.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/nesting-4.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/nesting-1.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/nesting-2.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/nesting-3.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-3.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-1.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-5.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-6.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-7.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-8.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-9.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-10.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-12.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-11.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-11-cartesian.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-2.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-4.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/scales-12-ordinal.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-5-cartesian.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-7-long-HV.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Axes/axes-12-cartesian-bleed.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/rain-3.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Collections/rain-4.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantile.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/scales-12-ordinal-band.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-5-identity.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-8-diverging.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/Cartesian/nscales-7-sequential-colors.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-7-sequential-colors.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-4-cyclical.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-3-multiHue.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-2-singleHue.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-1-diverging.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-7-sequential-rainbow.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantize.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-11-threshold.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/Cartesian/d3-scale-chromatic-5-categorical.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors-2.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-single-hue.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-div.html" />
-        <option value="$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-multi-hue.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-6-curve.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/curves.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-3.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-4.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-5.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-6-missing.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Americas_population.csv" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/filter.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Data/Americas_population.json" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-offsets.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-orders.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-bar.html" />
+        <option value="$PROJECT_DIR$/Appendixes/Tools/CSV_to_JSON.html" />
+        <option value="$PROJECT_DIR$/Appendixes/Tools/CSV_to_JSON2.html" />
+        <option value="$PROJECT_DIR$/Appendixes/Tools/Data/America_population2.json" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-orders-bar.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-area.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-4.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-5.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-5.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/curves-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/SVG/path_lineto.svg" />
+        <option value="$PROJECT_DIR$/Chapter10/SVG/path_curveto.svg" />
+        <option value="$PROJECT_DIR$/Chapter10/SVG/SVG_path.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Symbol/d3-symbols.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-bar.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-1.html" />
       </list>
     </option>
   </component>
@@ -225,9 +255,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1034" />
+    <option name="x" value="-1064" />
     <option name="y" value="92" />
-    <option name="width" value="1030" />
+    <option name="width" value="1060" />
     <option name="height" value="785" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -256,6 +286,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,81 +315,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter11" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Chapter10" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scales" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Scales" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cartesian" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,18 +331,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chapter9/Scales" />
-      <recent name="$PROJECT_DIR$/Chapter9/Scales/Cartesian" />
-      <recent name="$PROJECT_DIR$/Chapter9/Collections" />
-      <recent name="$PROJECT_DIR$/Chapter9/Axes" />
-      <recent name="$PROJECT_DIR$/Chapter9/Arrays" />
+      <recent name="$PROJECT_DIR$/Chapter10/SVG" />
+      <recent name="$PROJECT_DIR$/Chapter10/LineArea" />
+      <recent name="$PROJECT_DIR$/Chapter10/Radial" />
+      <recent name="$PROJECT_DIR$/Chapter10/Data" />
+      <recent name="$PROJECT_DIR$/Chapter10/ArcPie" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chapter9/Scales" />
-      <recent name="$PROJECT_DIR$/Chapter10" />
-      <recent name="$PROJECT_DIR$/Chapter9/Scales/Cartesian" />
+      <recent name="$PROJECT_DIR$/Chapter4/Data" />
+      <recent name="$PROJECT_DIR$/Appendixes/Tools" />
+      <recent name="$PROJECT_DIR$/Appendixes/Tools/Data" />
       <recent name="$PROJECT_DIR$/Appendixes/FullExamples" />
-      <recent name="$PROJECT_DIR$/Chapter8/StepByStepExample" />
+      <recent name="$PROJECT_DIR$/Appendixes/FullExamples/data" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.scales-5-identity.html">
@@ -484,22 +446,23 @@
       <workItem from="1538951352395" duration="12102000" />
       <workItem from="1539458611210" duration="53183000" />
       <workItem from="1540086491589" duration="7053000" />
-      <workItem from="1540166437154" duration="16398000" />
+      <workItem from="1540166437154" duration="16923000" />
+      <workItem from="1540495417895" duration="22631000" />
+      <workItem from="1540692794045" duration="45181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="574593000" />
+    <option name="totallyTimeSpent" value="642930000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1034" y="92" width="1030" height="785" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1064" y="92" width="1060" height="785" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34817815" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35068762" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32517985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -510,6 +473,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32517985" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -538,400 +502,422 @@
           <line>31</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Appendixes/Tools/JSON_to_JSON2.html</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter9/Collections/nesting-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter4/Data/radial-line-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Collections/nesting-3.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/Data/monthly_json.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes.html" />
-    <entry file="file://$PROJECT_DIR$/Chapter9/Collections/d3-collection-1.html">
+    <entry file="file://$PROJECT_DIR$/Chapter4/Data/monthly_json.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-1.html">
+    <entry file="file://$PROJECT_DIR$/Chapter4/Data/world_bank_co2_kt.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="84" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-3-all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-4-all-labelled.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-9-quantize-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-9-invert-y.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-11-cartesian.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-5-cartesian.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-2-pointRadial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-6-long-H.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        <state relative-caret-position="523">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-8-values.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/path_lineto.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-7-long-HV.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/path_curveto.svg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-10-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Axes/axes-12-cartesian-bleed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Collections/rain-2-map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Collections/rain-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Collections/rain-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="113" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-1-linear.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="42" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-2-linear-segmented.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-2-pow-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-2-pow-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-3-sqrt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-4-log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="22" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-4-log-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-6-time.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="27" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-6-time-hours.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="29" selection-start-line="19" selection-start-column="4" selection-end-line="27" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="59" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-point.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-6-time-utc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-5-identity-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-8-diverging.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-5-identity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-7-sequential.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/d3-symbols.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="75" />
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-3-multiHue.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/SVG_path.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/symbol-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/symbols.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-offsets-area.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="43" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-offsets-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-orders-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-2-singleHue.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-1-diverging.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="165">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-4-cyclical.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-7-sequential-rainbow.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-6-missing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/curves.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/curves-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantize.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-10-quantile.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-11-threshold.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-5-missing.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-band.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="45" selection-end-column="81" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="120">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/nscales-12-ordinal-colors-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="225">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-single-hue.html">
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="47" column="56" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-div.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter9/Scales/d3-scale-chromatic-5-categorical-multi-hue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="114">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
