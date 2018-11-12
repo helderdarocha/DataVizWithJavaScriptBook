@@ -47,12 +47,13 @@
 
     data.forEach(dataset => {
         const dataLine = svg.append("g").attr("class", "dataset")
+                        .datum(dataset)
         dataLine.append("path").attr("class", "line")
-            .attr("d", () => line(dataset))
-            .attr("stroke", () => colorScale(dataset))
+            .attr("d", line)
+            .attr("stroke", colorScale)
             .attr("fill", "none");
         dataLine.selectAll("path")
-                .data(dataset)
+                .data(d => d)
                 .enter()
                 .append("path").attr("class", "point")
                 .attr("d", star)

@@ -44,7 +44,7 @@
             .enter()
             .append("g")
             .attr("transform", "translate(120,120)");
-console.log(pie(data))
+    console.log(pie(data))
     g.append("path")
             .attr("d", arc)
             .attr("fill", (d,i) => colorScale(i))

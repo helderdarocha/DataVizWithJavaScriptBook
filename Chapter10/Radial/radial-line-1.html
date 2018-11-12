@@ -24,9 +24,6 @@
                     .angle((d,i) => ((i % 12)/12) * Math.PI * 2)
                     .radius(d => scaleRadius(d.Mean));
 
-            const pathData = spiral(data);
-            console.log(pathData);
-
             const svg = d3.select("body")
                     .append("svg")
                     .attr("height",height)
@@ -34,8 +31,8 @@
 
             svg.append("path")
                     .attr("transform","translate("+[width/2,height/2]+")")
-                    .datum(pathData)
-                    .attr("d", d => d)
+                    .datum(data)
+                    .attr("d", spiral)
                     .attr("stroke", "red")
                     .attr("fill", "none");
 

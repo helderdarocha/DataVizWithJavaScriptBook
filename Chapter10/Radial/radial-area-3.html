@@ -69,7 +69,6 @@
                     .enter()
                     .append("path")
                     .attr("d", d => spiral(d.value))
-                    //.attr("stroke", (d,i) => colorScale(i))
                     .attr("fill-opacity", .1)
                     .attr("fill", (d,i) => colorScale(i));
 

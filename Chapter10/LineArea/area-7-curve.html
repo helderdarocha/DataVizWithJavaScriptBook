@@ -45,21 +45,20 @@
     const axes = svg.append('g').attr("class", "axes");
 
     data.forEach(dataset => {
-        const dataLine = svg.append("g").attr("class", "dataset")
+        const dataLine = svg.append("g")
+                .datum(dataset)
+                .attr("class", "dataset")
         dataLine.append("path")
-            .attr("class", "area")
-            .attr("d", () => area(dataset))
-            .attr("fill", () => colorScale(dataset))
+            .attr("d", area)
+            .attr("fill", colorScale)
             .attr("fill-opacity", .1);
         dataLine.append("path")
-            .attr("class", "line")
-            .attr("d", () => line(dataset))
-            .attr("stroke", () => colorScale(dataset))
+            .attr("d", line)
+            .attr("stroke", colorScale)
             .attr("fill", "none");
         dataLine.selectAll("path")
-            .data(dataset)
-            .enter()
-            .append("path").attr("class", "point")
+            .data(dataset).enter()
+            .append("path")
             .attr("d", star)
             .attr("fill", () => colorScale(dataset))
             .attr("transform", d => "translate("+[scaleX(d[0]), scaleY(d[1])]+")");

@@ -2,58 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/CSV_to_JSON.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/Data/America_population2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/Data/Americas_population.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/Data/Americas_population.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Appendixes/Tools/JSON_to_JSON2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/America_population2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/Americas_population.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/monthly_json.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-6-missing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/curves-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/curves.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-5-missing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/SVG/SVG_path.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-area.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-orders-bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Symbol/symbol-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Symbol/symbols.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/JavaScript/commonWords.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter9/JavaScript/d3.layout.cloud.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Data/test.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-1-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/SVG/SVG_path-d3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-1-array.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-1-csv.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-1-object-flatdata.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-1-object.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-2-simple-bar.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter10/Stack/stack-1.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-3-area-na.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-3-area-sa.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter10/Stack/stack-2-bar.html" afterPath="$PROJECT_DIR$/Chapter10/Stack/stack-3-bar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" afterPath="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" afterPath="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/LineArea/line-4.html" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" afterPath="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" afterPath="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,108 +44,7 @@
     <favorites_list name="DataVizWithJavaScriptBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="line-6-symbol.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="line-7-curve.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arc-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arc-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arc-3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arc-4.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arc-5.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-5.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pie-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pie-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pie-3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -191,21 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-6-curve.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/curves.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-1.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-2.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-3.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-4.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-5.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-6-missing.html" />
-        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" />
-        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html" />
-        <option value="$PROJECT_DIR$/Chapter10/Americas_population.csv" />
-        <option value="$PROJECT_DIR$/Chapter10/Stack/filter.html" />
-        <option value="$PROJECT_DIR$/Chapter10/Data/Americas_population.json" />
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2.html" />
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-1.html" />
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-offsets.html" />
@@ -219,16 +73,10 @@
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area.html" />
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html" />
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-area.html" />
-        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" />
         <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html" />
         <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html" />
-        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" />
-        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" />
         <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html" />
-        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" />
-        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" />
         <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html" />
-        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html" />
         <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html" />
         <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-4.html" />
         <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-5.html" />
@@ -242,6 +90,27 @@
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html" />
         <option value="$PROJECT_DIR$/Chapter10/Stack/stack-offsets-bar.html" />
         <option value="$PROJECT_DIR$/Chapter10/LineArea/line-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/SVG/SVG_path-d3.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-1-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-4.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html" />
+        <option value="$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-1-array.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-object.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Data/test.csv" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-csv.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-object-accessor.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-object-flatdata.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-1-object-flatdata.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-2-simple-bar.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Stack/stack-3-area-sa.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html" />
+        <option value="$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html" />
       </list>
     </option>
   </component>
@@ -255,8 +124,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1064" />
-    <option name="y" value="92" />
+    <option name="x" value="-1061" />
+    <option name="y" value="94" />
     <option name="width" value="1060" />
     <option name="height" value="785" />
   </component>
@@ -285,8 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,12 +182,14 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter10" />
+              <option name="myItemId" value="Chapter11" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,11 +200,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chapter10/SVG" />
+      <recent name="$PROJECT_DIR$/Chapter10/Stack" />
       <recent name="$PROJECT_DIR$/Chapter10/LineArea" />
+      <recent name="$PROJECT_DIR$/Chapter10/SVG" />
       <recent name="$PROJECT_DIR$/Chapter10/Radial" />
       <recent name="$PROJECT_DIR$/Chapter10/Data" />
-      <recent name="$PROJECT_DIR$/Chapter10/ArcPie" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Chapter4/Data" />
@@ -448,18 +317,20 @@
       <workItem from="1540086491589" duration="7053000" />
       <workItem from="1540166437154" duration="16923000" />
       <workItem from="1540495417895" duration="22631000" />
-      <workItem from="1540692794045" duration="45181000" />
+      <workItem from="1540692794045" duration="45237000" />
+      <workItem from="1540925845263" duration="7004000" />
+      <workItem from="1540998608322" duration="12282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="642930000" />
+    <option name="totallyTimeSpent" value="662272000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1064" y="92" width="1060" height="785" extended-state="0" />
+    <frame x="-1061" y="94" width="1060" height="785" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35068762" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36444008" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -505,7 +376,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Appendixes/Tools/JSON_to_JSON2.html</url>
           <line>25</line>
-          <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
@@ -514,139 +384,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter4/Data/radial-line-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Data/monthly_json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/Data/monthly_json.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter4/Data/world_bank_co2_kt.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-2-pointRadial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/path_lineto.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/path_curveto.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/d3-symbols.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/SVG_path.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/symbol-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/d3-symbols.html" />
     <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/symbols.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-area-na.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-area-sa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="43" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,87 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,23 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/curves.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,39 +438,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/SVG_path.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/SVG/SVG_path-d3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="26" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/curves.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-1-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="525">
+          <caret line="55" column="7" selection-start-line="12" selection-start-column="4" selection-end-line="55" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -842,82 +505,266 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Symbol/symbol-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-6-symbol.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="705">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="61" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/line-7-curve.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="525">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="7" selection-start-line="33" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/LineArea/area-7-curve.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Data/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1-csv.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="16" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1-nest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1-object.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1-array.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-1-object-flatdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="44" column="6" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-3-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="36" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-2-simple-bar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-3-area-na.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Stack/stack-3-area-sa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="104" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Data/monthly_json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="0" column="549" selection-start-line="0" selection-start-column="549" selection-end-line="0" selection-end-column="549" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-line-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/Radial/radial-area-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="300">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="36" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/arc-5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="330">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter10/ArcPie/pie-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>

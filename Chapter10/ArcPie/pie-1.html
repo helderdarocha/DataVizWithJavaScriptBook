@@ -14,7 +14,7 @@
 
     const pie = d3.pie();
     const arcData = pie(data);
-    console.log(arcData);
+    console.log(JSON.stringify(arcData));
 
     const arc = d3.arc()
             .innerRadius(0)

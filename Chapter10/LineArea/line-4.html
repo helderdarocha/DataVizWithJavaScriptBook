@@ -5,7 +5,7 @@
     <title>Line</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
-        path.dataset {stroke-width: 3px;}
+        .dataset {stroke-width: 3px;}
     </style>
 </head>
 <body>
@@ -48,8 +48,9 @@
 
     data.forEach(dataset => {
         svg.append("path")
+            .datum(dataset)
             .attr("class", "dataset")
-            .attr("d", () => line(dataset))
+            .attr("d", line)
             .attr("stroke", () => colorScale(dataset))
             .attr("fill", "none");
     });
