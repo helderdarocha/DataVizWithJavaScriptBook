@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        circle {
+            fill: blue;
+        }
+
+        path {
+            fill: none;
+            stroke: #62b6e6;
+            stroke-width: 2px;
+        }
+        rect {
+            stroke: blue;
+            fill: none;
+        }
+        text {
+            font-family: sans-serif;
+            fill: #4a774a;
+        }
+        .node, .leaf {
+            font-size: 12px;
+            transform: translate(-12px,-12px);
+        }
+        .root {
+            font-size: 12px;
+            font-weight: bold;
+            transform: rotate(-90deg) translate(3px,3px);
+        }
+
+    </style>
+</head>
+<body>
+<script>
+    const height = 800;
+    const width = 1000;
+
+    d3.csv("../Data/amazon-river.csv").then(function(result) {
+        console.log("tabular data", result);
+
+        const stratify = d3.stratify()
+                        .id(d => d.Tributary)
+        .parentId(d => d.Confluence);
+
+        const hierData = d3.hierarchy(stratify(result));
+
+        // tree
+        const tree = d3.tree().size([height-100,width-150]); // sideways
+        const treeData = tree(hierData.sort((a,b) => a.height - b.height));
+
+        console.log(treeData);
+
+        draw(treeData);
+    });
+
+    function draw(data) {
+        const svg = d3.select("body").append("svg").attr("height", height).attr("width", width);
+        const chart = svg.append("g").attr("transform", "translate(20,50)");
+
+        drawLinks(chart.append("g").attr("class", "links"), data.links());
+        drawNodes(chart.append("g").attr("class", "nodes"), data.descendants());
+
+    }
+
+    function drawNodes(g, data) {
+        const node = g.selectAll("g")
+            .data(data)
+            .enter()
+            .append('g')
+            .attr('transform', function(d) {
+                return 'translate(' + [d.y, d.x] + ')';
+            });
+
+        node.append("circle")
+            .attr('r', 3);
+
+        node.append("text")
+                .attr('x', 5)
+                .attr('y', 5)
+                .attr("class", function(d) {
+                    if(d.height > 0 && d.depth != 0) {
+                        return "node";
+                    } else if (d.depth == 0){
+                        return "root";
+                    } else {
+                        return "leaf";
+                    }
+                })
+                .text(d => d.data.id);
+    }
+
+    const link = d3.linkHorizontal()
+            .x(function(d) { return d.y; })
+            .y(function(d) { return d.x; });
+
+    function drawLinks(g, data) {
+        g.selectAll("path")
+                .data(data)
+                .enter()
+                .append('path')
+                .attr("d", link);
+    }
+
+</script>
+</body>
+</html>
+
