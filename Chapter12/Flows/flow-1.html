@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flows</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<script>
+    d3.csv("../Data/migration_2017.csv").then(function(result) {
+        console.log("Loaded data", result);
+
+        const nodeLink = adjMatrixToNodeLink(result);
+        console.log(nodeLink);
+
+    });
+
+    function adjMatrixToNodeLink(matrix) {
+        const names = matrix.columns.slice(2); // Remove first two columns
+
+        if(matrix.length != names.length) {
+            throw {error: "Not a square matrix. x and y should be equal", x: names.length, y: matrix.length};
+        }
+
+        const links = [];
+        const nodes = [];
+
+        names.forEach(function(destination, index) {
+            const current = matrix.filter(item => item.Destination == destination)[0];
+            const node = {name: destination, total: +current.Total};
+            nodes.push(node);
+
+            for(key in current) {
+                if(key == 'Destination' || key == 'Total' || key == destination)
+                    continue;
+                const origin = key;
+                if(current[origin]) {
+                    const link = {
+                        value: +current[origin],
+                        from: origin,
+                        to: destination,
+                        source: names.findIndex(n => n == origin),
+                        target: index
+                    };
+                    links.push(link);
+                }
+            }
+        });
+
+        return {nodes: nodes, links: links};
+    }
+</script>
+<h1>See console for results</h1>
+</body>
+</html>

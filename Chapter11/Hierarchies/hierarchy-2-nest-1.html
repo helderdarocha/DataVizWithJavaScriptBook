@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+<script>
+    // Building a hierarchy without using stratify().
+
+    // Using recursive function to convert table to hierarchy
+    d3.csv("../Data/amazon-river.csv").then(function(result) {
+        console.log("tabular data", result);
+
+        // group direct tributaries by their destination rivers (one level)
+        const nested = d3.nest()
+                        .key(d => d.Confluence)
+                        .rollup(d => d.map(c => ({name: c.Tributary, length_km: +c.km})))
+                        .entries(result);
+
+        console.log("nested data", nested);
+
+        // assemble single-root hierarchy (many levels)
+        const h = makeHierarchy(nested, 'tributaries');
+
+        console.log("hierarchical data", h);
+
+    });
+
+    function makeHierarchy(nested, childrenKey, item) {
+        // builds root
+        if(item == null || item.name == '') {
+            const item = nested.filter(d => d.key == '')[0].value[0];
+            return makeHierarchy(nested, childrenKey, item);
+        }
+
+        // if name is a key, it contains children
+        const group = nested.filter(d => d.key == item.name)[0];
+        if(group) {
+            const elements = [];
+            group.value.forEach(function(d) {
+                const item = makeHierarchy(nested, childrenKey, d);
+                elements.push(item);
+            });
+            item[childrenKey] = elements;
+        }
+
+        return item;
+    }
+
+</script>
+
+<h1>See console for results</h1>
+</body>
+</html>
