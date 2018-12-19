@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchy</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/simple_hierarchical_data.js"></script>
+</head>
+<body>
+<script>
+    console.log("Original CSV", refTable);
+
+    const jsonTable = d3.csvParse(refTable);
+    console.log("JSON table", jsonTable);
+
+    const stratify = d3.stratify().id(d => d.Id).parentId(d => d.Context);
+    const hierarchy = stratify(jsonTable);
+    console.log("Original hierarchy")
+
+    // 1) d3.hierarchy()
+    const root = d3.hierarchy(hierarchy);
+    console.log("Root", root);
+
+    // 2) leaves()
+    const leaves = root.leaves();
+    console.log("root.leaves()", leaves);
+
+    // 3) descendants()
+    const descendants = root.descendants();
+    console.log("root.descendants()", descendants);
+
+    // 4) sibling node.sort() by height (tallest branch to shortest)
+    root.sort((a,b) => b.height - a.height);
+    console.log("Descendant array of height-sorted root", root.descendants());
+
+    // 5) Create and detach a subtree (deep copy): node.copy()
+    const subgroup1 = root.children.filter(d => d.data.id == 'group_1')[0].copy();
+    console.log("Subgroup 1 (deep copy)", subgroup1);
+
+    const leaves2 = subgroup1.leaves();
+    console.log("subgroup1.leaves()", leaves2);
+
+    const descendants2 = subgroup1.descendants();
+    console.log("subgroup1.descendants()", descendants2);
+
+    // 6) Make a map of all descendants (to facilitate retrieval)
+    const descendantMap = new Map(root.descendants().map(d => [d.data.id, d]));
+    console.log(descendantMap);
+
+    // 7) Reference a subtree
+    const subgroup3 = descendantMap.get("subg_3");
+    console.log("Subgroup 3 (reference)", subgroup3);
+
+    // 8) ancestors()
+    const ancestors = subgroup3.ancestors();
+    console.log("subgroup3.ancestors()", ancestors);
+
+    // 9) node.value()
+    console.log("root.value before root.count()", root.value);
+
+    // 10) d3.hierarchy().count() - creates value property with count of leaves in subtree
+    root.count();
+    console.log("root.value after root.count()", root.value);
+    console.log("subgroup3.value (ref)  after root.count()", subgroup3.value);
+    console.log("subgroup1.value (copy) after root.count()", subgroup1.value);
+
+    // 11) d3.hierarchy.sum() node-count
+    root.sum(d => 1);
+    console.log("root.value after root.sum(d => 1): count nodes", root.value);
+
+    // 12) d3.hierarchy.sum() leaf-count (same as root.count())
+    root.sum(d => d.values ? 1 : 0 );
+    console.log("root.value after root.sum(d => d.height == 0 ? 1 : 0): count leaves", root.value);
+
+    // 13) d3.hierarchy.sum() leaf-sum
+    root.sum(d => d.values ? d.values[0] : 0);
+    console.log("Cumulative sum of values[0]: root.sum(d => d.values ? d.values[0] : 0)", root.value);
+    console.log("Cumulative sum of subgroup3 (root reference)", subgroup3.value);
+
+    // 14) d3.hierarchy.sum() on separate subtree
+    console.log("Sum of subgroup1 (root copy)", subgroup1.value);
+    subgroup1.sum(d => d.values ? d.values[1] : 0);
+    console.log("Sum of subgroup1 after subgroup1.sum(d => d.values ? d.values[1] : 0)", subgroup1.value);
+
+    // 15) sibling node.sort() by height and value
+    root.sort((a,b) => b.height - a.height || a.value - b.value);
+    console.log("Sorted by descending height, then by ascending value", root.descendants());
+
+    // 16) sibling node.sort() by height and data
+    root.sort((a,b) => (b.height - a.height) || ((a.height == 0 && b.height == 0) ? a.data.values[0] - b.data.values[1] : a.value - b.value));
+    console.log("Sorted by descending height, then by using data values", root.descendants());
+
+    // 17) root.links()
+    const links = root.links();
+    console.log("root.links()", links);
+    console.log("subgroup1.links()", subgroup1.links());
+
+    // 18) root.eachAfter();
+    root.eachAfter(function(d) {
+        if(d.children) {
+            d.data.values = [0,0];
+            d.children.forEach(c => {d.data.values[0] += c.data.values[0];d.data.values[1] += c.data.values[1]});
+        }
+    });
+    console.log("root.eachAfter(): sum of data values", root.data.values);
+
+    // 19) root.eachBefore();
+    root.eachBefore(function(d) {
+        if(!d.parent) {
+            d.number = 1;
+        } else {
+            d.number = d.parent.number + "." + (d.parent.children.indexOf(d) + 1);
+        }
+    });
+    console.log("root.eachBefore(): numbering", root);
+
+    // 20 root.each()
+    let order = 0;
+    root.each(function(d) {
+        d.order = ++order;
+    });
+    console.log("root.each(): breadth order", root);
+
+    // 21 node.path(other)
+    const destination = descendantMap.get("leaf_13");
+    const origin = descendantMap.get("leaf_1");
+    const steps = origin.path(destination);
+    console.log("Path from leaf_13 to leaf_1 node.path(other)", steps);
+
+</script>
+<h1>See results in JavaScript console</h1>
+</body>
+</html>

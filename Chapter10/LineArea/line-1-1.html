@@ -17,20 +17,26 @@
     const height = 600;
 
     const data = [
-        [0,0],
-        [100,200],
-        [200,400],
-        [300,150],
-        [400,50],
-        [500,350],
-        [600,500],
-        [700,100],
-        [800,250],
+        {source: {x: 0, y: 0}, target: {x: 100, y: 200}},
+        {source: {x: 100, y: 200}, target: {x: 200, y: 400}},
+        {source: {x: 200, y: 400}, target: {x: 300, y: 150}}
     ]
+
+    const pairs = [];
+    data.forEach(function(d) {
+        pairs.push([d.source.x, d.source.y]);
+        if(pairs.length > 1 && ""+pairs[pairs.length-1] == ""+pairs[pairs.length-2]) {
+            pairs.pop();
+        }
+        pairs.push([d.target.x, d.target.y]);
+    });
+
+    console.log(pairs);
+
     const line = d3.line();
 
     const svg = d3.select("body").append("svg").attr("height",height).attr("width",width);
-    const g = svg.append("g").datum(data);
+    const g = svg.append("g").datum(pairs);
     g.append("path")
             .attr("d", line)
             .attr("stroke", "red")

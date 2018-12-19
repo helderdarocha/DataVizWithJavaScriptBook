@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/un_regions.js"></script>
+</head>
+<body>
+<script>
+    const width = 1200;
+    const height = 1600;
+
+    const planetScale = d3.scaleLinear().range([1,40]);
+
+    d3.json("../Data/planets.json").then(function(result) {
+        console.log("Loaded hierarachy", result);
+
+        // convert existing hierarchy to standard format
+        const root = d3.hierarchy(result, function(d) {
+            if(d.category == 'rocky' || d.category == 'gaseous' || d.category == 'dwarf') {
+                if (d.satellites) {
+                    return d.satellites;
+                }
+                return undefined;
+            }
+            return d.planets;
+        });
+
+        root.sort((a,b) => b.height - a.height || a.value - b.value);
+        root.sum(d => d.diameterKm);
+
+        console.log("Sorted", root);
+
+        const treemap = d3.treemap()
+                .size([height-50,width-50])
+                .padding(10);
+        const data = treemap(root)
+
+        draw(data.descendants());
+
+        planetScale.domain([0,d3.max(hierarchy.data.planets, d => d.density)]);
+
+    });
+
+    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+    function draw(data) {
+        const svg = d3.select("body").append("svg").attr("height", height).attr("width", width);
+        const chart = svg.append("g").attr("transform", d => `translate(${[25,25]})`);
+
+        drawTreemap(chart.append("g").attr("class", "partition"), data);
+    }
+
+    function drawTreemap(g, data) {
+        console.log("Partition data", data);
+        const cell = g.selectAll("g.cell")
+            .data(data)
+            .enter()
+            .append("g")
+            .attr("class", "cell");
+
+        cell.append("rect")
+            .attr("x", d => d.y0)
+            .attr("y", d => d.x0)
+            .attr("width", d => d.y1 - d.y0)
+            .attr("height", d => d.x1 - d.x0)
+            .attr("fill", function(d) {
+                    if(d.height == 0) {
+                        return 'rgb(255,255,200)';
+                    } else {
+                        return colorScale(d.depth);
+                    }
+                });
+
+        cell.append("text")
+            .text(d => d.data.name)
+                .attr("font-size", 10)
+                .attr("x", d => d.y0 + 5)
+                .attr("y", d => d.x0 + 5)
+    }
+
+</script>
+</body>
+</html>
