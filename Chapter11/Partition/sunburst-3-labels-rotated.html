@@ -5,6 +5,12 @@
     <title>Hierarchy</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="../JavaScript/simple_hierarchical_data.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            text-anchor: middle;
+        }
+    </style>
 </head>
 <body>
 <script>
@@ -32,10 +38,26 @@
         }
     });
 
+    const arc = d3.arc()
+            .startAngle(d => d.x0 * Math.PI / 180) // angles in radians
+            .endAngle(d => d.x1 * Math.PI / 180)
+            .innerRadius(d => d.y0)
+            .outerRadius(d => d.y1);
+
+    const start = arc.startAngle();
+    const end   = arc.endAngle();
+
+    const fontScale = d3.scaleLinear()
+            .domain(d3.extent(root.descendants(), d => d.depth).reverse())
+            .range([12,40]);
+
     const partition = d3.partition()
-            .size([width - 100, height - 100])
+            .size([360, height/2-50]) // angle in degrees
+            .padding(1);
     const partitionData = partition(root);
     const nodes = partitionData.descendants();
+
+    console.log(arc.startAngle()(nodes[6]))
 
     colorScale.domain(d3.extent(nodes, n => n.depth));
 
@@ -47,21 +69,36 @@
                 .attr("height", height)
                 .attr("width", width);
         const chart = svg.append("g")
-                        .attr("transform", d => `translate(${[25,25]})`);
+                        .attr("transform", d => `translate(${[width/2, height/2]})`);
 
         drawCells(chart, nodes);
+        drawLabels(chart, nodes);
     }
 
     function drawCells(chart, nodes) {
-        chart.selectAll("rect")
+        chart.selectAll("path")
             .data(nodes)
             .enter()
-            .append("rect")
-                .attr("x", d => d.x0)
-                .attr("y", d => d.y0)
-                .attr("width", d => d.x1 - d.x0)
-                .attr("height", d => d.y1 - d.y0)
+            .append("path")
+                .attr("d", arc)
                 .attr("fill", d => colorScale(d.depth));
+    }
+
+    function cartesian([degrees, radius]) {
+        const radians = (Math.PI/180) * degrees;
+        return [radius * Math.cos(radians), radius * Math.sin(radians)];
+    }
+
+    function drawLabels(chart, nodes) {
+        chart.selectAll("text")
+            .data(nodes)
+            .enter()
+            .append("text")
+                .attr("x", d => arc.centroid(d)[0])
+                .attr("y", d => arc.centroid(d)[1])
+                .attr("transform", d => `rotate(${(d.x0+d.x1)/2},${arc.centroid(d)})`)
+                .text(d => d.number )
+                .style("font-size", d => fontScale(d.depth));
     }
 </script>
 </body>

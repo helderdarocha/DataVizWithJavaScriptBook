@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/simple_hierarchical_data.js"></script>
+    <style>
+        circle {
+            stroke-width: 2px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 1000;
+    const height = 1000;
+
+    const colorScale = d3.scaleSequential(d3.interpolateWarm);
+
+    console.log("Original hierarchy", simpleHierarchy);
+
+    // 1) Setup hierarchy with sum (using node count as node.value) and sort (by descending height, ascending value)
+    const root = d3.hierarchy(simpleHierarchy)
+                   .sum(d => 1)
+                   .sort((a,b) => b.height - a.height || a.value - b.value);
+
+    console.log("Root", root);
+
+    const pack = d3.pack()
+                   .size([width-50,height-50])
+                   .padding(20);
+
+    const nodes = pack(root).descendants();
+
+    colorScale.domain(d3.extent(nodes, n => n.height));
+
+    draw(nodes);
+
+    function draw(data) {
+        const svg = d3.select("body")
+                      .append("svg")
+                      .attr("height", height)
+                      .attr("width", width);
+        const chart = svg.append("g")
+                         .attr("transform", d => `translate(${[25,25]})`);
+
+        packCircles(chart.append("g").attr("class", "chart"), data);
+
+    }
+
+    function packCircles(g, data) {
+        console.log("pack data", data);
+        const cell = g.selectAll("g")
+                .data(data)
+                .enter()
+                .append("g");
+
+        cell.append("circle")
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y)
+                .attr("r",  d => d.r)
+                .attr("fill", function(d) {
+                        return colorScale(d.value);
+                })
+                .attr("fill-opacity", function(d) {
+                    return (d.depth + 1) * .1;
+                })
+                .attr("stroke", function(d) {
+                    return d3.color(colorScale(d.value)).darker();
+                });
+    }
+</script>
+<h1>See console for results</h1>
+</body>
+</html>

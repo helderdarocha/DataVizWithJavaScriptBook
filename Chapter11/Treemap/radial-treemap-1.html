@@ -5,13 +5,19 @@
     <title>Hierarchy</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="../JavaScript/simple_hierarchical_data.js"></script>
+    <style>
+        path {
+            stroke: black;
+
+        }
+    </style>
 </head>
 <body>
 <script>
     const width  = 1000;
     const height = 800;
 
-    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+    const colorScale = d3.scaleOrdinal(d3.schemeSet3);
 
     console.log("Original hierarchy", simpleHierarchy);
 
@@ -20,7 +26,7 @@
 
     console.log("Root", root);
 
-    // required to generate value attributes used by partition
+    // required to generate value attributes used by treemap
     root.sum(d => d.values ? d.values[0] : 0);
 
     // generate label numbers
@@ -32,37 +38,43 @@
         }
     });
 
-    const partition = d3.partition()
-            .size([width - 100, height - 100])
-    const partitionData = partition(root);
-    const nodes = partitionData.descendants();
+    const arc = d3.arc()
+                .startAngle(d => d.x0 * Math.PI / 180) // angles in radians
+                .endAngle(d => d.x1 * Math.PI / 180)
+                .innerRadius(d => d.y0)
+                .outerRadius(d => d.y1);
 
-    colorScale.domain(d3.extent(nodes, n => n.depth));
+    const treemap = d3.treemap()
+                    .size([360, height/2 - 10]) // angles in degrees
+                    .paddingInner(d => d.height * 2 + 5)
+                    .paddingOuter(5)
+    const mapData = treemap(root);
+    const nodes = mapData.descendants();
 
-    drawPartition(nodes);
+    colorScale.domain(d3.extent(nodes, n => n.height));
 
-    function drawPartition(nodes) {
+    drawTreemap(nodes);
+
+    function drawTreemap(nodes) {
         const svg = d3.select("body")
                 .append("svg")
                 .attr("height", height)
                 .attr("width", width);
         const chart = svg.append("g")
-                        .attr("transform", d => `translate(${[25,25]})`);
+                        .attr("transform", d => `translate(${[width/2,height/2]})`);
 
         drawCells(chart, nodes);
     }
 
     function drawCells(chart, nodes) {
-        chart.selectAll("rect")
+        chart.selectAll("path")
             .data(nodes)
             .enter()
-            .append("rect")
-                .attr("x", d => d.x0)
-                .attr("y", d => d.y0)
-                .attr("width", d => d.x1 - d.x0)
-                .attr("height", d => d.y1 - d.y0)
-                .attr("fill", d => colorScale(d.depth));
+            .append("path")
+            .attr("d", arc)
+            .attr("fill", d => colorScale(d.height));
     }
+
 </script>
 </body>
 </html>

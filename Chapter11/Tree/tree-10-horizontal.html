@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/simple_hierarchical_data.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 1000;
+    const height = 800;
+
+    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+    console.log("Original hierarchy", simpleHierarchy);
+
+    const root = d3.hierarchy(simpleHierarchy);
+    root.sort((a,b) => a.height - b.height );
+
+    console.log("Root", root);
+
+    // generate label numbers
+    root.eachBefore(function(d) {
+        if(!d.parent) {
+            d.number = 1;
+        } else {
+            d.number = d.parent.number + "." + (d.parent.children.indexOf(d) + 1);
+        }
+    });
+
+    const tree = d3.tree()
+                   .nodeSize([40,220]);
+    const treeData = tree(root);
+    const nodes = treeData.descendants();
+    const links = treeData.links();
+
+    const horizontalLink = d3.linkHorizontal()
+            .x(function(d) { return d.y; })
+            .y(function(d) { return d.x; });
+
+    colorScale.domain(d3.extent(nodes, n => n.height));
+
+    drawTree(nodes);
+
+    function drawTree(nodes) {
+        const svg = d3.select("body")
+                      .append("svg")
+                      .attr("height", height)
+                      .attr("width", width);
+        const chart = svg.append("g")
+                         .attr("transform", d => `translate(${[60,height/2]})`);
+
+        drawLinks(chart, links);
+        drawNodes(chart, nodes);
+        drawLabels(chart, nodes);
+    }
+
+    function drawNodes(chart, nodes) {
+        chart.selectAll("g.node")
+            .data(nodes)
+            .enter()
+            .append("g")
+            .attr("class", "node")
+            .attr("transform", d => `translate(${[d.y, d.x]})`)
+            .append("circle")
+            .attr("r", d => (d.height + 1) * tree.nodeSize()[0]/5)
+            .attr("fill", d => colorScale(d.height));
+    }
+
+    function drawLabels(chart, nodes) {
+        chart.selectAll("g.node")
+            .append("text")
+            .text(d => d.number) // number was generated using eachBefore()
+            .attr("fill", d => d.height != 0 ? 'white' : 'black')
+            .attr("transform", d => d.height == 0 ? "translate(15,5)" : "translate(0,5)")
+            .style("text-anchor", d => d.height != 0 ? "middle" : "start")
+            .style("font-size", d => 14 + (d.height*d.height))
+    }
+
+    function drawLinks(chart, links) {
+        chart.selectAll("g.link")
+            .data(links)
+            .enter()
+            .append("g")
+            .attr("class", "link")
+                .append('path')
+                .attr("d", horizontalLink)
+                .attr("stroke-width", d => (d.target.height + 1) * (d.target.height + 1))
+                .attr("stroke", "black")
+                .attr("fill", "none")
+                .attr("opacity", d => d.target.depth *.25 * .6 + .4)
+    }
+
+</script>
+</body>
+</html>

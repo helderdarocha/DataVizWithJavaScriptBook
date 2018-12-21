@@ -5,13 +5,23 @@
     <title>Hierarchy</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="../JavaScript/simple_hierarchical_data.js"></script>
+    <style>
+        rect {
+            stroke: black;
+            stroke-width: .5px
+        }
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            text-anchor: middle;
+        }
+    </style>
 </head>
 <body>
 <script>
     const width  = 1000;
     const height = 800;
 
-    const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+    const colorScale = d3.scaleOrdinal(d3.schemeSet3);
 
     console.log("Original hierarchy", simpleHierarchy);
 
@@ -20,7 +30,11 @@
 
     console.log("Root", root);
 
-    // required to generate value attributes used by partition
+    const fontScale = d3.scaleLinear()
+            .domain(d3.extent(root.descendants(), d => d.depth).reverse())
+            .range([16,40]);
+
+    // required to generate value attributes used by treemap
     root.sum(d => d.values ? d.values[0] : 0);
 
     // generate label numbers
@@ -32,16 +46,20 @@
         }
     });
 
-    const partition = d3.partition()
+    const treemap = d3.treemap()
             .size([width - 100, height - 100])
-    const partitionData = partition(root);
-    const nodes = partitionData.descendants();
+            .paddingInner(5)
+            .paddingOuter(10)
+            .paddingTop(50)
+            .tile(d3.treemapSquarify.ratio(1.25)); // default is 1.61 (golden ratio)
+    const mapData = treemap(root);
+    const nodes = mapData.descendants();
 
-    colorScale.domain(d3.extent(nodes, n => n.depth));
+    colorScale.domain(d3.extent(nodes, n => n.height));
 
-    drawPartition(nodes);
+    drawTreemap(nodes);
 
-    function drawPartition(nodes) {
+    function drawTreemap(nodes) {
         const svg = d3.select("body")
                 .append("svg")
                 .attr("height", height)
@@ -50,6 +68,7 @@
                         .attr("transform", d => `translate(${[25,25]})`);
 
         drawCells(chart, nodes);
+        drawLabels(chart, nodes);
     }
 
     function drawCells(chart, nodes) {
@@ -61,7 +80,18 @@
                 .attr("y", d => d.y0)
                 .attr("width", d => d.x1 - d.x0)
                 .attr("height", d => d.y1 - d.y0)
-                .attr("fill", d => colorScale(d.depth));
+                .attr("fill", d => colorScale(d.height));
+    }
+
+    function drawLabels(chart, nodes) {
+        chart.selectAll("text")
+            .data(nodes)
+            .enter()
+            .append("text")
+            .attr("x", d => (d.x0 + d.x1) / 2)
+            .attr("y", d => d.y0 + 48 - (d.depth + 4) * 4)
+            .text(d => d.x1 - d.x0 > 50 ? d.number : '')
+            .style("font-size", d => fontScale(d.depth));
     }
 </script>
 </body>
