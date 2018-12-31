@@ -30,7 +30,7 @@
     });
 
     const tree = d3.tree()
-                   .size([360, height/2]) // radial - using 360 degrees as x
+                   .size([2 * Math.PI, height/2])
                    .separation((a,b) => (a.parent == b.parent ? 1 : 2) / (a.depth*a.depth));
     const treeData = tree(root);
     const nodes = treeData.descendants();
@@ -59,23 +59,20 @@
             .enter()
             .append("g")
             .attr("class", "node")
-            .attr("transform", d => `rotate(${d.x}) translate(${d.y})`)
+            .attr("transform", d => `rotate(${d.x * 180/Math.PI}) translate(${d.y})`)
             .append("circle")
             .attr("r", d => (d.height + 3) * 4)
             .attr("fill", d => colorScale(d.height));
     }
 
-    function cartesian([degrees, radius]) {
-        const radians = (Math.PI/180) * degrees;
-        return [radius * Math.cos(radians), radius * Math.sin(radians)];
+    function cartesian([angle, radius]) {
+        return [radius * Math.cos(angle), radius * Math.sin(angle)];
     }
 
     function drawLinks(chart, links) {
-        chart.selectAll("g.link")
+        chart.selectAll("line")
             .data(links)
             .enter()
-            .append("g")
-            .attr("class", "link")
             .append("line")
             .attr("x1", d => cartesian([d.source.x, d.source.y])[0])
             .attr("y1", d => cartesian([d.source.x, d.source.y])[1])

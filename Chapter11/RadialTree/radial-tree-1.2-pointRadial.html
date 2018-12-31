@@ -30,7 +30,7 @@
     });
 
     const tree = d3.tree()
-                   .size([360, height/2]) // radial
+                   .size([Math.PI * 2  , height/2]) // radial
                    .separation((a,b) => (a.parent == b.parent ? 1 : 2) / (a.depth*a.depth));
     const treeData = tree(root);
     const nodes = treeData.descendants();
@@ -59,14 +59,10 @@
             .enter()
             .append("g")
             .attr("class", "node")
-            .attr("transform", d => `translate(${cartesian(d.x, d.y)})`)
+            .attr("transform", d => `translate(${d3.pointRadial(d.x + Math.PI/2, d.y)})`)
             .append("circle")
             .attr("r", d => (d.height + 3) * 4)
             .attr("fill", d => colorScale(d.height));
-    }
-
-    function cartesian(degrees, radius) {
-        return d3.pointRadial(degrees * Math.PI/180 + Math.PI/2, radius);
     }
 
     function drawLinks(chart, links) {
@@ -76,10 +72,10 @@
             .append("g")
             .attr("class", "link")
             .append("line")
-            .attr("x1", d => cartesian(d.source.x, d.source.y)[0])
-            .attr("y1", d => cartesian(d.source.x, d.source.y)[1])
-            .attr("x2", d => cartesian(d.target.x, d.target.y)[0])
-            .attr("y2", d => cartesian(d.target.x, d.target.y)[1])
+            .attr("x1", d => d3.pointRadial(d.source.x + Math.PI/2, d.source.y)[0])
+            .attr("y1", d => d3.pointRadial(d.source.x + Math.PI/2, d.source.y)[1])
+            .attr("x2", d => d3.pointRadial(d.target.x + Math.PI/2, d.target.y)[0])
+            .attr("y2", d => d3.pointRadial(d.target.x + Math.PI/2, d.target.y)[1])
             .attr("stroke-width", d => (d.target.height + 1) * (d.target.height + 1))
             .attr("stroke", "black")
             .attr("opacity", d => d.target.depth *.25 * .6 + .4)

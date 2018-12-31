@@ -36,9 +36,9 @@
             text-anchor: middle;
         }
         .root {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
-            transform: rotate(-90deg) translate(-18px,3px);
+            transform: translate(0,16px);
         }
 
     </style>
@@ -64,7 +64,7 @@
 
         // tree
         const tree = d3.cluster()
-                .size([height-100,width-150])
+                .size([height-50,width-75])
                 .separation((a,b) => (a.parent == b.parent ? 1 : 2));
         const treeData = tree(root.sort((a,b) => b.height - a.height));
 
@@ -75,7 +75,7 @@
 
     function draw(data) {
         const svg = d3.select("body").append("svg").attr("height", height).attr("width", width);
-        const chart = svg.append("g").attr("transform", "translate(20,50)");
+        const chart = svg.append("g").attr("transform", `translate(${width - 25},50)`);
 
         drawLinks(chart.append("g").attr("class", "links"), data.links());
         drawNodes(chart.append("g").attr("class", "nodes"), data.descendants());
@@ -88,7 +88,7 @@
             .enter()
             .append('g')
             .attr('transform', function(d) {
-                return 'translate(' + [d.y, d.x] + ')';
+                return 'translate(' + [-d.y, d.x] + ')';
             });
 
         node.append("text")
@@ -107,7 +107,7 @@
     }
 
     const link = d3.linkHorizontal()
-            .x(function(d) { return d.y; })
+            .x(function(d) { return -d.y; })
             .y(function(d) { return d.x; });
 
     function drawLinks(g, data) {

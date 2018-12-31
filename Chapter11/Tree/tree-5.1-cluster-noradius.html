@@ -28,13 +28,13 @@
         }
     });
 
-    const tree = d3.tree()
+    const tree = d3.cluster()
                    .size([width-120,height-120]); // top-down
     const treeData = tree(root);
     const nodes = treeData.descendants();
     const links = treeData.links();
 
-    colorScale.domain(d3.extent(nodes, n => n.depth));
+    colorScale.domain(d3.extent(nodes, n => n.height));
 
     drawTree(nodes);
 
@@ -60,7 +60,7 @@
             .attr("transform", d => `translate(${[d.x, d.y]})`)
             .append("circle")
             .attr("r", 20)
-            .attr("fill", d => colorScale(d.depth));
+            .attr("fill", d => colorScale(d.height));
     }
 
     function drawLinks(chart, links) {

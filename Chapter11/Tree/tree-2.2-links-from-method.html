@@ -56,11 +56,9 @@
     }
 
     function drawLinks(chart, links) {
-        chart.selectAll("g.link")
+        chart.selectAll("line")
             .data(links)
             .enter()
-            .append("g")
-            .attr("class", "link")
             .append("line")
             .attr("x1", d => d.source.x)
             .attr("y1", d => d.source.y)

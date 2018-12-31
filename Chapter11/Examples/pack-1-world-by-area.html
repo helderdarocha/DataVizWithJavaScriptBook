@@ -22,15 +22,15 @@
     const width = 1000;
     const height = 1000;
 
-    const colorScale = d3.scaleSequential(d3.interpolatePuRd);
+    const colorScale = d3.scaleSequential(d3.interpolateBuGn);
 
     d3.csv("../Data/un_regions.csv").then(function(result) {
         console.log("tabular data", result);
 
         const nested = d3.nest()
-                        .key(d => d.Supercontinent)
+                       // .key(d => d.Supercontinent)
         .key(d => d.Continent)
-        .key(d => d.UN_Region)
+        //.key(d => d.UN_Region)
         .key(d => d.Country)
         .rollup(d => d.map(c => ({area: +c.Area_km2, population: +c.Pop_2016, hdi: +c.HDI_2017})))
         .entries(result);
@@ -83,8 +83,16 @@
             .append("text")
             .attr("transform", d => `translate(${[d.x, d.y]})`)
             .text(d => d.data.id)
-            .attr("font-size", 10)
-            .attr("y", d => d.height == 0 ? 3 : -d.r + 12)
+            .style("font-size", function(d) {
+                const size = Math.min(2*d.r, (2*d.r - 8) / this.getComputedTextLength() * 9);
+                if(size > 5) {
+                    return size + "px";
+                }
+                return 0;
+            })
+            .attr("y", function(d) {
+                return +this.style.fontSize.split('px')[0]/4;
+            })
             .attr("fill", d => d.height < 4 ? 'black' : 'white')
             .attr("opacity", d => d.r > 12  && !d.children ? 1 : 0);
     }

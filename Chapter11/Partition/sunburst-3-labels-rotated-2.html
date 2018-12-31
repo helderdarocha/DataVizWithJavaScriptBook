@@ -11,6 +11,10 @@
             text-anchor: middle;
             fill: white;
         }
+        path {
+            stroke: white;
+            stroke-width: 2px;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +58,6 @@
 
     const partition = d3.partition()
             .size([360, height/2-50]) // angle in degrees
-            .padding(1);
     const partitionData = partition(root);
     const nodes = partitionData.descendants();
 
@@ -83,11 +86,6 @@
             .append("path")
                 .attr("d", arc)
                 .attr("fill", d => colorScale(d.depth));
-    }
-
-    function cartesian([degrees, radius]) {
-        const radians = (Math.PI/180) * degrees;
-        return [radius * Math.cos(radians), radius * Math.sin(radians)];
     }
 
     function drawLabels(chart, nodes) {
