@@ -44,7 +44,10 @@
             .x(function(d) { return d.x; })
             .y(function(d) { return d.y; });
 
-    colorScale.domain(d3.extent(nodes, n => n.height));
+    console.log({source: {x: 150,  y: 0}, target: {x: 50, y: 100}})
+    console.log(verticalLink({source: {x: 150,  y: 0}, target: {x: 50, y: 100}}))
+
+    colorScale.domain(d3.extent(nodes, n => n.depth));
 
     drawTree(nodes);
 
@@ -71,7 +74,7 @@
             .attr("transform", d => `translate(${[d.x, d.y]})`)
             .append("circle")
             .attr("r", d => (d.height + 1) * 10)
-            .attr("fill", d => colorScale(d.height));
+            .attr("fill", d => colorScale(d.depth));
     }
 
     function drawLabels(chart, nodes) {
@@ -85,11 +88,9 @@
     }
 
     function drawLinks(chart, links) {
-        chart.selectAll("g.link")
+        chart.selectAll("path")
             .data(links)
             .enter()
-            .append("g")
-            .attr("class", "link")
                 .append('path')
                 .attr("d", verticalLink)
                 .attr("stroke-width", d => (d.target.height + 1) * (d.target.height + 1))

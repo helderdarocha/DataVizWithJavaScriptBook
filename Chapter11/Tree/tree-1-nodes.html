@@ -13,28 +13,18 @@
 
     const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
-    console.log("Original hierarchy", simpleHierarchy);
-
     const root = d3.hierarchy(simpleHierarchy);
-
-    console.log("Root", root);
-
-    // generate label numbers
-    root.eachBefore(function(d) {
-        if(!d.parent) {
-            d.number = 1;
-        } else {
-            d.number = d.parent.number + "." + (d.parent.children.indexOf(d) + 1);
-        }
-    });
 
     const tree = d3.tree()
                    .size([width-120,height-120]); // top-down
     const treeData = tree(root);
+
+    console.log(treeData);
+
     const nodes = treeData.descendants();
     const links = treeData.links();
 
-    colorScale.domain(d3.extent(nodes, n => n.height));
+    colorScale.domain(d3.extent(nodes, n => n.depth));
 
     drawTree(nodes);
 
@@ -52,15 +42,14 @@
     }
 
     function drawNodes(chart, nodes) {
-        chart.selectAll("g.node")
+        chart.selectAll("circle")
             .data(nodes)
             .enter()
-            .append("g")
-            .attr("class", "node")
-            .attr("transform", d => `translate(${[d.x, d.y]})`)
             .append("circle")
             .attr("r", 20)
-            .attr("fill", d => colorScale(d.height));
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("fill", d => colorScale(d.depth));
     }
 
     function drawLinks(chart, links) {

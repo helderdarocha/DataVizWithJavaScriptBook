@@ -10,6 +10,10 @@
             font-family: 'Yanone Kaffeesatz', sans-serif;
             text-anchor: middle;
         }
+        path {
+            stroke: white;
+            stroke-width: 2px;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +43,7 @@
     });
 
     const arc = d3.arc()
-            .startAngle(d => d.x0 * Math.PI / 180) // angles in radians
+            .startAngle(d => d.x0 * Math.PI / 180) // must convert angles to radians
             .endAngle(d => d.x1 * Math.PI / 180)
             .innerRadius(d => d.y0)
             .outerRadius(d => d.y1);
@@ -52,8 +56,7 @@
             .range([12,40]);
 
     const partition = d3.partition()
-            .size([360, height/2-50]) // angle in degrees
-            .padding(1);
+            .size([360, height/2-50]) // angle in degrees (easier to rotate in CSS)
     const partitionData = partition(root);
     const nodes = partitionData.descendants();
 
@@ -82,11 +85,6 @@
             .append("path")
                 .attr("d", arc)
                 .attr("fill", d => colorScale(d.depth));
-    }
-
-    function cartesian([degrees, radius]) {
-        const radians = (Math.PI/180) * degrees;
-        return [radius * Math.cos(radians), radius * Math.sin(radians)];
     }
 
     function drawLabels(chart, nodes) {

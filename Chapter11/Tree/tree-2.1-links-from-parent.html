@@ -58,11 +58,9 @@ console.log(widthScale(4))
     }
 
     function drawLinks(chart, nodes) {
-        chart.selectAll("g.link")
+        chart.selectAll("line")
             .data(nodes)
             .enter()
-            .append("g")
-            .attr("class", "link")
             .append("line")
             .attr("x1", d => d.parent.x)
             .attr("y1", d => d.parent.y)

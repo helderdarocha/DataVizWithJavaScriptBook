@@ -8,29 +8,30 @@
 </head>
 <body>
 <script>
-    console.log("Original CSV", refTable);
+    function makeRoot(items) {
+        const object = {
+            key: 'Root',
+            values: items
+        };
+        return d3.hierarchy(object, d => d.values);
+    }
 
-    const jsonTable = d3.csvParse(refTable, function(d) {
-   /*     const object = {name: d.Name};
-        if(d.Value1 && d.Value2) {
-            object.values = [+d.Value1,+d.Value2];
-        }
-        return object; */
-        return d;
-    });
+    console.log("Original CSV", catTable);
+
+    const jsonTable = d3.csvParse(catTable);
     console.log("JSON table", jsonTable);
 
-    const stratify = d3.stratify()
-                       .id(d => d.Id)
-                       .parentId(d => d.Context);
+    const nested = d3.nest()
+                    .key(d => d.Category)
+                    .key(d => d.Subcategory)
+                    .key(d => d.Group)
+                    .entries(jsonTable);
 
-    const hierarchy = stratify(jsonTable);
-
-    console.log(hierarchy.leaves())
-    console.log("Stratified hierarchy", hierarchy)
+    const hierarchy = {key: 'Root', values: nested};
+    console.log("Nested hierarchy", hierarchy);
 
     // 1) d3.hierarchy()
-    const root = d3.hierarchy(hierarchy);
+    const root = d3.hierarchy(hierarchy, d => d.values);
     console.log("Root", root);
 
     // The resulting structure has the same data as simpleHierarchy, but the data values
@@ -49,7 +50,7 @@
     console.log("Descendant array of height-sorted root", root.descendants());
 
     // 5) Create and detach a subtree (deep copy): node.copy()
-    const subgroup1 = root.children.filter(d => d.data.id == 'group_1')[0].copy();
+    const subgroup1 = root.children.filter(d => d.data.key == 'First Group')[0].copy();
     console.log("Subgroup 1 (deep copy)", subgroup1);
 
     const leaves2 = subgroup1.leaves();
@@ -59,11 +60,11 @@
     console.log("subgroup1.descendants()", descendants2);
 
     // 6) Make a map of all descendants (to facilitate retrieval)
-    const descendantMap = new Map(root.descendants().map(d => [d.data.id, d]));
+    const descendantMap = new Map(root.descendants().map(d => [d.data.Id || d.data.key, d]));
     console.log(descendantMap);
 
     // 7) Reference a subtree
-    const subgroup3 = descendantMap.get("subg_3");
+    const subgroup3 = descendantMap.get("Third Subgroup");
     console.log("Subgroup 3 (reference)", subgroup3);
 
     // 8) ancestors()
@@ -84,17 +85,17 @@
     console.log("root.value after root.sum(d => 1): count nodes", root.value);
 
     // 12) d3.hierarchy.sum() leaf-count (same as root.count())
-    root.sum(d => d.data.values ? 1 : 0 );
+    root.sum(d => !d.children ? 1 : 0 );
     console.log("root.value after root.sum(d => d.height == 0 ? 1 : 0): count leaves", root.value);
 
     // 13) d3.hierarchy.sum() leaf-sum
-    root.sum(d => d.data.values ? d.data.values[0] : 0);
+    root.sum(d => !d.children ? +d.Value1 : 0);
     console.log("Cumulative sum of values[0]: root.sum(d => d.values ? d.values[0] : 0)", root.value);
     console.log("Cumulative sum of subgroup3 (root reference)", subgroup3.value);
 
     // 14) d3.hierarchy.sum() on separate subtree
     console.log("Sum of subgroup1 (root copy)", subgroup1.value);
-    subgroup1.sum(d => d.data.values ? d.data.values[1] : 0);
+    subgroup1.sum(d => !d.children ? +d.Value2 : 0);
     console.log("Sum of subgroup1 after subgroup1.sum(d => d.values ? d.values[1] : 0)", subgroup1.value);
 
     // 15) sibling node.sort() by height and value
@@ -102,7 +103,7 @@
     console.log("Sorted by descending height, then by ascending value", root.descendants());
 
     // 16) sibling node.sort() by height and data
-    root.sort((a,b) => (b.height - a.height) || ((a.height == 0 && b.height == 0) ? a.data.data.values[0] - b.data.data.values[1] : a.value - b.value));
+    root.sort((a,b) => (b.height - a.height) || ((a.height == 0 && b.height == 0) ? +a.data.Value1 - +b.data.Value2 : a.value - b.value));
     console.log("Sorted by descending height, then by using data values", root.descendants());
 
     // 17) root.links()
@@ -113,11 +114,12 @@
     // 18) root.eachAfter();
     root.eachAfter(function(d) {
         if(d.children) {
-            d.data.data.values = [0,0];
-            d.children.forEach(c => {d.data.data.values[0] += c.data.data.values[0];d.data.data.values[1] += c.data.data.values[1]});
+            d.data.Value1 = 0;
+            d.data.Value2 = 0;
+            d.children.forEach(c => {d.data.Value1 += +c.data.Value1;d.data.Value2 += +c.data.Value2});
         }
     });
-    console.log("root.eachAfter(): sum of data values", root.data.data.values);
+    console.log("root.eachAfter(): sum of data values", [+root.data.Value1,+root.data.Value2]);
 
     // 19) root.eachBefore();
     root.eachBefore(function(d) {

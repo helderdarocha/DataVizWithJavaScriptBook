@@ -45,7 +45,7 @@
             .x(function(d) { return d.x; })
             .y(function(d) { return d.y; });
 
-    colorScale.domain(d3.extent(nodes, n => n.height));
+    colorScale.domain(d3.extent(nodes, n => n.depth));
 
     drawTree(nodes);
 
@@ -72,7 +72,7 @@
             .attr("transform", d => `translate(${[d.x, d.y]})`)
             .append("circle")
             .attr("r", d => (d.height + 1) * 10)
-            .attr("fill", d => colorScale(d.height));
+            .attr("fill", d => colorScale(d.depth));
     }
 
     function drawLabels(chart, nodes) {

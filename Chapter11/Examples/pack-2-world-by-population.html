@@ -8,8 +8,9 @@
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
-            font-size: 12px;
+            font-size: 10px;
             text-anchor: middle;
+            fill: blue;
         }
         circle {
             stroke-width: .5px;
@@ -22,26 +23,26 @@
     const width = 1000;
     const height = 1000;
 
-    const colorScale = d3.scaleSequential(d3.interpolatePuOr);
+    const colorScale = d3.scaleSequential(d3.interpolatePuRd);
 
     d3.csv("../Data/un_regions.csv").then(function(result) {
         console.log("tabular data", result);
 
         const nested = d3.nest()
-                        .key(d => d.Supercontinent)
-        .key(d => d.Continent)
-        .key(d => d.UN_Region)
-        .key(d => d.Country)
-        .rollup(d => d.map(c => ({area: +c.Area_km2, population: +c.Pop_2016, hdi: +c.HDI_2017})))
-        .entries(result);
+        //  .key(d => d.Supercontinent)
+            .key(d => d.Continent)
+        //    .key(d => d.UN_Region)
+            .key(d => d.Country)
+            .rollup(d => d.map(c => ({code: c.Code, area: +c.Area_km2, population: +c.Pop_2016, hdi: +c.HDI_2017})))
+            .entries(result);
 
         const root = d3.hierarchy(makeRoot(nested, false))
-                        .sum(d => d.data.population )
-                        .sort((a,b) => b.height - a.height || a.value - b.value);
+                        .sum(d => d.data.population)
+                       // .sort((a,b) => b.height - a.height || a.value - b.value);
 
         const pack = d3.pack()
                 .size([width-50,height-50])
-                .padding(8);
+                .padding(1);
 
         const nodes = pack(root).descendants();
 
@@ -84,9 +85,16 @@
             .append("text")
             .attr("transform", d => `translate(${[d.x, d.y]})`)
             .text(d => d.data.id)
-            .attr("font-size", 10)
-            .attr("y", d => d.height == 0 ? 3 : -d.r + 12)
-            .attr("fill", d => d.height < 4 ? 'white' : 'black')
+            .style("font-size", function(d) {
+                const size = Math.min(2*d.r, (2*d.r - 8) / this.getComputedTextLength() * 9);
+                if(size > 5) {
+                    return size + "px";
+                }
+                return 0;
+            })
+            .attr("y", function(d) {
+                return +this.style.fontSize.split('px')[0]/4;
+            })
             .attr("opacity", d => d.r > 11  && !d.children ? 1 : 0);
     }
 </script>

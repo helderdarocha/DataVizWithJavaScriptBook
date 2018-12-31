@@ -8,12 +8,11 @@
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
-            font-size: 16px;
             text-anchor: middle;
         }
         circle {
-            stroke-width: 2px;
-            opacity: .8;
+            stroke-width: 1px;
+            opacity: .7;
         }
     </style>
 </head>
@@ -22,7 +21,7 @@
     const width = 1000;
     const height = 1000;
 
-    const colorScale = d3.scaleSequential(d3.interpolateWarm);
+    const colorScale = d3.scaleSequential(d3.interpolateGnBu);
 
     console.log("Original hierarchy", simpleHierarchy);
 
@@ -43,7 +42,8 @@
 
     const pack = d3.pack()
                    .size([width-50,height-50])
-                   .padding(40);
+                   .radius(d => d.value)
+                   .padding(d => d.value/12);
 
     const nodes = pack(root).descendants();
 
@@ -73,19 +73,15 @@
 
         cell.append("circle")
                 .attr("r", d => d.r)
-                .attr("fill", function(d) {
-                        return colorScale(d.value);
-                })
-                .attr("stroke", function(d) {
-                    return d3.color(colorScale(d.value)).darker();
-                });
+                .attr("fill", d => colorScale(d.value))
+                .attr("stroke", "white");
 
         cell.append("text")
                 .text(d => d.number)
-                .attr("font-size", 10)
-                .attr("y", d => d.height == 0 ? 3 : -d.r + 14)
-                .attr("fill", d => d.height < 4 ? 'white' : 'black')
-                .attr("opacity", d => d.r > 10 ? 1 : 0)
+                .attr("font-size", 14)
+                .attr("y", d => d.height == 0 ? 3 : -d.r + 14) // places in center if leaf
+                .attr("fill", d => d.height < 4 ? 'black' : 'white')
+                .attr("opacity", d => d.r > 10 ? 1 : 0);
     }
 </script>
 <h1>See console for results</h1>

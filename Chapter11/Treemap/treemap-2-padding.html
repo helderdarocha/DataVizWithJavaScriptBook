@@ -41,7 +41,7 @@
     const treemap = d3.treemap()
             .size([width - 100, height - 100])
             .paddingInner(5)
-            .paddingOuter(10)
+            .paddingOuter(d => d.children.length == 1 ? 5 : 10)
             .paddingTop(50);
     const mapData = treemap(root);
     const nodes = mapData.descendants();
