@@ -8,11 +8,14 @@
         circle {
             fill: blue;
         }
-
-        path {
+        .bifurcation {
+            fill: #41b2ba;
+            stroke: #41b2ba;
+        }
+        .river {
             fill: none;
-            stroke: #62b6e6;
-            stroke-width: 2px;
+            stroke: #41b2ba;
+            stroke-linecap: round;
         }
         rect {
             stroke: blue;
@@ -21,15 +24,21 @@
         text {
             font-family: sans-serif;
             fill: #4a774a;
+            text-anchor: end;
         }
-        .node, .leaf {
+        .node {
             font-size: 12px;
-            transform: translate(-12px,-12px);
+            transform: translate(0px,-20px);
+        }
+        .leaf {
+            font-size: 12px;
+            transform: translate(-6px,-12px);
+            text-anchor: middle;
         }
         .root {
-            font-size: 12px;
+            font-size: 18px;
             font-weight: bold;
-            transform: rotate(-90deg) translate(3px,3px);
+            transform: rotate(-90deg) translate(-18px,3px);
         }
 
     </style>
@@ -39,18 +48,25 @@
     const height = 800;
     const width = 1000;
 
+    const lengthScale = d3.scaleLinear().range([1,8]);
+
     d3.csv("../Data/amazon-river.csv").then(function(result) {
+        result.forEach(d => d.km = +d.km);
         console.log("tabular data", result);
 
         const stratify = d3.stratify()
                         .id(d => d.Tributary)
         .parentId(d => d.Confluence);
 
-        const hierData = d3.hierarchy(stratify(result));
+        const root = d3.hierarchy(stratify(result));
+
+        lengthScale.domain(d3.extent(root.children, d => d.data.data.km));
 
         // tree
-        const tree = d3.tree().size([height-100,width-150]); // sideways
-        const treeData = tree(hierData.sort((a,b) => a.height - b.height));
+        const tree = d3.cluster()
+                .size([height-100,width-150])
+                .separation((a,b) => (a.parent == b.parent ? 1 : 2));
+        const treeData = tree(root.sort((a,b) => b.height - a.height));
 
         console.log(treeData);
 
@@ -75,9 +91,6 @@
                 return 'translate(' + [d.y, d.x] + ')';
             });
 
-        node.append("circle")
-            .attr('r', 3);
-
         node.append("text")
                 .attr('x', 5)
                 .attr('y', 5)
@@ -98,11 +111,13 @@
             .y(function(d) { return d.x; });
 
     function drawLinks(g, data) {
-        g.selectAll("path")
+        g.selectAll("path.river")
                 .data(data)
                 .enter()
                 .append('path')
-                .attr("d", link);
+                .attr("class", "river")
+                .attr("d", link)
+                .attr("stroke-width", d => lengthScale(d.target.data.data.km));
     }
 
 </script>

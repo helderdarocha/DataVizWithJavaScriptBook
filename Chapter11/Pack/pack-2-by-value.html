@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchies</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/simple_hierarchical_data.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 16px;
+            text-anchor: middle;
+        }
+        circle {
+            stroke-width: 2px;
+            opacity: .8;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 1000;
+    const height = 1000;
+
+    const colorScale = d3.scaleSequential(d3.interpolateWarm);
+
+    console.log("Original hierarchy", simpleHierarchy);
+
+    // 1) Setup hierarchy with sum (using node count as node.value) and sort (by descending height, ascending value)
+    const root = d3.hierarchy(simpleHierarchy)
+                   .sum(d => d.values ? (d.values[0] * d.values[0]) : 0)
+                   .sort((a,b) => b.height - a.height || a.value - b.value);
+
+    console.log("Root", root);
+
+    root.eachBefore(function(d) {
+        if(!d.parent) {
+            d.number = 1;
+        } else {
+            d.number = d.parent.number + "." + (d.parent.children.indexOf(d) + 1);
+        }
+    });
+
+    const pack = d3.pack()
+                   .size([width-50,height-50])
+                   .padding(40);
+
+    const nodes = pack(root).descendants();
+
+    colorScale.domain(d3.extent(nodes, n => n.value));
+
+    draw(nodes);
+
+    function draw(data) {
+        const svg = d3.select("body")
+                      .append("svg")
+                      .attr("height", height)
+                      .attr("width", width);
+        const chart = svg.append("g")
+                         .attr("transform", d => `translate(${[25,25]})`);
+
+        packCircles(chart.append("g").attr("class", "chart"), data);
+
+    }
+
+    function packCircles(g, data) {
+        console.log("pack data", data);
+        const cell = g.selectAll("g")
+                .data(data)
+                .enter()
+                .append("g")
+                .attr("transform", d => `translate(${[d.x, d.y]})`);
+
+        cell.append("circle")
+                .attr("r", d => d.r)
+                .attr("fill", function(d) {
+                        return colorScale(d.value);
+                })
+                .attr("stroke", function(d) {
+                    return d3.color(colorScale(d.value)).darker();
+                });
+
+        cell.append("text")
+                .text(d => d.number)
+                .attr("font-size", 10)
+                .attr("y", d => d.height == 0 ? 3 : -d.r + 14)
+                .attr("fill", d => d.height < 4 ? 'white' : 'black')
+                .attr("opacity", d => d.r > 10 ? 1 : 0)
+    }
+</script>
+<h1>See console for results</h1>
+</body>
+</html>
