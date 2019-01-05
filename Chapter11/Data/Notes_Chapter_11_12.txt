@@ -1,0 +1,5 @@
+Chapter 11 and 12 notes
+
+Both cover relational structures: networks
+Chapter 11 covers unidirectional networks, trees or hierarchies
+Chapter 12 covers other networks, such as flows and graphs

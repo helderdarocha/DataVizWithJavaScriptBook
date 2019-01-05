@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/arc.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 14px;
+            alignment-baseline: middle;
+            text-anchor: middle;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 800;
+    const height = 600;
+    const margin = 100;
+
+    const nodes = [
+        {node: 'A', value: 123}, // value not used in this example
+        {node: 'B', value: 456},
+        {node: 'C', value: 995},
+        {node: 'D', value: 65},
+        {node: 'E', value: 79},
+    ];
+
+    const edges = [
+        {source: 'A', target: 'B', weight: 16},
+        {source: 'A', target: 'C', weight: 2},
+        {source: 'B', target: 'A', weight: 8},
+        {source: 'B', target: 'C', weight: 4},
+        {source: 'C', target: 'B', weight: 1},
+        {source: 'D', target: 'B', weight: 1},
+        {source: 'D', target: 'E', weight: 1}
+    ];
+
+    const sim = d3.forceSimulation(nodes)
+                 // .force('charge', d3.forceManyBody())
+                 // .force('center', d3.forceCenter(width / 2, height / 2));
+
+    console.log(sim.nodes());
+
+    const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
+    const chart = svg.append("g").attr("transform", `translate(${[margin/2 + width/2,margin/2 + height/2]})`);
+
+    chart.selectAll('circle')
+            .data(nodes).enter()
+            .append('circle')
+            .attr('r', 5)
+            .attr('cx', d => d.x)
+            .attr('cy', d => d.y)
+
+</script>
+</body>
+</html>
