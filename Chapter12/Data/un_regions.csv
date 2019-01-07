@@ -66,7 +66,7 @@ Venezuela,Americas,South America,South America,912050,31568179,0.761,VEN
 Bermuda,Americas,North America,Northern America,50,65341,0.981,BMU
 Canada,Americas,North America,Northern America,9984670,36264604,0.926,CAN
 Greenland,Americas,North America,Northern America,410450,56186," 0.839",GRL
-United States,Americas,North America,Northern America,9831510,323405935,0.924,USA
+USA,Americas,North America,Northern America,9831510,323405935,0.924,USA
 Mexico,Americas,North America,Central America,1964380,127540423,0.774,MEX
 Belize,Americas,North America,Central America,22970,366954,0.708,BLZ
 Costa Rica,Americas,North America,Central America,51100,4857274,0.794,CRI
@@ -80,7 +80,7 @@ Aruba,Americas,North America,Caribbean,180,104822,0.908,ABW
 Bahamas,Americas,North America,Caribbean,13880,391232,0.807,BHS
 Barbados,Americas,North America,Caribbean,430,284996,0.800,BRB
 British Virgin Islands,Americas,North America,Caribbean,150,30661,0.945,VGB
-United States Virgin Islands,Americas,North America,Caribbean,350,107510,0.894,VIR
+US Virgin Islands,Americas,North America,Caribbean,350,107510,0.894,VIR
 Cayman Islands,Americas,North America,Caribbean,264,60765,0.983,CYM
 Cuba,Americas,North America,Caribbean,109880,11475982,0.777,CUB
 Curacao,Americas,North America,Caribbean,444,159663,0.811,CUW
@@ -117,11 +117,11 @@ Angola,Africa,Africa,Middle Africa,1246700,28813463,0.581,AGO
 Cameroon,Africa,Africa,Middle Africa,475440,23439189,0.556,CMR
 Central African Republic,Africa,Africa,Middle Africa,622980,4594621,0.367,CAF
 Chad,Africa,Africa,Middle Africa,1284000,14452543,0.404,TCD
-Democratic Republic of the Congo,Africa,Africa,Middle Africa,2344860,78736153,0.457,COD
-Equatorial Guinea,Africa,Africa,Middle Africa,28050,1221490,0.591,GNQ
+Congo DR,Africa,Africa,Middle Africa,2344860,78736153,0.457,COD
+Eq. Guinea,Africa,Africa,Middle Africa,28050,1221490,0.591,GNQ
 Gabon,Africa,Africa,Middle Africa,267670,1979786,0.702,GAB
-Republic of the Congo,Africa,Africa,Middle Africa,342000,5125821," 0.606",COG
-Sao Tome and Principe,Africa,Africa,Middle Africa,960,199910,0.589,STP
+Congo Rep.,Africa,Africa,Middle Africa,342000,5125821," 0.606",COG
+S. Tome & Principe,Africa,Africa,Middle Africa,960,199910,0.589,STP
 Algeria,Africa,Africa,Northern Africa,2381740,40606052,0.754,DZA
 Egypt,Africa,Africa,Northern Africa,1001450,95688681,0.696,EGY
 Libya,Africa,Africa,Northern Africa,1759540,6293253,0.706,LBY
@@ -157,7 +157,7 @@ New Caledonia,Oceania,Oceania,Melanesia,18580,276550,0.789,NCL
 Papua New Guinea,Oceania,Oceania,Melanesia,462840,8084991,0.544,PNG
 Solomon Islands,Oceania,Oceania,Melanesia,28900,599419,0.546,SLB
 Vanuatu,Oceania,Oceania,Melanesia,12190,270402,0.603,VUT
-Federated States of Micronesia,Oceania,Oceania,Micronesia,700,104937,0.627,FSM
+F.S. of Micronesia,Oceania,Oceania,Micronesia,700,104937,0.627,FSM
 Guam,Oceania,Oceania,Micronesia,540,162896,0.901,GUM
 Kiribati,Oceania,Oceania,Micronesia,810,114395,0.612,KIR
 Marshall Islands,Oceania,Oceania,Micronesia,180,53066,0.708,MHL
@@ -206,7 +206,7 @@ Latvia,Eurasia,Europe,Northern Europe,64490,1959537,0.847,LVA
 Lithuania,Eurasia,Europe,Northern Europe,65286,2868231,0.858,LTU
 Norway,Eurasia,Europe,Northern Europe,385178,5234519,0.953,NOR
 Sweden,Eurasia,Europe,Northern Europe,447420,9923085,0.933,SWE
-United Kingdom,Eurasia,Europe,Northern Europe,243610,65595565,0.922,GBR
+UK,Eurasia,Europe,Northern Europe,243610,65595565,0.922,GBR
 Belarus,Eurasia,Europe,Eastern Europe,207600,9501534,0.808,BLR
 Bulgaria,Eurasia,Europe,Eastern Europe,111000,7127822,0.813,BGR
 Czech Republic,Eurasia,Europe,Eastern Europe,78870,10566332,0.888,CZE
@@ -214,7 +214,7 @@ Hungary,Eurasia,Europe,Eastern Europe,93030,9814023,0.838,HUN
 Poland,Eurasia,Europe,Eastern Europe,312680,37970087,0.865,POL
 Moldova,Eurasia,Europe,Eastern Europe,33850,3551954,0.700,MDA
 Romania,Eurasia,Europe,Eastern Europe,238390,19702332,0.811,ROU
-Russian Federation,Eurasia,Europe,Eastern Europe,17098250,144342396,0.816,RUS
+Russia,Eurasia,Europe,Eastern Europe,17098250,144342396,0.816,RUS
 Slovakia,Eurasia,Europe,Eastern Europe,49035,5430798,0.855,SVK
 Ukraine,Eurasia,Europe,Eastern Europe,603550,45004645,0.751,UKR
 Antarctica,Antarctica,Antarctica,Antarctica,14000000,1000,,ATA
