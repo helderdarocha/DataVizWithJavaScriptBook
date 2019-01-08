@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../JavaScript/arc.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 12px;
+            alignment-baseline: middle;
+            text-anchor: middle;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 1000;
+    const height = 800;
+    const margin = 100;
+
+    const nodes = [];
+    const links = [];
+
+    const scaleWidth = d3.scaleLinear().range([.1,40]);
+    const scaleOpacity = d3.scaleSqrt().range([.9,.3]);
+    const scaleRadius = d3.scaleSqrt().range([2,60])
+    const nodeColors = d3.scaleSequential(d3.interpolateMagma);
+    const lineColors = d3.scaleSqrt().range(['rgba(0,0,80,.8)','red']);
+
+    d3.csv("../Data/migration_2017.csv", function(row) {
+        nodes.push({node: row.Destination, pop: +row.Population, total: +row.Total, code: row.Code})
+        return row;
+    }).then(function(data) {
+        data.forEach(function(d) {
+            for(const key in d) {
+                if(key != 'Destination' && key != 'Population' && key != 'Total' && key != 'Code' && +d[key]) {
+                    const link = {};
+                    link.value = +d[key];
+                    link.source = nodes.map(n => n.node).indexOf(d.Destination);
+                    link.target = nodes.map(n => n.node).indexOf(key);
+                    links.push(link);
+                }
+            }
+        });
+
+        console.log(nodes, links)
+
+        scaleWidth.domain(d3.extent(links, d => d.value))
+        scaleOpacity.domain(d3.extent(links, d => d.value))
+        scaleRadius.domain(d3.extent(nodes, d => d.pop))
+        nodeColors.domain([0,nodes.length])
+        lineColors.domain(d3.extent(links, d => d.value))
+
+        const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
+        const chart = svg.append("g").attr("transform", `translate(${[width * .5,height * .5]})`);
+
+        const sim = d3.forceSimulation(nodes);
+        sim.force('center', d3.forceCenter());
+        sim.force('manyBody', d3.forceManyBody().strength(-400));
+        sim.force('x', d3.forceY().strength(.6))
+        sim.force('link', d3.forceLink(links).iterations(2).distance(d => scaleWidth(d.value) * 500))
+        sim.force('collision', d3.forceCollide(d => scaleRadius(d.pop) + 10).iterations(2))
+
+        for(let i = 0; i < 300; i++) { sim.tick(); }
+        draw(chart,data);
+        sim.stop();
+    });
+
+    function draw(chart, data) {
+        chart.selectAll('line')
+                .data(links).enter()
+                .append('line')
+                .attr('x1', d => d.source.x)
+                .attr('x2', d => d.target.x)
+                .attr('y1', d => d.source.y)
+                .attr('y2', d => d.target.y)
+                .attr('fill', 'none')
+                .attr('stroke', d => lineColors(d.value))
+                .attr('opacity', .4)
+                .attr('stroke-width', d => scaleWidth(d.value))
+
+        chart.selectAll('circle')
+                .data(nodes).enter()
+                .append('circle')
+                .attr('r', d => scaleRadius(d.pop))
+                .attr('cx', d => d.x)
+                .attr('cy', d => d.y)
+                .attr('fill', (d,i) => nodeColors(i))
+                .attr('stroke','white')
+                .attr("stroke-width", .5)
+
+        chart.selectAll('text')
+                .data(nodes).enter()
+                .append('text')
+                .text(d => d.node.length / scaleRadius(d.pop) > .5 ? d.code : d.node)
+                .attr('x', d => d.x)
+                .attr('y', d => d.y)
+                .style('fill', (d,i) => contrast(nodeColors(i)))
+                .style("font-size", function(d) {
+                    const size = Math.min(2.2*scaleRadius(d.pop), (2.2*scaleRadius(d.pop) - 8) / this.getComputedTextLength() * 9);
+                    return size > 7 ? size : 0;
+                })
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 150 ? 'black' : 'white';
+    }
+
+
+</script>
+</body>
+</html>

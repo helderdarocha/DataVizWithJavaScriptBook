@@ -2,50 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-4-sort-groups.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-4-sort-subgroups.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-1-borders.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-2-borders.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-3-borders-labels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-10-links.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-11-links-node-radius.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-12-links-draw.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-13-position-x.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-14-position-y.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-15-position-radial.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-17-interactive-alpha.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-18-static-alpha.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-2-static-charge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-3-charge-collapse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-4-dynamic-charge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-5-center-charge.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-6-dynamic-center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-7-collide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-8-collapse-collide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/force-9-node-radius.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/Data/Data_for_Chapter_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter11/Data/Notes_Chapter_11_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter12/Data/Chart_Ideas.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-2-migrations-2.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-2-migrations-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-2-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-2-migrations.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Arc/arc-2-migrations-2.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Arc/arc-2-migrations-3.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Arc/arc-2-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-1-borders.html" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-1-ribbon.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-1-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-1-migrations.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-2-borders.html" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-2-nodes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-2-migrations-all.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-2-migrations-all.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-2-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-2-migrations.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-3-borders.html" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-3-labels.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Chord/chord-4-borders.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-4-borders-gradient.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Sankey/sankey-1.html" afterPath="$PROJECT_DIR$/Chapter12/Sankey/sankey-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Flow_Sankey/sankey-2-minard.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/sankey-2-minard.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Data/metrosp.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-3-bubble-continents-area-position.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-4-bubble-continents-pop-position.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-6-links-subway.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-7-links-borders-sa.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-8-links-migrations.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries-pop.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-2.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-area.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/force-5-bubble-continents-pop.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Data/un_regions.csv" afterPath="$PROJECT_DIR$/Chapter12/Data/un_regions.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Force/force-1.html" afterPath="$PROJECT_DIR$/Chapter12/Force/force-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Data/migration_2017.csv" afterPath="$PROJECT_DIR$/Chapter12/Data/migration_2017.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Data/migrations_50.csv" afterPath="$PROJECT_DIR$/Chapter12/Data/migrations_50.csv" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,21 +35,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="force-2-bubble-continents-2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-2.html">
+      <file leaf-file-name="force-8-links-migrations.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-8-links-migrations.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="69" column="59" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+            <state relative-caret-position="165">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="force-2-bubble-continents.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents.html">
+      <file leaf-file-name="force-4-bubble-continents-pop-position.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-4-bubble-continents-pop-position.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-3-bubble-continents-area-position.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-3-bubble-continents-area-position.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-7-links-borders-sa.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-7-links-borders-sa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-2-bubble-continents-area.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-area.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-1-bubble-countries-pop.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries-pop.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sankey-2-minard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-2-minard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-17-interactive-alpha.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/force-17-interactive-alpha.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-6-links-subway.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-6-links-subway.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="28" column="93" selection-start-line="28" selection-start-column="93" selection-end-line="28" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="force-5-bubble-continents-pop.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-5-bubble-continents-pop.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -103,14 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter12/JavaScript/arc.js" />
-        <option value="$PROJECT_DIR$/Chapter12/Arc/arc-2-migrations-2.html" />
-        <option value="$PROJECT_DIR$/Chapter12/Arc/arc-2-migrations-3.html" />
-        <option value="$PROJECT_DIR$/Chapter12/Arc/arc-2-migrations.html" />
-        <option value="$PROJECT_DIR$/Chapter12/JavaScript/minard.js" />
-        <option value="$PROJECT_DIR$/Chapter12/Data/minard-steps-adv.csv" />
-        <option value="$PROJECT_DIR$/Chapter12/Data/minard-steps-reduced.csv" />
-        <option value="$PROJECT_DIR$/Chapter12/Flow_Sankey/sankey-1.html" />
         <option value="$PROJECT_DIR$/Chapter12/Data/minard-steps.csv" />
         <option value="$PROJECT_DIR$/Chapter12/Force/force-2-static.html" />
         <option value="$PROJECT_DIR$/Chapter12/Force/force-3-dynamic.html" />
@@ -154,6 +194,14 @@
         <option value="$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries.html" />
         <option value="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-2.html" />
         <option value="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-area-position.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-pop-position.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Data/metrosp.json" />
+        <option value="$PROJECT_DIR$/Chapter12/Examples/force-6-links-subway.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Data/migrations_50.csv" />
+        <option value="$PROJECT_DIR$/Chapter12/Examples/force-7-links-borders-sa.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Data/migration_2017.csv" />
+        <option value="$PROJECT_DIR$/Chapter12/Examples/force-8-links-migrations.html" />
       </list>
     </option>
   </component>
@@ -167,8 +215,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="181" />
-    <option name="y" value="71" />
+    <option name="x" value="134" />
+    <option name="y" value="108" />
     <option name="width" value="1252" />
     <option name="height" value="725" />
   </component>
@@ -530,22 +578,22 @@
       <workItem from="1545510864060" duration="11403000" />
       <workItem from="1545876292837" duration="38537000" />
       <workItem from="1546091544148" duration="26197000" />
-      <workItem from="1546289143545" duration="150368000" />
+      <workItem from="1546289143545" duration="182228000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1089330000" />
+    <option name="totallyTimeSpent" value="1121190000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="181" y="71" width="1252" height="725" extended-state="0" />
+    <frame x="134" y="108" width="1252" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553719" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440946" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440946" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -595,84 +643,18 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Chapter12/Examples/force-7-links-borders-sa.html</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter12/Data/minard-cities.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Data/minard-troops.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/JavaScript/minard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="61" column="7" selection-start-line="28" selection-start-column="3" selection-end-line="61" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Data/minard-steps-adv.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Data/minard-steps-reduced.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Data/minard-steps.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="33" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Arc/arc-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -753,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/chord-2-borders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/Examples/chord-4-borders-gradient.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -813,14 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/force-17-interactive-alpha.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="70" column="31" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -961,22 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-2-minard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/Force/force-12-links-draw.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -993,18 +943,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Data/metrosp.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="69" column="59" selection-start-line="69" selection-start-column="59" selection-end-line="69" selection-end-column="59" />
+        <state relative-caret-position="-60">
+          <caret line="79" column="61" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/chord-2-borders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="42" column="7" selection-start-line="18" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Data/sa_borders.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Data/migrations_50.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Data/migration_2017.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-7-links-borders-sa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="104" column="5" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-6-links-subway.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="28" column="93" selection-start-line="28" selection-start-column="93" selection-end-line="28" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-5-bubble-continents-pop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-4-bubble-continents-pop-position.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-3-bubble-continents-area-position.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-2-bubble-continents-area.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="92" column="37" selection-start-line="92" selection-start-column="37" selection-end-line="92" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-1-bubble-countries-pop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-2-minard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/force-17-interactive-alpha.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/force-8-links-migrations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
           <folding />
         </state>
       </provider>
