@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/d3-sankey"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 10px;
+            alignment-baseline: middle;
+            text-anchor: middle;
+            fill: black;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 1200;
+    const height = 600;
+    const margin = 100;
+
+    //const color = d3.scaleOrdinal(d3.schemeCategory10);
+    const color = d3.scaleSequential(d3.interpolateRainbow);
+
+    const links = [];
+
+    d3.csv("../Data/EuropeUSSR_1990_2010_nodes.csv", function(row) {
+        if(row.Containers.length > 0 &&  row.Id != 'WB') { // don' include West berlin
+            const groups = row.Containers.split('|');
+            groups.forEach(function(group) {
+                const link = {}
+                if(group == 'DEU' || group.indexOf('EU') == 0) { // join
+                    link.target = group;
+                    link.source = row.Id;
+                } else { // split
+                    link.target = row.Id;
+                    link.source = group;
+                }
+                if(row.Unit == 1) {
+                    link.value = 1;
+                }
+                links.push(link);
+            });
+        } else if(+row.Unit == 1) {
+            return undefined;
+        }
+        return row;
+    }).then(function(nodes) {
+        links.forEach(function(link) {
+            link.source = nodes.map(n => n.Id).indexOf(link.source);
+            link.target = nodes.map(n => n.Id).indexOf(link.target);
+        });
+        links.forEach(function(link) {
+            link.value  = computeValue(links, link);
+        });
+
+        color.domain([0, nodes.length].reverse());
+
+        const sankey = d3.sankey()
+                .nodePadding(19)
+                .nodeWidth(70)
+                .extent([[margin/2, margin/2], [width-margin, height-margin]])
+                //.nodeAlign(d3.sankeyJustify)
+                .nodeAlign(d3.sankeyRight)
+                .iterations(500);
+
+        const graph = sankey({nodes: nodes, links: links});
+        console.log(graph)
+
+        draw(graph);
+    });
+
+    function computeValue(links, link) {
+        if (link.value > 0) {
+            return link.value;
+        } else {
+            const children = links.filter(k => k.target == link.source || k.source == link.target);
+            let total = 0;
+            children.forEach(function(d) {
+                total += computeValue(children, d);
+            });
+            return total;
+        }
+    }
+
+    function draw(graph) {
+        const svg = d3.select("body").append("svg").attr("width",1200).attr("height",600).attr("viewBox", "0 0 1200 600");
+        const chart = svg.append("g");
+
+        chart.selectAll('path')
+            .data(graph.links)
+            .enter()
+            .append('path')
+            .attr('d', d3.sankeyLinkHorizontal())
+            .attr("opacity", .3)
+            .attr('stroke-width', d => d.width)
+            .attr('stroke', d => d.target.Id.indexOf('EU') == 0 || d.target.Id == 'DEU' ? color(d.source.index) : color(d.target.index))
+            .attr('fill', 'none');
+
+        chart.selectAll('rect')
+            .data(graph.nodes)
+            .enter()
+            .append('rect')
+            .attr('x', d => d.x0)
+            .attr('y', function(d) {
+                if(d.y1 - d.y0 < 12) {
+                    return d.y0 +(d.y1 - d.y0)/2 - 5;
+                }
+                return d.y0;
+            })
+            .attr('width', d => d.x1 - d.x0)
+            .attr('height', function(d) {
+                if(d.y1 - d.y0 < 12) {
+                    return 10;
+                }
+                return d.y1 - d.y0;
+            })
+            .attr('rx', d => d.y1 - d.y0 < 4?10:0).attr('ry', d => d.y1 - d.y0 < 4?5:0)
+            .attr('fill', (d,i) => d3.rgb(color(i)).darker(.5))
+            .style('opacity', .6);
+
+        chart.selectAll('text')
+            .data(graph.nodes)
+            .enter()
+            .append('text')
+            .attr('x', d => (d.x1 + d.x0)/2)
+            .attr('y', d => (d.y1 + d.y0)/2 + 1)
+            .attr("transform", function(d) {
+                if(d.y1 - d.y0 > 60) {
+                    return `rotate(-90,${[(d.x1 + d.x0)/2, (d.y1 + d.y0)/2 + 2]})`;
+                }
+            })
+            .text(d => d.Country)
+            .style("fill", (d,i) => contrast(d3.rgb(color(i)).darker(.5)));
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 120 ? '#333' : 'lightyellow';
+    }
+</script>
+
+</body>
+</html>

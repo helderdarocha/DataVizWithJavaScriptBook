@@ -8,8 +8,8 @@
 </head>
 <body>
 <script>
-    const width = 800;
-    const height = 600;
+    const width = 700;
+    const height = 700;
     const margin = 100;
 
     const color = d3.scaleSequential(d3.interpolateBuGn);
@@ -47,8 +47,9 @@
             .append("rect")
             .attr('x', d => d.x)
             .attr('y', d => d.y)
-            .attr('height', d => d.h)
-            .attr('width', d => d.w)
+            .attr('height', d => d.h*.95)
+            .attr('width', d => d.w*.95)
+            .attr('rx',d => d.w/4).attr('ry', d => d.h/4)
             .attr('stroke', 'black')
             .attr('fill', d => d.weight ? color(d.weight) : 'white');
 

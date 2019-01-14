@@ -13,7 +13,7 @@
             fill: white;
         }
         button,p {
-            font-size: 14pt;
+            font-size: 12pt;
         }
         .container {
             position: absolute;
@@ -30,24 +30,43 @@
             position: absolute;
             left: 220px;
         }
+        span {
+            font-size: 10pt;
+        }
+        line {
+            opacity: 0;
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="form"><form>
+        <p>Current alpha: <span id="alpha">0.0000</span>
+        <br>alphaMin: <span id="alphaMin">0.0000</span><br>
+            <input id="c_alphaMin"      type='range' min='1' max='1000' value="10">
+        <br>alphaTarget: <span id="alphaTarget">0.0000</span><br>
+            <input id="c_alphaTarget"   type='range' min='0' max='1000' value="0">
+        <br>alphaDecay: <span id="alphaDecay">0.0000</span><br>
+            <input id="c_alphaDecay"    type='range' min='1' max='1000' value="22.76277904418933">
+        <br>velocityDecay: <span id="velocityDecay">0.0000</span><br>
+            <input id="c_velocityDecay" type='range' min='1' max='1000' value="400">
+        <p>Forces:<br>
+            <input type="checkbox" id="ck_manybody"> ManyBody
+             <input type="number" id="inout" value="-30"><br>
+            <input type="checkbox" id="ck_collide"> Collide<br>
+            <input type="checkbox" id="ck_link"> Link<br>
+            <input type="checkbox" id="ck_center"> Center
+             <input type="number" value="0" min="-1" max="1" id="cx">
+             ,<input type="number" value="0" min="-1" max="1" id="cy"><br>
+            <input type="checkbox" id="ck_x"> X
+             <input type="number" value="0" min="-1" max="1" id="x"><br>
+            <input type="checkbox" id="ck_y"> Y
+             <input type="number" value="0" min="-1" max="1" id="y">
+        </p>
+        <p><input type="checkbox" id="show_lines">Show link lines</p>
         <p><button id="restart" type="button" style="background: hsl(100,100%,80%)">restart()</button>
-           <button id="stop" type="button" style="background: hsl(0,100%,80%)">stop()</button>
-           <button id="tick" type="button" style="background: hsl(240,100%,90%)">tick()</button></p>
-
-        <p>Current alpha: <span id="alpha">0.0000</span></p>
-        <p>alphaMin: <span id="alphaMin">0.0000</span><br>
-            <input id="c_alphaMin"      type='range' min='1' max='1000' value="10"></p>
-        <p>alphaTarget: <span id="alphaTarget">0.0000</span><br>
-            <input id="c_alphaTarget"   type='range' min='0' max='1000' value="0"></p>
-        <p>alphaDecay: <span id="alphaDecay">0.0000</span><br>
-            <input id="c_alphaDecay"    type='range' min='1' max='1000' value="22.76277904418933"></p>
-        <p>velocityDecay: <span id="velocityDecay">0.0000</span><br>
-            <input id="c_velocityDecay" type='range' min='1' max='1000' value="400"></p>
+            <button id="stop" type="button" style="background: hsl(0,100%,80%)">stop()</button>
+            <button id="tick" type="button" style="background: hsl(240,100%,90%)">tick()</button></p>
     </form></div>
     <div class="svg"></div>
 </div>
@@ -136,9 +155,33 @@
 
     draw(chart);
 
-    sim.force('center', d3.forceCenter());
-    sim.force('link', d3.forceLink(links).iterations(20));
-    sim.force('collide', d3.forceCollide(d => radius(d.value)).iterations(1));
+    d3.select('#ck_manybody').on('change', function(d,i,n) {
+        const str = d3.select("#inout").node().value;
+        sim.force('manybody', this.checked ? d3.forceManyBody().strength(str) : null);
+    });
+    d3.select('#ck_center').on('change', function(d,i,n) {
+        const cx = +d3.select("#cx").node().value * width/2;
+        const cy = +d3.select("#cy").node().value * height/2;
+        sim.force('center', this.checked ? d3.forceCenter(cx,cy) : null);
+    });
+    d3.select('#ck_x').on('change', function(d,i,n) {
+        const x = +d3.select("#x").node().value * width/2;
+        sim.force('x', this.checked ? d3.forceX().x(x) : null);
+    });
+    d3.select('#ck_y').on('change', function(d,i,n) {
+        const y = +d3.select("#y").node().value * width/2;
+        sim.force('y', this.checked ? d3.forceY().y(y) : null);
+    });
+    d3.select('#ck_link').on('change', function(d,i,n) {
+        sim.force('link', this.checked ? d3.forceLink(links) : null);
+    });
+    d3.select('#ck_collide').on('change', function(d,i,n) {
+        sim.force('collide', this.checked ? d3.forceCollide(d => radius(d.value)) : null);
+    });
+
+    d3.select('#show_lines').on('change', function(d,i,n) {
+        this.checked ? d3.selectAll("line").style('opacity',1) : d3.selectAll("line").style('opacity',0) ;
+    });
 
     d3.select('#tick').on('click', ticked);
     d3.select('#stop').on('click', stop);
@@ -164,7 +207,6 @@
     start();
 
     function ticked() {
-        sim.force('charge', null);
         redraw(chart);
         d3.select('#alpha')
                 .style('color', sim.alpha() < sim.alphaMin() ? 'red' : 'black')
@@ -201,35 +243,49 @@
     }
 
     function draw(chart) {
-        chart.selectAll('circle')
-                .data(nodes).enter()
-                .append('circle')
-                .attr('r', d => radius(d.value))
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y)
-                .attr('fill', (d,i) => d3.rgb(color(i)).darker())
+        chart.selectAll('line')
+                .data(links).enter()
+                .append('line')
+                .attr('x1', d => d.source.x)
+                .attr('x2', d => d.target.x)
+                .attr('y1', d => d.source.y)
+                .attr('y2', d => d.target.y)
+                .attr('fill', 'none')
                 .attr('stroke', 'black')
-                .attr('fill-opacity',.5)
+                .attr('stroke-width', d => d.value * d.value)
 
-        chart.selectAll('text')
+        const n = chart.selectAll('g.node')
                 .data(nodes).enter()
-                .append('text')
+                .append('g').attr("class", 'node')
+                .attr('transform', d => `translate(${[d.x, d.y]})`);
+
+        n.append('circle')
+                .attr('r', d => radius(d.value))
+                .attr('fill', (d,i) => color(i))
+                .attr('stroke', 'black')
+
+        n.append('text')
                 .text(d => d.node)
-                .attr('x', d => d.x)
-                .attr('y', d => d.y)
                 .attr('font-size', d => radius(d.value))
+                .style('fill', (d,i) => contrast(color(i)))
     }
 
     function redraw(chart) {
-        chart.selectAll('circle')
+        chart.selectAll('g.node')
                 .transition().duration(2000)
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y);
+                .attr('transform', d => `translate(${[d.x, d.y]})`);
 
-        chart.selectAll('text')
+        chart.selectAll('line')
                 .transition().duration(2000)
-                .attr('x', d => d.x)
-                .attr('y', d => d.y);
+                .attr('x1', d => d.source.x)
+                .attr('x2', d => d.target.x)
+                .attr('y1', d => d.source.y)
+                .attr('y2', d => d.target.y)
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 150 ? 'black' : 'white';
     }
 
 </script>

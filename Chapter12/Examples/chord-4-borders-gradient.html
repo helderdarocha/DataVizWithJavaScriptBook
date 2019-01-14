@@ -11,7 +11,6 @@
             text-anchor: middle;
             alignment-baseline: middle;
             fill: white;
-            font-weight: 100
         }
     </style>
 </head>
@@ -24,8 +23,10 @@
     const chart = svg.append('g').attr('transform', `translate(${[width/2 + margin/4, height/2 + margin/4]})`);
     const radius = height/2 - margin/2;
 
-    const color = d3.scaleSequential(d3.interpolateRainbow).domain([0,13]);
-
+    const colors = ['#a6cee3','#1f78b4','#b2df8a','#33a02c','#fb9a99','#e31a1c','#fdbf6f','#ff7f00','#cab2d6','#6a3d9a','#ffff99','#b15928','#ffed6f'];
+    function color(index) {
+        return colors[index];
+    }
     // Using gradient ribbons - see tutorial:
     // https://www.visualcinnamon.com/2016/06/orientation-gradient-d3-chord-diagram.html
 
@@ -172,7 +173,13 @@
                 .attr('x', d => arc.centroid(d)[0])
                 .attr('y', d => arc.centroid(d)[1])
                 .text(d => headers[d.index])
+                .style("fill", d => contrast(color(d.index)))
                 .attr('transform',d => `rotate(${(arc.endAngle()(d) + arc.startAngle()(d))*90/Math.PI},${arc.centroid(d)})`);
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 150 ? 'black' : 'white';
     }
 </script>
 

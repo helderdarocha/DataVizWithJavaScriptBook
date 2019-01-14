@@ -64,6 +64,7 @@ const dvj = {
                     }
                 });
             });
+
             return matrix;
         }
 

@@ -33,11 +33,7 @@
         data.links.forEach(function(link) {
             const nodeKeys = data.nodes.map(n => n.station+':'+n.line);
             link.source = nodeKeys.indexOf(link.source+":"+link.lines[0]);
-            if(link.lines.length == 1) { // same line
-                link.target = nodeKeys.indexOf(link.target+":"+link.lines[0]);
-            } else { // length == 2 - different line
-                link.target = nodeKeys.indexOf(link.target+":"+link.lines[1]);
-            }
+            link.target = nodeKeys.indexOf(link.target+":"+link.lines[1]);
         });
 
         const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
@@ -47,8 +43,8 @@
         sim.force('center', d3.forceCenter())
         sim.force('link', d3.forceLink(data.links)
                             .iterations(15)
-                            .distance(d => d.lines.length == 2 ? 0 : 2)
-                            .strength(d => d.lines.length == 2 ? 2 : .1));
+                            .distance(d => d.lines[0] != d.lines[1] ? 0 : 2)
+                            .strength(d => d.lines[0] != d.lines[1] ? 2 : .1));
         sim.force('x', d3.forceX()
                          .x(d => xScale(d.line) * width)
                          .strength(d => xStrength(d.line)));
@@ -77,8 +73,8 @@
                 .attr('y1', d => d.source.y)
                 .attr('y2', d => d.target.y)
                 .attr('fill', 'none')
-                .attr('stroke', d => d.lines.length == 1 ? colorScale(d.lines[0]) : 'black')
-                .attr('stroke-width', d => d.lines.length * 8)
+                .attr('stroke', d => d.lines[0] == d.lines[1] ? colorScale(d.lines[0]) : 'black')
+                .attr('stroke-width', d => d.lines[0] != d.lines[1] ? 12 : 4)
 
         chart.selectAll('circle')
                 .data(data.nodes).enter()

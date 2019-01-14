@@ -24,14 +24,14 @@
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
     const nodes = [
-        {label: 'A'},
-        {label: 'B'},
-        {label: 'C'},
-        {label: 'D'},
-        {label: 'E'},
-        {label: 'F'},
-        {label: 'G'},
-        {label: 'H'}
+        {node: 'A', value: 123}, // value not used in this example
+        {node: 'B', value: 456},
+        {node: 'C', value: 995},
+        {node: 'D', value: 65},
+        {node: 'E', value: 79},
+        {node: 'F', value: 23},
+        {node: 'G', value: 178},
+        {node: 'H', value: 0},
     ];
 
     // one-way (no cycles): use target > source
@@ -58,6 +58,7 @@
     const sankey = d3.sankey()
                      .nodePadding(300)
                      .extent([[margin/2, margin/2], [width-margin, height-margin]])
+                     .nodeAlign(d3.sankeyRight)
                      .iterations(100);
 
     const graph = sankey({nodes: nodes, links: links});
@@ -90,7 +91,7 @@
             .append('text')
             .attr('x', d => (d.x1 + d.x0)/2)
             .attr('y', d => (d.y1 + d.y0)/2 + 2)
-            .text(d => d.label);
+            .text(d => d.node);
 
 
 </script>

@@ -108,7 +108,13 @@
                 .attr('x', d => arc.centroid(d)[0])
                 .attr('y', d => arc.centroid(d)[1])
                 .text(d => headers[d.index])
-                .attr('transform',d => `rotate(${(arc.endAngle()(d) + arc.startAngle()(d))*90/Math.PI},${arc.centroid(d)})`);
+                .attr('transform',d => `rotate(${(arc.endAngle()(d) + arc.startAngle()(d))*90/Math.PI},${arc.centroid(d)})`)
+                .style("fill", d => contrast(color(d.index)));
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 150 ? 'black' : 'white';
     }
 </script>
 
