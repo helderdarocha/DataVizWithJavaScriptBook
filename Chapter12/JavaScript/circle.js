@@ -1,31 +1,5 @@
 const dvj = {
 
-    /**
-     * Arc diagram layout generator function
-     * Default size is 1x1
-     *
-     * To create a layout function in a 800x600 view space:
-     *
-     * const arcDiagLayout = dvj.arcDiagram()
-     *                          .width(800);
-     *
-     * To generate an array of arc-positioned objects:
-     *
-     * const layout = arcDiagLayout(node, edges);
-     *
-     * Where nodes and edges have the following minimum structure:
-     *
-     * nodes: [{node: obj1}, {node: obj2}, ...]
-     * edges: [{source: obj1, target: obj2}, ...]
-     *
-     * Results:
-     *
-     * layout.points(): adds x coordinate for each node
-     * layout.curves(): replaces references for links to source and target for each edge
-     *
-     * @returns layout function
-     */
-
     circleDiagram: function() {
         let w = 1;
         let h = 1;

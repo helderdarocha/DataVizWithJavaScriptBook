@@ -48,7 +48,7 @@
         const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2]})`);
 
         chart.selectAll('rect')
-                .data(data.filter(d => d.x > d.y)) // filters out lower diagonal and cells below it
+                .data(data.filter(d => d.x > d.y && d.weight))
                 .enter()
                 .append("rect")
                 .attr('x', d => d.weight ? d.x : d.x + d.w/4)
@@ -57,28 +57,52 @@
                 .attr('width', d => d.weight ? d.w : d.w / 2)
                 .attr('rx',d => d.weight ? d.w/4 : 0)
                 .attr('ry', d => d.weight ? d.h/4 : 0)
-                .attr('fill', d => d.weight ? 'black' : 'lightgray');
+                .attr('fill', d => d.weight ? 'black' : '#eee');
+
+        chart.selectAll('line'.horizontal)
+            .data(data.filter(d => d.x > d.y && d.weight))
+            .enter()
+            .append("line").attr('class','horizontal')
+            .attr('x1', (d,i) => d.y + d.w)
+            .attr('y1', d => d.y + d.h/2)
+            .attr('x2', d => d.x + d.w/2)
+            .attr('y2', d => d.y + d.h/2)
+            .attr('stroke-width', d => d.w/2)
+            .attr('stroke-opacity', .3)
+            .attr('stroke', 'black');
+
+        chart.selectAll('line'.vertical)
+            .data(data.filter(d => d.x > d.y && d.weight))
+            .enter()
+            .append("line").attr('class','vertical')
+            .attr('x1', d => d.x + d.w/2)
+            .attr('y1', (d,i) => 0)
+            .attr('x2', d => d.x + d.w/2)
+            .attr('y2', d => d.y + d.h/2)
+            .attr('stroke-width', d => d.w/2)
+            .attr('stroke-opacity', .3)
+            .attr('stroke', 'black');
 
         chart.selectAll('text.source')
-                .data(data.filter(d => d.y == 0))
+                .data(data.filter(d => d.x > d.y && d.weight))
                 .enter()
                 .append("text").attr("class",'source')
                 .attr('y', d => d.x + d.w/2)
                 .style("text-anchor", 'start')
                 .attr('x', 5)
                 .attr('transform',`rotate(-90) `)
-                .text((d,i) => i>0 ? nodes[i].node : '')
-                .style('fill', (d,i) => d3.rgb(colorScale(nodes[i].node.split(':')[1])).darker(.5));
+                .text(d => d.source)
+                .style('fill', (d,i) => d3.rgb(colorScale(d.source.split(':')[1])).darker(.5));
 
         chart.selectAll('text.target')
-                .data(data.filter(d => d.x == 0))
+                .data(data.filter(d => d.x > d.y && d.weight))
                 .enter()
                 .append("text").attr("class",'target')
                 .attr('y', d => d.y + d.h/2)
                 .style("text-anchor", 'end')
-                .attr('x', (d,i) => d.w * (i+1) - 10)
-                .text((d,i) => i<nodes.length-1 ? nodes[i].node : '')
-                .style('fill', (d,i) => d3.rgb(colorScale(nodes[i].node.split(':')[1])).darker(.5));
+                .attr('x', (d,i) => d.y + d.w - 10)
+                .text(d => d.target)
+                .style('fill', (d,i) => d3.rgb(colorScale(d.target.split(':')[1])).darker(.5));
 
     }
 
