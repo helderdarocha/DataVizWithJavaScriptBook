@@ -11,6 +11,16 @@
             font-size: 10px;
             alignment-baseline: middle;
         }
+        .faded {
+            opacity: .3;
+        }
+        .highlight {
+            font-weight: bold;
+            font-size: 120%;
+        }
+        rect.highlight {
+            stroke-width: 1px;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +82,9 @@
                 .attr('width', d => d.w)
                 .attr('rx',d => d.w/4).attr('ry', d => d.h/4)
                 .attr('stroke', 'black').attr('stroke-width', 0.1)
-                .attr('fill', d => d.weight ? color(d.weight) : 'white');
+                .attr('fill', d => d.weight ? color(d.weight) : 'white')
+                .on('mouseover', highlight)
+                .on('mouseout', d => d3.selectAll("rect, text").classed('faded highlight', false));
 
         chart.selectAll('text.source')
                 .data(data.filter(d => d.y == 0))
@@ -82,7 +94,9 @@
                 .style("text-anchor", 'start')
                 .attr('x', 5)
                 .attr('transform',`rotate(-90) `)
-                .text((d,i) => nodes[i].node);
+                .text((d,i) => nodes[i].node)
+                .on('mouseover', highlight)
+                .on('mouseout', d => d3.selectAll("rect, text").classed('faded highlight', false));
         chart.append('text')
                 .style("text-anchor", 'middle')
                 .attr('transform',`rotate(-90,${[0,height/2 - margin/2]}) translate(${[0, height/2 - margin/2 - 75]})`)
@@ -96,13 +110,22 @@
                 .attr('y', d => d.y + d.h/2)
                 .style("text-anchor", 'end')
                 .attr('x', -10)
-                .text((d,i) => nodes[i].node);
+                .text((d,i) => nodes[i].node)
+                .on('mouseover', highlight)
+                .on('mouseout', d => d3.selectAll("rect, text").classed('faded highlight', false));
         chart.append('text')
                 .style("text-anchor", 'middle')
                 .attr('transform',`translate(${[width/2 - margin/2, -75]})`)
                 .style('font-size', 24)
                 .text('TO');
 
+    }
+
+    function highlight(d) {
+        d3.selectAll("rect").classed('faded', k => !(k.x == d.x || k.y == d.y))
+        d3.selectAll("rect").classed('highlight', k => k.x == d.x || k.y == d.y)
+        d3.selectAll("text.source").classed('highlight', k => k.x == d.x)
+        d3.selectAll("text.target").classed('highlight', k => k.y == d.y)
     }
 </script>
 </body>

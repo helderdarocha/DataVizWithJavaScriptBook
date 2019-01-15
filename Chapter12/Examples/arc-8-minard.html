@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/arc.js"></script>
+    <script src="../JavaScript/dvj-all.js"></script>
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -12,6 +12,13 @@
             alignment-baseline: middle;
             text-anchor: middle;
             fill: 'black';
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .3;
+        }
+        .active {
+            opacity: 1;
         }
     </style>
 </head>
@@ -39,20 +46,20 @@
 
         rows.forEach(function(row) {
             const obj = {
-                weight: +row.survivors,
+                value: +row.survivors,
                 direction: +row.direction,
                 target: row.to,
                 source: row.from
             }
             edges.push(obj);
         });
-        edges.push({weight: 10000, direction: -1, target: 'Kovno', source: 'W18'});
+        edges.push({value: 10000, direction: -1, target: 'Kovno', source: 'W18'});
 
         const arcDiagLayout = dvj.arcDiagram().width(width-margin);
         const arcData = arcDiagLayout(nodes, edges);
 
         color.domain([0,edges.length]);
-        widthScale.domain([0, d3.max(edges, d => d.weight)]);
+        widthScale.domain([0, d3.max(edges, d => d.value)]);
 
         console.log(arcData.points(), arcData.curves())
 
@@ -71,7 +78,7 @@
                 .enter()
                 .append('path')
                 .attr('d', curve)
-                .attr('stroke-width', d => widthScale(d.weight))
+                .attr('stroke-width', d => widthScale(d.value))
                 .attr('stroke', (d,i) => d.direction > 0 ? "#c97b20" : "#252523")
                 .attr('stroke-opacity', .3)
                 .attr('fill', 'none');
@@ -87,11 +94,13 @@
                    const target = data.curves().filter(k => k.target.node == d.node)[0];
                    const source = data.curves().filter(k => k.source.node == d.node)[0];
                    if(target && source) {
-                       return .5 * widthScale(d3.max([target.weight, source.weight]));
+                       return .5 * widthScale(d3.max([target.value, source.value]));
                    }
-                   if(target) return .5 * widthScale(target.weight);
-                   else return .5 * widthScale(source.weight);
-                });
+                   if(target) return .5 * widthScale(target.value);
+                   else return .5 * widthScale(source.value);
+                })
+                .on('mouseover', highlight)
+                .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
 
         chart.selectAll('text.location')
                 .data(data.points())
@@ -106,10 +115,18 @@
                 .enter()
                 .append('text').attr('class','value')
                 .attr('x', d => 0.5 * (d.source.x + d.target.x))
-                .attr('y', d => 1.25 * (d.source.x - d.target.x) - d.direction * (10 + widthScale(d.weight/2)))
+                .attr('y', d => 1.25 * (d.source.x - d.target.x) - d.direction * (10 + widthScale(d.value/2)))
                 .style('font-size', 18)
                 .style('fill', '#555')
-                .text(d => d.weight);
+                .text(d => d.value);
+    }
+
+    function highlight(d) {
+        d3.selectAll("path")
+                .classed('faded', s => !(s.source === d || s.target === d))
+        d3.selectAll("circle")
+                .classed('faded', n => !(n === d  || n.sources.filter(s => s.target === d).length > 0
+        || n.targets.filter(s => s.source === d).length > 0));
     }
 
 </script>

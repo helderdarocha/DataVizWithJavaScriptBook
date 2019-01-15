@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/arc.js"></script>
+    <script src="../JavaScript/dvj-all.js"></script>
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -12,6 +12,13 @@
             alignment-baseline: middle;
             text-anchor: middle;
             fill: white;
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .3;
+        }
+        .active {
+            opacity: 1;
         }
     </style>
 </head>
@@ -35,7 +42,7 @@
             if(key != 'Population' && key != 'Destination' && key != 'Total' && key != 'Code') {
                 if(isNaN(row[key])) continue;
                 const obj = {
-                    weight: +row[key] ,
+                    value: +row[key] ,
                     target: row.Destination,
                     source: key
                 }
@@ -57,7 +64,7 @@
         const arcData = arcDiagLayout(filteredNodes, filteredEdges);
 
         color.domain([0,filteredNodes.length]);
-        widthScale.domain([0, d3.max(filteredEdges, d => d.weight)]);
+        widthScale.domain([0, d3.max(filteredEdges, d => d.value)]);
         popScale.domain([0, d3.max(filteredNodes, d => d.pop)]);
 
         draw(arcData);
@@ -76,9 +83,9 @@
                 .enter()
                 .append('path')
                 .attr('d', curve)
-                .attr('stroke-width', d => widthScale(d.weight))
+                .attr('stroke-width', d => widthScale(d.value))
                 .attr('stroke', d => color(d.source.i))
-                .attr('stroke-opacity', .3)
+                .attr('stroke-opacity', .6)
                 .attr('fill', 'none');
 
         chart.selectAll('circle')
@@ -87,7 +94,9 @@
                 .append('circle')
                 .attr('cx', d => d.x)
                 .attr('fill', (d,i) => d3.rgb(color(i)).darker(.5))
-                .attr('r', d => popScale(d.pop));
+                .attr('r', d => popScale(d.pop))
+    .on('mouseover', highlight)
+                .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
 
         chart.selectAll('text')
                 .data(data.points())
@@ -96,6 +105,14 @@
                 .attr('x', d => d.x)
                 .style('font-size',d => popScale(d.pop))
                 .text(d => d.code);
+    }
+
+    function highlight(d) {
+        d3.selectAll("path")
+                .classed('faded', s => !(s.source === d || s.target === d))
+        d3.selectAll("circle")
+                .classed('faded', n => !(n === d  || n.sources.filter(s => s.target === d).filter(k => k.value > 1000).length > 0
+        || n.targets.filter(s => s.source === d).filter(k => k.value > 1000).length > 0));
     }
 
 </script>

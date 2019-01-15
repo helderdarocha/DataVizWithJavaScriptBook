@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/arc.js"></script>
+    <script src="../JavaScript/dvj-all.js"></script>
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -32,20 +32,20 @@
     ];
 
     const edges = [
-        {source: 'A', target: 'B', weight: 16},
-        {source: 'A', target: 'C', weight: 2},
-        {source: 'B', target: 'A', weight: 8},
-        {source: 'B', target: 'C', weight: 4},
-        {source: 'C', target: 'B', weight: 1},
-        {source: 'D', target: 'B', weight: 1},
-        {source: 'D', target: 'E', weight: 1}
+        {source: 'A', target: 'B', value: 16},
+        {source: 'A', target: 'C', value: 2},
+        {source: 'B', target: 'A', value: 8},
+        {source: 'B', target: 'C', value: 4},
+        {source: 'C', target: 'B', value: 1},
+        {source: 'D', target: 'B', value: 1},
+        {source: 'D', target: 'E', value: 1}
     ];
 
     const arcDiagLayout = dvj.arcDiagram().width(width-margin);
 
     const data = arcDiagLayout(nodes, edges);
 
-    color.domain([0, d3.max(edges, d => d.weight)]);
+    color.domain([0, d3.max(edges, d => d.value)]);
 
     const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
     const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2 + height/2]})`);
@@ -54,14 +54,14 @@
 
     const widthScale = d3.scaleLinear()
             .range([2,10])
-            .domain([0, d3.max(edges, d => d.weight)]);
+            .domain([0, d3.max(edges, d => d.value)]);
 
     chart.selectAll('path')
             .data(data.curves())
             .enter()
             .append('path')
             .attr('d', curve)
-            .attr('stroke-width', d => widthScale(d.weight))
+            .attr('stroke-width', d => widthScale(d.value))
             .attr('stroke', d => color(d.source.i))
             .attr('stroke-opacity', .3)
             .attr('fill', 'none');

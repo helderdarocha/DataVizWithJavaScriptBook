@@ -12,6 +12,22 @@
             alignment-baseline: middle;
             text-anchor: middle;
         }
+        .faded {
+            opacity: .3;
+        }
+        .highlight {
+            font-weight: bold;
+            font-size: 150%;
+        }
+        .highlight rect {
+            stroke-width: 1px;
+        }
+        text.node {
+            pointer-events: none;
+        }
+        .tooltip text {
+            font-size: 150%;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +38,7 @@
 
     const color = d3.scaleSqrt().range(['lightyellow','red']);
 
-    const format = d3.format(',');
+    const format = d3.format(',.2f');
 
     const nodes = [];
 
@@ -34,7 +50,7 @@
             if(key != 'Population' && key != 'Destination' && key != 'Total' && key != 'Code') {
                 if(isNaN(row[key])) continue;
                 const obj = {
-                    weight: +row[key] ,
+                    value: +row[key] ,
                     source: row.Destination,
                     target: key
                 }
@@ -56,7 +72,7 @@
         const matrixLayout = dvj.adjacencyMatrix().size([width-margin,height-margin]);
         const matrix = matrixLayout(filteredNodes, filteredEdges);
 
-        color.domain([0,d3.max(edges, d => d.weight)]);
+        color.domain([0,d3.max(edges, d => d.value)]);
 
         draw(filteredNodes, matrix);
     });
@@ -66,17 +82,20 @@
         const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
         const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2]})`);
 
-        chart.selectAll('rect')
+        const cell = chart.selectAll('g.cell')
                 .data(data)
                 .enter()
-                .append("rect")
-                .attr('x', d => d.x)
-                .attr('y', d => d.y)
+                .append("g").attr('class', 'cell')
+                .attr('transform', d => `translate(${[d.x, d.y]})`)
+                .on('mouseover', highlight)
+                .on('mouseout', unHighlight);
+
+        cell.append("rect")
                 .attr('height', d => d.h)
                 .attr('width', d => d.w)
                 .attr('rx',d => d.w/4).attr('ry', d => d.h/4)
                 .attr('stroke', 'black').attr('stroke-width', 0.2)
-                .attr('fill', d => d.weight ? color(d.weight) : 'white');
+                .attr('fill', d => d.value ? color(d.value) : 'white')
 
         chart.selectAll('text.node')
                 .data(data)
@@ -84,8 +103,11 @@
                 .append("text").attr("class",'node')
                 .attr('y', d => d.h/2 + d.y)
                 .attr('x', d => d.w/2 + d.x)
-                .text((d,i) => Math.sqrt(data.length) <= 20 ? format(d.weight) : '')
-                .style('fill', d => contrast(color(d.weight)));
+                .text((d,i) => Math.sqrt(data.length) <= 20 ? format(d.value) : '')
+                .style('fill', d => contrast(color(d.value)))
+                .on('mouseover', highlight)
+                .on('mouseout', unHighlight);
+
 
         chart.selectAll('text.source')
                 .data(data.filter(d => d.y == 0))
@@ -95,7 +117,10 @@
                 .style("text-anchor", 'start')
                 .attr('x', 5)
                 .attr('transform',`rotate(-90) `)
-                .text((d,i) => nodes[i].node);
+                .text((d,i) => nodes[i].node)
+                .on('mouseover', highlight)
+                .on('mouseout', unHighlight);
+
         chart.append('text')
                 .style("text-anchor", 'middle')
                 .attr('transform',`rotate(-90,${[0,height/2 - margin/2]}) translate(${[0, height/2 - margin/2 - 100]})`)
@@ -109,18 +134,62 @@
                 .attr('y', d => d.y + d.h/2)
                 .style("text-anchor", 'end')
                 .attr('x', -10)
-                .text((d,i) => nodes[i].node);
+                .text((d,i) => nodes[i].node)
+                .on('mouseover', highlight)
+                .on('mouseout', unHighlight);
+
         chart.append('text')
                 .style("text-anchor", 'middle')
                 .attr('transform',`translate(${[width/2 - margin/2, -100]})`)
                 .style('font-size', 24)
                 .text('LIVING IN');
 
+        const tooltip = chart.append('g')
+                .attr('class','tooltip')
+                .attr('opacity', 0)
+                .style('pointer-events', 'none')
+
+        tooltip.append('rect')
+                .attr('fill', 'white')
+                .attr('stroke', 'black')
+        tooltip.append('text')
+                .style('alignment-baseline', 'middle')
+                .style('text-anchor', 'middle')
+
     }
 
     function contrast(color) {
         const c = d3.rgb(color);
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 120 ? '#333' : 'lightyellow';
+    }
+
+    function unHighlight(d,i,nodes) {
+        d3.selectAll(".cell, text.source, text.target").classed('faded highlight', false);
+        d3.select('.tooltip').attr('opacity', 0);
+    }
+
+    function highlight(d) {
+        d3.selectAll(".cell").classed('faded', k => !(k.x == d.x || k.y == d.y))
+        d3.selectAll(".cell").classed('highlight', k => k.x == d.x || k.y == d.y)
+        d3.selectAll("text.source").classed('highlight', k => k.x == d.x)
+        d3.selectAll("text.target").classed('highlight', k => k.y == d.y)
+
+        d3.select('.tooltip').select('text')
+                .attr('x', d.w * .75)
+                .attr('y', d.h * .75)
+                .text(d.value ? format(d.value/1000000) : 0);
+
+        d3.select('.tooltip')
+                .attr('transform', `translate(${[d.x -d.w/4, d.y -d.h/4]})`)
+                .attr('opacity', 1)
+
+                .select('rect')
+                .attr('stroke-width', 3)
+                .attr('rx', d.w/4)
+                .attr('ry', d.h/4)
+                .attr('fill', d.value ? color(d.value) : 'white')
+                .attr('width', 1.5 * d.w)
+                .attr('height', 1.5 * d.w)
     }
 </script>
 </body>

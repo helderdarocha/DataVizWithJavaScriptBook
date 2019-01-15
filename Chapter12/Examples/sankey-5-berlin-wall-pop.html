@@ -12,13 +12,17 @@
             alignment-baseline: middle;
             text-anchor: middle;
             fill: black;
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .2;
         }
     </style>
 </head>
 <body>
 <script>
-    const width = 2000;
-    const height = 700;
+    const width = 1000;
+    const height = 1000;
     const margin = 100;
 
     const color = d3.scaleOrdinal(d3.schemeCategory10);
@@ -26,30 +30,32 @@
     const links = [];
 
     d3.csv("../Data/EuropeUSSR_1990_2010_nodes.csv", function(row) {
-        if (row.Containers.length > 0 && row.Id != 'WB' && row.Id != 'DDR' && row.Id != 'FRG') {
-            const groups = row.Containers.split('|');
-            groups.forEach(function (group) {
-                if(group != 'WSP' && group != 'EEC' && group != 'SUN' && group != 'YUG' && group != 'CSK' && group != 'SRB+KOS' && group != 'SCG') {
-                    const link = {}
-                    if (group == 'DEU' || group.indexOf('EU') == 0) { // join
-                        link.target = group;
-                        link.source = row.Id;
-                    } else { // split
-                        link.target = row.Id;
-                        link.source = group;
+        if(+row.State == 1) {
+            if (row.Containers.length > 0 && row.Id != 'WB') {
+                const groups = row.Containers.split('|');
+                groups.forEach(function (group) {
+                    if(group.length != 4 && group != 'WSP' && group != 'EEC') {
+                        const link = {}
+                        if (group == 'DEU') { // join
+                            link.target = group;
+                            link.source = row.Id;
+                        } else { // split
+                            link.target = row.Id;
+                            link.source = group;
+                        }
+                        link.value = Math.sqrt(+row.Area);
+                        links.push(link);
                     }
-                    link.value = +row.Area;
-                    links.push(link);
-                }
-            });
-        } else if (+row.Unit == 1) {
-            return undefined;
+                });
+            } else if (+row.Unit == 1) {
+                return undefined;
+            }
+            row.Area = +row.Area;
+            return row;
         }
-        row.Area = +row.Area;
-        return row;
     }).then(function(rows) {
         const linked = d3.merge([links.map(k => k.source),links.map(k => k.target)]);
-        nodes = rows.filter(n => linked.indexOf(n.Id) >= 0);
+        nodes = rows.filter(n => +n.State == 1 && linked.indexOf(n.Id) >= 0);
 
         links.forEach(function(link) {
             link.source = nodes.map(n => n.Id).indexOf(link.source);
@@ -59,20 +65,32 @@
         color.domain([0, nodes.length]);
 
         const sankey = d3.sankey()
-                .nodePadding(20)
+                .nodePadding(10)
                 .nodeWidth(110)
                 .extent([[margin/2, margin/2], [width-margin, height-margin]])
-                .nodeAlign(d3.sankeyCenter)
+                .nodeAlign(d3.sankeyJustify)
                 .iterations(500);
 
-        const graph = sankey({nodes: Object.assign([],nodes), links: Object.assign([],links)});
+        const graph = sankey({nodes: nodes, links: links});
         console.log(graph);
 
         const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
 
         draw(graph, svg);
 
+        drawFade(svg);
     });
+
+    function drawFade(svg) {
+        for(let i = 0; i < 30; i++) {
+            svg.append('rect')
+                    .attr('y', margin/2 + i*i/15)
+                    .attr("width", width)
+                    .attr("height", (1 - i/30) * 8)
+                    .attr("fill", 'white');
+        }
+
+    }
 
     function draw(graph, svg) {
         const chart = svg.append("g");
@@ -82,10 +100,12 @@
                 .enter()
                 .append('path')
                 .attr('d', d3.sankeyLinkHorizontal())
-                .attr("opacity", .3)
+                .attr("stroke-opacity", .4)
                 .attr('stroke-width', d => d.width)
-    .attr('stroke', d => d.target.Id == 'DEU' || d.target.Id.indexOf('EU') == 0 ? color(d.source.index) : color(d.target.index))
-    .attr('fill', 'none');
+                .attr('stroke', d => d.target.Id == 'DEU' ? color(d.source.index) : color(d.target.index))
+                .attr('fill', 'none')
+                .on('mouseover', highlightPath)
+                .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
 
         chart.selectAll('rect')
             .data(graph.nodes)
@@ -107,7 +127,9 @@
             })
             .attr('rx', d => d.y1 - d.y0 < 4?10:0).attr('ry', d => d.y1 - d.y0 < 4?5:0)
             .attr('fill', (d,i) => d3.rgb(color(i)).darker(.5))
-            .style('opacity', .8);
+            .style('fill-opacity', .8)
+            .on('mouseover', highlightNode)
+            .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
 
         chart.selectAll('text')
             .data(graph.nodes)
@@ -129,6 +151,17 @@
     function contrast(color) {
         const c = d3.rgb(color);
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 130 ? 'black' : 'white';
+    }
+
+    function highlightNode(node) {
+        console.log(node)
+        d3.selectAll("rect, text").classed('faded', d => !(d === node));
+        d3.selectAll("path").classed('faded', edge => !(edge.source === node || edge.target == node));
+    }
+    function highlightPath(edge) {
+        console.log(edge)
+        d3.selectAll("rect, text").classed('faded', node => !(node === edge.source || node === edge.target))
+        d3.selectAll("path").classed('faded', d => !(d === edge));
     }
 </script>
 

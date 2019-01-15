@@ -12,6 +12,10 @@
             alignment-baseline: middle;
             text-anchor: middle;
             fill: black;
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .2;
         }
     </style>
 </head>
@@ -94,10 +98,12 @@
             .enter()
             .append('path')
             .attr('d', d3.sankeyLinkHorizontal())
-            .attr("opacity", .3)
+            .attr("stroke-opacity", .5)
             .attr('stroke-width', d => d.width)
             .attr('stroke', d => d.target.Id.indexOf('EU') == 0 || d.target.Id == 'DEU' ? color(d.source.index) : color(d.target.index))
-            .attr('fill', 'none');
+            .attr('fill', 'none')
+            .on('mouseover', highlightPath)
+            .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
 
         chart.selectAll('rect')
             .data(graph.nodes)
@@ -119,7 +125,9 @@
             })
             .attr('rx', d => d.y1 - d.y0 < 4?10:0).attr('ry', d => d.y1 - d.y0 < 4?5:0)
             .attr('fill', (d,i) => d3.rgb(color(i)).darker(.5))
-            .style('opacity', .6);
+            .style('fill-opacity', .6)
+            .on('mouseover', highlightNode)
+            .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
 
         chart.selectAll('text')
             .data(graph.nodes)
@@ -139,6 +147,17 @@
     function contrast(color) {
         const c = d3.rgb(color);
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 120 ? '#333' : 'lightyellow';
+    }
+
+    function highlightNode(node) {
+        console.log(node)
+        d3.selectAll("rect, text").classed('faded', d => !(d === node));
+        d3.selectAll("path").classed('faded', edge => !(edge.source === node || edge.target == node));
+    }
+    function highlightPath(edge) {
+        console.log(edge)
+        d3.selectAll("rect, text").classed('faded', node => !(node === edge.source || node === edge.target))
+        d3.selectAll("path").classed('faded', d => !(d === edge));
     }
 </script>
 

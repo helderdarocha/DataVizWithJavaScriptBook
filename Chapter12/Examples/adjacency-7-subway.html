@@ -86,6 +86,13 @@
         const c = d3.rgb(color);
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 120 ? '#333' : 'lightyellow';
     }
+
+    function highlight(d) {
+        d3.selectAll("rect").classed('faded', k => !(k.x == d.x || k.y == d.y))
+        d3.selectAll("rect").classed('highlight', k => k.x == d.x || k.y == d.y)
+        d3.selectAll("text.source").classed('highlight', k => k.x == d.x)
+        d3.selectAll("text.target").classed('highlight', k => k.y == d.y)
+    }
 </script>
 </body>
 </html>

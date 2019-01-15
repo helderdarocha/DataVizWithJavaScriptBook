@@ -51,12 +51,48 @@
         {node: 'Y', value: 20},
         {node: 'Z', value: 1},
     ];
+    
+    const links = [
+        {source: 0, target: 4, value: 3},
+        {source: 4, target: 8, value: 3},
+        {source: 8, target: 14, value: 3},
+        {source: 14, target: 20, value: 3},
+        {source: 0, target: 1, value: 1},
+        {source: 1, target: 2, value: 1},
+        {source: 2, target: 3, value: 1},
+        {source: 3, target: 4, value: 1},
+        {source: 4, target: 5, value: 1},
+        {source: 5, target: 6, value: 1},
+        {source: 6, target: 7, value: 1},
+        {source: 7, target: 8, value: 1},
+        {source: 8, target: 9, value: 1},
+        {source: 9, target: 10, value: 1},
+        {source: 10, target: 11, value: 1},
+        {source: 11, target: 12, value: 1},
+        {source: 12, target: 13, value: 1},
+        {source: 13, target: 14, value: 1},
+        {source: 14, target: 15, value: 1},
+        {source: 15, target: 16, value: 1},
+        {source: 16, target: 17, value: 1},
+        {source: 17, target: 18, value: 1},
+        {source: 18, target: 19, value: 1},
+        {source: 19, target: 20, value: 1},
+        {source: 20, target: 21, value: 1},
+        {source: 21, target: 22, value: 1},
+        {source: 22, target: 23, value: 1},
+        {source: 23, target: 24, value: 1},
+        {source: 24, target: 25, value: 1},
+        {source: 16, target: 15, value: 2},
+        {source: 17, target: 16, value: 2},
+        {source: 18, target: 17, value: 2},
+        {source: 19, target: 18, value: 2}
+    ];
 
     color.domain([0,nodes.length]);
 
     const sim = d3.forceSimulation(nodes);
 
-    sim.force('center', d3.forceCenter(200,200));
+    sim.force('center', d3.forceCenter());
 
     console.log(sim.nodes());
 
@@ -65,7 +101,10 @@
 
     draw(chart);
 
-    for(let i = 0; i < 45; i++) {
+    sim.force('link', d3.forceLink(links).iterations(15));
+    sim.force('collide', d3.forceCollide(30).iterations(10));
+
+    for(let i = 0; i < 10; i++) {
         sim.tick();
         redraw(chart);
     }
@@ -73,15 +112,25 @@
     sim.stop();
 
     function draw(chart) {
+        chart.selectAll('line')
+                .data(links).enter()
+                .append('line')
+                .attr('x1', d => d.source.x)
+                .attr('x2', d => d.target.x)
+                .attr('y1', d => d.source.y)
+                .attr('y2', d => d.target.y)
+                .attr('fill', 'none')
+                .attr('stroke', 'black')
+                .attr('stroke-width', d => d.value * d.value)
+
         chart.selectAll('circle')
                 .data(nodes).enter()
                 .append('circle')
                 .attr('r', 15)
                 .attr('cx', d => d.x)
                 .attr('cy', d => d.y)
-                .attr('fill', (d,i) => d3.rgb(color(i)).darker())
+                .attr('fill', (d,i) => color(i))
                 .attr('stroke', 'black')
-                .attr('fill-opacity',.5)
 
         chart.selectAll('text')
                 .data(nodes).enter()
@@ -101,6 +150,13 @@
                 .transition().duration(2000)
                 .attr('x', d => d.x)
                 .attr('y', d => d.y);
+
+        chart.selectAll('line')
+                .transition().duration(2000)
+                .attr('x1', d => d.source.x)
+                .attr('x2', d => d.target.x)
+                .attr('y1', d => d.source.y)
+                .attr('y2', d => d.target.y)
     }
 
 </script>

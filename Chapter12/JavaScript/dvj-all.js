@@ -126,11 +126,24 @@ dvj.arcDiagram = function() {
             .map(nodes);
 
         edges.forEach(function(edge, j) {
-            edge.source = groups.get(edge.source);
-            edge.target = groups.get(edge.target);
-            if(edge.source && edge.target && edge.weight > 0) {
-                curves.push(edge);
+            if(isNaN(edge.source)) {
+                edge.source = groups.get(edge.source);
+                edge.target = groups.get(edge.target);
+                if(edge.source && edge.target && edge.value > 0) {
+                    curves.push(edge);
+                }
+            } else {
+                edge.source = nodes[edge.source];
+                edge.target = nodes[edge.target];
+                if(edge.source && edge.target && edge.value > 0) {
+                    curves.push(edge);
+                }
             }
+        });
+
+        points.forEach(function(node, i) {
+            node.sources = edges.filter(edge => edge.source == node);
+            node.targets = edges.filter(edge => edge.target == node);
         });
 
         return {points: () => points, curves: () => curves};
@@ -199,11 +212,24 @@ dvj.circleDiagram = function() {
             .map(nodes);
 
         edges.forEach(function(edge, j) {
-            edge.source = groups.get(edge.source);
-            edge.target = groups.get(edge.target);
-            if(edge.source && edge.target && edge.weight > 0) {
-                curves.push(edge);
+            if(isNaN(edge.source)) {
+                edge.source = groups.get(edge.source);
+                edge.target = groups.get(edge.target);
+                if(edge.source && edge.target && edge.value > 0) {
+                    curves.push(edge);
+                }
+            } else {
+                edge.source = nodes[edge.source];
+                edge.target = nodes[edge.target];
+                if(edge.source && edge.target && edge.value > 0) {
+                    curves.push(edge);
+                }
             }
+        });
+
+        points.forEach(function(node, i) {
+            node.sources = edges.filter(edge => edge.source == node);
+            node.targets = edges.filter(edge => edge.target == node);
         });
 
         return {points: () => points, links: () => curves};
@@ -215,58 +241,6 @@ dvj.circleDiagram = function() {
 
     return layout;
 };
-
-dvj.xxx = function() {
-    let w = 1;
-    let h = 1;
-    let rows = d => d.x;
-    let direction = 1;
-    let offset = 0;
-    let skip = 0;
-
-    function layout(n, e) {
-
-        const nodes = n.map(a => Object.assign({}, a));
-        const edges = e.map(a => Object.assign({}, a));
-
-        const matrix = [];
-        const len = nodes.length * (skip + 1) + offset;
-
-        const groups = d3.nest()
-            .key(d => d.source)
-            .key(d => d.target)
-            .rollup(d => d[0])
-            .map(edges);
-
-        nodes.forEach(function(source, i) {
-            const t = groups.get(source.node);
-            nodes.forEach(function(target, j) {
-                const coords = {x: (skip + 1) * (i + offset) * w/len, y: (skip + 1) * (j + offset) * h/len};
-                if(t) {
-                    const value = t.get(target.node);
-                    if(value) {
-                        Object.assign(value, coords);
-                        matrix.push(value);
-                    } else {
-                        matrix.push(coords);
-                    }
-                } else {
-                    matrix.push(coords);
-                }
-            });
-        });
-
-        return matrix;
-    }
-
-    layout.rows = (func) => arguments.length ? (rows = func, layout) : rows;
-    layout.direction = (value) => arguments.length ? (direction = +value, layout) : direction;
-    layout.offset = (value) => arguments.length ? (offset = +value, layout) : offset;
-    layout.skip = (value) => arguments.length ? (skip = +value, layout) : skip;
-    layout.size = (array)  => arguments.length ? (w = +array[0], h = +array[1], layout) : [w, h];
-
-    return layout;
-}
 
 dvj.squareGrid = function() {
     let w = 1;
@@ -310,6 +284,11 @@ dvj.squareGrid = function() {
         edges.forEach(function(edge, j) {
             edge.source = groups.get(edge.source);
             edge.target = groups.get(edge.target);
+        });
+
+        nodes.forEach(function(node, i) {
+            node.sources = edges.filter(edge => edge.source == node);
+            node.targets = edges.filter(edge => edge.target == node);
         });
 
         edges.sort((a,b) => d3.ascending(a.source.node, b.source.node) || d3.ascending(a.target.node, b.target.node));

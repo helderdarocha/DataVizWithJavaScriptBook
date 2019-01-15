@@ -11,6 +11,10 @@
             text-anchor: middle;
             alignment-baseline: middle;
             fill: white;
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .2;
         }
     </style>
 </head>
@@ -117,6 +121,7 @@
         const c = d3.rgb(color);
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 150 ? 'black' : 'white';
     }
+
 </script>
 
 </body>

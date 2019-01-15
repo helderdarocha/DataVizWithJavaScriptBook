@@ -56,8 +56,7 @@
 
     const sim = d3.forceSimulation(nodes);
 
-    sim.force('charge', d3.forceManyBody());
-    sim.force('center', d3.forceCenter(200,200));
+    sim.force('manybody', d3.forceManyBody()); // default is -30 repel
 
     console.log(sim.nodes());
 

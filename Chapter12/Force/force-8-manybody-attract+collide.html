@@ -61,7 +61,7 @@
     const sim = d3.forceSimulation(nodes);
 
     const manyBody = d3.forceManyBody();
-    sim.force('charge', manyBody);
+    sim.force('manybody', manyBody);
 
     for(let i = 0; i < 45; i++) { sim.tick(); } // start separated
 
