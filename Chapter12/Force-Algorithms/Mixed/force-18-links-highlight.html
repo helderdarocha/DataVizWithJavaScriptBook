@@ -12,6 +12,13 @@
             alignment-baseline: middle;
             text-anchor: middle;
             fill: white;
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .2;
+        }
+        .highlight {
+            stroke-width: 3;
         }
     </style>
 </head>
@@ -108,6 +115,7 @@
         sim.tick();
         redraw(chart);
     }
+    console.log(links);
 
     sim.stop();
 
@@ -131,6 +139,8 @@
                 .attr('cy', d => d.y)
                 .attr('fill', (d,i) => color(i))
                 .attr('stroke', 'black')
+                .on('mouseover', highlightNode)
+                .on('mouseout', d => d3.selectAll("circle, line").classed('faded highlight', false));
 
         chart.selectAll('text')
                 .data(nodes).enter()
@@ -157,6 +167,14 @@
                 .attr('x2', d => d.target.x)
                 .attr('y1', d => d.source.y)
                 .attr('y2', d => d.target.y)
+    }
+
+    function highlightNode(node) {
+        d3.selectAll("circle").classed('highlight', d => d === node);
+        d3.selectAll("circle").classed('faded', d => !(d === node
+                                || links.filter(k => k.source == node).filter(m => m.target == d).length > 0
+                                || links.filter(k => k.target == node).filter(m => m.source == d).length > 0));
+        d3.selectAll("line").classed('faded', edge => !(edge.source === node || edge.target === node ));
     }
 
 </script>

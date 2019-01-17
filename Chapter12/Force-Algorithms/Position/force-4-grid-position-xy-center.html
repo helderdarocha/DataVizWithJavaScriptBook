@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="../../JavaScript/arc.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 14px;
+            alignment-baseline: middle;
+            text-anchor: middle;
+            fill: white;
+        }
+        svg {
+            border: solid 1px #eaeaea;
+        }
+        .margin {
+            stroke: blue;
+            opacity: .1;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 500;
+    const height = 500;
+    const margin = 100;
+
+    const cols = 3;
+
+    const nodes = [
+        {node: 'A', value: 79},
+        {node: 'B', value: 15},
+        {node: 'C', value: 24},
+        {node: 'D', value: 44},
+        {node: 'E', value: 125},
+        {node: 'F', value: 22},
+        {node: 'G', value: 20},
+        {node: 'H', value: 64},
+        {node: 'I', value: 69},
+    ];
+
+    // Diverging colors (blue is negative, red is positive)
+    const colors = ['#b2182b','#d6604d','#f4a582','#fddbc7','#f7f7f7','#d1e5f0','#92c5de','#4393c3','#2166ac'];
+
+    // Reference setup
+    const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
+    const chart = svg.append("g").attr("transform", `translate(${[width/2,height/2]})`);
+    drawReferenceBackground();
+
+
+    // SIMULATION
+    const sim = d3.forceSimulation(nodes);
+    sim.force('x', d3.forceX(50)); // center all at 50,50 (deforming shape)
+    sim.force('y', d3.forceY(50));
+    for(let i = 0; i < 100; i++) { sim.tick(); }  // ticks cause no changes
+    sim.stop();
+
+    // Results
+    drawChart();
+
+
+    // functions
+    function drawChart() {
+        chart.selectAll('g.simulation')
+                .data(nodes).enter()
+                .append('g').attr('class', "simulation")
+                .each(function(d,i) {
+                    d3.select(this)
+                            .append('circle')
+                            .attr('r', 15)
+                            .attr('cx', d.x)
+                            .attr('cy', d.y)
+                            .attr('fill', colors[i])
+                            .attr('stroke', 'black')
+                    d3.select(this)
+                            .append('text')
+                            .text(d.node)
+                            .style('fill', contrast(colors[i]))
+                            .attr('x', d.x)
+                            .attr('y', d.y)
+                });
+    }
+
+    function drawReferenceBackground() {
+
+        // draw margins
+        svg.append('line').attr("x1", margin/2).attr("y1", margin/2).attr("x2", margin/2).attr("y2", height-margin/2)
+                .attr("class", 'margin')
+        svg.append('line').attr("x1", width-margin/2).attr("y1", margin/2).attr("x2", width-margin/2).attr("y2", height-margin/2)
+                .attr("class", 'margin')
+        svg.append('line').attr("x1", margin/2).attr("y1", margin/2).attr("x2", width - margin/2).attr("y2", margin/2)
+                .attr("class", 'margin')
+        svg.append('line').attr("x1", margin/2).attr("y1", height-margin/2).attr("x2", width-margin/2).attr("y2", height-margin/2)
+                .attr("class", 'margin')
+
+        // Initial position in grid
+        const step = (width - margin) * cols / (nodes.length);
+        nodes.forEach(function(node, i) {
+            node.x = (-i % cols + (nodes.length/cols-1)/2) * step;
+            node.y = (-Math.floor(i/cols) + (nodes.length/cols-1)/2) * step;
+        });
+
+        // draw grid
+        chart.selectAll("line.v")
+                .data(nodes.filter((n,i) => Math.floor(i / 3) == 0))
+                .enter()
+                .append("line").attr('class', 'v')
+                .attr("x1", d => d.x).attr("y1", -height/2).attr("x2", d => d.x).attr("y2", height/2)
+                .attr("stroke", 'rgb(255,0,0,.3)');
+        chart.selectAll("line.h")
+                .data(nodes.filter((n,i) => i % 3 == 0))
+                .enter()
+                .append("line").attr('class', 'h')
+                .attr("x1", -width/2).attr("y1", d => d.y).attr("x2", width/2).attr("y2", d => d.y)
+                .attr("stroke", 'rgb(255,0,0,.3)')
+
+        // crossline at (50,50)
+        chart.append("line").attr('class', 'center')
+                .attr("x1", 50).attr("y1", 10).attr("x2", 50).attr("y2", 90)
+                .attr("stroke", 'green');
+        chart.append("line").attr('class', 'center')
+                .attr("x1", 10).attr("y1", 50).attr("x2", 90).attr("y2", 50)
+                .attr("stroke", 'green');
+
+        // draw reference
+        chart.selectAll('g.reference')
+                .data(nodes).enter()
+                .append('g').attr('class', "reference")
+                .each(function(d,i) {
+                    d3.select(this)
+                            .append('circle')
+                            .attr('r', 15)
+                            .attr('cx', d => d.x)
+                            .attr('cy', d => d.y)
+                            .attr('fill', '#ddd')
+                            .attr('stroke', '#999')
+                            .attr('stroke-dasharray', '2 2');
+                    d3.select(this)
+                            .append('text')
+                            .style('fill', 'gray')
+                            .text(d => d.node)
+                            .attr('x', d => d.x)
+                            .attr('y', d => d.y);
+
+                });
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 130 ? 'black' : 'white';
+    }
+
+</script>
+</body>
+</html>

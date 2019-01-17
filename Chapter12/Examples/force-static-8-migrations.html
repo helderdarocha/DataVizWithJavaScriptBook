@@ -11,7 +11,19 @@
             font-size: 12px;
             alignment-baseline: middle;
             text-anchor: middle;
-            fill: white;
+            fill: white
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .1;
+            stroke-opacity: .1
+        }
+        .highlight circle {
+            stroke-width: 3;
+        }
+        .highlight {
+            opacity: 1;
+            stroke-opacity: 1;
         }
     </style>
 </head>
@@ -56,8 +68,6 @@
             node.countries = immigrantCountries.length;
         });
 
-        console.log(nodes, links)
-
         scaleWidth.domain(d3.extent(links, d => d.value))
         scaleOpacity.domain(d3.extent(links, d => d.value))
         scaleRadius.domain(d3.extent(nodes, d => Math.sqrt(d.total)))
@@ -89,14 +99,16 @@
                 .attr('y2', d => d.target.y)
                 .attr('fill', 'none')
                 .attr('stroke', d => d3.rgb(nodeColors(d.source.index)).darker(.5))
-                .attr('opacity', d => scaleOpacity(d.value))
+                .attr('stroke-opacity', d => scaleOpacity(d.value))
                 .attr('stroke-width', d => scaleWidth(d.value))
 
         const node = chart.selectAll('g.location')
                 .data(nodes).enter()
                 .append('g')
                 .attr('class', 'location')
-                .attr("transform", d => `translate(${[d.x,d.y]})`);
+                .attr("transform", d => `translate(${[d.x,d.y]})`)
+                .on('mouseover', highlightNode)
+                .on('mouseout', d => d3.selectAll("g.location, line").classed('faded highlight', false));
 
         node.append('circle')
                 .attr('r', d => scaleRadius(Math.sqrt(d.total)))
@@ -127,7 +139,7 @@
                 .style("font-size", d => .25 * scaleRadius(Math.sqrt(d.total)));
 
         node.append('text').attr("class", "rank")
-                .text((d,i) => {console.log(i+1, d.node);return i < 15 ? ordinal(i+1) : ''})
+                .text((d,i) => i < 15 ? ordinal(i+1) : '')
                 .attr('y', d => -scaleRadius(Math.sqrt(d.total)) + 4)
                 .style('alignment-baseline', 'hanging')
                 .style('fill', (d,i) => contrast(nodeColors(i)))
@@ -146,6 +158,14 @@
         return number + (ordinalSuffixes[(value - 20) % 10] || ordinalSuffixes[value] || ordinalSuffixes[0]);
     }
 
+    function highlightNode(node) {
+        d3.selectAll(".location").classed('highlight', d => d === node);
+        d3.selectAll(".location").classed('faded', d => !(d === node
+                            || links.filter(k => k.source == node).filter(m => m.target == d).length > 0
+                            || links.filter(k => k.target == node).filter(m => m.source == d).length > 0));
+        d3.selectAll("line").classed('faded', edge => !(edge.source === node || edge.target === node ));
+        d3.selectAll("line").classed('highlight', edge => (edge.source === node || edge.target === node ));
+     }
 
 </script>
 </body>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/arc.js"></script>
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -12,6 +11,13 @@
             alignment-baseline: middle;
             text-anchor: middle;
             fill: white;
+            pointer-events: none;
+        }
+        .faded {
+            opacity: .1;
+        }
+        .highlight {
+            stroke-width: 3;
         }
     </style>
 </head>
@@ -88,7 +94,7 @@
                 .attr('y2', d => d.target.y)
                 .attr('fill', 'none')
                 .attr('stroke', d => isCoastline(d) ? 'blue' : 'black')
-                .attr('opacity', d => scaleOpacity(d.value))
+                .attr('stroke-opacity', d => scaleOpacity(d.value))
                 .attr('stroke-width', d => scaleWidth(d.value))
 
         chart.selectAll('circle')
@@ -100,6 +106,8 @@
                 .attr('fill', (d,i) => colors[i])
                 .attr('stroke', 'black')
                 .attr('stroke-width', .5)
+                .on('mouseover', highlightNode)
+                .on('mouseout', d => d3.selectAll("circle, line").classed('faded highlight', false));
 
         chart.selectAll('text')
                 .data(nodes).enter()
@@ -119,6 +127,13 @@
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 130 ? 'black' : 'white';
     }
 
+    function highlightNode(node) {
+        d3.selectAll("circle").classed('highlight', d => d === node);
+        d3.selectAll("circle").classed('faded', d => !(d === node
+                            || links.filter(k => k.source == node).filter(m => m.target == d).length > 0
+                            || links.filter(k => k.target == node).filter(m => m.source == d).length > 0));
+        d3.selectAll("line").classed('faded', edge => !(edge.source === node || edge.target === node ));
+    }
 
 </script>
 </body>
