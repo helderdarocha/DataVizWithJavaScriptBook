@@ -21,6 +21,7 @@
 
     const color = d3.scaleSequential(d3.interpolateCool);
     const radius = d3.scaleSqrt().range([5,145])
+    const nodeDragged = d3.drag();
 
     d3.csv('../Data/un_regions.csv', function(row) {
         return {Country: row.Country, Population: +row.Pop_2016};
@@ -40,11 +41,18 @@
         .force('y', d3.forceY().strength(.6))
         .force('collide', d3.forceCollide(d => radius(d.Population) + 1).strength(2).iterations(5));
 
-        // static chart
-        for(let i = 0; i < 300; i++) {
-            sim.tick();
-        }
-        sim.stop();
+        // dynamic chart
+        sim.on('tick', redraw);
+
+        // Dragging behavior
+        nodeDragged.on('drag', function(d) {
+            d.x = d3.event.x;
+            d.y = d3.event.y;
+            if(sim.alpha() < .05) {
+                sim.alpha(.05);
+                sim.restart();
+            }
+        });
 
         draw(chart, nodes);
     });
@@ -53,7 +61,8 @@
         const bubbles = chart.selectAll('g.bubble')
                 .data(nodes).enter().append('g')
                 .append('g').attr('class', 'bubble')
-                .attr('transform', d => `translate(${[d.x, d.y]})`);
+                .attr('transform', d => `translate(${[d.x, d.y]})`)
+                .call(nodeDragged);
 
         bubbles.append('circle')
                 .attr('r', d => radius(d.Population))

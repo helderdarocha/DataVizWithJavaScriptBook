@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/arc.js"></script>
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -83,15 +82,6 @@
     });
 
     function draw(chart, nodes) {
-    /*    chart.selectAll('line')
-                .data(links).enter()
-                .append('line')
-                .attr('x1', d => d.source.x)
-                .attr('x2', d => d.target.x)
-                .attr('y1', d => d.source.y)
-                .attr('y2', d => d.target.y)
-                .attr('fill', 'none')
-                .attr('stroke', 'black'); */
 
         chart.selectAll('circle')
                 .data(nodes).enter()

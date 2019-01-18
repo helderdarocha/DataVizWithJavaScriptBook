@@ -83,10 +83,7 @@
         .force('collide', d3.forceCollide(d => radius(d.value) + 1).iterations(5))
         .alphaDecay(.38);
 
-        for(let i = 0; i < 150; i++) {
-            sim.tick();
-        }
-        sim.stop();
+        sim.on('tick', redraw);
 
         draw(chart, nodes);
     });
