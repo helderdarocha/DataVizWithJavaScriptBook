@@ -69,7 +69,7 @@
 
     // SIMULATION SETUP
     const sim = d3.forceSimulation(nodes);
-    sim.force('link', d3.forceLink(links).strength(d => d.index/200)); // default strength is 1
+    sim.force('link', d3.forceLink(links).strength(d => d.index/200)); // default strength is 1 / min number of connections
     drawReferenceBackgroundGrid(nodes, links);
 
     // Update on ticks

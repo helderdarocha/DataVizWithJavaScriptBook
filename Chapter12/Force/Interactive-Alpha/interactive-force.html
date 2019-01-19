@@ -41,6 +41,7 @@
 <div class="container">
     <div class="form"><form>
         <p>Current alpha: <span id="alpha">0.0000</span>
+            <input id="c_alpha"      type='range' min='0' max='1000' value="1000">
         <br>alphaMin: <span id="alphaMin">0.0000</span><br>
             <input id="c_alphaMin"      type='range' min='1' max='1000' value="10">
         <br>alphaTarget: <span id="alphaTarget">0.0000</span><br>
@@ -51,7 +52,7 @@
             <input id="c_velocityDecay" type='range' min='1' max='1000' value="400">
         <p>Forces:<br>
             <input type="checkbox" id="ck_manybody"> ManyBody
-             <input type="number" id="inout" value="-30"><br>
+             <input type="number" id="inout" value="-30" min="-10000" max="10000"><br>
             <input type="checkbox" id="ck_collide"> Collide<br>
             <input type="checkbox" id="ck_link"> Link<br>
             <input type="checkbox" id="ck_center"> Center
@@ -63,9 +64,14 @@
              <input type="number" value="0" min="-1" max="1" id="y">
         </p>
         <p><input type="checkbox" id="show_lines">Show link lines</p>
-        <p><button id="restart" type="button" style="background: hsl(100,100%,80%)">restart()</button>
-            <button id="stop" type="button" style="background: hsl(0,100%,80%)">stop()</button>
-            <button id="tick" type="button" style="background: hsl(240,100%,90%)">tick()</button></p>
+
+        <p>Automatic simulation<br>
+            <button id="restart" type="button" style="background: hsl(100,100%,80%)">Start</button>
+            <button id="stop" type="button" style="background: hsl(0,100%,80%)">Stop</button></p>
+        <p>Static simulation<br>
+            <button id="tick" type="button" style="background: hsl(240,100%,90%)">Tick</button>
+            <button id="reset" type="button" style="background: hsl(60,100%,80%)">Reset</button></p>
+
     </form></div>
     <div class="svg"></div>
 </div>
@@ -144,78 +150,90 @@
     const svg = d3.select(".svg").append("svg").attr("width",width).attr("height",height);
     const chart = svg.append("g").attr("transform", `translate(${[margin/2 + width/2,margin/2 + height/2]})`);
 
-    const sim = d3.forceSimulation(nodes);
+    const sim = d3.forceSimulation(nodes).stop(); // initially stopped
+    sim.on('tick', ticked);
 
     // Move nodes to fixed positions
     const nodeDragged = d3.drag().on('drag', function(d) {
         d.x = d3.event.x;
         d.y = d3.event.y;
+        sim.stop()
+        if(sim.alpha() < sim.alphaMin()) {
+            sim.alpha(sim.alpha() * 100);
+            sim.restart();
+        }
         sim.tick();
+        ticked();
     });
 
-    sim.on('tick', ticked)
+    const forceMap = new Map();
 
-    d3.select('#alpha').text(sim.alpha());
-    d3.select('#alphaMin').text(sim.alphaMin());
-    d3.select('#alphaTarget').text(sim.alphaTarget());
-    d3.select('#alphaDecay').text(sim.alphaDecay());
-    d3.select('#velocityDecay').text(sim.velocityDecay());
+    setupPanel();
+    init();
 
-    draw(chart);
+    function updateForces() {
+        const str =  d3.select("#inout").node().value;
+        const cx  = +d3.select("#cx").node().value * width/2;
+        const cy  = +d3.select("#cy").node().value * height/2;
+        const x   = +d3.select("#x").node().value * width/2;
+        const y   = +d3.select("#y").node().value * width/2;
 
-    d3.select('#ck_manybody').on('change', function(d,i,n) {
-        const str = d3.select("#inout").node().value;
-        sim.force('manybody', this.checked ? d3.forceManyBody().strength(str) : null);
-    });
-    d3.select('#ck_center').on('change', function(d,i,n) {
-        const cx = +d3.select("#cx").node().value * width/2;
-        const cy = +d3.select("#cy").node().value * height/2;
-        sim.force('center', this.checked ? d3.forceCenter(cx,cy) : null);
-    });
-    d3.select('#ck_x').on('change', function(d,i,n) {
-        const x = +d3.select("#x").node().value * width/2;
-        sim.force('x', this.checked ? d3.forceX().x(x) : null);
-    });
-    d3.select('#ck_y').on('change', function(d,i,n) {
-        const y = +d3.select("#y").node().value * width/2;
-        sim.force('y', this.checked ? d3.forceY().y(y) : null);
-    });
-    d3.select('#ck_link').on('change', function(d,i,n) {
-        sim.force('link', this.checked ? d3.forceLink(links) : null);
-    });
-    d3.select('#ck_collide').on('change', function(d,i,n) {
-        sim.force('collide', this.checked ? d3.forceCollide(d => radius(d.value)) : null);
-    });
+        sim.force('manybody', forceMap.get('manybody') ? d3.forceManyBody().strength(str) : null);
+        sim.force('center', forceMap.get('center') ? d3.forceCenter(cx,cy) : null);
+        sim.force('x', forceMap.get('x') ? d3.forceX().x(x) : null);
+        sim.force('y', forceMap.get('y') ? d3.forceY().y(y) : null);
+        sim.force('link', forceMap.get('link') ? d3.forceLink(links) : null);
+        sim.force('collide', forceMap.get('collide') ? d3.forceCollide(d => radius(d.value)) : null);
+    }
 
-    d3.select('#show_lines').on('change', function(d,i,n) {
-        this.checked ? d3.selectAll("line").style('opacity',1) : d3.selectAll("line").style('opacity',0) ;
-    });
+    function setupPanel() {
+        d3.select('#ck_manybody').on('change', function() { return forceMap.set('manybody', this.checked) });
+        d3.select('#ck_center').on('change', function() { return forceMap.set('center', this.checked) });
+        d3.select('#ck_x').on('change', function() { return forceMap.set('x', this.checked) });
+        d3.select('#ck_y').on('change', function() { return forceMap.set('y', this.checked) });
+        d3.select('#ck_link').on('change', function() { return forceMap.set('link', this.checked) });
+        d3.select('#ck_collide').on('change', function() { return forceMap.set('collide', this.checked) });
 
-    d3.select('#tick').on('click', ticked());
-    d3.select('#stop').on('click', stop);
-    d3.select('#restart').on('click', start);
+        d3.select('#show_lines').on('change', function() {
+            this.checked ? d3.selectAll("line").style('opacity',1) : d3.selectAll("line").style('opacity',0) ;
+        });
 
-    d3.select('#c_alphaDecay').on('input', function(d,i,n) {
-        sim.alphaDecay(+this.value/1000);
-        d3.select('#alphaDecay').text(sim.alphaDecay());
-    });
-    d3.select('#c_alphaTarget').on('input', function(d,i,n) {
-        sim.alphaTarget(+this.value/1000);
-        d3.select('#alphaTarget').text(sim.alphaTarget());
-    });
-    d3.select('#c_alphaMin').on('input', function(d,i,n) {
-        sim.alphaMin(+this.value/1000);
-        d3.select('#alphaMin').text(sim.alphaMin());
-    });
-    d3.select('#c_velocityDecay').on('input', function(d,i,n) {
-        sim.velocityDecay(+this.value/1000);
-        d3.select('#velocityDecay').text(sim.velocityDecay());
-    });
+        d3.select('#tick').on('click', clickedTick);
+        d3.select('#stop').on('click', stop);
+        d3.select('#restart').on('click', start);
+        d3.select("#reset").on('click', reset);
 
-    start();
+        d3.select('#c_alpha').on('input', function(d,i,n) {
+            sim.alpha(+this.value/1000);
+            d3.select('#alpha').text(sim.alpha())
+                    .style('color', sim.alpha() < sim.alphaMin() ? 'red' : 'black')
+        });
+        d3.select('#c_alphaDecay').on('input', function(d,i,n) {
+            sim.alphaDecay(+this.value/1000);
+            d3.select('#alphaDecay').text(sim.alphaDecay());
+        });
+        d3.select('#c_alphaTarget').on('input', function(d,i,n) {
+            sim.alphaTarget(+this.value/1000);
+            d3.select('#alphaTarget').text(sim.alphaTarget());
+        });
+        d3.select('#c_alphaMin').on('input', function(d,i,n) {
+            sim.alphaMin(+this.value/1000);
+            d3.select('#alphaMin').text(sim.alphaMin());
+        });
+        d3.select('#c_velocityDecay').on('input', function(d,i,n) {
+            sim.velocityDecay(+this.value/1000);
+            d3.select('#velocityDecay').text(sim.velocityDecay());
+        });
+    }
+
+    function clickedTick() {
+        sim.tick();
+        ticked();
+    }
 
     function ticked() {
-        redraw(chart);
+        updateForces();
+        redraw();
         d3.select('#alpha')
                 .style('color', sim.alpha() < sim.alphaMin() ? 'red' : 'black')
                 .text(sim.alpha());
@@ -227,30 +245,49 @@
                 .text(sim.alphaDecay());
         d3.select('#velocityDecay')
                 .text(sim.velocityDecay());
+        d3.select('#c_alpha').node().value  = sim.alpha() * 1000;
     }
 
     function start() {
-        sim.restart();
-        d3.select('#alpha')
-                .style('color', sim.alpha() < sim.alphaMin() ? 'red' : 'black')
-                .text(sim.alpha());
         d3.select('#restart').property('disabled', true);
         d3.select('#stop').property('disabled', false);
-        d3.select('#tick').property('disabled', false);
+        d3.select('#tick').property('disabled', true);
+        if (sim.alpha() < sim.alphaMin()) {
+            sim.alpha(1);
+        }
+        sim.restart();
     }
 
     function stop() {
-        sim.alpha(1);
         sim.stop();
-        d3.select('#alpha')
-                .style('color', sim.alpha() < sim.alphaMin() ? 'red' : 'black')
-                .text(sim.alpha());
         d3.select('#restart').property('disabled', false);
         d3.select('#stop').property('disabled', true);
-        d3.select('#tick').property('disabled', true);
+        d3.select('#tick').property('disabled', false);
     }
 
-    function draw(chart) {
+    function reset() {
+        location.reload();
+    }
+
+    function init() {
+        forceMap.set('center', null);
+        forceMap.set('manybody', null);
+        forceMap.set('collide', null);
+        forceMap.set('x', null);
+        forceMap.set('y', null);
+        forceMap.set('radius', null);
+        forceMap.set('link', null);
+
+        d3.select('#alpha').text(sim.alpha());
+        d3.select('#alphaMin').text(sim.alphaMin());
+        d3.select('#alphaTarget').text(sim.alphaTarget());
+        d3.select('#alphaDecay').text(sim.alphaDecay());
+        d3.select('#velocityDecay').text(sim.velocityDecay());
+
+        d3.select('#restart').property('disabled', false);
+        d3.select('#stop').property('disabled', true);
+        d3.select('#tick').property('disabled', false);
+
         chart.selectAll('line')
                 .data(links).enter()
                 .append('line')
@@ -279,7 +316,7 @@
                 .style('fill', (d,i) => contrast(color(i)))
     }
 
-    function redraw(chart) {
+    function redraw() {
         chart.selectAll('g.node')
                 .attr('transform', d => `translate(${[d.x, d.y]})`);
 
