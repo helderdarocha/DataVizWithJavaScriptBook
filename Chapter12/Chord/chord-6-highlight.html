@@ -64,7 +64,7 @@
             .attr('opacity', .5)
             .attr('fill', d => color(d.source.index))
             .on('mouseover', highlightRibbon)
-            .on('mouseout', d => d3.selectAll("path").classed('faded', false));
+            .on('mouseout', fade);
 
     const arc = d3.arc().innerRadius(radius+2).outerRadius(radius+30);
 
@@ -74,7 +74,7 @@
             .attr('d', arc)
             .attr('fill', d => color(d.index))
             .on('mouseover', highlightNode)
-            .on('mouseout', d => d3.selectAll("path").classed('faded', false));
+            .on('mouseout', fade);
 
 
     chart.selectAll('text')
@@ -86,12 +86,15 @@
             .attr('transform',d => `rotate(${(arc.endAngle()(d) + arc.startAngle()(d))*90/Math.PI},${arc.centroid(d)})`);
 
     function highlightNode(node) {
-        d3.selectAll("path.arc").classed('faded', d => !(d.index === node.index));
+        d3.selectAll("path.arc").classed('faded', d => !(d === node));
         d3.selectAll("path.ribbon").classed('faded', edge => !(edge.source.index === node.index));
     }
     function highlightRibbon(edge) {
         d3.selectAll("path.arc").classed('faded', node => !(node.index === edge.source.index || node.index === edge.target.index))
         d3.selectAll("path.ribbon").classed('faded', d => !(d === edge));
+    }
+    function fade(node) {
+        d3.selectAll("path").classed('faded', false);
     }
 </script>
 

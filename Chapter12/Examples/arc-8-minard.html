@@ -61,7 +61,7 @@
         color.domain([0,edges.length]);
         widthScale.domain([0, d3.max(edges, d => d.value)]);
 
-        console.log(arcData.points(), arcData.curves())
+        console.log(arcData.nodes(), arcData.links())
 
         draw(arcData);
     });
@@ -74,7 +74,7 @@
         const curve = dvj.curve().size([width-margin*4, height*4]);
 
         chart.selectAll('path')
-                .data(data.curves())
+                .data(data.links())
                 .enter()
                 .append('path')
                 .attr('d', curve)
@@ -84,15 +84,15 @@
                 .attr('fill', 'none');
 
         chart.selectAll('circle')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('circle')
                 .attr("id", d => d.node)
                 .attr('cx', d => d.x)
                 .attr('fill', (d,i) => d.direction > 0 ? "#c97b20" : "#252523")
                 .attr('r', function(d) {
-                   const target = data.curves().filter(k => k.target.node == d.node)[0];
-                   const source = data.curves().filter(k => k.source.node == d.node)[0];
+                   const target = data.links().filter(k => k.target.node == d.node)[0];
+                   const source = data.links().filter(k => k.source.node == d.node)[0];
                    if(target && source) {
                        return .5 * widthScale(d3.max([target.value, source.value]));
                    }
@@ -103,7 +103,7 @@
                 .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
 
         chart.selectAll('text.location')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('text').attr('class','location')
                 .attr('x', d => d.x)
@@ -111,7 +111,7 @@
                 .text(d => d.node.length > 3 ? d.node : '');
 
         chart.selectAll('text.value')
-                .data(data.curves())
+                .data(data.links())
                 .enter()
                 .append('text').attr('class','value')
                 .attr('x', d => 0.5 * (d.source.x + d.target.x))

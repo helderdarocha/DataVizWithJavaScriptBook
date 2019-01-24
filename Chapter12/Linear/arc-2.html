@@ -92,7 +92,7 @@
 
     const data = arcDiagLayout(nodes, edges);
 
-    console.log(data.points(), data.curves())
+    console.log(data.nodes(), data.links())
 
     color.domain([0, d3.max(edges, d => d.value)]);
 
@@ -106,7 +106,7 @@
             .domain([0, d3.max(edges, d => d.value)]);
 
     chart.selectAll('path')
-            .data(data.curves())
+            .data(data.links())
             .enter()
             .append('path')
             .attr('d', curve)
@@ -116,7 +116,7 @@
             .attr('fill', 'none');
 
     chart.selectAll('circle')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('circle')
             .attr('cx', d => d.x)
@@ -124,7 +124,7 @@
             .attr('r', 10)
 
     chart.selectAll('text')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('text')
             .attr('x', d => d.x)

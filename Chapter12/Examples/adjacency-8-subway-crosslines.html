@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/adjacency.js"></script>
+    <script src="../JavaScript/dvj-all.js"></script>
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -28,17 +28,23 @@
     d3.json('../Data/metrosp.json').then(function(data) {
 
         data.nodes = data.nodes.map(n => ({node: n.station+':'+n.line}));
-        data.links = data.links.map(n => ({source: n.source+':'+n.lines[0], target: n.target+':'+n.lines[1], lines: n.lines, weight: 1}));
+        data.links = data.links.map(n => ({source: n.source+':'+n.lines[0], target: n.target+':'+n.lines[1], lines: n.lines, value: 1}));
 
         const filteredLinks = data.links.filter(d => d.lines[0] != d.lines[1]);
         const connectionNodes = data.nodes.filter(d => filteredLinks.map(k => k.source).indexOf(d.node) >= 0)
 
+        filteredLinks.forEach(function(edge) {
+            edge.source = connectionNodes.map(n => n.node).indexOf(edge.source);
+            edge.target = connectionNodes.map(n => n.node).indexOf(edge.target);
+        });
+
         const matrixLayout = dvj.adjacencyMatrix().size([width-margin,height-margin]);
-        const matrix = matrixLayout(connectionNodes, filteredLinks, true);
 
-        console.log(connectionNodes, matrix)
+        const matrix = dvj.linksToMatrix(connectionNodes, filteredLinks);
 
-        draw(connectionNodes, matrix);
+        const result = matrixLayout(connectionNodes, matrix);
+
+        draw(connectionNodes, result);
 
     });
 
@@ -48,19 +54,19 @@
         const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2]})`);
 
         chart.selectAll('rect')
-                .data(data.filter(d => d.x > d.y && d.weight))
+                .data(data.filter(d => d.x > d.y && d.value))
                 .enter()
                 .append("rect")
-                .attr('x', d => d.weight ? d.x : d.x + d.w/4)
-                .attr('y', d => d.weight ? d.y : d.y + d.h/4)
-                .attr('height', d => d.weight ? d.h : d.h / 2)
-                .attr('width', d => d.weight ? d.w : d.w / 2)
-                .attr('rx',d => d.weight ? d.w/4 : 0)
-                .attr('ry', d => d.weight ? d.h/4 : 0)
-                .attr('fill', d => d.weight ? 'black' : '#eee');
+                .attr('x', d => d.value ? d.x : d.x + d.w/4)
+                .attr('y', d => d.value ? d.y : d.y + d.h/4)
+                .attr('height', d => d.value ? d.h : d.h / 2)
+                .attr('width', d => d.value ? d.w : d.w / 2)
+                .attr('rx',d => d.value ? d.w/4 : 0)
+                .attr('ry', d => d.value ? d.h/4 : 0)
+                .attr('fill', d => d.value ? 'black' : '#eee');
 
         chart.selectAll('line'.horizontal)
-            .data(data.filter(d => d.x > d.y && d.weight))
+            .data(data.filter(d => d.x > d.y && d.value))
             .enter()
             .append("line").attr('class','horizontal')
             .attr('x1', (d,i) => d.y + d.w)
@@ -72,7 +78,7 @@
             .attr('stroke', 'black');
 
         chart.selectAll('line'.vertical)
-            .data(data.filter(d => d.x > d.y && d.weight))
+            .data(data.filter(d => d.x > d.y && d.value))
             .enter()
             .append("line").attr('class','vertical')
             .attr('x1', d => d.x + d.w/2)
@@ -84,25 +90,25 @@
             .attr('stroke', 'black');
 
         chart.selectAll('text.source')
-                .data(data.filter(d => d.x > d.y && d.weight))
+                .data(data.filter(d => d.x > d.y && d.value))
                 .enter()
                 .append("text").attr("class",'source')
                 .attr('y', d => d.x + d.w/2)
                 .style("text-anchor", 'start')
                 .attr('x', 5)
                 .attr('transform',`rotate(-90) `)
-                .text(d => d.source)
-                .style('fill', (d,i) => d3.rgb(colorScale(d.source.split(':')[1])).darker(.5));
+                .text(d => d.source.node)
+                .style('fill', (d,i) => d3.rgb(colorScale(d.source.node.split(':')[1])).darker(.5));
 
         chart.selectAll('text.target')
-                .data(data.filter(d => d.x > d.y && d.weight))
+                .data(data.filter(d => d.x > d.y && d.value))
                 .enter()
                 .append("text").attr("class",'target')
                 .attr('y', d => d.y + d.h/2)
                 .style("text-anchor", 'end')
                 .attr('x', (d,i) => d.y + d.w - 10)
-                .text(d => d.target)
-                .style('fill', (d,i) => d3.rgb(colorScale(d.target.split(':')[1])).darker(.5));
+                .text(d => d.target.node)
+                .style('fill', (d,i) => d3.rgb(colorScale(d.target.node.split(':')[1])).darker(.5));
 
     }
 

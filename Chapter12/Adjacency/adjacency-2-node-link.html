@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../JavaScript/adjacency.js"></script>
+    <script src="../JavaScript/dvj-all.js"></script>
 </head>
 <body>
 <script>
@@ -23,20 +23,24 @@
     ];
 
     const edges = [
-        {source: 'A', target: 'B', weight: 6},
-        {source: 'A', target: 'C', weight: 2},
-        {source: 'B', target: 'A', weight: 8},
-        {source: 'B', target: 'C', weight: 5},
-        {source: 'C', target: 'B', weight: 1},
-        {source: 'D', target: 'B', weight: 1},
-        {source: 'D', target: 'E', weight: 1}
+        {source: 0, target: 1, value: 6},
+        {source: 0, target: 2, value: 2},
+        {source: 1, target: 0, value: 8},
+        {source: 1, target: 2, value: 5},
+        {source: 2, target: 1, value: 1},
+        {source: 3, target: 1, value: 1},
+        {source: 3, target: 4, value: 1}
     ];
 
     const matrixLayout = dvj.adjacencyMatrix().size([width-margin,height-margin]);
 
-    const data = matrixLayout(nodes, edges);
+    const matrix = dvj.linksToMatrix(nodes, edges);
 
-    color.domain([0, d3.max(edges, d => d.weight)]);
+    const data = matrixLayout(nodes, matrix);
+
+    console.log(data)
+
+    color.domain([0, d3.max(edges, d => d.value)]);
 
     const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
     const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2]})`);
@@ -51,29 +55,31 @@
             .attr('width', d => d.w*.95)
             .attr('rx',d => d.w/4).attr('ry', d => d.h/4)
             .attr('stroke', 'black')
-            .attr('fill', d => d.weight ? color(d.weight) : 'white');
+            .attr('fill', d => d.value ? color(d.value) : 'white');
 
     chart.selectAll('text.source')
-            .data(data.filter(d => d.y == 0))
+            .data(data.filter(d => d.x == 0))
             .enter()
             .append("text").attr("class",'source')
-            .attr('x', d => d.x + d.w/2)
+            .attr('y', d => d.y + d.h/2 + 7)
+            .attr('x', -15)
             .attr("text-anchor", 'middle')
-            .attr('y', -15)
             .text((d,i) => nodes[i].node);
+
+
+    chart.selectAll('text.target')
+            .data(data.filter(d => d.y == 0))
+            .enter()
+            .append("text").attr("class",'target')
+            .attr('x', d => d.x + d.w/2)
+            .attr('y', -10)
+            .attr("text-anchor", 'end')
+            .text((d,i) => nodes[i].node);
+
     chart.append('text')
             .attr("text-anchor", 'middle')
             .attr('transform',`rotate(-90,${[0,height/2 - margin/2]}) translate(${[0, height/2 - margin/2 - 30]})`)
             .text('FROM');
-
-    chart.selectAll('text.target')
-            .data(data.filter(d => d.x == 0))
-            .enter()
-            .append("text").attr("class",'target')
-            .attr('y', d => d.y + d.h/2 + 7)
-            .attr("text-anchor", 'end')
-            .attr('x', -10)
-            .text((d,i) => nodes[i].node);
     chart.append('text')
             .attr("text-anchor", 'middle')
             .attr('transform',`translate(${[width/2 - margin/2, -35]})`)

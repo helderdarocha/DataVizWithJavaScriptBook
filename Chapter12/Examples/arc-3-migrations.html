@@ -79,7 +79,7 @@
                          .size([width-margin, height]);
 
         chart.selectAll('path')
-                .data(data.curves())
+                .data(data.links())
                 .enter()
                 .append('path')
                 .attr('d', curve)
@@ -89,7 +89,7 @@
                 .attr('fill', 'none');
 
         chart.selectAll('circle')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('circle')
                 .attr('cx', d => d.x)
@@ -99,7 +99,7 @@
                 .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
 
         chart.selectAll('text')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('text')
                 .attr('x', d => d.x)

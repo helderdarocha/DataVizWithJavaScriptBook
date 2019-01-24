@@ -45,7 +45,7 @@
         const arcDiagLayout = dvj.arcDiagram().width(width-margin);
         const arcData = arcDiagLayout(connectionNodes, filteredLinks);
 
-        console.log(arcData.points(), arcData.curves())
+        console.log(arcData.nodes(), arcData.links())
 
         draw(arcData);
 
@@ -63,7 +63,7 @@
         const lineConnection = dvj.curve().size([width-margin, 2 * height]);
 
         chart.selectAll('path')
-                .data(data.curves().filter(d => d.source.x < d.target.x))
+                .data(data.links().filter(d => d.source.x < d.target.x))
                 .enter()
                 .append('path')
                 .attr('d', d => d.lines[0] == d.lines[1] ? stationConnection(d) : lineConnection(d))
@@ -73,7 +73,7 @@
                 .attr('fill', 'none');
 
         chart.selectAll('circle')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('circle')
                 .attr("id", d => d.node)
@@ -84,7 +84,7 @@
                 .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
 
         chart.selectAll('text.location')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('text').attr('class','location')
                 .attr('x', d => d.x - 15)
@@ -94,7 +94,7 @@
                 .on('mouseout', d => d3.selectAll("path, circle, .location").classed('faded', false));;
 
         chart.selectAll('text.line')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('text').attr('class','line')
                 .attr('x', d => d.x)

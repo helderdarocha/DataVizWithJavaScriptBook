@@ -38,6 +38,8 @@
     const chord = d3.chord().padAngle(.3);
     const chords = chord(matrix);
 
+    console.log(chords)
+
     const radius = height/2 - margin/2;
 
     const ribbon = d3.ribbon().radius(radius);

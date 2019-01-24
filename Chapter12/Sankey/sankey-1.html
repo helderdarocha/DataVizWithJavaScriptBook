@@ -68,7 +68,6 @@
             .enter()
             .append('path')
             .attr('d', d3.sankeyLinkHorizontal())
-            .attr('stroke', 'red')
             .attr("opacity", .5)
             .attr('stroke-width', d => d.width)
             .attr('stroke', d => color(d.source.index))

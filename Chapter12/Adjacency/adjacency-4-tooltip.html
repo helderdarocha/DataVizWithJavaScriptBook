@@ -38,18 +38,20 @@
     ];
 
     const edges = [
-        {source: 'A', target: 'B', value: 6},
-        {source: 'A', target: 'C', value: 2},
-        {source: 'B', target: 'A', value: 8},
-        {source: 'B', target: 'C', value: 5},
-        {source: 'C', target: 'B', value: 1},
-        {source: 'D', target: 'B', value: 1},
-        {source: 'D', target: 'E', value: 1}
+        {source: 0, target: 1, value: 6},
+        {source: 0, target: 2, value: 2},
+        {source: 1, target: 0, value: 8},
+        {source: 1, target: 2, value: 5},
+        {source: 2, target: 1, value: 1},
+        {source: 3, target: 1, value: 1},
+        {source: 3, target: 4, value: 1}
     ];
 
     const matrixLayout = dvj.adjacencyMatrix().size([width-margin,height-margin]);
 
-    const data = matrixLayout(nodes, edges);
+    const matrix = dvj.linksToMatrix(nodes, edges);
+
+    const data = matrixLayout(nodes, matrix);
 
     color.domain([0, d3.max(edges, d => d.value)]);
 

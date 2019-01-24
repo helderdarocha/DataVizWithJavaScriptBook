@@ -28,11 +28,10 @@
 
     const chord = d3.chord().padAngle(.3);
     const chords = chord(matrix);
+    console.log(chords);
 
     const radius = height/2 - margin/2;
-
     const ribbon = d3.ribbon().radius(radius);
-
 
     const color = d3.scaleSequential(d3.interpolateRainbow).domain([0,matrix.length]);
 

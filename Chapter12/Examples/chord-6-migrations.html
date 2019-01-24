@@ -107,11 +107,11 @@
                 .data(chords)
                 .enter().append('path').attr('class','ribbon')
                 .attr('d', ribbon)
-                .attr('opacity', .6)
+                .attr('fill-opacity', .6)
                 .attr('fill', d => color(d.target.index))
                 .on('mouseover', highlightRibbon)
                 .on('mouseout', d => {
-                    d3.selectAll("path").classed('faded', false);
+                    d3.selectAll(".ribbon, .arc").classed('faded', false);
                     d3.select('.tooltip').transition().attr('opacity', 0);
                 });
 
@@ -123,7 +123,7 @@
                 .attr('d', arc)
                 .attr('fill', d => color(d.index))
                 .on('mouseover', highlightNode)
-                .on('mouseout', d => d3.selectAll("path").classed('faded', false));;
+                .on('mouseout', d => d3.selectAll(".ribbon, .arc").classed('faded', false));;
 
         chart.selectAll('text')
                 .data(chords.groups)
@@ -169,11 +169,11 @@
 
     function highlightNode(node) {
         d3.selectAll("path.arc").classed('faded', d => !(d === node));
-        d3.selectAll("path.ribbon").classed('faded', edge => !(edge.source.index == node.index));
+        d3.selectAll("path.ribbon").classed('faded', edge => !(edge.source == node));
     }
     function highlightRibbon(edge) { console.log(edge)
         d3.selectAll("path.arc").classed('faded', node => !(node.index === edge.source.index || node.index === edge.target.index))
-        d3.selectAll("path.ribbon").classed('faded', d => !(d.index === edge.index));
+        d3.selectAll("path.ribbon").classed('faded', d => !(d === edge));
         d3.select('.tooltip').transition().attr('opacity', 1);
         d3.select('#from tspan:nth-child(1)').text(`${headers[edge.target.index]} to ${headers[edge.source.index]}`);
         d3.select('#to tspan:nth-child(1)').text(`${headers[edge.source.index]} to ${headers[edge.target.index]}`);

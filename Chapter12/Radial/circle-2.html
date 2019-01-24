@@ -115,7 +115,7 @@
             .attr('fill', 'none');
 
     chart.selectAll('circle')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('circle')
             .attr('cx', d => d3.pointRadial(d.angle, d.radius)[0])
@@ -124,7 +124,7 @@
             .attr('r', 15);
 
     chart.selectAll('text')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('text')
             .attr('x', d => d3.pointRadial(d.angle, d.radius)[0])

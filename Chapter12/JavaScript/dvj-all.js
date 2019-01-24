@@ -1,6 +1,63 @@
 const dvj = {}
 
 /**
+ *
+ * @param names - List of objects with node identification information (ex: list of strings)
+ * @param matrix - Square matrix with adjacency data
+ * @returns {{nodes: Array of {node: name}, links: Array of {source: i, target: j, value: matrix[i,j]}}
+ */
+dvj.matrixToLinks = function(nodes, matrix, objectID) {
+
+    const links = [];
+
+    for(let s = 0; s < matrix.length; s++) {
+        for(let t = 0; t < matrix.length; t++) {
+            const v = matrix[s][t];
+            if(v != 0) {
+                if(!objectID) {
+                    links.push({source: s, target: t, value: v});
+                } else {
+                    links.push({source: nodes[s], target: nodes[t], value: v});
+                }
+            }
+        }
+    }
+
+    return links;
+}
+
+/**
+ *
+ * @param nodes
+ * @param links
+ * @returns {[
+ *             [0, links.filter(k => k.source == 0 && k.target == 1)[0].value, ...],
+ *             [...],
+ *             ...
+ *          ]}
+ */
+dvj.linksToMatrix = function(nodes, links, objectID) {
+
+    const matrix = [];
+
+    for(let s = 0; s < nodes.length; s++) {
+        const line = [];
+        for(let t = 0; t < nodes.length; t++) {
+            const link = !objectID ? links.filter(k => k.source == s && k.target == t) :
+                                     links.filter(k => k.source == nodes[s] && k.target == nodes[t]);
+            if(link.length != 0) {
+                line.push(link[0].value);
+            } else {
+                line.push(0);
+            }
+        }
+        matrix.push(line);
+    }
+
+    return matrix;
+}
+
+/**
  * Adjacency Matrix layout generator function
  * Default size is 1x1
  *
@@ -11,12 +68,9 @@ const dvj = {}
  *
  * To generate an array of matrix-positioned objects:
  *
- * const matrix = matrixLayout(node, edges);
+ * const data = matrixLayout(names, matrix);
  *
- * Where nodes and edges have the following minimum structure:
- *
- * nodes: [{node: obj1}, {node: obj2}, ...]
- * edges: [{source: obj1, target: obj2}, ...]
+ * Where names is a list of objects and matrix a square matrix of values
  *
  * Result is array with (nodes x nodes) elements. Each element contains:
  *   x - x position of rectangle
@@ -24,48 +78,35 @@ const dvj = {}
  *   w - width of rectangle
  *   h - height of rectangle
  *
- * If element is an adjacency, it additionally contains properties from corresponding edge element.
+ * If element is an adjacency (value > 0), it additionally contains:
+ *   value - original valua
+ *   source - source node
+ *   target - target node
  *
  * @returns layout function
  */
 
 dvj.adjacencyMatrix = function() {
-    let w = 1;
-    let h = 1;
+    let w = 1, h = 1;
 
-    function layout(n, e) {
+    function layout(nodes, sourceMatrix) {
 
-        const nodes = n.map(a => Object.assign({}, a));
-        const edges = e.map(a => Object.assign({}, a));
-
-        const matrix = [];
         const len = nodes.length;
 
-        const groups = d3.nest()
-            .key(d => d.source)
-            .key(d => d.target)
-            .rollup(d => d[0])
-            .map(edges);
-
-        nodes.forEach(function(source, i) {
-            const t = groups.get(source.node);
-            nodes.forEach(function(target, j) {
-                const rect = {x: i * w/len, y: j * h/len, w: w/len, h: h/len};
-                if(t) {
-                    const value = t.get(target.node);
-                    if(value) {
-                        Object.assign(value, rect);
-                        matrix.push(value);
-                    } else {
-                        matrix.push(rect);
-                    }
+        const resultMatrix = [];
+        for(let s = 0; s < sourceMatrix.length; s++) {
+            for(let t = 0; t < sourceMatrix.length; t++) {
+                const v = +sourceMatrix[s][t];
+                const rect = {x: t * w/len, y: s * h/len, w: w/len, h: h/len};
+                if(v > 0) {
+                    const edge = {source: nodes[s], target: nodes[t], value: value = v};
+                    resultMatrix.push(Object.assign(edge, rect));
                 } else {
-                    matrix.push(rect);
+                    resultMatrix.push(Object.assign({}, rect));
                 }
-            });
-        });
-
-        return matrix;
+            }
+        }
+        return resultMatrix;
     }
 
     layout.size = function(array) {
@@ -95,8 +136,8 @@ dvj.adjacencyMatrix = function() {
  *
  * Results:
  *
- * layout.points(): adds x coordinate for each node
- * layout.curves(): replaces references for links to source and target for each edge
+ * layout.nodes(): adds x coordinate for each node
+ * layout.links(): replaces references for links to source and target for each edge
  *
  * @returns layout function
  */
@@ -146,7 +187,7 @@ dvj.arcDiagram = function() {
             node.targets = edges.filter(edge => edge.target == node);
         });
 
-        return {points: () => points, curves: () => curves};
+        return {nodes: () => points, links: () => curves};
     }
 
     layout.width = function(width) {
@@ -232,7 +273,7 @@ dvj.circleDiagram = function() {
             node.targets = edges.filter(edge => edge.target == node);
         });
 
-        return {points: () => points, links: () => curves};
+        return {nodes: () => points, links: () => curves};
     }
 
     layout.size = function(array) {

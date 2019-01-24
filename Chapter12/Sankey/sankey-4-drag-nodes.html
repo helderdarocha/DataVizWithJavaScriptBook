@@ -15,7 +15,7 @@
             pointer-events: none;
         }
         .faded {
-            opacity: .2;
+            opacity: .5;
         }
     </style>
 </head>
@@ -27,16 +27,7 @@
 
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-    const nodes = [
-        {node: 'A', value: 123}, // value not used in this example
-        {node: 'B', value: 456},
-        {node: 'C', value: 995},
-        {node: 'D', value: 65},
-        {node: 'E', value: 79},
-        {node: 'F', value: 23},
-        {node: 'G', value: 178},
-        {node: 'H', value: 0},
-    ];
+    const nodes = ['A','B','C','D','E','F','G','H'].map(n => ({node: n}));
 
     // one-way (no cycles): use target > source
     const links = [
@@ -68,47 +59,78 @@
     const graph = sankey({nodes: nodes, links: links});
     console.log(graph)
 
-    chart.selectAll('path')
+    chart.selectAll('path.link')
             .data(graph.links)
             .enter()
             .append('path')
+            .attr('class', 'link')
             .attr('d', d3.sankeyLinkHorizontal())
-            .attr("opacity", .5)
+            .attr("stroke-opacity", .5)
             .attr('stroke-width', d => d.width)
             .attr('stroke', d => color(d.source.index))
             .attr('fill', 'none')
             .on('mouseover', highlightPath)
-            .on('mouseout', d => d3.selectAll("rect, path").classed('faded', false));
+            .on('mouseout', fade);
 
-    chart.selectAll('rect')
+    chart.selectAll('g.node')
             .data(graph.nodes)
             .enter()
-            .append('rect')
-            .attr('x', d => d.x0)
-            .attr('y', d => d.y0)
-            .attr('width', d => d.x1 - d.x0)
-            .attr('height', d => d.y1 - d.y0)
-            .attr('fill', (d,i) => color(i))
+            .append('g')
+            .attr('transform', d => `translate(${[d.x0, d.y0]})`)
+            .attr('class', 'node')
+            .each(function(d,i) {
+                d3.select(this).append('rect')
+                    .attr('width', d.x1 - d.x0)
+                    .attr('height', d.y1 - d.y0)
+                    .attr('fill', color(i))
+                d3.select(this).append('text')
+                    .attr('x', (d.x1 - d.x0)/2)
+                    .attr('y', (d.y1 - d.y0)/2 + 2)
+                    .text(d.node);
+            })
             .on('mouseover', highlightNode)
-            .on('mouseout', d => d3.selectAll("rect, path").classed('faded', false));
+            .on('mouseout', fade)
+            .call(d3.drag()
+                    .on('start', dragStart)
+                    .on('drag', dragging)
+                    .on('end', dragEnd)
+            );
 
-    chart.selectAll('text')
-            .data(graph.nodes)
-            .enter()
-            .append('text')
-            .attr('x', d => (d.x1 + d.x0)/2)
-            .attr('y', d => (d.y1 + d.y0)/2 + 2)
-            .text(d => d.node);
+    let timeout = 0;
 
     function highlightNode(node) {
-        console.log(node)
-        d3.selectAll("rect, text").classed('faded', d => !(d === node));
-        d3.selectAll("path").classed('faded', edge => !(edge.source === node || edge.target == node));
+        timeout = setTimeout(function () {
+            d3.selectAll(".node").classed('faded', d => !(d === node));
+            d3.selectAll(".link").classed('faded', edge => !(edge.source === node || edge.target == node));
+        }, 500);
     }
     function highlightPath(edge) {
-        console.log(edge)
-        d3.selectAll("rect, text").classed('faded', node => !(node === edge.source || node === edge.target))
-        d3.selectAll("path").classed('faded', d => !(d === edge));
+        timeout = setTimeout(function () {
+            d3.selectAll(".node").classed('faded', node => !(node === edge.source || node === edge.target));
+            d3.selectAll(".link").classed('faded', d => !(d === edge));
+        }, 500);
+    }
+    function fade(d) {
+        clearTimeout(timeout);
+        d3.selectAll(".node, .link").classed('faded', false)
+    }
+
+    function dragStart(d) {
+        d.dy = d3.event.y - d.y0;
+        d3.selectAll(".link, .node").style('pointer-events', 'none');
+        d3.select(this).raise().classed("active", true);
+    }
+
+    function dragging(d) {
+        d.y0 = d3.event.y - d.dy;
+        d3.select(this).attr("transform", `translate(${[d.x0,d.y0]})`);
+        sankey.update(graph);
+        chart.selectAll('path').attr("d", d3.sankeyLinkHorizontal());
+    }
+
+    function dragEnd(d) {
+        d3.selectAll(".link, .node").style('pointer-events', 'auto')
+        d3.select(this).classed("active", false);
     }
 </script>
 </body>

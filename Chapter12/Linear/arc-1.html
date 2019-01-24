@@ -50,24 +50,22 @@
     const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
     const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2 + height/2]})`);
 
-    const curve = dvj.curve();
-
     const widthScale = d3.scaleLinear()
             .range([2,10])
             .domain([0, d3.max(edges, d => d.value)]);
 
     chart.selectAll('path')
-            .data(data.curves())
+            .data(data.links())
             .enter()
             .append('path')
-            .attr('d', curve)
+            .attr('d', dvj.curve())
             .attr('stroke-width', d => widthScale(d.value))
             .attr('stroke', d => color(d.source.i))
             .attr('stroke-opacity', .3)
             .attr('fill', 'none');
 
     chart.selectAll('circle')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('circle')
             .attr('cx', d => d.x)
@@ -75,7 +73,7 @@
             .attr('r', 15);
 
     chart.selectAll('text')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('text')
             .attr('x', d => d.x)

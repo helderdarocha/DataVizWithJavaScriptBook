@@ -15,7 +15,7 @@
             pointer-events: none;
         }
         .faded {
-            opacity: .2;
+            opacity: .5;
         }
     </style>
 </head>
@@ -29,6 +29,19 @@
     const color = d3.scaleSequential(d3.interpolateRainbow);
 
     const links = [];
+
+    const svg = d3.select("body").append("svg").attr("width",1200).attr("height",600).attr("viewBox", "0 0 1200 600");
+
+    const sankey = d3.sankey()
+            .nodePadding(19)
+            .nodeWidth(70)
+            .extent([[margin/2, margin/2], [width-margin, height-margin]])
+            //.nodeAlign(d3.sankeyJustify)
+            .nodeId(d => d.Id)
+            .nodeAlign(d3.sankeyRight)
+            .iterations(500);
+
+    let graph = [];
 
     d3.csv("../Data/EuropeUSSR_1990_2010_nodes.csv", function(row) {
         if(row.Containers.length > 0 &&  row.Id != 'WB') { // don' include West berlin
@@ -53,27 +66,14 @@
         return row;
     }).then(function(nodes) {
         links.forEach(function(link) {
-            link.source = nodes.map(n => n.Id).indexOf(link.source);
-            link.target = nodes.map(n => n.Id).indexOf(link.target);
-        });
-        links.forEach(function(link) {
             link.value  = computeValue(links, link);
         });
 
         color.domain([0, nodes.length].reverse());
 
-        const sankey = d3.sankey()
-                .nodePadding(19)
-                .nodeWidth(70)
-                .extent([[margin/2, margin/2], [width-margin, height-margin]])
-                //.nodeAlign(d3.sankeyJustify)
-                .nodeAlign(d3.sankeyRight)
-                .iterations(500);
+        graph = sankey({nodes: nodes, links: links});
 
-        const graph = sankey({nodes: nodes, links: links});
-        console.log(graph)
-
-        draw(graph);
+        draw();
     });
 
     function computeValue(links, link) {
@@ -89,59 +89,63 @@
         }
     }
 
-    function draw(graph) {
-        const svg = d3.select("body").append("svg").attr("width",1200).attr("height",600).attr("viewBox", "0 0 1200 600");
+    function draw() {
         const chart = svg.append("g");
 
-        chart.selectAll('path')
+        chart.selectAll('path.link')
             .data(graph.links)
             .enter()
-            .append('path')
+            .append('path').attr("class", 'link')
             .attr('d', d3.sankeyLinkHorizontal())
             .attr("stroke-opacity", .5)
             .attr('stroke-width', d => d.width)
             .attr('stroke', d => d.target.Id.indexOf('EU') == 0 || d.target.Id == 'DEU' ? color(d.source.index) : color(d.target.index))
             .attr('fill', 'none')
             .on('mouseover', highlightPath)
-            .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
+            .on('mouseout', fade);
 
-        chart.selectAll('rect')
+        chart.selectAll('g.node')
             .data(graph.nodes)
             .enter()
-            .append('rect')
-            .attr('x', d => d.x0)
-            .attr('y', function(d) {
-                if(d.y1 - d.y0 < 12) {
-                    return d.y0 +(d.y1 - d.y0)/2 - 5;
-                }
-                return d.y0;
+            .append('g').attr("class", 'node')
+                .attr("transform", d => `translate(${[d.x0,d.y0]})`)
+                .each(function(d,i) {
+                    d3.select(this).append('rect')
+                        .attr('y', function() {
+                            if(d.y1 - d.y0 < 12) {
+                                return (d.y1 - d.y0)/2 - 5;
+                            }
+                            return 0;
+                        })
+                        .attr('width', d.x1 - d.x0)
+                        .attr('height', function() {
+                            if(d.y1 - d.y0 < 12) {
+                                return 10;
+                            }
+                            return d.y1 - d.y0;
+                        })
+                        .attr('rx', d.y1 - d.y0 < 4?10:0).attr('ry', d => d.y1 - d.y0 < 4?5:0)
+                        .attr('fill', d3.rgb(color(i)).darker(.5))
+                        .style('fill-opacity', .8)
+
+                d3.select(this).append('text')
+                        .attr('x', (d.x1 - d.x0)/2)
+                        .attr('y', (d.y1 - d.y0)/2 + 1)
+                        .attr("transform", function() {
+                            if(d.y1 - d.y0 > 60) {
+                                return `rotate(-90,${[(d.x1 - d.x0)/2, (d.y1 - d.y0)/2 + 2]})`;
+                            }
+                        })
+                        .text(d.Country)
+                        .style("fill", contrast(d3.rgb(color(i)).darker(.5)));
             })
-            .attr('width', d => d.x1 - d.x0)
-            .attr('height', function(d) {
-                if(d.y1 - d.y0 < 12) {
-                    return 10;
-                }
-                return d.y1 - d.y0;
-            })
-            .attr('rx', d => d.y1 - d.y0 < 4?10:0).attr('ry', d => d.y1 - d.y0 < 4?5:0)
-            .attr('fill', (d,i) => d3.rgb(color(i)).darker(.5))
-            .style('fill-opacity', .6)
             .on('mouseover', highlightNode)
-            .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
-
-        chart.selectAll('text')
-            .data(graph.nodes)
-            .enter()
-            .append('text')
-            .attr('x', d => (d.x1 + d.x0)/2)
-            .attr('y', d => (d.y1 + d.y0)/2 + 1)
-            .attr("transform", function(d) {
-                if(d.y1 - d.y0 > 60) {
-                    return `rotate(-90,${[(d.x1 + d.x0)/2, (d.y1 + d.y0)/2 + 2]})`;
-                }
-            })
-            .text(d => d.Country)
-            .style("fill", (d,i) => contrast(d3.rgb(color(i)).darker(.5)));
+            .on('mouseout', fade)
+            .call(d3.drag()
+                    .on('start', dragStart)
+                    .on('drag', dragging)
+                    .on('end', dragEnd)
+            );
     }
 
     function contrast(color) {
@@ -149,17 +153,43 @@
         return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 120 ? '#333' : 'lightyellow';
     }
 
+    let timeout = 0;
+
     function highlightNode(node) {
-        console.log(node)
-        d3.selectAll("rect, text").classed('faded', d => !(d === node));
-        d3.selectAll("path").classed('faded', edge => !(edge.source === node || edge.target == node));
+        timeout = setTimeout(function () {
+            d3.selectAll(".node").classed('faded', d => !(d === node));
+            d3.selectAll(".link").classed('faded', edge => !(edge.source === node || edge.target == node));
+        }, 500);
     }
     function highlightPath(edge) {
-        console.log(edge)
-        d3.selectAll("rect, text").classed('faded', node => !(node === edge.source || node === edge.target))
-        d3.selectAll("path").classed('faded', d => !(d === edge));
+        timeout = setTimeout(function () {
+            d3.selectAll(".node").classed('faded', node => !(node === edge.source || node === edge.target));
+            d3.selectAll(".link").classed('faded', d => !(d === edge));
+        }, 500);
     }
-</script>
+    function fade(d) {
+        clearTimeout(timeout);
+        d3.selectAll(".node, .link").classed('faded', false)
+    }
+
+    function dragStart(d) {
+        d.dy = d3.event.y - d.y0;
+        d3.selectAll(".link, .node").style('pointer-events', 'none');
+        d3.select(this).raise().classed("active", true);
+    }
+
+    function dragging(d) {
+        d.y0 = d3.event.y - d.dy;
+        d3.select(this).attr("transform", `translate(${[d.x0,d.y0]})`);
+        sankey.update(graph);
+        d3.selectAll('.link').attr("d", d3.sankeyLinkHorizontal());
+    }
+
+    function dragEnd(d) {
+        d3.selectAll(".link, .node").style('pointer-events', 'auto')
+        d3.select(this).classed("active", false);
+    }
+ </script>
 
 </body>
 </html>

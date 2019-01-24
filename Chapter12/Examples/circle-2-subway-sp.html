@@ -39,7 +39,7 @@
         const circleLayout = dvj.circleDiagram().size([width-margin*2, height-margin*2]);
         const circleData = circleLayout(data.nodes, data.links);
 
-        console.log(circleData.points(), circleData.links())
+        console.log(circleData.nodes(), circleData.links())
 
         draw(circleData);
 
@@ -64,7 +64,7 @@
                 .attr('fill', 'none');
 
         chart.selectAll('circle')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('circle')
                 .attr("id", d => d.node)
@@ -76,7 +76,7 @@
                 .on('mouseout', d => d3.selectAll("line, circle, text").classed('faded', false));
 
         chart.selectAll('text.location')
-                .data(data.points())
+                .data(data.nodes())
                 .enter()
                 .append('text').attr('class','location')
                 .attr('x', d => d3.pointRadial(d.angle, d.radius + 25)[0])

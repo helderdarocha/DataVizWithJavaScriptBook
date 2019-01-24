@@ -8,10 +8,16 @@
     <style>
         text {
             font-family: 'Yanone Kaffeesatz', sans-serif;
-            font-size: 18px;
+            font-size: 14px;
             alignment-baseline: middle;
             text-anchor: middle;
             fill: white;
+        }
+        .faded {
+            opacity: .3;
+        }
+        .active {
+            opacity: 1;
         }
     </style>
 </head>
@@ -88,51 +94,57 @@
         {node: 'Z', value: 1},
     ];
 
-    const circleLayout = dvj.circleDiagram().size([width-margin, height-margin]);
+    const arcDiagLayout = dvj.arcDiagram().width(width-margin);
 
-    const data = circleLayout(nodes, edges);
+    const data = arcDiagLayout(nodes, edges);
+
+    console.log(data.nodes(), data.links())
 
     color.domain([0, d3.max(edges, d => d.value)]);
 
     const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
-    const chart = svg.append("g").attr("transform", `translate(${[margin/2 + width/2,margin/4 + height/2]})`);
+    const chart = svg.append("g").attr("transform", `translate(${[margin/2,margin/2 + height/2]})`);
+
+    const curve = dvj.curve();
 
     const widthScale = d3.scaleLinear()
             .range([2,10])
             .domain([0, d3.max(edges, d => d.value)]);
 
-    const radialLink = d3.linkRadial()
-            .angle(function(d)  { return d.angle;  })
-            .radius(function(d) { return d.radius; });
-
     chart.selectAll('path')
             .data(data.links())
             .enter()
             .append('path')
-            .attr('d', radialLink)
+            .attr('d', curve)
             .attr('stroke-width', d => widthScale(d.value))
             .attr('stroke', d => color(d.source.i))
-            .attr('stroke-opacity', .3)
+            .style('stroke-opacity', .3)
             .attr('fill', 'none');
 
     chart.selectAll('circle')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('circle')
-            .attr('cx', d => d3.pointRadial(d.angle, d.radius)[0])
-            .attr('cy', d => d3.pointRadial(d.angle, d.radius)[1])
+            .attr('cx', d => d.x)
             .attr('fill', (d,i) => color(i))
-            .attr('r', 15);
+            .attr('r', 10)
+            .on('mouseover', highlight)
+            .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));
 
     chart.selectAll('text')
-            .data(data.points())
+            .data(data.nodes())
             .enter()
             .append('text')
-            .attr('x', d => d3.pointRadial(d.angle, d.radius)[0])
-            .attr('y', d => d3.pointRadial(d.angle, d.radius)[1])
-            .text(d => d.node);
+            .attr('x', d => d.x)
+            .text(d => d.node)
+            .style('pointer-events','none');
 
-
+    function highlight(d) {
+        d3.selectAll("path").classed('faded', s => !(s.source === d || s.target === d))
+        d3.selectAll("circle").classed('faded', n => !(n === d
+                                                   || n.sources.filter(s => s.target === d).length > 0
+                                                   || n.targets.filter(s => s.source === d).length > 0))
+    }
 
 </script>
 </body>
