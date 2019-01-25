@@ -105,14 +105,19 @@
     sim.on('tick', redraw);
 
     // Dragging behavior
-    const nodeDragged = d3.drag().on('drag', function(d) {
-        d.x = d3.event.x;
-        d.y = d3.event.y;
-        if(sim.alpha() < .05) {
-            sim.alpha(.05);
-            sim.restart();
-        }
-    });
+    const nodeDragged = d3.drag()
+        .on('drag', function(d) {
+            d.x = d3.event.x;
+            d.y = d3.event.y;
+            console.log(sim.alpha())
+        })
+        .on('start', function() {
+            if(sim.alpha() <= sim.alphaMin()) {
+                sim.restart();
+            }
+            sim.alphaTarget(sim.alphaMin() + .1)
+        })
+        .on('end', () => sim.alphaTarget(0));
 
     draw();
 

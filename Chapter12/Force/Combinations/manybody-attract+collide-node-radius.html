@@ -57,7 +57,8 @@
     const chart = svg.append("g").attr("transform", `translate(${[margin/2 + width/2,margin/2 + height/2]})`);
 
 
-    const sim = d3.forceSimulation(nodes);
+    // static part
+    const sim = d3.forceSimulation(nodes).stop();
 
     const manyBody = d3.forceManyBody();
     sim.force('manybody', manyBody);
@@ -66,8 +67,11 @@
     for(let i = 0; i < 45; i++) { sim.tick(); } // start separated
 
     manyBody.strength(100);
-    sim.force('collide', d3.forceCollide(d => radius(d.value)).iterations(50));
+    sim.force('collide', d3.forceCollide(d => radius(d.value)).iterations(10));
 
+    // dynamic part
+    sim.alpha(1);
+    sim.restart();
     sim.on('tick', redraw);
 
     draw(chart);

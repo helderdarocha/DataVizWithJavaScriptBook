@@ -2,77 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-2-node-link.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-8-from-nodelink-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-8-from-nodelink.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-11-id.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-4-distance.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/simple-example-dynamic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/simple-example-interactive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/simple-example-static.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Linear/arc-4-from-matrix.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Radial/circle-5-from-matrix.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Sankey/sankey-4-drag-nodes.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter12/JavaScript/adjacency.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter12/JavaScript/arc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter12/JavaScript/circle.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-1.html" afterPath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-1-matrix.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-2-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-3-highlight.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-2-tooltip.html" afterPath="$PROJECT_DIR$/Chapter12/Adjacency/adjacency-4-tooltip.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-4-lines.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-5-lines.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-5-strength-per-link.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-6-strength-per-link.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-6-degree.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-7-degree.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-7-weight.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-8-weight.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-8-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-9-highlight.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-9-drag.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Link/force-link-10-drag.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/arc-1.html" afterPath="$PROJECT_DIR$/Chapter12/Linear/arc-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/arc-2.html" afterPath="$PROJECT_DIR$/Chapter12/Linear/arc-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/arc-3-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Linear/arc-3-highlight.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/circle-1.html" afterPath="$PROJECT_DIR$/Chapter12/Radial/circle-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/circle-2.html" afterPath="$PROJECT_DIR$/Chapter12/Radial/circle-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/circle-3-pathlink.html" afterPath="$PROJECT_DIR$/Chapter12/Radial/circle-3-pathlink.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/circle-4-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Radial/circle-4-highlight.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter12/Graph/static-1-euler.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/grid-1-euler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter12/Force/simple-example-no-force.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Chord/chord-1-ribbon.html" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-1-ribbon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Chord/chord-2-nodes.html" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-2-nodes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Chord/chord-6-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Chord/chord-6-highlight.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-1-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-1-migrations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-2-migrations-asia.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-2-migrations-asia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-3-migrations-all.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-3-migrations-all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-4-migrations-n_america.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-4-migrations-n_america.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-5-borders-sa-symmetrical.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-5-borders-sa-symmetrical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-6-borders-sa-triangular.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-6-borders-sa-triangular.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-7-subway.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-7-subway.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/adjacency-8-subway-crosslines.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/adjacency-8-subway-crosslines.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-1-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-1-migrations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-10-subway-sp.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-10-subway-sp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-11-subway-sp-lines.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-11-subway-sp-lines.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-2-migrations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-3-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-3-migrations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-4-migrations-africa.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-4-migrations-africa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-5-migrations-america.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-5-migrations-america.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-6-migrations-europe.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-6-migrations-europe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-7-migrations-asia.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-7-migrations-asia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-8-minard.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-8-minard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/arc-9-borders-sa.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/arc-9-borders-sa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/chord-6-migrations.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/chord-6-migrations.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/circle-1-borders-sa.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/circle-1-borders-sa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/circle-2-subway-sp.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/circle-2-subway-sp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/circle-3-subway-sp-pathlinks.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/circle-3-subway-sp-pathlinks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/sankey-1-minard.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/sankey-1-minard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/sankey-2-europe-ussr-count.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/sankey-2-europe-ussr-count.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/sankey-3-europe-ussr.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/sankey-3-europe-ussr.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/sankey-4-european-union.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/sankey-4-european-union.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Examples/sankey-5-berlin-wall-pop.html" afterPath="$PROJECT_DIR$/Chapter12/Examples/sankey-5-berlin-wall-pop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/JavaScript/dvj-all.js" afterPath="$PROJECT_DIR$/Chapter12/JavaScript/dvj-all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Sankey/sankey-1.html" afterPath="$PROJECT_DIR$/Chapter12/Sankey/sankey-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Sankey/sankey-2-align.html" afterPath="$PROJECT_DIR$/Chapter12/Sankey/sankey-2-align.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Sankey/sankey-3-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Sankey/sankey-3-highlight.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter4/JavaScript/Chart.PieceLabel.js" afterPath="$PROJECT_DIR$/Chapter4/JavaScript/Chart.PieceLabel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter5/JavaScript/Chart.PieceLabel.js" afterPath="$PROJECT_DIR$/Chapter5/JavaScript/Chart.PieceLabel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-radial.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-radial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Force/Combinations/manybody-attract+collide-node-radius.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Combinations/manybody-attract+collide-node-radius.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-drag.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-drag.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-highlight.html" afterPath="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-highlight.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,101 +32,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="force-collide-2-fixed-radius.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Collide/force-collide-2-fixed-radius.html">
+      <file leaf-file-name="nodes-links-edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            <state relative-caret-position="579">
+              <caret line="238" column="35" selection-start-line="238" selection-start-column="35" selection-end-line="238" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="force-collide-3-strength.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Collide/force-collide-3-strength.html">
+      <file leaf-file-name="nodes-links-drag.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-drag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            <state relative-caret-position="495">
+              <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="force-collide-4-variable-radius.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Collide/force-collide-4-variable-radius.html">
+      <file leaf-file-name="sankey-4-drag-nodes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-4-drag-nodes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="link+collide+center.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+center.html">
+      <file leaf-file-name="force-link-9-highlight.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Link/force-link-9-highlight.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="link+collide+position-radial.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-radial.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="link+collide+position-x.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-x.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-1553">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="link+collide-node-radius.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide-node-radius.html">
+      <file leaf-file-name="force-link-10-drag.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Link/force-link-10-drag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            <state relative-caret-position="82">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="86" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interactive-tick-alpha-linear.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha-linear.html">
+      <file leaf-file-name="simple-example-dynamic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-dynamic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple-example-no-force.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-no-force.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple-example-static.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-static.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enter-exit-5-enter-append-merge.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter8/GeneralUpdatePattern/enter-exit-5-enter-append-merge.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nodes-links-find.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interactive-force.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-force.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manybody+collide+position-y.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/manybody+collide+position-y.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+              <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="139" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -210,12 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter12/Force/Position/force-position-1-x.html" />
-        <option value="$PROJECT_DIR$/Chapter12/Force/Collide/force-collide-4-variable-radius.html" />
-        <option value="$PROJECT_DIR$/Chapter12/Force/Interactive-Static-Alpha/interactive-tick-alpha.html" />
-        <option value="$PROJECT_DIR$/Chapter12/JavaScript/LogSlider.js" />
-        <option value="$PROJECT_DIR$/Chapter12/Force/Interactive-Static-Alpha/tick-alpha.html" />
-        <option value="$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha.html" />
         <option value="$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha-log.html" />
         <option value="$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha-linear.html" />
         <option value="$PROJECT_DIR$/Chapter12/Examples/adjacency-7-subway.html" />
@@ -260,7 +192,13 @@
         <option value="$PROJECT_DIR$/Chapter12/Force/Combinations/simple-example-static.html" />
         <option value="$PROJECT_DIR$/Chapter12/Force/Combinations/simple-example-interactive.html" />
         <option value="$PROJECT_DIR$/Chapter12/Force/Combinations/simple-example-dynamic.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Force/Combinations/manybody-attract+collide-node-radius.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-radial.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-highlight.html" />
         <option value="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-drag.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-edit.html" />
+        <option value="$PROJECT_DIR$/Chapter12/Force/simple-example-no-force.html" />
       </list>
     </option>
   </component>
@@ -274,8 +212,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2038" />
-    <option name="y" value="93" />
+    <option name="y" value="70" />
     <option name="width" value="1382" />
     <option name="height" value="794" />
   </component>
@@ -304,6 +241,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -322,206 +261,8 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sankey" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Node-Selection" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ManyBody" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Interactive-Alpha" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Combinations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Collide" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter12" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Force" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Center" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -535,19 +276,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chapter12/Force/Node-Selection" />
-      <recent name="$PROJECT_DIR$/Chapter12/Force/Combinations" />
-      <recent name="$PROJECT_DIR$/Chapter12" />
-      <recent name="$PROJECT_DIR$/Chapter12/Sankey" />
-      <recent name="$PROJECT_DIR$/Chapter12/Examples" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Chapter12/Force" />
       <recent name="$PROJECT_DIR$/Chapter12/Examples" />
       <recent name="$PROJECT_DIR$/Chapter12/Force/Drag-Selection" />
       <recent name="$PROJECT_DIR$/Chapter12/Force/Static-Force" />
       <recent name="$PROJECT_DIR$/Chapter12/Force/Interactive-Static-Alpha" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter12/Force" />
+      <recent name="$PROJECT_DIR$/Chapter12/Force/Node-Selection" />
+      <recent name="$PROJECT_DIR$/Chapter12/Force/Combinations" />
+      <recent name="$PROJECT_DIR$/Chapter12" />
+      <recent name="$PROJECT_DIR$/Chapter12/Sankey" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.force-14-link+collide+position-y.html">
@@ -688,22 +429,22 @@
       <workItem from="1547467366694" duration="46526000" />
       <workItem from="1547553787444" duration="21873000" />
       <workItem from="1547649446698" duration="27230000" />
-      <workItem from="1547729755567" duration="108375000" />
+      <workItem from="1547729755567" duration="115309000" />
+      <workItem from="1548342902952" duration="9796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1463776000" />
+    <option name="totallyTimeSpent" value="1480506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2038" y="93" width="1382" height="794" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="70" width="1382" height="794" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26343283" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26716417" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3233618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -714,6 +455,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3233618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -770,13 +512,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha-log.html</url>
           <line>105</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Chapter12/Examples/sankey-2-europe-ussr-count.html</url>
           <line>92</line>
-          <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
@@ -785,83 +525,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-4-european-union.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-3-europe-ussr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-2-europe-ussr-count.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-5-berlin-wall-pop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Link/force-link-10-drag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="73" column="4" selection-start-line="73" selection-start-column="4" selection-end-line="86" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Link/force-link-11-id.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/arc-8-minard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/sankey-1-minard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/chord-8-minard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Examples/chord-8-minard.html" />
     <entry file="file://$PROJECT_DIR$/Chapter12/Examples/adjacency-2-migrations-asia.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -877,7 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -893,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1198">
           <caret line="169" column="6" selection-start-line="169" selection-start-column="6" selection-end-line="169" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="45" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="57" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,26 +602,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-6-string-nodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-5-drag-nodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-6-string-nodes.html" />
+    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-5-drag-nodes.html" />
     <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-3-highlight.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
@@ -981,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="69" column="49" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,18 +634,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="177" column="49" selection-start-line="177" selection-start-column="49" selection-end-line="177" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Radial/arc-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Radial/arc-1.html" />
     <entry file="file://$PROJECT_DIR$/Chapter12/Linear/arc-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1009,22 +646,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-4-drag-nodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/simple-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/simple-example.html" />
     <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-interactive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -1033,43 +655,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-static.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-dynamic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="68" column="38" selection-start-line="66" selection-start-column="7" selection-end-line="68" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-highlight.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="165" column="6" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="127" column="7" selection-start-line="127" selection-start-column="7" selection-end-line="127" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/Force/Center/force-center-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,6 +713,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-x.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1137,23 +740,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+center.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/manybody+collide+position-y.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="-465">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/manybody-attract+collide-node-radius.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide-node-radius.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-force.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-radial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="1500">
+          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="101" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide+position-x.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha-linear.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-highlight.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2250">
+          <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter8/GeneralUpdatePattern/enter-exit-5-enter-append-merge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Sankey/sankey-4-drag-nodes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Link/force-link-9-highlight.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1553">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Link/force-link-10-drag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="86" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="139" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-drag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/grid-no-force.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1161,34 +852,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/link+collide-node-radius.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Node-Selection/nodes-links-edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        <state relative-caret-position="579">
+          <caret line="238" column="35" selection-start-line="238" selection-start-column="35" selection-end-line="238" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-tick-alpha-linear.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-no-force.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        <state relative-caret-position="405">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Interactive-Alpha/interactive-force.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-dynamic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="149">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter12/Force/Combinations/manybody+collide+position-y.html">
+    <entry file="file://$PROJECT_DIR$/Chapter12/Force/simple-example-static.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="119">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding />
         </state>
       </provider>

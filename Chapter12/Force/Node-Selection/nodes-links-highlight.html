@@ -140,7 +140,7 @@
                 .attr('fill', (d,i) => color(i))
                 .attr('stroke', 'black')
                 .on('mouseover', highlightNode)
-                .on('mouseout', d => d3.selectAll("circle, line").classed('faded highlight', false));
+                .on('mouseout', fade);
 
         chart.selectAll('text')
                 .data(nodes).enter()
@@ -175,6 +175,9 @@
                                 || links.filter(k => k.source == node).filter(m => m.target == d).length > 0
                                 || links.filter(k => k.target == node).filter(m => m.source == d).length > 0));
         d3.selectAll("line").classed('faded', edge => !(edge.source === node || edge.target === node ));
+    }
+    function fade() {
+        d3.selectAll("circle, line").classed('faded highlight', false);
     }
 
 </script>

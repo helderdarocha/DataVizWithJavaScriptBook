@@ -12,16 +12,6 @@
             text-anchor: middle;
             fill: white;
         }
-
-        .highlight circle {
-            stroke-width: 5;
-            stroke: pink;
-            fill: black;
-            r: 25;
-        }
-        .highlight text {
-            font-size: 150%;
-        }
     </style>
 </head>
 <body>
@@ -103,26 +93,17 @@
 
     sim.force('center', d3.forceCenter());
 
-    console.log(sim.nodes());
+    const offsetX = margin/2 + width/2;
+    const offsetY = margin/2 + height/2;
 
     const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
-    const chart = svg.append("g").attr("transform", `translate(${[margin/2 + width/2, margin/2 + height/2]})`);
+    const chart = svg.append("g").attr("transform", `translate(${[offsetX,offsetY]})`);
 
     sim.force('link', d3.forceLink(links).iterations(15));
     sim.force('manybody', d3.forceManyBody().strength(100))
     sim.force('collide', d3.forceCollide(30));
 
     sim.on('tick', redraw);
-
-    // Dragging behavior
-    const nodeDragged = d3.drag().on('drag', function(d) {
-        d.x = d3.event.x;
-        d.y = d3.event.y;
-        if(sim.alpha() < .05) {
-            sim.alpha(.05);
-            sim.restart();
-        }
-    });
 
     // to capture mouse clicks using chart area coordinates
     const mouseDownCanvas = chart.append('rect')
@@ -131,15 +112,28 @@
             .attr('fill', 'white')
             .attr("transform", `translate(${[-width/2,-height/2]})`);
 
+    // Dragging behavior
+    const nodeDragged = d3.drag()
+            .on('drag', function(d) {
+                d.x = d3.event.x;
+                d.y = d3.event.y;
+            })
+            .on('start', function() {
+                if(sim.alpha() <= sim.alphaMin()) {
+                    sim.restart();
+                }
+                sim.alphaTarget(sim.alphaMin() + .1)
+            })
+            .on('end', () => sim.alphaTarget(0));
+
     draw();
 
     function draw() {
-        mouseDownCanvas.on('click', function() {
-            const nearest = sim.find(d3.mouse(this)[0] - width/2, d3.mouse(this)[1] - height/2);
-            d3.selectAll('.node').classed('highlight', d => d == nearest);
-        })
+        //svg.on('click', addNode);
+        mouseDownCanvas.on('click', addNode);
+
         chart.selectAll('line')
-                .data(links).enter()
+                .data(links, d => d.source.node + '-' + d.target.node).enter() // must use name as key so that nodes are removed correctly
                 .append('line')
                 .attr('x1', d => d.source.x)
                 .attr('x2', d => d.target.x)
@@ -150,7 +144,7 @@
                 .attr('stroke-width', d => d.value * d.value)
 
         chart.selectAll('g.node')
-                .data(nodes).enter()
+                .data(nodes, d => d.node).enter()
                 .append('g').attr('class', 'node')
                 .attr('transform', d => `translate(${[d.x, d.y]})`)
                 .each(function(d,i) {
@@ -161,6 +155,7 @@
                     d3.select(this).append('text')
                             .text(d => d.node)
                 })
+                .on('click', removeNode)
                 .call(nodeDragged);
 
     }
@@ -174,6 +169,80 @@
                 .attr('x2', d => d.target.x)
                 .attr('y1', d => d.source.y)
                 .attr('y2', d => d.target.y)
+    }
+
+    function removeNode(d) {
+        d3.event.stopPropagation(); // required so event doesn' also create new node
+
+        // 1) Update data
+        nodes.splice(d.index, 1); // remove from nodes array
+        for (let i = 0; i < links.length;) { // remove connecting links from links array
+            if(links[i].source == d || links[i].target == d) {
+                links.splice(i, 1);
+            } else {
+                ++i;
+            }
+        }
+
+        // 2) Update simulation
+        sim.nodes(nodes);    // update simulation with new array
+        sim.force('link')    // update link force with new nodes and links
+                .links(links)
+                .initialize(nodes);
+
+        // 3) Update SVG data bindings
+        this.remove();       // update SVG elements: remove node
+        d3.selectAll('line') // update SVG elements: remove links
+                .data(links, d => d.source.node + '-' + d.target.node).exit().remove();
+
+        // 4) Reheat simulation
+        if(sim.alpha() < .05) {
+            sim.alpha(.05);
+            sim.restart();
+        }
+    }
+
+    function addNode() {
+
+        // 1) Update data arrays
+        const nearest = sim.find(d3.mouse(this)[0] - width/2, d3.mouse(this)[1] - height/2);
+        //const nearest = sim.find(d3.event.x - offsetX, d3.event.y - offsetY);
+        nodes.push({node: nearest.node + (links.filter(n => n.source == nearest).length + 1), value: 1});
+        links.push({source: nearest.index, target: nodes.length-1, value: 2}); // link to nearest
+
+        // 2) Update simulation
+        sim.nodes(nodes); // update simulation nodes
+        sim.force('link')
+                .links(links)
+                .initialize(nodes); // update links
+
+        // 3) Update SVG data bindings
+        const selk = chart.selectAll('line').data(links)
+        selk.enter().append('line').merge(selk)
+                .attr('x1', d => d.source.x)
+                .attr('x2', d => d.target.x)
+                .attr('y1', d => d.source.y)
+                .attr('y2', d => d.target.y)
+                .attr('fill', 'none')
+                 .attr('stroke', 'black')
+                .attr('stroke-width', d => d.value * d.value)
+
+        const seln = chart.selectAll('g.node').raise().data(nodes);
+        seln.enter().append('g').attr('class', 'node').merge(seln).each(function(d,i) {
+                    d3.select(this).append('circle')
+                            .attr('r', 15)
+                            .attr('fill', color(i))
+                    d3.select(this).append('text')
+                            .text(d => d.node)
+                })
+                .on('click', removeNode)
+                .call(nodeDragged);
+
+        // 4) Reheat simulation
+        if(sim.alpha() < .05) {
+            sim.alpha(.05);
+            sim.restart();
+        }
     }
 
 </script>
