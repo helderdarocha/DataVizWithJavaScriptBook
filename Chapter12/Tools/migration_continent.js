@@ -30,32 +30,6 @@ function process(results) {
     });
     writeFile(JSON.stringify(data));
 }
-function a() {
-
-    migrations.forEach(function(m) {
-        let match = false;
-        populations.forEach(function(p) {
-            if (p.Country == m.Destination) {
-                match = true;
-                if(!m.Code) {
-                    m.Code = p.Code;
-                    newData.push(p.Code);
-                } else {
-                    nothing.push(p.Code);
-                }
-            }
-        });
-        if(!match) {
-            matches.push(m.Destination);
-        }
-    });
-    
-    console.log("NO MATCHES", matches);
-    console.log("NEWDATA", newData);
-    console.log("NOTHING size", nothing.length);
-
-    writeFile(Papa.unparse(migrations));
-}
 
 function writeFile(data) {
     fs.writeFile(target, data, (err) => {

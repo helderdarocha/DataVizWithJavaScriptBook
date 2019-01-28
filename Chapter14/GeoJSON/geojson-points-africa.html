@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        svg {border: solid 1px gray;}
+        text {
+            font-family: "Yanone Kaffeesatz", sans-serif;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 960;
+    const height = 500;
+
+
+    d3.json('../Data/africa-simple.geojson')
+            .then(function(data) {
+
+        console.log(data);
+
+        const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+        const svg = d3.select("body").append("svg")
+                      .attr("width", width).attr("height", height);
+
+        const geoPath = d3.geoPath().projection(d3.geoMercator());
+
+        const rivers    = data.features.filter(d => d.geometry.type == 'LineString' || d.geometry.type == 'MultiLineString');
+        const continent = data.features.filter(d => d.geometry.type == 'Polygon' || d.geometry.type == 'MultiPolygon');
+        const cities    = data.features.filter(d => d.geometry.type == 'Point');
+
+        svg.selectAll("g.continent")
+                .data(continent)
+                .enter()
+                .append("g")
+                .attr("class","continent")
+                .attr("fill", (d,i) =>  color(i))
+                .attr("opacity", .9)
+                .attr("stroke", "white")
+                .append("path")
+                    .attr('d', geoPath)
+
+
+        svg.selectAll("g.river")
+                .data(rivers)
+                .enter()
+                .append("g")
+                .attr("class","river")
+                .attr("fill", 'none')
+                .attr("stroke", "cyan")
+                .append("path")
+                    .attr('d', geoPath)
+
+        svg.selectAll("g.city")
+                .data(cities)
+                .enter()
+                .append("g")
+                .attr("class","city")
+                .each(function(d) {
+                    d3.select(this)
+                      .append("circle")
+                            .attr("fill", 'yellow')
+                            .attr("stroke", "black")
+                            .attr('cx', geoPath.projection()(d.geometry.coordinates)[0])
+                            .attr('cy', geoPath.projection()(d.geometry.coordinates)[1])
+                            .attr('r', 3);
+                    d3.select(this)
+                      .append("text")
+                            .attr('x', geoPath.projection()(d.geometry.coordinates)[0])
+                            .attr('y', geoPath.projection()(d.geometry.coordinates)[1] + 2)
+                            .style("font-size", 10)
+                            .style('text-anchor', 'middle')
+                            .style('alignment-baseline', 'hanging')
+                            .text(d.properties.name);
+                })
+
+    })
+</script>
+
+</body>
+</html>
