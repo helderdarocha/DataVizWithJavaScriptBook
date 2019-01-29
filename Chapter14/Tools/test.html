@@ -7,7 +7,7 @@
 </head>
 <body>
 <script>
-    const source1 = '../Data/world.geojson';
+    const source1 = '../Data/world-medres.geojson';
     const source2 = '../Data/un_regions.csv';
     const target = '../Data/world-continents.geojson';
 
@@ -29,14 +29,14 @@
         world.features.forEach(function(c) {
             let match = false;
             regions.forEach(function(r) {
-                if (r.code === c.id) {
+                if (r.code === c.properties.ISO_A3) {
                     match = true;
                     c.properties.continent = r.continent;
                     newData.push(r.Country);
                 }
             });
             if(!match) {
-                matches.push(c.id);
+                matches.push(c.properties.ISO_A3);
                 c.properties.continent = 'Unmatched'
             }
         });

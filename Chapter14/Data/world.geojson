@@ -24939,7 +24939,7 @@
       "id": "CS-KM",
       "properties": {
         "name": "Kosovo",
-        "continent": "Unmatched"
+        "continent": "Europe"
       },
       "geometry": {
         "type": "Polygon",
