@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson-client"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+</head>
+<body>
+<script>
+    const width = 960;
+    const height = 500;
+    const file = "world-medres.topojson";
+    const key  = "world";
+
+    const svg = d3.select("body").append("svg")
+            .attr("width", width).attr("height", height);
+
+    // choose a projection
+    const projection = d3.geoConicEquidistant()
+            .center([-2.5, 55]) // center Great Britain
+            .scale(1500)
+
+    // create a path generator function for the projection
+    const geoPath = d3.geoPath()
+            .projection(projection)
+
+    const map = {};
+
+    d3.json('../Data/' + file)
+            .then(function(topology) {
+                //console.log(topology); // TopoJSON topology
+
+                map.topology   = topology.objects[key];
+                map.geometries = map.topology.geometries;
+                map.features   = topojson.feature(topology, map.topology).features;
+
+                drawGraticules();
+                draw();
+
+            });
+
+    function draw() {
+        svg.selectAll("g.country")
+                .data(map.features)
+                .enter()
+                .append("g")
+                .attr("class","country")
+                .attr("fill", 'gray')
+                .attr("fill-opacity", .9)
+                    .append("path")
+                    .attr('d', geoPath)
+                    .attr("stroke", "white")
+                    .attr('stroke-width', '.25');
+    }
+
+    const graticule = d3.geoGraticule()
+            .stepMinor([2.5,2.5])
+            .stepMajor([10,10]);
+    console.log(graticule)
+
+    function drawGraticules() {
+        svg.append("path").attr("class","background")
+                .datum(d3.geoGraticule().outline())
+                .attr('d', geoPath)
+                .attr("stroke", "black")
+                .attr("fill", "hsl(30,100%,95%")
+                .attr('stroke-width', 2);
+
+        svg.append("path").attr("class","tropic-cancer")
+                .datum(d3.geoCircle().center([0,90]).radius(66.5))
+                .attr('d', geoPath)
+                .attr("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .attr("fill", "white")
+                .attr('stroke-width', 1)
+
+        svg.append("path").attr("class","tropic-capricorn")
+                .datum(d3.geoCircle().center([0,-90]).radius(66.5))
+                .attr('d', geoPath)
+                .attr("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .attr("fill", "white")
+                .attr('stroke-width', 1)
+
+        svg.append("path").attr("class","antarctic-circle")
+                .datum(d3.geoCircle().center([0,-90]).radius(23.5))
+                .attr('d', geoPath)
+                .attr("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .attr("fill", "hsl(240,100%,95%")
+                .attr('stroke-width', 1)
+                .attr('stroke-opacity', .6);
+
+        svg.append("path").attr("class","arctic-circle")
+                .datum(d3.geoCircle().center([0,90]).radius(23.5))
+                .attr('d', geoPath)
+                .attr("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .attr("fill", "hsl(240,100%,95%")
+                .attr('stroke-width', 1)
+                .attr('stroke-opacity', .6);
+
+        svg.append("path").attr("class","graticule")
+                .datum(graticule())
+                .attr("fill", 'none')
+                .attr('d', geoPath)
+                .attr("stroke", "green")
+                .attr('stroke-width', '.25');
+
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 3)
+                .attr('stroke-opacity', .2);
+
+        svg.append("path").attr("class","prime")
+                .datum(d3.geoCircle().center([90,0]))
+                .attr('d', geoPath)
+                .attr("stroke", "red")
+                .attr("fill", "none")
+                .attr('stroke-width', 3)
+                .attr('stroke-opacity', .2);
+
+        svg.append("path").attr("class","outline")
+                .datum(d3.geoGraticule().outline())
+                .attr('d', geoPath)
+                .attr("stroke", "black")
+                .attr("fill", "none")
+                .attr('stroke-width', 3);
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,987 @@
+iata,latitude,longitude,name,city,country,region,rank,passengers,year
+POM,-9.443380355834961,147.22000122070312,Port Moresby Jacksons International Airport,Port Moresby,Papua New Guinea,Pacific,612,900000,2017
+KEF,63.985000610352,-22.605600357056,Keflavik International Airport,Keflavik,Iceland,Atlantic,228,8260949,2017
+YEG,53.309700012200004,-113.580001831,Edmonton International Airport,Edmonton,Canada,America,241,7807384,2017
+YHZ,44.8807983398,-63.5085983276,Halifax / Stanfield International Airport,Halifax,Canada,America,339,4083188,2017
+YLW,49.9561004639,-119.377998352,Kelowna International Airport,Kelowna,Canada,America,469,1893470,2017
+YOW,45.3224983215332,-75.66919708251953,Ottawa Macdonald-Cartier International Airport,Ottawa,Canada,America,315,4839677,2017
+YQB,46.7911,-71.393303,Quebec Jean Lesage International Airport,Quebec,Canada,America,496,1670880,2017
+YQR,50.43190002441406,-104.66600036621094,Regina International Airport,Regina,Canada,America,550,1219311,2017
+YTZ,43.627499,-79.396202,Billy Bishop Toronto City Centre Airport,Toronto,Canada,America,396,2800000,2017
+YUL,45.4706001282,-73.7407989502,Montreal / Pierre Elliott Trudeau International Airport,Montreal,Canada,America,130,18160223,2017
+YVR,49.193901062,-123.183998108,Vancouver International Airport,Vancouver,Canada,America,92,24166122,2017
+YWG,49.909999847399995,-97.2398986816,Winnipeg / James Armstrong Richardson International Airport,Winnipeg,Canada,America,329,4305744,2017
+YXE,52.170799255371094,-106.69999694824219,Saskatoon John G. Diefenbaker International Airport,Saskatoon,Canada,America,523,1462751,2017
+YYC,51.113899231,-114.019996643,Calgary International Airport,Calgary,Canada,America,142,16275862,2017
+YYJ,48.646900177,-123.426002502,Victoria International Airport,Victoria,Canada,America,466,1934842,2017
+YYZ,43.6772003174,-79.63059997559999,Lester B. Pearson International Airport,Toronto,Canada,America,30,47054696,2017
+BJA,36.7120018005,5.0699200630200005,Soummam Airport,Bejaja,Algeria,Africa,805,294933,2017
+ALG,36.691001892089844,3.215409994125366,Houari Boumediene Airport,Algier,Algeria,Africa,246,7500000,2017
+TMR,22.8115005493,5.45107984543,Aguenar – Hadj Bey Akhamok Airport,Tamanrasset,Algeria,Africa,965,70515,2017
+AAE,36.822200775146484,7.809169769287109,Annaba Airport,Annaba,Algeria,Africa,732,466053,2017
+TLM,35.0167007446,-1.45000004768,Zenata – Messali El Hadj Airport,Tlemcen,Algeria,Africa,915,137907,2017
+ORN,35.6239013672,-0.6211829781529999,Es Senia Airport,Oran,Algeria,Africa,472,1851910,2017
+AZR,27.837600708007812,-0.18641400337219238,Touat Cheikh Sidi Mohamed Belkebir Airport,Adrar,Algeria,Africa,942,92197,2017
+BSK,34.793300628699996,5.73823022842,Biskra Airport,Biskra,Algeria,Africa,939,93644,2017
+GHA,32.38410186767578,3.794110059738159,Noumérat - Moufdi Zakaria Airport,Ghardaia,Algeria,Africa,985,45794,2017
+HME,31.673000335699996,6.140439987180001,Oued Irara Airport,Hassi Messaoud,Algeria,Africa,737,450929,2017
+COO,6.357230186462402,2.384350061416626,Cadjehoun Airport,Cotonou,Benin,Africa,718,503633,2017
+ACC,5.605189800262451,-0.16678600013256073,Kotoka International Airport,Accra,Ghana,Africa,411,2547527,2017
+ABJ,5.261390209197998,-3.9262900352478027,Port Bouet Airport,Abidjan,Cote d'Ivoire,Africa,448,2070000,2017
+ABV,9.006790161132812,7.263169765472412,Nnamdi Azikiwe International Airport,Abuja,Nigeria,Africa,362,3462830,2017
+CBQ,4.976019859313965,8.347200393676758,Margaret Ekpo International Airport,Calabar,Nigeria,Africa,880,189908,2017
+ENU,6.474269866943359,7.561960220336914,Akanu Ibiam International Airport,Enugu,Nigeria,Africa,772,352820,2017
+KAN,12.047599792480469,8.524620056152344,Mallam Aminu International Airport,Kano,Nigeria,Africa,757,389530,2017
+LOS,6.5773701667785645,3.321160078048706,Murtala Muhammed International Airport,Lagos,Nigeria,Africa,267,6367478,2017
+PHC,5.0154900550842285,6.94959020614624,Port Harcourt International Airport,Port Hartcourt,Nigeria,Africa,549,1223807,2017
+NIM,13.481499671936035,2.183609962463379,Diori Hamani International Airport,Niamey,Niger,Africa,899,165000,2017
+MIR,35.75809860229492,10.75469970703125,Monastir Habib Bourguiba International Airport,Monastir,Tunisia,Africa,350,3831924,2017
+TUN,36.85100173950195,10.22719955444336,Tunis Carthage International Airport,Tunis,Tunisia,Africa,289,5691037,2017
+DJE,33.875,10.775500297546387,Djerba Zarzis International Airport,Djerba,Tunisia,Africa,532,1354502,2017
+BRU,50.901401519800004,4.48443984985,Brussels Airport,Brussels,Belgium,Europe,86,24783911,2017
+CRL,50.459201812699995,4.45382022858,Brussels South Charleroi Airport,Charleroi,Belgium,Europe,244,7698767,2017
+SXF,52.380001068115,13.522500038147,Berlin-Schönefeld International Airport,Berlin,Germany,Europe,168,12865315,2017
+DRS,51.1328010559082,13.767200469970703,Dresden Airport,Dresden,Germany,Europe,493,1706563,2017
+ERF,50.979801177978516,10.958100318908691,Erfurt Airport,Erfurt,Germany,Europe,814,282731,2017
+FRA,50.0333333,8.5705556,Frankfurt am Main International Airport,Frankfurt,Germany,Europe,14,64500386,2017
+FMO,52.134601593,7.68483018875,Münster Osnabrück Airport,Munster,Germany,Europe,596,962348,2017
+HAM,53.630401611328,9.9882297515869,Hamburg Airport,Hamburg,Germany,Europe,133,17622997,2017
+CGN,50.8658981323,7.1427397728,Cologne Bonn Airport,Cologne,Germany,Europe,175,12384223,2017
+DUS,51.28950119018555,6.766779899597168,Düsseldorf International Airport,Duesseldorf,Germany,Europe,87,24640564,2017
+MUC,48.353801727295,11.786100387573,Munich International Airport,Munich,Germany,Europe,38,44577241,2017
+NUE,49.498699,11.0780556,Nuremberg Airport,Nuernberg,Germany,Europe,334,4186961,2017
+LEJ,51.4238889,12.2363889,Leipzig Halle Airport,Leipzig,Germany,Europe,427,2361534,2017
+SCN,49.214599609400004,7.10950994492,Saarbrücken Airport,Saarbruecken,Germany,Europe,755,396849,2017
+STR,48.689899444599995,9.22196006775,Stuttgart Airport,Stuttgart,Germany,Europe,188,10962247,2017
+TXL,52.5597000122,13.2876996994,Berlin-Tegel International Airport,Berlin,Germany,Europe,120,20460688,2017
+HAJ,52.461101532,9.685079574580001,Hannover Airport,Hannover,Germany,Europe,283,5870104,2017
+BRE,53.0475006104,8.78666973114,Bremen Airport,Bremen,Germany,Europe,412,2540084,2017
+HHN,49.948699951200005,7.263889789579999,Frankfurt-Hahn Airport,Hahn,Germany,Europe,420,2471900,2017
+PAD,51.614101409899995,8.616319656369999,Paderborn Lippstadt Airport,Paderborn,Germany,Europe,645,738474,2017
+DTM,51.51829910279999,7.61223983765,Dortmund Airport,Dortmund,Germany,Europe,456,2000695,2017
+FDH,47.671298980699994,9.51148986816,Friedrichshafen Airport,Friedrichshafen,Germany,Europe,713,517209,2017
+HEL,60.317199707031,24.963300704956,Helsinki Vantaa Airport,Helsinki,Finland,Europe,127,18892386,2017
+BFS,54.6575012207,-6.2158298492399995,Belfast International Airport,Belfast,United Kingdom,Europe,284,5844000,2017
+BHX,52.453899383499994,-1.74802994728,Birmingham International Airport,Birmingham,United Kingdom,Europe,166,12983436,2017
+MAN,53.35369873046875,-2.2749500274658203,Manchester Airport,Manchester,United Kingdom,Europe,75,27901708,2017
+BRS,51.382702,-2.71909,Bristol Airport,Bristol,United Kingdom,Europe,231,8100000,2017
+LPL,53.33359909057617,-2.849720001220703,Liverpool John Lennon Airport,Liverpool,United Kingdom,Europe,310,4950000,2017
+LTN,51.874698638916016,-0.36833301186561584,London Luton Airport,London,United Kingdom,Europe,146,15799219,2017
+LGW,51.148101806640625,-0.19027799367904663,London Gatwick Airport,London,United Kingdom,Europe,33,45561694,2017
+LCY,51.505299,0.055278,London City Airport,London,United Kingdom,Europe,321,4530439,2017
+LHR,51.4706,-0.461941,London Heathrow Airport,London,United Kingdom,Europe,6,78014598,2017
+LBA,53.86589813232422,-1.6605700254440308,Leeds Bradford Airport,Leeds,United Kingdom,Europe,341,4074500,2017
+NCL,55.037498474121094,-1.6916699409484863,Newcastle Airport,Newcastle,United Kingdom,Europe,298,5349751,2017
+EMA,52.8311004639,-1.32806003094,East Midlands Airport,East Midlands,United Kingdom,Europe,312,4875791,2017
+GLA,55.8718986511,-4.43306016922,Glasgow International Airport,Glasgow,United Kingdom,Europe,205,9897825,2017
+EDI,55.95000076293945,-3.372499942779541,Edinburgh Airport,Edinburgh,United Kingdom,Europe,161,13432485,2017
+STN,51.8849983215,0.234999999404,London Stansted Airport,London,United Kingdom,Europe,81,25904573,2017
+AMS,52.3086013794,4.763889789579999,Amsterdam Airport Schiphol,Amsterdam,Netherlands,Europe,11,68515425,2017
+EIN,51.4500999451,5.37452983856,Eindhoven Airport,Eindhoven,Netherlands,Europe,291,5653402,2017
+DUB,53.42129898071289,-6.2700700759887695,Dublin Airport,Dublin,Ireland,Europe,70,29582321,2017
+CPH,55.617900848389,12.656000137329,Copenhagen Kastrup Airport,Copenhagen,Denmark,Europe,72,29177833,2017
+LUX,49.6233333,6.2044444,Luxembourg-Findel International Airport,Luxemburg,Luxembourg,Europe,379,3020000,2017
+BGO,60.29339981,5.218140125,Bergen Airport Flesland,Bergen,Norway,Europe,274,6110944,2017
+OSL,60.193901062012,11.100399971008,Oslo Gardermoen Airport,Oslo,Norway,Europe,76,27482315,2017
+TRD,63.4578018,10.9239998,Trondheim Airport Værnes,Trondheim,Norway,Europe,323,4427733,2017
+SVG,58.876701354,5.6377801895,Stavanger Airport Sola,Stavanger,Norway,Europe,335,4177673,2017
+GDN,54.377601623535156,18.46619987487793,Gdańsk Lech Wałęsa Airport,Gdansk,Poland,Europe,320,4611714,2017
+KRK,50.077701568603516,19.784799575805664,John Paul II International Airport Kraków-Balice Airport,Krakow,Poland,Europe,285,5835189,2017
+KTW,50.4743,19.08,Katowice International Airport,Katowice,Poland,Europe,347,3892941,2017
+POZ,52.421001434299995,16.8262996674,Poznań-Ławica Airport,Poznan,Poland,Europe,505,1611074,2017
+WAW,52.1656990051,20.967100143399996,Warsaw Chopin Airport,Warsaw,Poland,Europe,147,15730330,2017
+GOT,57.662799835205,12.279800415039,Gothenburg-Landvetter Airport,Gothenborg,Sweden,Europe,256,6758520,2017
+ARN,59.651901245117,17.918600082397,Stockholm-Arlanda Airport,Stockholm,Sweden,Europe,78,26642034,2017
+CPT,-33.9648017883,18.6016998291,Cape Town International Airport,Cape Town,South Africa,Africa,192,10693063,2017
+DUR,-29.6144444444,31.1197222222,King Shaka International Airport,Durban,South Africa,Africa,295,5527747,2017
+JNB,-26.1392,28.246,OR Tambo International Airport,Johannesburg,South Africa,Africa,115,21180060,2017
+PLZ,-33.9849014282,25.6173000336,Port Elizabeth Airport,Port Elizabeth,South Africa,Africa,503,1620705,2017
+MRU,-20.430200576782227,57.68360137939453,Sir Seewoosagur Ramgoolam International Airport,Plaisance,Mauritius,Indian,356,3588777,2017
+DLA,4.0060801506,9.719479560849999,Douala International Airport,Douala,Cameroon,Africa,518,1500000,2017
+RUN,-20.887100219726562,55.51029968261719,Roland Garros Airport,St.-denis,Reunion,Indian,434,2293242,2017
+TNR,-18.7968997955,47.4788017273,Ivato Airport,Antananarivo,Madagascar,Indian,688,611175,2017
+LAD,-8.85836982727,13.231200218199998,Quatro de Fevereiro Airport,Luanda,Angola,Africa,423,2430794,2017
+VFA,-18.09589958190918,25.839000701904297,Victoria Falls International Airport,Victoria Falls,Zimbabwe,Africa,781,341196,2017
+HRE,-17.931800842285156,31.09280014038086,Harare International Airport,Harare,Zimbabwe,Africa,687,612208,2017
+FIH,-4.38574981689,15.4446001053,Ndjili International Airport,Kinshasa,Congo (Kinshasa),Africa,639,773338,2017
+FUE,28.452699661254883,-13.863800048828125,Fuerteventura Airport,Fuerteventura,Spain,Atlantic,276,6049401,2017
+SPC,28.62649917602539,-17.755599975585938,La Palma Airport,Santa Cruz De La Palma,Spain,Atlantic,541,1302485,2017
+LPA,27.931900024414062,-15.38659954071045,Gran Canaria Airport,Gran Canaria,Spain,Atlantic,164,13092117,2017
+ACE,28.945499420166016,-13.605199813842773,Lanzarote Airport,Arrecife,Spain,Atlantic,250,7389025,2017
+TFS,28.044500351,-16.5725002289,Tenerife South Airport,Tenerife,Spain,Atlantic,184,11249327,2017
+TFN,28.4827003479,-16.3414993286,Tenerife Norte Airport,Tenerife,Spain,Atlantic,317,4704863,2017
+MLN,35.279800415,-2.9562599659,Melilla Airport,Melilla,Spain,Europe,784,324366,2017
+AGA,30.325000762939453,-9.413069725036621,Al Massira Airport,Agadir,Morocco,Africa,509,1544160,2017
+CMN,33.36750030517578,-7.589970111846924,Mohammed V International Airport,Casablanca,Morocco,Africa,211,9357427,2017
+RAK,31.606899261499997,-8.03629970551,Menara Airport,Marrakech,Morocco,Africa,327,4359865,2017
+TNG,35.726898193400004,-5.91689014435,Ibn Batouta Airport,Tanger,Morocco,Africa,575,1070247,2017
+DKR,14.739700317382812,-17.49020004272461,Léopold Sédar Senghor International Airport,Dakar,Senegal,Africa,445,2114269,2017
+SID,16.74139976501465,-22.949399948120117,Amílcar Cabral International Airport,Amilcar Cabral,Cape Verde,Atlantic,571,1093059,2017
+ADD,8.97789001465,38.799301147499996,Addis Ababa Bole International Airport,Addis Ababa,Ethiopia,Africa,221,8900000,2017
+CAI,30.12190055847168,31.40559959411621,Cairo International Airport,Cairo,Egypt,Africa,186,11081892,2017
+HRG,27.178300857543945,33.799400329589844,Hurghada International Airport,Hurghada,Egypt,Africa,342,4027291,2017
+EDL,0.4044579863548279,35.23889923095703,Eldoret International Airport,Eldoret,Kenya,Africa,928,111250,2017
+KIS,-0.0861390009522438,34.72890090942383,Kisumu Airport,Kisumu,Kenya,Africa,825,267379,2017
+MBA,-4.034830093383789,39.594200134277344,Mombasa Moi International Airport,Mombasa,Kenya,Africa,540,1313168,2017
+WIL,-1.321720004081726,36.81480026245117,Nairobi Wilson Airport,Nairobi,Kenya,Africa,796,302194,2017
+WJR,1.733240008354187,40.09159851074219,Wajir Airport,Wajir,Kenya,Africa,921,123000,2017
+KRT,15.589500427246094,32.553199768066406,Khartoum International Airport,Khartoum,Sudan,Africa,442,2178097,2017
+ARK,-3.3677899837493896,36.63330078125,Arusha Airport,Arusha,Tanzania,Africa,913,142224,2017
+DAR,-6.87810993195,39.202598571799996,Julius Nyerere International Airport,Dar Es Salaam,Tanzania,Africa,418,2496394,2017
+JRO,-3.42940998077,37.0745010376,Kilimanjaro International Airport,Kilimanjaro,Tanzania,Africa,638,780800,2017
+MWZ,-2.4444899559020996,32.932701110839844,Mwanza Airport,Mwanza,Tanzania,Africa,739,444215,2017
+ZNZ,-6.222020149229999,39.224899292,Abeid Amani Karume International Airport,Zanzibar,Tanzania,Africa,602,934337,2017
+EBB,0.042385999113321304,32.44350051879883,Entebbe International Airport,Entebbe,Uganda,Africa,512,1530031,2017
+SOF,42.696693420410156,23.411436080932617,Sofia Airport,Sofia,Bulgaria,Europe,262,6206400,2017
+DBV,42.5614013671875,18.268199920654297,Dubrovnik Airport,Dubrovnik,Croatia,Europe,430,2323065,2017
+PUY,44.89350128173828,13.922200202941895,Pula Airport,Pula,Croatia,Europe,692,595812,2017
+RJK,45.21689987182617,14.570300102233887,Rijeka Airport,Rijeka,Croatia,Europe,901,160000,2017
+SPU,43.53889846801758,16.29800033569336,Split Airport,Split,Croatia,Europe,393,2818176,2017
+ZAG,45.7429008484,16.0687999725,Zagreb Airport,Zagreb,Croatia,Europe,375,3092047,2017
+ZAD,44.108299255371094,15.346699714660645,Zemunik Airport,Zadar,Croatia,Europe,694,589841,2017
+ALC,38.28219985961914,-0.5581560134887695,Alicante International Airport,Alicante,Spain,Europe,159,13713061,2017
+LEI,36.84389877319336,-2.3701000213623047,Almería International Airport,Almeria,Spain,Europe,583,1007446,2017
+OVD,43.5635986328125,-6.0346198081970215,Asturias Airport,Aviles,Spain,Europe,525,1407217,2017
+BIO,43.30110168457031,-2.9106099605560303,Bilbao Airport,Bilbao,Spain,Europe,307,4973712,2017
+BCN,41.297100067139,2.0784599781036,Barcelona International Airport,Barcelona,Spain,Europe,28,47262826,2017
+LCG,43.302101135253906,-8.377260208129883,A Coruña Airport,La Coruna,Spain,Europe,564,1141242,2017
+GRO,41.901000977,2.7605500221,Girona Airport,Gerona,Spain,Europe,463,1946816,2017
+GRX,37.18870162963867,-3.777359962463379,Federico Garcia Lorca Airport,Granada,Spain,Europe,611,901961,2017
+IBZ,38.872898101800004,1.3731199502899998,Ibiza Airport,Ibiza,Spain,Europe,236,7903892,2017
+XRY,36.744598388671875,-6.060110092163086,Jerez Airport,Jerez,Spain,Europe,579,1046251,2017
+MJV,37.775001525878906,-0.8123890161514282,San Javier Airport,Murcia,Spain,Europe,551,1196605,2017
+MAD,40.471926,-3.56264,Adolfo Suárez Madrid–Barajas Airport,Madrid,Spain,Europe,25,53386075,2017
+AGP,36.67490005493164,-4.499110221862793,Málaga Airport,Malaga,Spain,Europe,129,18628876,2017
+MAH,39.86259841918945,4.218649864196777,Menorca Airport,Menorca,Spain,Europe,364,3434615,2017
+REU,41.14739990234375,1.1671700477600098,Reus Air Base,Reus,Spain,Europe,581,1022964,2017
+EAS,43.35649871826172,-1.7906099557876587,San Sebastian Airport,San Sebastian,Spain,Europe,815,281859,2017
+SCQ,42.89630126953125,-8.415140151977539,Santiago de Compostela Airport,Santiago,Spain,Europe,408,2644925,2017
+VLC,39.48929977416992,-0.4816249907016754,Valencia Airport,Valencia,Spain,Europe,257,6745394,2017
+VGO,42.2318000793457,-8.62677001953125,Vigo Airport,Vigo,Spain,Europe,578,1065595,2017
+SDR,43.427101135253906,-3.82000994682312,Santander Airport,Santander,Spain,Europe,601,937641,2017
+ZAZ,41.66619873046875,-1.0415500402450562,Zaragoza Air Base,Zaragoza,Spain,Europe,741,438035,2017
+SVQ,37.417999267578125,-5.8931097984313965,Sevilla Airport,Sevilla,Spain,Europe,304,5108807,2017
+BOD,44.828300476100004,-0.715556025505,Bordeaux-Mérignac Airport,Bordeaux,France,Europe,271,6203824,2017
+TLS,43.629101,1.36382,Toulouse-Blagnac Airport,Toulouse,France,Europe,214,9264611,2017
+LYS,45.7255556,5.0811111,Lyon Saint-Exupéry Airport,Lyon,France,Europe,199,10280192,2017
+MRS,43.439271922,5.22142410278,Marseille Provence Airport,Marseille,France,Europe,219,9002086,2017
+NCE,43.6584014893,7.215869903560001,Nice-Côte d'Azur Airport,Nice,France,Europe,162,13304782,2017
+CDG,49.0127983093,2.54999995232,Charles de Gaulle International Airport,Paris,France,Europe,10,69471442,2017
+NTE,47.153198242200006,-1.61073005199,Nantes Atlantique Airport,Nantes,France,Europe,296,5489899,2017
+BSL,47.59,7.5291667,EuroAirport Basel-Mulhouse-Freiburg Airport,Mulhouse,France,Europe,237,7888725,2017
+HER,35.3396987915,25.180299758900002,Heraklion International Nikos Kazantzakis Airport,Heraklion,Greece,Europe,248,7480408,2017
+RHO,36.405399322509766,28.086200714111328,Diagoras Airport,Rhodos,Greece,Europe,300,5301517,2017
+SKG,40.51969909667969,22.97089958190918,Thessaloniki Macedonia International Airport,Thessaloniki,Greece,Europe,266,6395523,2017
+ZTH,37.75090026855469,20.884300231933594,Dionysios Solomos Airport,Zakynthos,Greece,Europe,497,1659646,2017
+BUD,47.436901092499994,19.255599975599996,Budapest Ferenc Liszt International Airport,Budapest,Hungary,Europe,163,13097239,2017
+BRI,41.138901,16.760599,Bari Karol Wojtyła Airport,Bari,Italy,Europe,318,4686016,2017
+CTA,37.466801,15.0664,Catania-Fontanarossa Airport,Catania,Italy,Europe,217,9120913,2017
+PMO,38.175999,13.091,Falcone–Borsellino Airport,Palermo,Italy,Europe,286,5775274,2017
+CAG,39.251499,9.05428,Cagliari Elmas Airport,Cagliari,Italy,Europe,337,4157612,2017
+MXP,45.6306,8.72811,Malpensa International Airport,Milano,Italy,Europe,109,22169167,2017
+BGY,45.673901,9.70417,Il Caravaggio International Airport,Bergamo,Italy,Europe,176,12336137,2017
+LIN,45.445099,9.27674,Milano Linate Airport,Milan,Italy,Europe,208,9548363,2017
+BLQ,44.5354,11.2887,Bologna Guglielmo Marconi Airport,Bologna,Italy,Europe,229,8198156,2017
+VCE,45.505299,12.3519,Venice Marco Polo Airport,Venice,Italy,Europe,197,10371380,2017
+CIA,41.7994,12.5949,Ciampino–G. B. Pastine International Airport,Rome,Italy,Europe,282,5885812,2017
+FCO,41.8002778,12.2388889,Leonardo da Vinci–Fiumicino Airport,Rome,Italy,Europe,47,40968756,2017
+NAP,40.886002,14.2908,Naples International Airport,Naples,Italy,Europe,230,8134492,2017
+PSA,43.683899,10.3927,Pisa International Airport,Pisa,Italy,Europe,301,5233118,2017
+LJU,46.223701,14.4576,Ljubljana Jože Pučnik Airport,Ljubljana,Slovenia,Europe,495,1683045,2017
+OSR,49.6963005065918,18.111099243164062,Ostrava Leos Janáček Airport,Ostrava,Czech Republic,Europe,785,324116,2017
+PED,50.01340103149414,15.73859977722168,Pardubice Airport,Pardubice,Czech Republic,Europe,947,88490,2017
+PRG,50.1008,14.26,Václav Havel Airport Prague,Prague,Czech Republic,Europe,150,15415001,2017
+BRQ,49.15129852294922,16.694400787353516,Brno-Tuřany Airport,Brno,Czech Republic,Europe,730,470000,2017
+TLV,32.01139831542969,34.88669967651367,Ben Gurion International Airport,Tel-aviv,Israel,Asia,117,20781226,2017
+MLA,35.857498,14.4775,Malta International Airport,Malta,Malta,Europe,278,6014548,2017
+VIE,48.110298156738,16.569700241089,Vienna International Airport,Vienna,Austria,Europe,89,24392805,2017
+FAO,37.0144004822,-7.96590995789,Faro Airport,Faro,Portugal,Europe,225,8727000,2017
+TER,38.761798858599995,-27.090799331699998,Lajes Field,Lajes (terceira Island),Portugal,Atlantic,678,631236,2017
+PDL,37.7411994934,-25.6979007721,João Paulo II Airport,Ponta Delgada,Portugal,Atlantic,474,1849000,2017
+OPO,41.2481002808,-8.68138980865,Francisco de Sá Carneiro Airport,Porto,Portugal,Europe,191,10787000,2017
+PXO,33.0733985901,-16.3500003815,Porto Santo Airport,Porto Santo,Portugal,Europe,891,175300,2017
+LIS,38.7812995911,-9.13591957092,Lisbon Portela Airport,Lisbon,Portugal,Europe,77,26669755,2017
+SJJ,43.82460021972656,18.331499099731445,Sarajevo International Airport,Sarajevo,Bosnia and Herzegovina,Europe,597,957971,2017
+OTP,44.5711111,26.085,Henri Coandă International Airport,Bucharest,Romania,Europe,172,12804191,2017
+GVA,46.23809814453125,6.108950138092041,Geneva Cointrin International Airport,Geneva,Switzerland,Europe,136,17351816,2017
+ZRH,47.464698791504,8.5491695404053,Zürich Airport,Zurich,Switzerland,Europe,71,29396094,2017
+ESB,40.128101348899996,32.995098114,Esenboğa International Airport,Ankara,Turkey,Europe,145,15845878,2017
+ADA,36.9822006226,35.280399322499996,Adana Airport,Adana,Turkey,Europe,293,5594630,2017
+AYT,36.898701,30.800501,Antalya International Airport,Antalya,Turkey,Europe,80,25931659,2017
+GZT,36.9472007751,37.4786987305,Gaziantep International Airport,Gaziantep,Turkey,Europe,419,2480979,2017
+KYA,37.979,32.561901,Konya Airport,Konya,Turkey,Europe,576,1067753,2017
+MLX,38.353699,38.253899,Malatya Tulga Airport,Malatya,Turkey,Europe,640,767701,2017
+MZH,40.829399,35.521999,Amasya Merzifon Airport,Merzifon,Turkey,Europe,911,146707,2017
+VAS,39.813801,36.9035,Sivas Nuri Demirağ Airport,Sivas,Turkey,Europe,711,533278,2017
+ASR,38.770401001,35.4953994751,Kayseri Erkilet Airport,Kayseri,Turkey,Europe,460,1980247,2017
+DNZ,37.7855987549,29.7012996674,Çardak Airport,Denizli,Turkey,Europe,717,509047,2017
+IST,40.9768981934,28.814599990799998,Atatürk International Airport,Istanbul,Turkey,Europe,15,63859785,2017
+ADB,38.2924003601,27.156999588,Adnan Menderes International Airport,Izmir,Turkey,Europe,169,12823701,2017
+DLM,36.7131004333,28.7924995422,Dalaman International Airport,Dalaman,Turkey,Europe,324,4377101,2017
+EZS,38.6068992615,39.2914009094,Elazığ Airport,Elazig,Turkey,Europe,598,955988,2017
+DIY,37.893901825,40.201000213600004,Diyarbakir Airport,Diyabakir,Turkey,Europe,447,2071089,2017
+ERC,39.7102012634,39.527000427199994,Erzincan Airport,Erzincan,Turkey,Europe,804,296284,2017
+ERZ,39.9565010071,41.17020034789999,Erzurum International Airport,Erzurum,Turkey,Europe,573,1085117,2017
+TZX,40.99509811401367,39.78969955444336,Trabzon International Airport,Trabzon,Turkey,Europe,365,3361450,2017
+VAN,38.46820068359375,43.332298278808594,Van Ferit Melen Airport,Van,Turkey,Europe,526,1394328,2017
+BAL,37.929000854499996,41.1166000366,Batman Airport,Batman,Turkey,Europe,877,197301,2017
+BEG,44.8184013367,20.3090991974,Belgrade Nikola Tesla Airport,Belgrade,Serbia,Europe,299,5343420,2017
+GUA,14.58329963684082,-90.52749633789062,La Aurora Airport,Guatemala City,Guatemala,America,410,2579123,2017
+LCE,15.7425,-86.852997,Goloson International Airport,La Ceiba,Honduras,America,897,165802,2017
+SAP,15.45259952545166,-87.92359924316406,Ramón Villeda Morales International Airport,San Pedro Sula,Honduras,America,621,867747,2017
+RTB,16.316799,-86.523003,Juan Manuel Galvez International Airport,Roatan,Honduras,America,763,371657,2017
+TGU,14.06089973449707,-87.21720123291016,Toncontín International Airport,Tegucigalpa,Honduras,America,654,697925,2017
+ACA,16.757099151611328,-99.75399780273438,General Juan N Alvarez International Airport,Acapulco,Mexico,America,658,685124,2017
+GDL,20.521799087524414,-103.31099700927734,Don Miguel Hidalgo Y Costilla International Airport,Guadalajara,Mexico,America,171,12808000,2017
+MEX,19.4363,-99.072098,Licenciado Benito Juarez International Airport,Mexico City,Mexico,America,36,44732418,2017
+MTY,25.7784996033,-100.107002258,General Mariano Escobedo International Airport,Monterrey,Mexico,America,206,9771630,2017
+TIJ,32.541099548339844,-116.97000122070312,General Abelardo L. Rodríguez International Airport,Tijuana,Mexico,America,253,7103200,2017
+CUN,21.036500930800003,-86.8770980835,Cancún International Airport,Cancun,Mexico,America,96,23601509,2017
+MGA,12.141500473022461,-86.16819763183594,Augusto C. Sandino (Managua) International Airport,Managua,Nicaragua,America,511,1533034,2017
+DAV,8.390999794006348,-82.43499755859375,Enrique Malek International Airport,David,Panama,America,786,323465,2017
+BLB,8.91479,-79.599602,Panama Pacific International Airport,Howard,Panama,America,918,131930,2017
+PAC,8.973340034484863,-79.55560302734375,Marcos A. Gelabert International Airport,Panama,Panama,America,852,230000,2017
+PTY,9.0713596344,-79.3834991455,Tocumen International Airport,Panama City,Panama,America,148,15616065,2017
+LIR,10.593299865722656,-85.54440307617188,Daniel Oduber Quiros International Airport,Liberia,Costa Rica,America,556,1182123,2017
+SJO,9.993860244750977,-84.20880126953125,Juan Santamaria International Airport,San Jose,Costa Rica,America,325,4369333,2017
+SAL,13.4409,-89.055702,El Salvador International Airport,San Salvador,El Salvador,America,382,2984764,2017
+HAV,22.989200592041016,-82.40910339355469,José Martí International Airport,Havana,Cuba,America,287,5713859,2017
+BZE,17.539100646972656,-88.30819702148438,Philip S. W. Goldson International Airport,Belize City,Belize,America,620,867976,2017
+NAN,-17.755399703979492,177.4429931640625,Nadi International Airport,Nandi,Fiji,Pacific,459,1984898,2017
+AKL,-37.008098602299995,174.792007446,Auckland International Airport,Auckland,New Zealand,Pacific,126,19020573,2017
+CHC,-43.48939895629883,172.53199768066406,Christchurch International Airport,Christchurch,New Zealand,Pacific,260,6566598,2017
+DUD,-45.9281005859375,170.197998046875,Dunedin Airport,Dunedin,New Zealand,Pacific,592,973089,2017
+HLZ,-37.8666992188,175.332000732,Hamilton International Airport,Hamilton,New Zealand,Pacific,789,317348,2017
+NPL,-39.00859832763672,174.1790008544922,New Plymouth Airport,New Plymouth,New Zealand,Pacific,745,435000,2017
+NSN,-41.298301696777344,173.2209930419922,Nelson Airport,Nelson,New Zealand,Pacific,585,1000373,2017
+IVC,-46.41239929199219,168.31300354003906,Invercargill Airport,Invercargill,New Zealand,Pacific,806,294832,2017
+PMR,-40.32059860229492,175.61700439453125,Palmerston North Airport,Palmerston North,New Zealand,Pacific,680,630000,2017
+ZQN,-45.0210990906,168.738998413,Queenstown International Airport,Queenstown International,New Zealand,Pacific,470,1892443,2017
+ROT,-38.10919952392578,176.31700134277344,Rotorua Regional Airport,Rotorua,New Zealand,Pacific,841,241303,2017
+TRG,-37.67190170288086,176.1959991455078,Tauranga Airport,Tauranga,New Zealand,Pacific,774,350085,2017
+BHE,-41.5182991027832,173.8699951171875,Woodbourne Airport,Woodbourne,New Zealand,Pacific,795,302884,2017
+WLG,-41.3272018433,174.804992676,Wellington International Airport,Wellington,New Zealand,Pacific,277,6049194,2017
+JED,21.6796,39.156502,King Abdulaziz International Airport,Jeddah,Saudi Arabia,Asia,60,33917282,2017
+MED,24.55340003967285,39.705101013183594,Prince Mohammad Bin Abdulaziz Airport,Madinah,Saudi Arabia,Asia,270,6300638,2017
+RUH,24.957599639892578,46.69879913330078,King Khaled International Airport,Riyadh,Saudi Arabia,Asia,85,25038000,2017
+ABD,30.371099472,48.2282981873,Abadan Airport,Abadan,Iran,Asia,675,644915,2017
+AWZ,31.337400436399996,48.7620010376,Ahwaz Airport,Ahwaz,Iran,Asia,384,2939958,2017
+BUZ,28.9447994232,50.8345985413,Bushehr Airport,Bushehr,Iran,Asia,682,625976,2017
+KIH,26.5261993408,53.980201721200004,Kish International Airport,Kish Island,Iran,Asia,385,2926752,2017
+IFN,32.75080108642578,51.86130142211914,Esfahan Shahid Beheshti International Airport,Esfahan,Iran,Asia,397,2784616,2017
+RAS,37.323333,49.617778,Sardar-e-Jangal Airport,Rasht,Iran,Asia,738,446576,2017
+THR,35.68920135498047,51.31340026855469,Mehrabad International Airport,Teheran,Iran,Asia,135,17464216,2017
+BND,27.218299865722656,56.37779998779297,Bandar Abbas International Airport,Bandar Abbas,Iran,Asia,543,1289063,2017
+KER,30.274400711099997,56.9510993958,Kerman Airport,Kerman,Iran,Asia,630,846317,2017
+SYZ,29.539199829101562,52.58980178833008,Shiraz Shahid Dastghaib International Airport,Shiraz,Iran,Asia,360,3530525,2017
+TBZ,38.1338996887207,46.23500061035156,Tabriz International Airport,Tabriz,Iran,Asia,465,1942726,2017
+AZD,31.9048995972,54.2765007019,Shahid Sadooghi Airport,Yazd,Iran,Asia,641,764074,2017
+ZAH,29.47570037841797,60.90620040893555,Zahedan International Airport,Zahedan,Iran,Asia,705,554683,2017
+AUH,24.433000564575195,54.651100158691406,Abu Dhabi International Airport,Abu Dhabi,United Arab Emirates,Asia,95,23760561,2017
+DXB,25.2527999878,55.3643989563,Dubai International Airport,Dubai,United Arab Emirates,Asia,3,88242099,2017
+RKT,25.613500595092773,55.93880081176758,Ras Al Khaimah International Airport,Ras Al Khaimah,United Arab Emirates,Asia,728,471432,2017
+SHJ,25.32859992980957,55.5172004699707,Sharjah International Airport,Sharjah,United Arab Emirates,Asia,183,11360000,2017
+TTT,22.7549991607666,121.10199737548828,Taitung Airport,Fengnin,Taiwan,Asia,799,300432,2017
+KHH,22.57710075378418,120.3499984741211,Kaohsiung International Airport,Kaohsiung,Taiwan,Asia,263,6472085,2017
+CYI,23.46179962158203,120.39299774169922,Chiayi Airport,Chiayi,Taiwan,Asia,955,78826,2017
+KYD,22.027000427246094,121.53500366210938,Lanyu Airport,Lanyu,Taiwan,Asia,984,47406,2017
+TNN,22.95039939880371,120.20600128173828,Tainan Airport,Tainan,Taiwan,Asia,765,367124,2017
+MZG,23.568700790405273,119.62799835205078,Makung Airport,Makung,Taiwan,Asia,431,2320249,2017
+TSA,25.069400787353516,121.552001953125,Taipei Songshan Airport,Taipei,Taiwan,Asia,272,6143445,2017
+TPE,25.0777,121.233002,Taiwan Taoyuan International Airport,Taipei,Taiwan,Asia,35,44878703,2017
+HUN,24.023099899291992,121.61799621582031,Hualien Airport,Hualien,Taiwan,Asia,888,184347,2017
+NRT,35.7647018433,140.386001587,Narita International Airport,Tokyo,Japan,Asia,49,40631193,2017
+IBR,36.181098938,140.414993286,Hyakuri Airport,Ibaraki,Japan,Asia,709,538227,2017
+OBO,42.7332992554,143.216995239,Tokachi-Obihiro Airport,Obihiro,Japan,Asia,690,605703,2017
+CTS,42.77519989013672,141.69200134277344,New Chitose Airport,Sapporo,Japan,Asia,102,22916914,2017
+HKD,41.7700004578,140.822006226,Hakodate Airport,Hakodate,Japan,Asia,487,1772052,2017
+MMB,43.8805999756,144.164001465,Memanbetsu Airport,Memanbetsu,Japan,Asia,642,757103,2017
+UBJ,33.930000305200004,131.279006958,Yamaguchi Ube Airport,Yamaguchi,Japan,Asia,605,918238,2017
+TSJ,34.2849006653,129.330993652,Tsushima Airport,Tsushima,Japan,Asia,834,250194,2017
+AKJ,43.670799255371094,142.44700622558594,Asahikawa Airport,Asahikawa,Japan,Asia,562,1148825,2017
+FUK,33.585899353027344,130.4510040283203,Fukuoka Airport,Fukuoka,Japan,Asia,97,23484678,2017
+KOJ,31.80340003967285,130.718994140625,Kagoshima Airport,Kagoshima,Japan,Asia,302,5220710,2017
+KMI,31.877199173,131.449005127,Miyazaki Airport,Miyazaki,Japan,Asia,383,2976563,2017
+OIT,33.479400634799994,131.736999512,Oita Airport,Oita,Japan,Asia,473,1849834,2017
+KKJ,33.8459014893,131.035003662,Kitakyūshū Airport,Kitakyushu,Japan,Asia,539,1317504,2017
+KMJ,32.83729934692383,130.85499572753906,Kumamoto Airport,Kumamoto,Japan,Asia,368,3241633,2017
+NGS,32.916900634799994,129.914001465,Nagasaki Airport,Nagasaki,Japan,Asia,374,3110686,2017
+ASJ,28.430599212646484,129.71299743652344,Amami Airport,Amami,Japan,Asia,663,676601,2017
+KMQ,36.39459991455078,136.40699768066406,Komatsu Airport,Kanazawa,Japan,Asia,475,1844117,2017
+TOY,36.64830017089844,137.18800354003906,Toyama Airport,Toyama,Japan,Asia,646,736740,2017
+HIJ,34.4361000061,132.919006348,Hiroshima Airport,Hiroshima,Japan,Asia,405,2669210,2017
+OKJ,34.7569007874,133.854995728,Okayama Airport,Okayama,Japan,Asia,527,1391723,2017
+IZO,35.4136009216,132.88999939,Izumo Airport,Izumo,Japan,Asia,632,832825,2017
+YGJ,35.4921989440918,133.23599243164062,Miho Yonago Airport,Miho,Japan,Asia,668,666445,2017
+KCZ,33.5461006165,133.669006348,Kōchi Ryōma Airport,Kochi,Japan,Asia,533,1350930,2017
+MYJ,33.82720184326172,132.6999969482422,Matsuyama Airport,Matsuyama,Japan,Asia,390,2863239,2017
+ITM,34.785499572753906,135.43800354003906,Osaka International Airport,Osaka,Japan,Asia,152,14541936,2017
+TTJ,35.5301017761,134.167007446,Tottori Airport,Tottori,Japan,Asia,766,366925,2017
+TKS,34.1328010559,134.606994629,Tokushima Airport,Tokushima,Japan,Asia,586,1000121,2017
+TAK,34.214199066199996,134.01600647,Takamatsu Airport,Takamatsu,Japan,Asia,479,1809820,2017
+AOJ,40.73469924926758,140.6909942626953,Aomori Airport,Aomori,Japan,Asia,588,992696,2017
+HNA,39.4286003112793,141.13499450683594,Hanamaki Airport,Hanamaki,Japan,Asia,756,395647,2017
+AXT,39.6156005859375,140.218994140625,Akita Airport,Akita,Japan,Asia,547,1238082,2017
+MSJ,40.703201293899994,141.367996216,Misawa Air Base,Misawa,Japan,Asia,832,252616,2017
+SDJ,38.1397018433,140.917007446,Sendai Airport,Sendai,Japan,Asia,372,3152569,2017
+HND,35.552299,139.779999,Tokyo Haneda International Airport,Tokyo,Japan,Asia,7,76476251,2017
+KWJ,35.1263999939,126.808998108,Gwangju Airport,Kwangju,South Korea,Asia,504,1613775,2017
+RSU,34.84230041503906,127.61699676513672,Yeosu Airport,Yeosu,South Korea,Asia,719,503371,2017
+CJU,33.51129913330078,126.49299621582031,Jeju International Airport,Cheju,South Korea,Asia,67,29846712,2017
+PUS,35.1795005798,128.93800354,Gimhae International Airport,Busan,South Korea,Asia,141,16403541,2017
+USN,35.59349823,129.352005005,Ulsan Airport,Ulsan,South Korea,Asia,707,545321,2017
+GMP,37.5583000183,126.791000366,Gimpo International Airport,Seoul,South Korea,Asia,83,25267408,2017
+KPO,35.9878997803,129.419998169,Pohang Airport,Pohang,South Korea,Asia,966,68226,2017
+TAE,35.894100189199996,128.658996582,Daegu Airport,Taegu,South Korea,Asia,357,3560124,2017
+OKA,26.1958007812,127.646003723,Naha Airport,Okinawa,Japan,Asia,119,20569935,2017
+ISG,24.344499588,124.18699646,Ishigaki Airport,Ishigaki,Japan,Asia,432,2308065,2017
+UEO,26.363500595092773,126.71399688720703,Kumejima Airport,Kumejima,Japan,Asia,844,238875,2017
+MMY,24.782800674399997,125.294998169,Miyako Airport,Miyako,Japan,Asia,535,1335697,2017
+MNL,14.5086,121.019997,Ninoy Aquino International Airport,Manila,Philippines,Asia,44,42022484,2017
+CGY,8.41562,124.611,Cagayan De Oro Airport,Ladag,Philippines,Asia,485,1776353,2017
+PAG,7.83073144787,123.461179733,Pagadian Airport,Pagadian,Philippines,Asia,881,188920,2017
+GES,6.05800008774,125.096000671,General Santos International Airport,Romblon,Philippines,Asia,631,838941,2017
+ZAM,6.922420024871826,122.05999755859375,Zamboanga International Airport,Zamboanga,Philippines,Asia,574,1076000,2017
+SJI,12.361499786399998,121.04699707,San Jose Airport,San Jose,Philippines,Asia,983,49010,2017
+TAC,11.2276000977,125.027999878,Daniel Z. Romualdez Airport,Tacloban,Philippines,Asia,555,1182951,2017
+BCD,10.7764,123.014999,Bacolod-Silay City International Airport,Bacolod,Philippines,Asia,519,1498741,2017
+DGT,9.3337097168,123.300003052,Sibulan Airport,Dumaguete,Philippines,Asia,706,546276,2017
+MPH,11.9245,121.954002,Godofredo P. Ramos Airport,Caticlan,Philippines,Asia,647,736559,2017
+ILO,10.833017,122.493358,Iloilo International Airport,Iloilo,Philippines,Asia,464,1943719,2017
+KLO,11.679400444,122.375999451,Kalibo International Airport,Kalibo,Philippines,Asia,404,2711036,2017
+PPS,9.742119789123535,118.75900268554688,Puerto Princesa Airport,Puerto Princesa,Philippines,Asia,499,1644003,2017
+PRA,-31.7948,-60.4804,General Urquiza Airport,Parana,Argentina,America,930,106054,2017
+ROS,-32.9036,-60.785,Islas Malvinas Airport,Rosario,Argentina,America,643,747571,2017
+SFN,-31.7117,-60.8117,Sauce Viejo Airport,Santa Fe,Argentina,America,988,37725,2017
+AEP,-34.5592,-58.4156,Jorge Newbery Airpark,Buenos Aires,Argentina,America,157,13797710,2017
+COR,-31.323600769,-64.2080001831,Ingeniero Ambrosio Taravella Airport,Cordoba,Argentina,America,401,2762393,2017
+MDZ,-32.8316993713,-68.7929000854,El Plumerillo Airport,Mendoza,Argentina,America,490,1717419,2017
+AFA,-34.588299,-68.4039,Suboficial Ay Santiago Germano Airport,San Rafael,Argentina,America,973,56905,2017
+CTC,-28.5956001282,-65.751701355,Catamarca Airport,Catamarca,Argentina,America,969,64007,2017
+SDE,-27.765556335399996,-64.3099975586,Vicecomodoro Angel D. La Paz Aragonés Airport,Santiago Del Estero,Argentina,America,937,98827,2017
+IRJ,-29.3815994263,-66.7957992554,Capitan V A Almonacid Airport,La Rioja,Argentina,America,960,75469,2017
+TUC,-26.8409,-65.104897,Teniente Benjamin Matienzo Airport,Tucuman,Argentina,America,704,556834,2017
+UAQ,-31.571501,-68.418198,Domingo Faustino Sarmiento Airport,San Julian,Argentina,America,858,217712,2017
+RCU,-33.0850982666,-64.2612991333,Area De Material Airport,Rio Cuarto,Argentina,America,974,56844,2017
+LUQ,-33.2732009888,-66.3563995361,Brigadier Mayor D Cesar Raul Ojeda Airport,San Luis,Argentina,America,944,90926,2017
+CNQ,-27.4455,-58.7619,Corrientes Airport,Corrientes,Argentina,America,934,102977,2017
+RES,-27.45,-59.0561,Resistencia International Airport,Resistencia,Argentina,America,790,316290,2017
+FMA,-26.2127,-58.2281,Formosa Airport,Formosa,Argentina,America,929,106527,2017
+IGR,-25.737300872800002,-54.473400116,Cataratas Del Iguazú International Airport,Iguazu Falls,Argentina,America,587,998460,2017
+PSS,-27.3858,-55.9707,Libertador Gral D Jose De San Martin Airport,Posadas,Argentina,America,863,211581,2017
+SLA,-24.856000900299996,-65.4861984253,Martin Miguel De Guemes International Airport,Salta,Argentina,America,570,1095104,2017
+JUJ,-24.3927993774,-65.0978012085,Gobernador Horacio Guzman International Airport,Jujuy,Argentina,America,826,264819,2017
+CRD,-45.7853,-67.4655,General E. Mosconi Airport,Comodoro Rivadavia,Argentina,America,686,618257,2017
+EQS,-42.908000946,-71.139503479,Brigadier Antonio Parodi Airport,Esquel,Argentina,America,970,60092,2017
+REL,-43.2105,-65.2703,Almirante Marco Andres Zar Airport,Trelew,Argentina,America,802,298946,2017
+VDM,-40.8692,-63.0004,Gobernador Castello Airport,Viedma,Argentina,America,989,36327,2017
+PMY,-42.7592,-65.1027,El Tehuelche Airport,Puerto Madryn,Argentina,America,932,104315,2017
+RGA,-53.7777,-67.7494,Hermes Quijada International Airport,Rio Grande,Argentina,America,909,150849,2017
+RGL,-51.6089,-69.3126,Piloto Civil N. Fernández Airport,Rio Gallegos,Argentina,America,809,255982,2017
+USH,-54.8433,-68.2958,Malvinas Argentinas Airport,Ushuaia,Argentina,America,636,795652,2017
+BHI,-38.725,-62.1693,Comandante Espora Airport,Bahia Blanca,Argentina,America,751,410415,2017
+MDQ,-37.9342,-57.5733,Ástor Piazzola International Airport,Mar Del Plata,Argentina,America,812,285289,2017
+NQN,-38.9490013123,-68.15570068359999,Presidente Peron Airport,Neuquen,Argentina,America,608,907980,2017
+RSA,-36.588299,-64.275703,Santa Rosa Airport,Santa Rosa,Argentina,America,982,49109,2017
+BRC,-41.1511993408,-71.1575012207,San Carlos De Bariloche Airport,San Carlos De Bariloche,Argentina,America,544,1279524,2017
+CPC,-40.0754013062,-71.137298584,Aviador C. Campos Airport,San Martin Des Andes,Argentina,America,931,104695,2017
+AJU,-10.984000206,-37.0703010559,Santa Maria Airport,Aracaju,Brazil,America,548,1225789,2017
+BEL,-1.3792500495900002,-48.4762992859,Val de Cans/Júlio Cezar Ribeiro International Airport,Belem,Brazil,America,367,3311817,2017
+PLU,-19.851200103759766,-43.950599670410156,Pampulha - Carlos Drummond de Andrade Airport,Belo Horizonte,Brazil,America,847,234675,2017
+BSB,-15.86916732788086,-47.920833587646484,Presidente Juscelino Kubistschek International Airport,Brasilia,Brazil,America,139,16912680,2017
+BVB,2.84138894081,-60.6922225952,Atlas Brasil Cantanhede Airport,Boa Vista,Brazil,America,813,283699,2017
+CNF,-19.62444305419922,-43.97194290161133,Tancredo Neves International Airport,Belo Horizonte,Brazil,America,203,10164077,2017
+CGR,-20.468700408900002,-54.6725006104,Campo Grande Airport,Campo Grande,Brazil,America,510,1536838,2017
+CWB,-25.5284996033,-49.1758003235,Afonso Pena Airport,Curitiba,Brazil,America,258,6722058,2017
+CGB,-15.6528997421,-56.1166992188,Marechal Rondon Airport,Cuiaba,Brazil,America,388,2882450,2017
+PPB,-22.1751003265,-51.4245986938,Presidente Prudente Airport,President Prudente,Brazil,America,831,256883,2017
+MAO,-3.0386099815368652,-60.04970169067383,Eduardo Gomes International Airport,Manaus,Brazil,America,407,2645205,2017
+IGU,-25.600278854370117,-54.48500061035156,Cataratas International Airport,Foz Do Iguacu,Brazil,America,443,2177298,2017
+FLN,-27.670278549194336,-48.5525016784668,Hercílio Luz International Airport,Florianopolis,Brazil,America,349,3843328,2017
+FEN,-3.8549299240112305,-32.423301696777344,Fernando de Noronha Airport,Fernando Do Noronha,Brazil,America,836,248248,2017
+FOR,-3.776279926300049,-38.53260040283203,Pinto Martins International Airport,Fortaleza,Brazil,America,280,5935288,2017
+GIG,-22.8099994659,-43.2505569458,Rio Galeão – Tom Jobim International Airport,Rio De Janeiro,Brazil,America,143,16243253,2017
+GYN,-16.631999969482422,-49.220699310302734,Santa Genoveva Airport,Goiania,Brazil,America,377,3088274,2017
+GRU,-23.435556411743164,-46.47305679321289,Guarulhos - Governador André Franco Montoro International Airport,Sao Paulo,Brazil,America,54,37774000,2017
+IOS,-14.815999984741,-39.033199310303,Bahia - Jorge Amado Airport,Ilheus,Brazil,America,691,596351,2017
+IMP,-5.531290054321289,-47.459999084472656,Prefeito Renato Moreira Airport,Imperatriz,Brazil,America,801,300023,2017
+JPA,-7.145833015440001,-34.9486122131,Presidente Castro Pinto International Airport,Joao Pessoa,Brazil,America,528,1387496,2017
+JOI,-26.22450065612793,-48.797401428222656,Lauro Carneiro de Loyola Airport,Joinville,Brazil,America,715,515832,2017
+VCP,-23.0074005127,-47.1344985962,Viracopos International Airport,Campinas,Brazil,America,212,9332631,2017
+LDB,-23.333599090599996,-51.1301002502,Governador José Richa Airport,Londrina,Brazil,America,617,880429,2017
+MAB,-5.36858987808,-49.138000488299994,João Correa da Rocha Airport,Maraba,Brazil,America,817,280174,2017
+MGF,-23.479444503799996,-52.01222229,Regional de Maringá - Sílvio Nane Junior Airport,Maringa,Brazil,America,672,658000,2017
+MOC,-16.706899642899998,-43.818901062,Mário Ribeiro Airport,Montes Claros,Brazil,America,818,280022,2017
+MCZ,-9.510809898376465,-35.79169845581055,Zumbi dos Palmares Airport,Maceio,Brazil,America,449,2068245,2017
+MCP,0.0506640002131,-51.0722007751,Alberto Alcolumbre Airport,Macapa,Brazil,America,698,576257,2017
+NVT,-26.8799991607666,-48.65140151977539,Ministro Victor Konder International Airport,Navegantes,Brazil,America,508,1588921,2017
+NAT,-5.768056,-35.376111,Governador Aluízio Alves International Airport,Natal,Brazil,America,424,2403135,2017
+POA,-29.994400024414062,-51.1713981628418,Salgado Filho Airport,Porto Alegre,Brazil,America,233,8012114,2017
+PNZ,-9.362409591674805,-40.56909942626953,Senador Nilo Coelho Airport,Petrolina,Brazil,America,725,485495,2017
+PVH,-8.70928955078125,-63.90230178833008,Governador Jorge Teixeira de Oliveira Airport,Porto Velho,Brazil,America,637,794109,2017
+RBR,-9.868888854980469,-67.89805603027344,Plácido de Castro Airport,Rio Branco,Brazil,America,778,345079,2017
+REC,-8.126489639282227,-34.92359924316406,Guararapes - Gilberto Freyre International Airport,Recife,Brazil,America,242,7776881,2017
+SDU,-22.910499572799996,-43.1631011963,Santos Dumont Airport,Rio De Janeiro,Brazil,America,215,9247185,2017
+RAO,-21.136388778686523,-47.776668548583984,Leite Lopes Airport,Ribeirao Preto,Brazil,America,622,867544,2017
+SLZ,-2.585360050201416,-44.234100341796875,Marechal Cunha Machado International Airport,Sao Luis,Brazil,America,506,1601836,2017
+CGH,-23.626110076904297,-46.65638732910156,Congonhas Airport,Sao Paulo,Brazil,America,112,21859453,2017
+SJP,-20.816600799599996,-49.40650177,Prof. Eribelto Manoel Reino State Airport,Sao Jose Do Rio Preto,Brazil,America,650,728162,2017
+SSA,-12.9086112976,-38.3224983215,Deputado Luiz Eduardo Magalhães International Airport,Salvador,Brazil,America,243,7735685,2017
+THE,-5.0599398613,-42.8235015869,Senador Petrônio Portela Airport,Teresina,Brazil,America,567,1104451,2017
+UDI,-18.88361167907715,-48.225276947021484,Ten. Cel. Aviador César Bombonato Airport,Uberlandia,Brazil,America,569,1102569,2017
+VIX,-20.258056640625,-40.2863883972168,Eurico de Aguiar Salles Airport,Vitoria,Brazil,America,378,3021949,2017
+SCL,-33.393001556396484,-70.78579711914062,Comodoro Arturo Merino Benítez International Airport,Santiago,Chile,America,107,22316093,2017
+ASU,-25.239999771118164,-57.52000045776367,Silvio Pettirossi International Airport,Asuncion,Paraguay,America,557,1180111,2017
+BOG,4.70159,-74.1469,El Dorado International Airport,Bogota,Colombia,America,65,30989932,2017
+PCL,-8.37794017791748,-74.57430267333984,Cap FAP David Abenzur Rengifo International Airport,Pucallpa,Peru,America,720,499800,2017
+CIX,-6.787479877471924,-79.8281021118164,Capitan FAP Jose A Quinones Gonzales International Airport,Chiclayo,Peru,America,714,516589,2017
+LIM,-12.0219,-77.114304,Jorge Chávez International Airport,Lima,Peru,America,110,22046042,2017
+JUL,-15.467100143432617,-70.158203125,Inca Manco Capac International Airport,Juliaca,Peru,America,733,462650,2017
+IQT,-3.7847399711608887,-73.30879974365234,Coronel FAP Francisco Secada Vignetta International Airport,Iquitos,Peru,America,603,934031,2017
+AQP,-16.3411006927,-71.5830993652,Rodríguez Ballón International Airport,Arequipa,Peru,America,501,1634090,2017
+TRU,-8.08141040802002,-79.10880279541016,Capitan FAP Carlos Martinez De Pinillos International Airport,Trujillo,Peru,America,702,560922,2017
+TPP,-6.508739948272705,-76.37319946289062,Cadete FAP Guillermo Del Castillo Paredes Airport,Tarapoto,Peru,America,667,671576,2017
+PIU,-5.20574998856,-80.61640167239999,Capitán FAP Guillermo Concha Iberico International Airport,Piura,Peru,America,627,849388,2017
+CUZ,-13.535699844400002,-71.9387969971,Alejandro Velasco Astete International Airport,Cuzco,Peru,America,369,3209153,2017
+MUN,9.75452995300293,-63.14739990234375,Maturín Airport,Maturin,Venezuela,America,336,4176556,2017
+SXM,18.041000366200002,-63.1088981628,Princess Juliana International Airport,Philipsburg,Netherlands Antilles,America,478,1829543,2017
+YKS,62.093299865722656,129.77099609375,Yakutsk Airport,Yakutsk,Russia,Asia,610,902463,2017
+MJZ,62.534698486328125,114.03900146484375,Mirny Airport,Mirnyj,Russia,Asia,807,291410,2017
+BQS,50.42539978027344,127.41200256347656,Ignatyevo Airport,Blagoveschensk,Russia,Asia,754,405000,2017
+KHV,48.52799987793,135.18800354004,Khabarovsk-Novy Airport,Khabarovsk,Russia,Asia,452,2051000,2017
+PKC,53.16790008544922,158.45399475097656,Yelizovo Airport,Petropavlovsk,Russia,Asia,671,658718,2017
+UUS,46.88869857788086,142.71800231933594,Yuzhno-Sakhalinsk Airport,Yuzhno-sakhalinsk,Russia,Asia,589,985200,2017
+VVO,43.39899826049805,132.1479949951172,Vladivostok International Airport,Vladivostok,Russia,Asia,441,2179000,2017
+HTA,52.026299,113.306,Chita-Kadala Airport,Chita,Russia,Asia,760,380500,2017
+BTK,56.370601654052734,101.697998046875,Bratsk Airport,Bratsk,Russia,Asia,924,117789,2017
+IKT,52.268001556396,104.38899993896,Irkutsk Airport,Irkutsk,Russia,Asia,455,2010000,2017
+UUD,51.80780029296875,107.43800354003906,Ulan-Ude Airport (Mukhino),Ulan-ude,Russia,Asia,822,269700,2017
+KBP,50.345001220703125,30.894699096679688,Boryspil International Airport,Kiev,Ukraine,Europe,193,10554757,2017
+SIP,45.05220031738281,33.975101470947266,Simferopol International Airport,Simferopol,Ukraine,Europe,303,5128738,2017
+LED,59.80030059814453,30.262500762939453,Pulkovo Airport,St. Petersburg,Russia,Europe,144,16125520,2017
+MMK,68.78170013427734,32.75080108642578,Murmansk Airport,Murmansk,Russia,Europe,629,846440,2017
+KGD,54.88999938964844,20.592599868774414,Khrabrovo Airport,Kaliningrad,Russia,Europe,484,1780000,2017
+MSQ,53.882499694824,28.030700683594,Minsk National Airport,Minsk 2,Belarus,Europe,338,4114512,2017
+ABA,53.7400016784668,91.38500213623047,Abakan Airport,Abakan,Russia,Asia,882,188786,2017
+BAX,53.363800048828125,83.53849792480469,Barnaul Airport,Barnaul,Russia,Asia,712,521600,2017
+KEJ,55.27009963989258,86.1072006225586,Kemerovo Airport,Kemorovo,Russia,Asia,823,268560,2017
+OMS,54.96699905395508,73.31050109863281,Omsk Central Airport,Omsk,Russia,Asia,595,963600,2017
+KRR,45.034698486328,39.170501708984,Krasnodar Pashkovsky International Airport,Krasnodar,Russia,Europe,361,3498126,2017
+MCX,42.81679916381836,47.65230178833008,Uytash Airport,Makhachkala,Russia,Europe,577,1067685,2017
+MRV,44.225101470947266,43.08190155029297,Mineralnyye Vody Airport,Mineralnye Vody,Russia,Europe,440,2180178,2017
+STW,45.10919952392578,42.11280059814453,Stavropol Shpakovskoye Airport,Stavropol,Russia,Europe,770,356253,2017
+ROV,47.2582015991,39.8180999756,Rostov-on-Don Airport,Rostov,Russia,Europe,400,2766000,2017
+AER,43.449901580811,39.956600189209,Sochi International Airport,Sochi,Russia,Europe,288,5691822,2017
+ASF,46.2832984924,48.0063018799,Astrakhan Airport,Astrakhan,Russia,Europe,697,582302,2017
+VOG,48.782501220703125,44.34550094604492,Volgograd International Airport,Volgograd,Russia,Europe,582,1013985,2017
+CEK,55.305801,61.5033,Chelyabinsk Balandino Airport,Chelyabinsk,Russia,Asia,515,1517000,2017
+MQF,53.39310073852539,58.755699157714844,Magnitogorsk International Airport,Magnetiogorsk,Russia,Asia,919,127662,2017
+NJC,60.94929885864258,76.48359680175781,Nizhnevartovsk Airport,Nizhnevartovsk,Russia,Asia,661,680577,2017
+PEE,57.914501190186,56.021198272705,Bolshoye Savino Airport,Perm,Russia,Asia,534,1338373,2017
+SGC,61.34370040893555,73.40180206298828,Surgut Airport,Surgut,Russia,Asia,489,1723312,2017
+SVX,56.743099212646,60.802700042725,Koltsovo Airport,Yekaterinburg,Russia,Asia,297,5404000,2017
+SVO,55.972599,37.4146,Sheremetyevo International Airport,Moscow,Russia,Europe,50,40092806,2017
+VOZ,51.81420135498047,39.22959899902344,Voronezh International Airport,Voronezh,Russia,Europe,689,606697,2017
+VKO,55.5914993286,37.2615013123,Vnukovo International Airport,Moscow,Russia,Europe,131,18139000,2017
+SCW,61.64699935913086,50.84510040283203,Syktyvkar Airport,Syktyvkar,Russia,Europe,736,451187,2017
+KZN,55.606201171875,49.278701782227,Kazan International Airport,Kazan,Russia,Europe,409,2623423,2017
+REN,51.795799255371094,55.45669937133789,Orenburg Central Airport,Orenburg,Russia,Asia,651,714635,2017
+UFA,54.557498931885,55.874401092529,Ufa International Airport,Ufa,Russia,Asia,394,2814330,2017
+KUF,53.504901885986,50.16429901123,Kurumoch International Airport,Samara,Russia,Europe,406,2649426,2017
+AMD,23.0771999359,72.63469696039999,Sardar Vallabhbhai Patel International Airport,Ahmedabad,India,Asia,249,7405282,2017
+IXU,19.862699508666992,75.39810180664062,Aurangabad Airport,Aurangabad,India,Asia,783,326971,2017
+BOM,19.0886993408,72.8678970337,Chhatrapati Shivaji International Airport,Mumbai,India,Asia,29,47204259,2017
+BDQ,22.3362007141,73.2263031006,Vadodara Airport,Baroda,India,Asia,568,1103981,2017
+BHO,23.2875003815,77.3374023438,Raja Bhoj International Airport,Bhopal,India,Asia,664,676015,2017
+GOI,15.3808002472,73.8313980103,Dabolim Airport,Goa,India,Asia,255,6876491,2017
+IDR,22.7217998505,75.8011016846,Devi Ahilyabai Holkar Airport,Indore,India,Asia,436,2256760,2017
+NAG,21.092199325561523,79.04720306396484,Dr. Babasaheb Ambedkar International Airport,Nagpur,India,Asia,461,1976707,2017
+PNQ,18.58209991455078,73.9197006225586,Pune Airport,Pune,India,Asia,240,7837331,2017
+RAJ,22.3092002869,70.77950286869999,Rajkot Airport,Rajkot,India,Asia,752,405518,2017
+UDR,24.617700576799997,73.89610290530001,Maharana Pratap Airport,Udaipur,India,Asia,572,1089899,2017
+IXA,23.8869991302,91.24040222170001,Agartala Airport,Agartala,India,Asia,554,1184867,2017
+AJL,23.840599060099997,92.6196975708,Lengpui Airport,Aizwal,India,Asia,846,235613,2017
+IXB,26.68120002746582,88.32859802246094,Bagdogra Airport,Baghdogra,India,Asia,453,2040765,2017
+BBI,20.244400024399997,85.8178024292,Biju Patnaik Airport,Bhubaneswar,India,Asia,386,2907867,2017
+CCU,22.654699325561523,88.44670104980469,Netaji Subhash Chandra Bose International Airport,Kolkata,India,Asia,121,20167698,2017
+IMF,24.7600002289,93.896697998,Imphal Airport,Imphal,India,Asia,615,886338,2017
+IXS,24.9129009247,92.97869873050001,Silchar Airport,Silchar,India,Asia,861,212228,2017
+DIB,27.4839000702,95.0168991089,Dibrugarh Airport,Mohanbari,India,Asia,793,305796,2017
+PAT,25.591299057,85.0879974365,Lok Nayak Jayaprakash Airport,Patina,India,Asia,398,2781276,2017
+IXR,23.314300537100003,85.3217010498,Birsa Munda Airport,Ranchi,India,Asia,580,1035740,2017
+VTZ,17.721200943,83.2245025635,Vishakhapatnam Airport,Vishakhapatnam,India,Asia,437,2242645,2017
+HKG,22.3089008331,113.915000916,Chek Lap Kok International Airport,Hong Kong,Hong Kong,Asia,8,72665078,2017
+ATQ,31.7096004486,74.7973022461,Sri Guru Ram Dass Jee International Airport,Amritsar,India,Asia,446,2087118,2017
+VNS,25.4524002075,82.8592987061,Lal Bahadur Shastri Airport,Varanasi,India,Asia,467,1916454,2017
+DED,30.189699173,78.18029785159999,Dehradun Airport,Dehra Dun,India,Asia,616,882564,2017
+DEL,28.566499710083008,77.10310363769531,Indira Gandhi International Airport,Delhi,India,Asia,16,63451503,2017
+JDH,26.251100540161133,73.04889678955078,Jodhpur Airport,Jodhpur,India,Asia,773,350583,2017
+JAI,26.8241996765,75.8122024536,Jaipur International Airport,Jaipur,India,Asia,328,4345927,2017
+IXJ,32.6890983582,74.8374023438,Jammu Airport,Jammu,India,Asia,560,1159937,2017
+IXL,34.1358985901,77.5465011597,Leh Kushok Bakula Rimpochee Airport,Leh,India,Asia,701,563800,2017
+LKO,26.7605991364,80.8892974854,Chaudhary Charan Singh International Airport,Lucknow,India,Asia,330,4272024,2017
+SXR,33.987098693847656,74.77420043945312,Sheikh ul Alam Airport,Srinagar,India,Asia,438,2227863,2017
+BLR,13.1979,77.706299,Kempegowda International Airport,Bangalore,India,Asia,84,25047272,2017
+VGA,16.530399322509766,80.79679870605469,Vijayawada Airport,Vijayawada,India,Asia,684,622354,2017
+CJB,11.029999733,77.0434036255,Coimbatore International Airport,Coimbatore,India,Asia,444,2175212,2017
+COK,10.1520004272,76.40190124510002,Cochin International Airport,Kochi,India,Asia,200,10274598,2017
+CCJ,11.1367998123,75.95529937740001,Calicut International Airport,Calicut,India,Asia,387,2886915,2017
+IXM,9.83450984955,78.09339904790001,Madurai Airport,Madurai,India,Asia,591,978919,2017
+IXE,12.9612998962,74.8900985718,Mangalore International Airport,Mangalore,India,Asia,451,2054005,2017
+MAA,12.990005493164062,80.16929626464844,Chennai International Airport,Madras,India,Asia,124,19599438,2017
+RJA,17.1103992462,81.81819915770001,Rajahmundry Airport,Rajahmundry,India,Asia,827,261348,2017
+TIR,13.632499694800002,79.543296814,Tirupati Airport,Tirupeti,India,Asia,724,486029,2017
+TRZ,10.765399932861328,78.70970153808594,Tiruchirapally Civil Airport Airport,Tiruchirappalli,India,Asia,531,1359447,2017
+TRV,8.48211956024,76.9200973511,Trivandrum International Airport,Trivandrum,India,Asia,343,4018095,2017
+DMK,13.9125995636,100.607002258,Don Mueang International Airport,Bangkok,Thailand,Asia,52,38299757,2017
+UTP,12.679900169372559,101.00499725341797,U-Tapao International Airport,Pattaya,Thailand,Asia,653,710000,2017
+LPT,18.27090072631836,99.50420379638672,Lampang Airport,Lampang,Thailand,Asia,811,290420,2017
+PRH,18.132200241088867,100.16500091552734,Phrae Airport,Phrae,Thailand,Asia,964,72274,2017
+PHS,16.782899856567383,100.27899932861328,Phitsanulok Airport,Phitsanulok,Thailand,Asia,723,492117,2017
+NAW,6.5199198722839355,101.74299621582031,Narathiwat Airport,Narathiwat,Thailand,Asia,839,241721,2017
+KBV,8.09912014008,98.9861984253,Krabi Airport,Krabi,Thailand,Asia,340,4079564,2017
+USM,9.547789573669998,100.06199646,Samui Airport,Ko Samui,Thailand,Asia,417,2500000,2017
+HKT,8.11320018768,98.3169021606,Phuket International Airport,Phuket,Thailand,Asia,140,16855637,2017
+UNN,9.777620315551758,98.58550262451172,Ranong Airport,Ranong,Thailand,Asia,935,102228,2017
+HDY,6.93320989609,100.392997742,Hat Yai International Airport,Hat Yai,Thailand,Asia,326,4367364,2017
+TST,7.508739948272705,99.6166000366211,Trang Airport,Trang,Thailand,Asia,635,799279,2017
+UTH,17.386400222800003,102.788002014,Udon Thani Airport,Udon Thani,Thailand,Asia,428,2350005,2017
+SNO,17.195100784301758,104.11900329589844,Sakon Nakhon Airport,Sakon Nakhon,Thailand,Asia,777,346351,2017
+LOE,17.43910026550293,101.72200012207031,Loei Airport,Loei,Thailand,Asia,828,261274,2017
+DAD,16.043899536132812,108.1989974975586,Da Nang International Airport,Danang,Vietnam,Asia,190,10860235,2017
+HAN,21.221200942993164,105.80699920654297,Noi Bai International Airport,Hanoi,Vietnam,Asia,101,23068227,2017
+HUI,16.401500701899998,107.70300293,Phu Bai Airport,Hue,Vietnam,Asia,488,1750000,2017
+PQC,10.1698,103.9931,Phu Quoc International Airport,Phuquoc,Vietnam,Asia,380,3000000,2017
+SGN,10.8187999725,106.652000427,Tan Son Nhat International Airport,Ho Chi Minh City,Vietnam,Asia,56,35900000,2017
+MDL,21.702199935913086,95.97789764404297,Mandalay International Airport,Mandalay,Burma,Asia,542,1290000,2017
+RGN,16.907300949099998,96.1332015991,Yangon International Airport,Yangon,Burma,Asia,281,5916597,2017
+UPG,-5.061629772186279,119.55400085449219,Hasanuddin International Airport,Ujung Pandang,Indonesia,Asia,180,11653387,2017
+BIK,-1.190019965171814,136.10800170898438,Frans Kaisiepo Airport,Biak,Indonesia,Asia,768,361410,2017
+TIM,-4.528279781341553,136.88699340820312,Moses Kilangin Airport,Timika,Indonesia,Asia,747,429774,2017
+DJJ,-2.5769500732421875,140.51600646972656,Sentani Airport,Jayapura,Indonesia,Asia,413,2533445,2017
+WMX,-4.10250997543335,138.95700073242188,Wamena Airport,Wamena,Indonesia,Asia,872,201710,2017
+MKQ,-8.52029037475586,140.41799926757812,Mopah Airport,Merauke,Indonesia,Asia,800,300332,2017
+GTO,0.63711899519,122.849998474,Jalaluddin Airport,Gorontalo,Indonesia,Asia,759,381082,2017
+PLW,-0.9185420274734497,119.91000366210938,Mutiara Airport,Palu,Indonesia,Asia,666,672698,2017
+MDC,1.5492600202560425,124.9260025024414,Sam Ratulangi Airport,Manado,Indonesia,Asia,354,3671997,2017
+TTE,0.831413984298706,127.38099670410156,Sultan Khairun Babullah Airport,Ternate,Indonesia,Asia,780,342313,2017
+AMQ,-3.7102599144,128.089004517,"Pattimura Airport, Ambon",Ambon,Indonesia,Asia,538,1318041,2017
+MKW,-0.8918330073356628,134.0489959716797,Rendani Airport,Manokwari,Indonesia,Asia,727,479889,2017
+SOQ,-0.894,131.287,Dominique Edward Osok Airport,Sorong,Indonesia,Asia,776,347355,2017
+BTU,3.12385010719,113.019996643,Bintulu Airport,Bintulu,Malaysia,Asia,626,849596,2017
+KCH,1.4846999645233154,110.34700012207031,Kuching International Airport,Kuching,Malaysia,Asia,305,5095193,2017
+LMN,4.808300018310547,115.01000213623047,Limbang Airport,Limbang,Malaysia,Asia,975,55437,2017
+MYY,4.322010040283203,113.98699951171875,Miri Airport,Miri,Malaysia,Asia,439,2188048,2017
+SBW,2.2616000175476074,111.98500061035156,Sibu Airport,Sibu,Malaysia,Asia,521,1497412,2017
+LDU,5.032249927520752,118.3239974975586,Lahad Datu Airport,Lahad Datu,Malaysia,Asia,914,140077,2017
+BKI,5.9372100830078125,116.0510025024414,Kota Kinabalu International Airport,Kota Kinabalu,Malaysia,Asia,234,8006446,2017
+LBU,5.300680160522461,115.25,Labuan Airport,Labuan,Malaysia,Asia,693,595290,2017
+TWU,4.320159912109375,118.12799835205078,Tawau Airport,Tawau,Malaysia,Asia,529,1374893,2017
+PKU,0.46078601479530334,101.44499969482422,Sultan Syarif Kasim Ii (Simpang Tiga) Airport,Pekanbaru,Indonesia,Asia,322,4465977,2017
+CGK,-6.1255698204,106.65599823,Soekarno-Hatta International Airport,Jakarta,Indonesia,Asia,17,63015620,2017
+GNS,1.1663800477981567,97.70469665527344,Binaka Airport,Gunung Sitoli,Indonesia,Asia,856,225147,2017
+KTG,-1.816640019416809,109.96299743652344,Ketapang(Rahadi Usman) Airport,Ketapang,Indonesia,Asia,903,156577,2017
+PNK,-0.15071099996566772,109.40399932861328,Supadio Airport,Pontianak,Indonesia,Asia,363,3447254,2017
+DJB,-1.6380200386047363,103.64399719238281,Sultan Thaha Airport,Jambi,Indonesia,Asia,500,1639873,2017
+BKS,-3.8637,102.338997,Fatmawati Soekarno Airport,Bengkulu,Indonesia,Asia,648,736315,2017
+PLM,-2.8982501029968,104.69999694824,Sultan Mahmud Badaruddin II Airport,Palembang,Indonesia,Asia,290,5677234,2017
+BTJ,5.522872024010001,95.42063713070002,Sultan Iskandar Muda International Airport,Banda Aceh,Indonesia,Asia,644,741438,2017
+AOR,6.189670085906982,100.39800262451172,Sultan Abdul Halim Airport,Alor Setar,Malaysia,Asia,634,802304,2017
+KBR,6.1668500900268555,102.29299926757812,Sultan Ismail Petra Airport,Kota Bahru,Malaysia,Asia,458,1988212,2017
+KUA,3.7753899097442627,103.20899963378906,Kuantan Airport,Kuantan,Malaysia,Asia,840,241314,2017
+IPH,4.567969799041748,101.09200286865234,Sultan Azlan Shah Airport,Ipoh,Malaysia,Asia,820,274146,2017
+JHB,1.6413099765777588,103.66999816894531,Senai International Airport,Johor Bahru,Malaysia,Asia,373,3124799,2017
+KUL,2.745579957962,101.70999908447,Kuala Lumpur International Airport,Kuala Lumpur,Malaysia,Asia,23,58558440,2017
+LGK,6.329730033874512,99.72869873046875,Langkawi International Airport,Langkawi,Malaysia,Asia,399,2767707,2017
+MKZ,2.2633600235,102.251998901,Malacca Airport,Malacca,Malaysia,Asia,972,58703,2017
+TGG,5.3826398849487305,103.10299682617188,Sultan Mahmud Airport,Kuala Terengganu,Malaysia,Asia,599,943660,2017
+PEN,5.297140121459961,100.2770004272461,Penang International Airport,Penang,Malaysia,Asia,251,7232097,2017
+SIN,1.35019,103.994003,Singapore Changi Airport,Singapore,Singapore,Asia,18,62219573,2017
+ASP,-23.806699752807617,133.90199279785156,Alice Springs Airport,Alice Springs,Australia,Australia,696,582755,2017
+BNE,-27.384199142456055,153.11700439453125,Brisbane International Airport,Brisbane,Australia,Australia,99,23205702,2017
+OOL,-28.1644001007,153.505004883,Gold Coast Airport,Coolangatta,Australia,Australia,264,6457086,2017
+CNS,-16.885799408,145.755004883,Cairns International Airport,Cairns,Australia,Australia,311,4898189,2017
+ISA,-20.663900375399997,139.488998413,Mount Isa Airport,Mount Isa,Australia,Australia,866,208395,2017
+MCY,-26.603300094599998,153.091003418,Sunshine Coast Airport,Maroochydore,Australia,Australia,628,847906,2017
+MKY,-21.171699523900003,149.179992676,Mackay Airport,Mackay,Australia,Australia,604,928354,2017
+PPP,-20.4950008392,148.552001953,Proserpine Whitsunday Coast Airport,Prosserpine,Australia,Australia,816,280848,2017
+ROK,-23.3819007874,150.475006104,Rockhampton Airport,Rockhampton,Australia,Australia,677,634913,2017
+TSV,-19.252500534057617,146.76499938964844,Townsville Airport,Townsville,Australia,Australia,520,1497946,2017
+ABX,-36.06779861450195,146.95799255371094,Albury Airport,Albury,Australia,Australia,837,244611,2017
+HBA,-42.836101532,147.509994507,Hobart International Airport,Hobart,Australia,Australia,421,2440792,2017
+LST,-41.54529953,147.214004517,Launceston Airport,Launceston,Australia,Australia,545,1272198,2017
+MEL,-37.673301696777344,144.84300231933594,Melbourne International Airport,Melbourne,Australia,Australia,61,33704854,2017
+ADL,-34.94499969482422,138.531005859375,Adelaide International Airport,Adelaide,Australia,Australia,232,8090000,2017
+KTA,-20.712200164799995,116.773002625,Karratha Airport,Karratha,Australia,Australia,669,659913,2017
+KGI,-30.789400100699996,121.461997986,Kalgoorlie Boulder Airport,Kalgoorlie,Australia,Australia,854,227946,2017
+KNX,-15.7781000137,128.707992554,Kununurra Airport,Kununurra,Australia,Australia,958,77415,2017
+PHE,-20.3777999878,118.625999451,Port Hedland International Airport,Port Hedland,Australia,Australia,729,470741,2017
+PER,-31.94029998779297,115.96700286865234,Perth International Airport,Perth,Australia,Australia,158,13759170,2017
+CBR,-35.30690002441406,149.19500732421875,Canberra International Airport,Canberra,Australia,Australia,381,2995470,2017
+CFS,-30.3206005096,153.115997314,Coffs Harbour Airport,Coff's Harbour,Australia,Australia,771,354212,2017
+DBO,-32.2167015076,148.574996948,Dubbo City Regional Airport,Dubbo,Australia,Australia,883,188736,2017
+SYD,-33.94609832763672,151.177001953125,Sydney Kingsford Smith International Airport,Sydney,Australia,Australia,42,43410355,2017
+TMW,-31.0839004517,150.847000122,Tamworth Airport,Tamworth,Australia,Australia,906,153838,2017
+WGA,-35.1652984619,147.466003418,Wagga Wagga City Airport,Wagga Wagga,Australia,Australia,864,209671,2017
+PEK,40.080101013183594,116.58499908447266,Beijing Capital International Airport,Beijing,China,Asia,2,95786442,2017
+TSN,39.124401092499994,117.346000671,Tianjin Binhai International Airport,Tianjin,China,Asia,118,20711697,2017
+TYN,37.74689865112305,112.62799835205078,Taiyuan Wusu Airport,Taiyuan,China,Asia,167,12980259,2017
+CAN,23.39240074157715,113.29900360107422,Guangzhou Baiyun International Airport,Guangzhou,China,Asia,13,65887473,2017
+CSX,28.189199447599997,113.220001221,Changsha Huanghua International Airport,Changcha,China,Asia,94,23764820,2017
+KWL,25.21809959411621,110.03900146484375,Guilin Liangjiang International Airport,Guilin,China,Asia,238,7862015,2017
+NNG,22.608299255371094,108.1719970703125,Nanning Wuxu Airport,Nanning,China,Asia,155,13915542,2017
+SZX,22.639299392700195,113.81099700927734,Shenzhen Bao'an International Airport,Shenzhen,China,Asia,34,45558409,2017
+CGO,34.519699096699995,113.841003418,Zhengzhou Xinzheng International Airport,Zhengzhou,China,Asia,90,24299073,2017
+WUH,30.78380012512207,114.20800018310547,Wuhan Tianhe International Airport,Wuhan,China,Asia,100,23129400,2017
+LHW,36.5152015686,103.620002747,Lanzhou Zhongchuan Airport,Lanzhou,China,Asia,170,12816443,2017
+XIY,34.44710159301758,108.75199890136719,Xi'an Xianyang International Airport,Xi'an,China,Asia,46,41857406,2017
+JHG,21.973899841308594,100.76000213623047,Xishuangbanna Gasa Airport,Jinghonggasa,China,Asia,344,3990867,2017
+KMG,25.1019444,102.9291667,Kunming Changshui International Airport,Kunming,China,Asia,37,44729736,2017
+XMN,24.54400062561035,118.12799835205078,Xiamen Gaoqi International Airport,Xiamen,China,Asia,88,24485239,2017
+KHN,28.864999771118164,115.9000015258789,Nanchang Changbei International Airport,Nanchang,China,Asia,185,11212161,2017
+FOC,25.935100555419922,119.66300201416016,Fuzhou Changle International Airport,Fuzhou,China,Asia,174,12469235,2017
+HGH,30.22949981689453,120.43399810791016,Hangzhou Xiaoshan International Airport,Hangzhou,China,Asia,58,35570411,2017
+NGB,29.82670021057129,121.46199798583984,Ningbo Lishe International Airport,Ninbo,China,Asia,210,9390527,2017
+NKG,31.742000579833984,118.86199951171875,Nanjing Lukou Airport,Nanjing,China,Asia,82,25822936,2017
+HFE,31.780000686645508,117.2979965209961,Hefei Luogang International Airport,Hefei,China,Asia,207,9690716,2017
+TAO,36.2661018372,120.374000549,Liuting Airport,Qingdao,China,Asia,98,23210530,2017
+SHA,31.197900772094727,121.33599853515625,Shanghai Hongqiao International Airport,Shanghai,China,Asia,45,41884059,2017
+YNT,37.40169906616211,121.37200164794922,Yantai Laishan Airport,Yantai,China,Asia,261,6503015,2017
+CKG,29.719200134277344,106.64199829101562,Chongqing Jiangbei International Airport,Chongqing,China,Asia,51,38715210,2017
+KWE,26.53849983215332,106.8010025024414,Longdongbao Airport,Guiyang,China,Asia,132,18109610,2017
+CTU,30.578500747680664,103.9469985961914,Chengdu Shuangliu International Airport,Chengdu,China,Asia,26,49801693,2017
+URC,43.907100677490234,87.47419738769531,Ürümqi Diwopu International Airport,Urumqi,China,Asia,114,21500901,2017
+HRB,45.6234016418457,126.25,Taiping Airport,Harbin,China,Asia,128,18810317,2017
+DLC,38.9656982421875,121.53900146484375,Zhoushuizi Airport,Dalian,China,Asia,134,17503810,2017
+PVG,31.143400192260742,121.80500030517578,Shanghai Pudong International Airport,Shanghai,China,Asia,9,70001237,2017
+SZB,3.130579948425293,101.54900360107422,Sultan Abdul Aziz Shah International Airport,Kuala Lumpur,Malaysia,Asia,389,2880586,2017
+HBE,30.917699813842773,29.696399688720703,Borg El Arab International Airport,Alexandria,Egypt,Africa,486,1774163,2017
+ITO,19.721399307250977,-155.04800415039062,Hilo International Airport,Hilo,United States,Pacific,537,1327245,2017
+ORL,28.545499801636,-81.332901000977,Orlando Executive Airport,Orlando,United States,America,63,32042475,2017
+BOS,42.36429977,-71.00520325,General Edward Lawrence Logan International Airport,Boston,United States,America,55,36288042,2017
+OAK,37.72129821777344,-122.22100067138672,Metropolitan Oakland International Airport,Oakland,United States,America,165,13072245,2017
+OMA,41.303199768066406,-95.89409637451172,Eppley Airfield,Omaha,United States,America,319,4611906,2017
+MCI,39.2976,-94.713898,Kansas City International Airport,Kansas City,United States,America,182,11503936,2017
+PHX,33.43429946899414,-112.01200103759766,Phoenix Sky Harbor International Airport,Phoenix,United States,America,41,43921670,2017
+FXE,26.1972999573,-80.1707000732,Fort Lauderdale Executive Airport,Fort Lauderdale,United States,America,902,159999,2017
+SFO,37.61899948120117,-122.375,San Francisco International Airport,San Francisco,United States,America,24,55822129,2017
+GNV,29.6900997162,-82.2717971802,Gainesville Regional Airport,Gainesville,United States,America,744,436184,2017
+LAX,33.94250107,-118.4079971,Los Angeles International Airport,Los Angeles,United States,America,4,84557968,2017
+CLE,41.4117012024,-81.8498001099,Cleveland Hopkins International Airport,Cleveland,United States,America,216,9140445,2017
+CVG,39.0488014221,-84.6678009033,Cincinnati Northern Kentucky International Airport,Cincinnati,United States,America,239,7842149,2017
+EWR,40.692501068115234,-74.168701171875,Newark Liberty International Airport,Newark,United States,America,43,43393499,2017
+DAL,32.84709930419922,-96.85179901123047,Dallas Love Field,Dallas,United States,America,149,15562738,2017
+KOA,19.738800048828125,-156.04600524902344,Kona International At Keahole Airport,Kona,United States,Pacific,376,3088641,2017
+DCA,38.8521,-77.037697,Ronald Reagan Washington National Airport,Washington,United States,America,93,23928248,2017
+FLL,26.072599411010742,-80.15270233154297,Fort Lauderdale Hollywood International Airport,Fort Lauderdale,United States,America,62,32511053,2017
+SLC,40.78839874267578,-111.97799682617188,Salt Lake City International Airport,Salt Lake City,United States,America,91,24198816,2017
+IAH,29.984399795532227,-95.34140014648438,George Bush Intercontinental Houston Airport,Houston,United States,America,48,40696189,2017
+ELP,31.80719948,-106.3779984,El Paso International Airport,El Paso,United States,America,395,2807734,2017
+PNS,30.473400115967,-87.186599731445,Pensacola Regional Airport,Pensacola,United States,America,498,1650000,2017
+HOU,29.64539909,-95.27890015,William P Hobby Airport,Houston,United States,America,160,13435672,2017
+PIT,40.49150085,-80.23290253,Pittsburgh International Airport,Pittsburgh,United States,America,220,8988016,2017
+MIA,25.79319953918457,-80.29060363769531,Miami International Airport,Miami,United States,America,40,44071313,2017
+SEA,47.44900131225586,-122.30899810791016,Seattle Tacoma International Airport,Seattle,United States,America,31,46934194,2017
+LGB,33.81769943,-118.1520004,Long Beach /Daugherty Field/ Airport,Long Beach,United States,America,391,2852294,2017
+IND,39.7173,-86.294403,Indianapolis International Airport,Indianapolis,United States,America,224,8770308,2017
+HPN,41.06700134277344,-73.70760345458984,Westchester County Airport,White Plains,United States,America,522,1468851,2017
+LIH,21.97599983215332,-159.33900451660156,Lihue Airport,Lihue,United States,Pacific,392,2832281,2017
+PIE,27.91020012,-82.68740082,St Petersburg Clearwater International Airport,St. Petersburg,United States,America,594,965000,2017
+SAT,29.533700942993164,-98.46980285644531,San Antonio International Airport,San Antonio,United States,America,218,9050000,2017
+ROC,43.118900299072266,-77.67240142822266,Greater Rochester International Airport,Rochester,United States,America,553,1186002,2017
+RDU,35.877601623535156,-78.7874984741211,Raleigh Durham International Airport,Raleigh-durham,United States,America,181,11653086,2017
+IAG,43.1072998046875,-78.94619750976562,Niagara Falls International Airport,Niagara Falls,United States,America,848,233302,2017
+PVD,41.732601165771484,-71.42040252685547,Theodore Francis Green State Airport,Providence,United States,America,345,3937947,2017
+BUR,34.20069885253906,-118.35900115966797,Bob Hope Airport,Burbank,United States,America,435,2282000,2017
+DTW,42.212398529052734,-83.35340118408203,Detroit Metropolitan Wayne County Airport,Detroit,United States,America,59,34701497,2017
+TPA,27.975500106811523,-82.533203125,Tampa International Airport,Tampa,United States,America,123,19624284,2017
+SWF,41.50410079956055,-74.10479736328125,Stewart International Airport,Newburgh,United States,America,797,302000,2017
+DFW,32.89680099487305,-97.03800201416016,Dallas Fort Worth International Airport,Dallas-Fort Worth,United States,America,12,67092194,2017
+AUS,30.194499969482422,-97.6698989868164,Austin Bergstrom International Airport,Austin,United States,America,156,13889305,2017
+STL,38.74869918823242,-90.37000274658203,Lambert St Louis International Airport,St. Louis,United States,America,151,14730656,2017
+ATL,33.63669967651367,-84.4281005859375,Hartsfield Jackson Atlanta International Airport,Atlanta,United States,America,1,103902992,2017
+FAT,36.77619934082031,-119.71800231933594,Fresno Yosemite International Airport,Fresno,United States,America,633,805252,2017
+BNA,36.1245002746582,-86.6781997680664,Nashville International Airport,Nashville,United States,America,154,14134448,2017
+LRD,27.543800354003906,-99.46160125732422,Laredo International Airport,Laredo,United States,America,926,116565,2017
+LGA,40.77719879,-73.87259674,La Guardia Airport,New York,United States,America,68,29786769,2017
+TLH,30.396499633789062,-84.35030364990234,Tallahassee Regional Airport,Tallahassee,United States,America,656,692724,2017
+MKK,21.15290069580078,-157.0959930419922,Molokai Airport,Molokai,United States,Pacific,810,290588,2017
+SJT,31.35770034790039,-100.49600219726562,San Angelo Regional Mathis Field,San Angelo,United States,America,936,102079,2017
+BTV,44.471900939899996,-73.15329742429999,Burlington International Airport,Burlington,United States,America,561,1151000,2017
+JAX,30.49410057067871,-81.68789672851562,Jacksonville International Airport,Jacksonville,United States,America,294,5591886,2017
+IAD,38.94449997,-77.45580292,Washington Dulles International Airport,Washington,United States,America,103,22892504,2017
+CLL,30.58860016,-96.36380005,Easterwood Field,College Station,United States,America,979,53557,2017
+MKE,42.947200775146484,-87.89659881591797,General Mitchell International Airport,Milwaukee,United States,America,366,3350000,2017
+PDX,45.58869934,-122.5979996,Portland International Airport,Portland,United States,America,125,19080454,2017
+PBI,26.68320083618164,-80.09559631347656,Palm Beach International Airport,West Palm Beach,United States,America,269,6322452,2017
+HNL,21.318700790405273,-157.9219970703125,Honolulu International Airport,Honolulu,United States,Pacific,122,19950125,2017
+SAN,32.7336006165,-117.190002441,San Diego International Airport,San Diego,United States,America,108,22173493,2017
+ONT,34.055999755859375,-117.60099792480469,Ontario International Airport,Ontario,United States,America,333,4217366,2017
+BRO,25.90679931640625,-97.4259033203125,Brownsville South Padre Island International Airport,Brownsville,United States,America,889,183604,2017
+SYR,43.11119842529297,-76.1063003540039,Syracuse Hancock International Airport,Syracuse,United States,America,462,1951370,2017
+MDW,41.7859992980957,-87.75240325927734,Chicago Midway International Airport,Chicago,United States,America,106,22460236,2017
+SJC,37.36259841918945,-121.92900085449219,Norman Y. Mineta San Jose International Airport,San Jose,United States,America,173,12480232,2017
+DEN,39.861698150635,-104.672996521,Denver International Airport,Denver,United States,America,20,61379396,2017
+PHL,39.87189865112305,-75.24109649658203,Philadelphia International Airport,Philadelphia,United States,America,69,29585754,2017
+CMH,39.99800109863281,-82.89189910888672,Port Columbus International Airport,Columbus,United States,America,247,7500000,2017
+ANC,61.174400329589844,-149.99600219726562,Ted Stevens Anchorage International Airport,Anchorage,United States,America,308,4966000,2017
+RSW,26.53619956970215,-81.75520324707031,Southwest Florida International Airport,Fort Myers,United States,America,223,8842549,2017
+JHM,20.962900161743164,-156.67300415039062,Kapalua Airport,Lahania-kapalua,United States,Pacific,961,75295,2017
+JFK,40.63980103,-73.77890015,John F Kennedy International Airport,New York,United States,America,22,59392500,2017
+SMF,38.69540023803711,-121.59100341796875,Sacramento International Airport,Sacramento,United States,America,189,10912097,2017
+BUF,42.94049835,-78.73220062,Buffalo Niagara International Airport,Buffalo,United States,America,316,4726000,2017
+BDL,41.9388999939,-72.68319702149999,Bradley International Airport,Windsor Locks,United States,America,265,6436407,2017
+MFE,26.17580032,-98.23860168,Mc Allen Miller International Airport,Mcallen,United States,America,652,714067,2017
+ORD,41.97859955,-87.90480042,Chicago O'Hare International Airport,Chicago,United States,America,5,79828183,2017
+PSP,33.8297004699707,-116.50700378417969,Palm Springs International Airport,Palm Springs,United States,America,457,1998206,2017
+AMA,35.219398498535156,-101.70600128173828,Rick Husband Amarillo International Airport,Amarillo,United States,America,662,679653,2017
+COT,28.45669937,-99.22029877,Cotulla-La Salle County Airport,Cotulla,United States,America,830,258529,2017
+BWI,39.17539978,-76.66829681,Baltimore/Washington International Thurgood Marshall Airport,Baltimore,United States,America,79,26369411,2017
+LNY,20.785600662231445,-156.9510040283203,Lanai Airport,Lanai,United States,Pacific,967,64483,2017
+ISP,40.79520035,-73.10019684,Long Island Mac Arthur Airport,Islip,United States,America,685,620000,2017
+MSP,44.881999969499994,-93.22180175780001,Minneapolis-St Paul International/Wold-Chamberlain Airport,Minneapolis,United States,America,53,38034341,2017
+MSY,29.99340057373047,-90.25800323486328,Louis Armstrong New Orleans International Airport,New Orleans,United States,America,178,12009512,2017
+PWM,43.64619827,-70.30930328,Portland International Jetport Airport,Portland,United States,America,483,1785649,2017
+ALB,42.74829864501953,-73.80169677734375,Albany International Airport,Albany,United States,America,426,2393506,2017
+SNA,33.67570114,-117.8679962,John Wayne Airport-Orange County Airport,Santa Ana,United States,America,196,10423578,2017
+CLT,35.2140007019043,-80.94309997558594,Charlotte Douglas International Airport,Charlotte,United States,America,32,45909899,2017
+LAS,36.08010101,-115.1520004,McCarran International Airport,Las Vegas,United States,America,27,48566803,2017
+MCO,28.429399490356445,-81.30899810791016,Orlando International Airport,Orlando,United States,America,39,44511265,2017
+BKK,13.681099891662598,100.74700164794922,Suvarnabhumi Airport,Bangkok,Thailand,Asia,21,60860557,2017
+MLG,-7.926559925079999,112.714996338,Abdul Rachman Saleh Airport,Malang,Indonesia,Asia,624,859000,2017
+BDO,-6.900629997253418,107.57599639892578,Husein Sastranegara International Airport,Bandung,Indonesia,Asia,352,3696175,2017
+JOG,-7.788179874420166,110.43199920654297,Adi Sutjipto International Airport,Yogyakarta,Indonesia,Asia,226,8634369,2017
+SRG,-6.97273,110.375,Achmad Yani Airport,Semarang,Indonesia,Asia,332,4224295,2017
+BTH,1.12102997303,104.119003296,Hang Nadim International Airport,Batam,Indonesia,Asia,268,6355113,2017
+TJQ,-2.74571990967,107.754997253,Buluh Tumbang (H A S Hanandjoeddin) Airport,Tanjung Pandan,Indonesia,Asia,749,421211,2017
+PGK,-2.16219997406,106.138999939,Pangkal Pinang (Depati Amir) Airport,Pangkal Pinang,Indonesia,Asia,468,1914006,2017
+TNJ,0.922683000565,104.531997681,Raja Haji Fisabilillah International Airport,Tanjung Pinang,Indonesia,Asia,819,274509,2017
+BDJ,-3.4423599243164062,114.76300048828125,Syamsudin Noor Airport,Banjarmasin,Indonesia,Asia,355,3613473,2017
+PKN,-2.70519995689,111.672996521,Iskandar Airport,Pangkalan Bun,Indonesia,Asia,743,436264,2017
+PKY,-2.22513008118,113.943000793,Tjilik Riwut Airport,Palangkaraya,Indonesia,Asia,676,642330,2017
+ENE,-8.8492898941,121.661003113,Ende (H Hasan Aroeboesman) Airport,Ende,Indonesia,Asia,867,208284,2017
+KOE,-10.171600341796875,123.6709976196289,El Tari Airport,Kupang,Indonesia,Asia,514,1523342,2017
+LBJ,-8.48666000366211,119.88899993896484,Komodo (Mutiara II) Airport,Labuhan Bajo,Indonesia,Asia,874,200212,2017
+BPN,-1.26827001572,116.893997192,Sultan Aji Muhamad Sulaiman Airport,Balikpapan,Indonesia,Asia,245,7510090,2017
+TRK,3.326667,117.569444,Juwata Airport,Taraken,Indonesia,Asia,584,1002484,2017
+SRI,-0.484530985355,117.156997681,Temindung Airport,Samarinda,Indonesia,Asia,943,91849,2017
+BMU,-8.5396499633789,118.68699645996,Muhammad Salahuddin Airport,Bima,Indonesia,Asia,917,134977,2017
+SUB,-7.3798298835754395,112.78700256347656,Juanda International Airport,Surabaya,Indonesia,Asia,111,21882335,2017
+SOC,-7.516089916229248,110.75700378417969,Adi Sumarmo Wiryokusumo Airport,Solo City,Indonesia,Asia,513,1525013,2017
+ICN,37.46910095214844,126.45099639892578,Incheon International Airport,Seoul,South Korea,Asia,19,62157834,2017
+CNX,18.766799926799997,98.962600708,Chiang Mai International Airport,Chiang Mai,Thailand,Asia,201,10230070,2017
+CEI,19.952299118,99.88289642330001,Chiang Rai International Airport,Chiang Rai,Thailand,Asia,416,2503375,2017
+NST,8.539620399475098,99.9447021484375,Nakhon Si Thammarat Airport,Nakhon Si Thammarat,Thailand,Asia,517,1503463,2017
+KOP,17.383800506591797,104.64299774169922,Nakhon Phanom Airport,Nakhon Phanom,Thailand,Asia,762,372026,2017
+UBP,15.2512998581,104.870002747,Ubon Ratchathani Airport,Ubon Ratchathani,Thailand,Asia,481,1791828,2017
+KKC,16.466600418099997,102.783996582,Khon Kaen Airport,Khon Kaen,Thailand,Asia,494,1703209,2017
+THS,17.238000869750977,99.81819915771484,Sukhothai Airport,Sukhothai,Thailand,Asia,963,74000,2017
+DPS,-8.7481698989868,115.16699981689,Ngurah Rai (Bali) International Airport,Denpasar,Indonesia,Asia,104,22863647,2017
+ATH,37.9364013672,23.9444999695,Eleftherios Venizelos International Airport,Athens,Greece,Europe,113,21737787,2017
+NGO,34.8583984375,136.80499267578125,Chubu Centrair International Airport,Nagoya,Japan,Asia,202,10177713,2017
+UKB,34.6328010559082,135.2239990234375,Kobe Airport,Kobe,Japan,Asia,422,2435110,2017
+ITH,42.49100112915039,-76.4583969116211,Ithaca Tompkins Regional Airport,Ithaca,United States,America,949,87230,2017
+SBA,34.42620087,-119.8399963,Santa Barbara Municipal Airport,Santa Barbara,United States,America,670,658955,2017
+RIX,56.92359924316406,23.971099853515625,Riga International Airport,Riga,Latvia,Europe,275,6097765,2017
+BUS,41.6102981567,41.5997009277,Batumi International Airport,Batumi,Georgia,Asia,721,495668,2017
+KUT,42.176700592,42.4826011658,Kopitnari Airport,Kutaisi,Georgia,Asia,753,405173,2017
+TBS,41.6692008972,44.95470047,Tbilisi International Airport,Tbilisi,Georgia,Asia,371,3164139,2017
+FMM,47.988800048799995,10.2395000458,Memmingen Allgau Airport,Memmingen,Germany,Europe,558,1179875,2017
+NAV,38.7719,34.5345,Nevşehir Kapadokya Airport,Nevsehir,Turkey,Europe,769,359563,2017
+EZE,-34.8222,-58.5358,Ministro Pistarini International Airport,Buenos Aires,Argentina,America,198,10327203,2017
+EMD,-23.5674991608,148.179000854,Emerald Airport,Emerald,Australia,Australia,850,230274,2017
+KIX,34.42729949951172,135.24400329589844,Kansai International Airport,Osaka,Japan,Asia,73,27983093,2017
+TAG,9.664079666137695,123.85299682617188,Tagbilaran Airport,Tagbilaran,Philippines,Asia,619,871383,2017
+PMI,39.551700592,2.73881006241,Palma De Mallorca Airport,Palma de Mallorca,Spain,Europe,74,27970655,2017
+DRW,-12.41469955444336,130.8769989013672,Darwin International Airport,Darwin,Australia,Australia,450,2057307,2017
+URT,9.13259983063,99.135597229,Surat Thani Airport,Surat Thani,Thailand,Asia,454,2032042,2017
+AYQ,-25.1861,130.975998,Ayers Rock Connellan Airport,Uluru,Australia,Australia,792,307068,2017
+MHT,42.93259811401367,-71.43569946289062,Manchester Airport,Manchester NH,United States,America,502,1630000,2017
+ABQ,35.040199279785156,-106.60900115966797,Albuquerque International Sunport Airport,Albuquerque,United States,America,309,4958417,2017
+FRS,16.913799285899998,-89.86640167239999,Mundo Maya International Airport,Flores,Guatemala,America,927,113444,2017
+DME,55.40879821777344,37.90629959106445,Domodedovo International Airport,Moscow,Russia,Europe,66,30700000,2017
+SYX,18.302900314331055,109.41200256347656,Sanya Phoenix International Airport,Sanya,China,Asia,116,21005001,2017
+LJG,26.6800003052,100.246002197,Lijiang Airport,Lijiang,China,Asia,252,7105345,2017
+HVB,-25.3188991547,152.880004883,Hervey Bay Airport,Hervey Bay,Australia,Australia,900,162688,2017
+MZV,4.048329830169678,114.80500030517578,Mulu Airport,Mulu,Malaysia,Asia,971,60074,2017
+SSH,27.9773006439,34.3950004578,Sharm El Sheikh International Airport,Sharm El Sheikh,Egypt,Africa,415,2509277,2017
+NBO,-1.31923997402,36.9277992249,Jomo Kenyatta International Airport,Nairobi,Kenya,Africa,254,7039175,2017
+FTE,-50.2803,-72.053101,El Calafate Airport,El Calafate,Argentina,America,683,625562,2017
+ARM,-30.528099060099997,151.617004395,Armidale Airport,Armidale,Australia,Australia,920,124173,2017
+SRQ,27.39539909362793,-82.55439758300781,Sarasota Bradenton International Airport,Sarasota,United States,America,552,1186419,2017
+OVB,55.012599945068,82.650703430176,Tolmachevo Airport,Novosibirsk,Russia,Asia,306,5007302,2017
+INC,38.481899,106.009003,Yinchuan Airport,Yinchuan,China,Asia,227,8505613,2017
+HGN,19.301300048828125,97.97579956054688,Mae Hong Son Airport,Mae Hong Son,Thailand,Asia,976,55368,2017
+DVO,7.1255202293396,125.64600372314453,Francisco Bangoy International Airport,Davao,Philippines,Asia,358,3553201,2017
+FNC,32.697898864746,-16.774499893188,Madeira Airport,Funchal,Portugal,Europe,370,3200000,2017
+STM,-2.4247219562530518,-54.785831451416016,Maestro Wilson Fonseca Airport,Santarem,Brazil,America,734,452966,2017
+NPE,-39.465801,176.869995,Hawke's Bay Airport,NAPIER,New Zealand,Pacific,674,652456,2017
+LXA,29.2978000641,90.91190338130001,Lhasa Gonggar Airport,Lhasa,China,Asia,351,3718350,2017
+TNA,36.857200622558594,117.21600341796875,Yaoqiang Airport,Jinan,China,Asia,153,14319264,2017
+CZX,31.919701,119.778999,Changzhou Benniu Airport,Changzhou,China,Asia,414,2510512,2017
+TJM,57.189601898199996,65.3243026733,Roshchino International Airport,Tyumen,Russia,Asia,477,1831654,2017
+HAK,19.934900283813477,110.45899963378906,Haikou Meilan International Airport,Haikou,China,Asia,105,22584815,2017
+NNT,18.807899475097656,100.78299713134766,Nan Airport,Nan,Thailand,Asia,761,376420,2017
+ROI,16.11680030822754,103.77400207519531,Roi Et Airport,Roi Et,Thailand,Asia,782,334955,2017
+BFV,15.229499816894531,103.25299835205078,Buri Ram Airport,Buri Ram,Thailand,Asia,876,197988,2017
+TDX,12.274600029,102.319000244,Trat Airport,Trat,Thailand,Asia,945,90000,2017
+CRK,15.1859998703,120.559997559,Clark International Airport,Angeles City,Philippines,Asia,516,1514531,2017
+SDK,5.900899887084961,118.05899810791016,Sandakan Airport,Sandakan,Malaysia,Asia,613,896347,2017
+SHE,41.639801025390625,123.48300170898438,Taoxian Airport,Shenyang,China,Asia,137,17342626,2017
+LYA,34.741100311299995,112.388000488,Luoyang Airport,Luoyang,China,Asia,618,880253,2017
+DLI,11.75,108.36699676513672,Lien Khuong Airport,Dalat,Vietnam,Asia,507,1600000,2017
+VCL,15.403300285299999,108.706001282,Chu Lai International Airport,Chu Lai,Vietnam,Asia,665,673000,2017
+TBB,13.049599647500001,109.333999634,Dong Tac Airport,Tuy Hoa,Vietnam,Asia,968,64037,2017
+NSI,3.722559928894043,11.553299903869629,Yaoundé Nsimalen International Airport,Yaounde,Cameroon,Africa,865,208973,2017
+FKB,48.7793998718,8.08049964905,Karlsruhe Baden-Baden Airport,Karlsruhe/Baden-Baden,Germany,Europe,546,1240551,2017
+SFB,28.777599334716797,-81.23750305175781,Orlando Sanford International Airport,Sanford,United States,America,402,2752410,2017
+MWX,34.991406,126.382814,Muan International Airport,Muan,South Korea,Asia,787,321675,2017
+NRN,51.6024017334,6.14216995239,Weeze Airport,Weeze,Germany,Europe,471,1885811,2017
+USU,12.1215000153,120.099998474,Francisco B. Reyes Airport,Busuanga,Philippines,Asia,788,321595,2017
+BXU,8.9515,125.4788,Bancasi Airport,Butuan,Philippines,Asia,660,681263,2017
+DPL,8.60198349877,123.341875076,Dipolog Airport,Dipolog,Philippines,Asia,838,243418,2017
+LAO,18.1781005859375,120.53199768066406,Laoag International Airport,Laoag,Philippines,Asia,871,204156,2017
+LGP,13.1575,123.735,Legazpi City International Airport,Legazpi,Philippines,Asia,700,564372,2017
+OZC,8.178509712219238,123.84200286865234,Labo Airport,Ozamis,Philippines,Asia,808,290966,2017
+CEB,10.307499885559,123.97899627686,Mactan Cebu International Airport,Cebu,Philippines,Asia,204,10050940,2017
+BPS,-16.438600540161133,-39.08089828491211,Porto Seguro Airport,Porto Seguro,Brazil,America,492,1716037,2017
+PMW,-10.291500091600001,-48.35699844359999,Brigadeiro Lysias Rodrigues Airport,Palmas,Brazil,America,673,654397,2017
+BDB,-24.903900146499996,152.319000244,Bundaberg Airport,Bundaberg,Australia,Australia,904,156231,2017
+GOJ,56.230098724365,43.784000396729,Nizhny Novgorod Strigino International Airport,Nizhniy Novgorod,Russia,Europe,593,966000,2017
+BNK,-28.8339004517,153.56199646,Ballina Byron Gateway Airport,Ballina Byron Bay,Australia,Australia,742,437026,2017
+TOF,56.380298614502,85.208297729492,Bogashevo Airport,Tomsk,Russia,Asia,681,628932,2017
+CJM,10.711199760437012,99.36170196533203,Chumphon Airport,Chumphon,Thailand,Asia,940,93567,2017
+SWA,23.552,116.5033,Jieyang Chaoshan International Airport,Shantou,China,Asia,314,4851015,2017
+AGT,-25.454516,-54.842682,Guarani International Airport,Ciudad del Este,Paraguay,America,986,40923,2017
+BJV,37.25059890749999,27.6643009186,Milas Bodrum International Airport,Bodrum,Turkey,Europe,348,3877603,2017
+SAW,40.898601532,29.3092002869,Sabiha Gökçen International Airport,Istanbul,Turkey,Europe,64,31385841,2017
+BME,-17.944700241088867,122.23200225830078,Broome International Airport,Broome,Australia,Australia,758,383952,2017
+NTL,-32.79499816894531,151.83399963378906,Newcastle Airport,Newcastle,Australia,Australia,563,1142997,2017
+IKA,35.416099548339844,51.152198791503906,Imam Khomeini International Airport,Tehran,Iran,Asia,222,8852232,2017
+MHD,36.235198974609375,59.64099884033203,Mashhad International Airport,Mashhad,Iran,Asia,195,10459377,2017
+NSK,69.31109619140625,87.33219909667969,Norilsk-Alykel Airport,Norilsk,Russia,Asia,716,515764,2017
+AAQ,45.002101898193,37.347301483154,Anapa Vityazevo Airport,Anapa,Russia,Europe,530,1364000,2017
+ARH,64.60030364990234,40.71670150756836,Talagi Airport,Arkhangelsk,Russia,Europe,614,893400,2017
+RTW,51.564998626708984,46.04669952392578,Saratov Central Airport,Saratov,Russia,Europe,746,433385,2017
+NUX,66.06939697265625,76.52030181884766,Novy Urengoy Airport,Novy Urengoy,Russia,Asia,600,939625,2017
+NOJ,63.18330001831055,75.2699966430664,Noyabrsk Airport,Noyabrsk,Russia,Asia,873,201612,2017
+USK,66.00469970703125,57.3671989440918,Usinsk Airport,Usinsk,Russia,Europe,898,165087,2017
+NNM,67.63999938964844,53.12189865112305,Naryan Mar Airport,Naryan-Mar,Russia,Europe,870,205017,2017
+KGP,62.190399169921875,74.53379821777344,Kogalym International Airport,Kogalym,Russia,Asia,925,117774,2017
+KJA,56.172901153564,92.493301391602,Yemelyanovo Airport,Krasnoyarsk,Russia,Asia,433,2297468,2017
+CGQ,43.9962005615,125.684997559,Longjia Airport,Changchun,China,Asia,179,11662943,2017
+KIJ,37.9558982849,139.121002197,Niigata Airport,Niigata,Japan,Asia,590,984629,2017
+BLJ,35.752101898199996,6.308589935300001,Batna Airport,Batna,Algeria,Africa,957,78123,2017
+ECN,35.154701232910156,33.49610137939453,Ercan International Airport,Nicosia,Cyprus,Asia,425,2400000,2017
+KSY,40.562198638916016,43.1150016784668,Kars Airport,Kars,Turkey,Europe,748,424724,2017
+KCM,37.5388259888,36.9535217285,Kahramanmaraş Airport,Kahramanmaras,Turkey,Europe,853,228689,2017
+AJI,39.654541015625,43.025978088378906,Ağrı Airport,Agri,Turkey,Europe,862,211806,2017
+ADF,37.7313995361,38.4688987732,Adıyaman Airport,Adiyaman,Turkey,Europe,879,190744,2017
+ISE,37.8554000854,30.368400573699997,Süleyman Demirel International Airport,Isparta,Turkey,Europe,842,241016,2017
+EDO,39.554599762,27.0137996674,Balıkesir Körfez Airport,Balikesir Korfez,Turkey,Europe,565,1115595,2017
+SZF,41.254501,36.567101,Samsun Çarşamba Airport,Samsun,Turkey,Europe,491,1716993,2017
+OMH,37.6680984497,45.0686988831,Urmia Airport,Uromiyeh,Iran,Asia,735,451967,2017
+LZN,26.159799575805664,119.95800018310547,Matsu Nangan Airport,Matsu Islands,Taiwan,Asia,829,259289,2017
+MFK,26.224199295043945,120.00299835205078,Matsu Beigan Airport,Matsu Islands,Taiwan,Asia,954,79850,2017
+KUH,43.041000366199995,144.192993164,Kushiro Airport,Kushiro,Japan,Asia,657,685379,2017
+HSG,33.149700164799995,130.302001953,Saga Airport,Saga,Japan,Asia,679,630478,2017
+NKM,35.255001068115234,136.9239959716797,Nagoya Airport,Nagoya,Japan,Asia,649,735114,2017
+FKS,37.22740173339844,140.43099975585938,Fukushima Airport,Fukushima,Japan,Asia,833,250535,2017
+SYO,38.81219863889999,139.787002563,Shonai Airport,Shonai,Japan,Asia,767,364815,2017
+KUV,35.90380096435547,126.61599731445312,Kunsan Air Base,Kunsan,South Korea,Asia,849,232132,2017
+WJU,37.43809890749999,127.959999084,Wonju Airport,Wonju,South Korea,Asia,956,78567,2017
+YNY,38.06129837036133,128.66900634765625,Yangyang International Airport,Sokcho / Gangneung,South Korea,Asia,946,88704,2017
+HIN,35.0885009765625,128.07000732421875,Sacheon Air Base,Sacheon,South Korea,Asia,910,150728,2017
+CJJ,36.7165985107,127.499000549,Cheongju International Airport,Chongju,South Korea,Asia,403,2732755,2017
+SUG,9.755838325629998,125.480947495,Surigao Airport,Sangley Point,Philippines,Asia,933,104313,2017
+WNP,13.58489990234375,123.2699966430664,Naga Airport,Naga,Philippines,Asia,916,137329,2017
+BSO,20.4512996674,121.980003357,Basco Airport,Basco,Philippines,\N,952,82853,2017
+TUG,17.6433676823,121.733150482,Tuguegarao Airport,Tuguegarao,Philippines,Asia,887,186193,2017
+VRC,13.576399803161621,124.20600128173828,Virac Airport,Virac,Philippines,Asia,977,54021,2017
+CRM,12.502400398254395,124.63600158691406,Catarman National Airport,Catarman,Philippines,Asia,987,40237,2017
+RXS,11.597700119018555,122.75199890136719,Roxas Airport,Roxas City,Philippines,Asia,824,267388,2017
+JDO,-7.21895980835,-39.270099639899996,Orlando Bezerra de Menezes Airport,Juazeiro Do Norte,Brazil,America,708,542400,2017
+CEE,59.273601532,38.015800476100004,Cherepovets Airport,Cherepovets,Russia,Europe,857,221463,2017
+NOZ,53.8114013671875,86.877197265625,Spichenkovo Airport,Novokuznetsk,Russia,Asia,885,188458,2017
+IAA,67.43720245361328,86.62190246582031,Igarka Airport,Igarka,Russia,Asia,859,215413,2017
+GRV,43.298099517822266,45.78409957885742,Khankala Air Base,Grozny,Russia,Europe,868,208052,2017
+NAL,43.512901306152344,43.636600494384766,Nalchik Airport,Nalchik,Russia,Europe,845,236865,2017
+OGZ,43.2051010132,44.6066017151,Beslan Airport,Beslan,Russia,Europe,764,369288,2017
+SLY,66.5907974243164,66.61100006103516,Salekhard Airport,Salekhard,Russia,Asia,803,296294,2017
+HMA,61.028499603271484,69.08609771728516,Khanty Mansiysk Airport,Khanty-Mansiysk,Russia,Asia,851,230124,2017
+IJK,56.82809829711914,53.45750045776367,Izhevsk Airport,Izhevsk,Russia,Europe,791,315702,2017
+KVX,58.503299713135,49.348300933838,Pobedilovo Airport,Kirov,Russia,Europe,896,166160,2017
+NYM,65.48090362548828,72.69889831542969,Nadym Airport,Nadym,Russia,Asia,893,169343,2017
+EGO,50.643798828125,36.5900993347168,Belgorod International Airport,Belgorod,Russia,Europe,731,468787,2017
+CSY,56.090301513671875,47.3473014831543,Cheboksary Airport,Cheboksary,Russia,Europe,835,250000,2017
+ULY,54.4010009765625,48.80270004272461,Ulyanovsk East Airport,Ulyanovsk,Russia,Europe,843,241000,2017
+PEZ,53.110599517822266,45.02109909057617,Penza Airport,Penza,Russia,Europe,907,152758,2017
+GAU,26.10610008239746,91.58589935302734,Lokpriya Gopinath Bordoloi International Airport,Guwahati,India,Asia,331,4237474,2017
+MAQ,16.699899673461914,98.54509735107422,Mae Sot Airport,Tak,Thailand,Asia,892,174612,2017
+BMV,12.668299675,108.120002747,Buon Ma Thuot Airport,Buonmethuot,Vietnam,Asia,623,860000,2017
+HPH,20.819400787353516,106.7249984741211,Cat Bi International Airport,Haiphong,Vietnam,Asia,482,1787300,2017
+CXR,11.998200416564941,109.21900177001953,Cam Ranh Airport,Nha Trang,Vietnam,Asia,313,4858362,2017
+VCS,8.73182964325,106.633003235,Co Ong Airport,Conson,Vietnam,Asia,884,188549,2017
+VCA,10.085100174,105.711997986,Can Tho International Airport,Can Tho,Vietnam,Asia,726,481447,2017
+DIN,21.3974990845,103.008003235,Dien Bien Phu Airport,Dienbienphu,Vietnam,Asia,953,81564,2017
+UIH,13.9549999237,109.041999817,Phu Cat Airport,Phucat,Vietnam,Asia,750,420520,2017
+PXU,14.004500389099121,108.01699829101562,Pleiku Airport,Pleiku,Vietnam,Asia,798,300471,2017
+VII,18.7376003265,105.67099762,Vinh Airport,Vinh,Vietnam,Asia,480,1800000,2017
+TKG,-5.240556,105.175556,Radin Inten II (Branti) Airport,Bandar Lampung-Sumatra Island,Indonesia,Asia,524,1419342,2017
+HLP,-6.266610145568848,106.89099884033203,Halim Perdanakusuma International Airport,Jakarta,Indonesia,Asia,235,7934520,2017
+HTI,-20.3581008911,148.95199585,Hamilton Island Airport,Hamilton Island,Australia,Australia,722,493860,2017
+DPO,-41.1697006226,146.429992676,Devonport Airport,Devonport,Australia,Australia,912,143597,2017
+GET,-28.796101,114.707001,Geraldton Airport,Geraldton,Australia,Australia,923,119467,2017
+GLT,-23.869699,151.223007,Gladstone Airport,Gladstone,Australia,Australia,740,443730,2017
+HID,-10.586400032,142.289993286,Horn Island Airport,Horn Island,Australia,Australia,948,88197,2017
+MQL,-34.229198455799995,142.085998535,Mildura Airport,Mildura,Australia,Australia,860,212789,2017
+MOV,-22.057800293,148.07699585,Moranbah Airport,Moranbah,Australia,Australia,905,156192,2017
+MGB,-37.745601654052734,140.78500366210938,Mount Gambier Airport,Mount Gambier,Australia,Australia,959,76950,2017
+ZNE,-23.417800903299998,119.803001404,Newman Airport,Newman,Australia,Australia,775,348885,2017
+OLP,-30.485000610399997,136.876998901,Olympic Dam Airport,Olympic Dam,Australia,Australia,962,74346,2017
+PBO,-23.1711006165,117.745002747,Paraburdoo Airport,Paraburdoo,Australia,Australia,890,176100,2017
+PLO,-34.6053009033,135.880004883,Port Lincoln Airport,Port Lincoln,Australia,Australia,878,190853,2017
+PQQ,-31.4358005524,152.863006592,Port Macquarie Airport,Port Macquarie,Australia,Australia,855,225198,2017
+RMA,-26.545000076300003,148.774993896,Roma Airport,Roma,Australia,Australia,875,198099,2017
+NAY,39.782798767089844,116.38800048828125,Beijing Nanyuan Airport,Beijing,China,Asia,279,5946886,2017
+HET,40.851398468,111.823997498,Baita International Airport,Hohhot,China,Asia,187,10969050,2017
+SJW,38.28070068359375,114.6969985961914,Shijiazhuang Daguocun International Airport,Shijiazhuang,China,Asia,194,10528364,2017
+ZUH,22.006399,113.375999,Zhuhai Jinwan Airport,Zhuhai,China,Asia,209,9425951,2017
+XNN,36.5275,102.042999,Xining Caojiabu Airport,Xining,China,Asia,292,5627696,2017
+LYI,35.04610061645508,118.41200256347656,Shubuling Airport,Linyi,China,Asia,536,1328071,2017
+JJN,24.7964,118.589996,Quanzhou Jinjiang International Airport,Quanzhou,China,Asia,273,6118876,2017
+WUX,31.494400024399997,120.429000854,Sunan Shuofang International Airport,Wuxi,China,Asia,259,6683380,2017
+WNZ,27.912200927734375,120.85199737548828,Wenzhou Yongqiang Airport,Wenzhou,China,Asia,213,9285621,2017
+MIG,31.4281005859375,104.74099731445312,Mianyang Airport,Mianyang,China,Asia,359,3543403,2017
+ORH,42.26729965209961,-71.87570190429688,Worcester Regional Airport,Worcester,United States,America,978,54000,2017
+CYZ,16.9298992157,121.752998352,Cauayan Airport,Cauayan,Philippines,Asia,950,85691,2017
+MQM,37.223300933800004,40.6316986084,Mardin Airport,Mardin,Turkey,Europe,699,567597,2017
+AOE,39.809898,30.5194,Anadolu Airport,Eskissehir,Turkey,Europe,981,51925,2017
+CKZ,40.1376991272,26.4267997742,Çanakkale Airport,Canakkale,Turkey,Europe,894,168031,2017
+MSR,38.747798919677734,41.66120147705078,Muş Airport,Mus,Turkey,Europe,779,342953,2017
+SIC,42.015800476074,35.066398620605,Sinop Airport,Sinop,Turkey,Europe,941,92418,2017
+TEQ,41.13819885253906,27.919099807739258,Tekirdağ Çorlu Airport,Çorlu,Turkey,Europe,908,151520,2017
+YEI,40.2551994324,29.5625991821,Bursa Yenişehir Airport,Yenisehir,Turkey,Europe,886,186703,2017
+MRQ,13.361000061035156,121.82599639892578,Marinduque Airport,Gasan,Philippines,Asia,429,2343346,2017
+GDZ,44.5820926295,38.0124807358,Gelendzhik Airport,Gelendzhik,Russia,Europe,794,304000,2017
+NBC,55.564701080322266,52.092498779296875,Begishevo Airport,Nizhnekamsk,Russia,Europe,695,587775,2017
+IAO,9.8591003418,126.013999939,Siargao Airport,Siargao,Philippines,Asia,980,53150,2017
+PGD,26.92020035,-81.9905014,Charlotte County Airport,Punta Gorda,United States,America,703,558471,2017
+HTY,36.36277771,36.282222747800006,Hatay Airport,Hatay,Turkey,Europe,559,1171484,2017
+PGU,27.379601,52.737701,Persian Gulf International Airport,Khalije Fars,Iran,Asia,625,852990,2017
+ECP,30.357106,-85.795414,Northwest Florida Beaches International Airport,Panama City,United States,America,607,910000,2017
+DWC,24.896356,55.161389,Al Maktoum International Airport,Dubai,United Arab Emirates,Asia,609,904940,2017
+GZP,36.2992172241,32.3005981445,Gazipaşa Airport,Alanya,Turkey,Europe,606,915046,2017
+LOP,-8.757322,116.276675,Lombok International Airport,Praya,Indonesia,Asia,353,3677477,2017
+HDG,36.5258333333,114.425555556,Handan Airport,Handan,China,Asia,659,684081,2017
+PDG,-0.8749889731409999,100.351997375,Tabing Airport,Padang,Indonesia,Asia,346,3937251,2017
+YTY,32.5634,119.7198,Yangzhou Taizhou Airport,Yangzhou,China,Asia,476,1836515,2017
+RHD,-27.4966,-64.93595,Termas de Río Hondo international Airport,Rio Hondo,Argentina,America,895,167968,2017
+BFJ,27.267066,105.472097,Bijie Feixiong Airport,Bijie,China,Asia,566,1110613,2017
+GNY,37.44566345214844,38.895591735839844,Şanlıurfa GAP Airport,Sanliurfa,Turkey,Europe,655,697729,2017
+KZR,39.107377,30.115724,Zafer Airport,Kutahya,Turkey,Europe,938,95239,2017
+KFS,41.31420135498047,33.795799255371094,Kastamonu Airport,Kastamonu,Turkey,Europe,951,82855,2017
+NKT,37.3647,42.0582,Şırnak Şerafettin Elçi Airport,Cizre,Turkey,Europe,821,272576,2017
+BUW,-5.486879825592041,122.56900024414062,Betoambari Airport,Bau-Bau,Indonesia,\N,922,122676,2017
+KNO,3.642222,98.885278,Kualanamu International Airport,Medan,Indonesia,Asia,177,12245116,2017
+IGT,43.322299957300004,45.0125999451,Magas Airport,Magas,Russia,Europe,869,205843,2017

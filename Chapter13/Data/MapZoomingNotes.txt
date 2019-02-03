@@ -1,0 +1,38 @@
+Rotating the globe - exzamples to add
+
+Zooming, semanting and geometric
+https://bl.ocks.org/mbostock/3680957
+https://bl.ocks.org/mbostock/3680999
+
+
+One-axis rotation (include in book)
+??
+
+Two-axes rotation
+??
+
+Three-axes, naive implementation:
+??
+
+Simple, three axes, using euler angles
+https://www.jasondavies.com/maps/rotate/
+
+Versor dragging (include)
+https://beta.observablehq.com/@mbostock/d3-versor-dragging
+
+Quaternions (an alternative method)
+
+
+PANNING: World tour (do this example! - learn panning)
+https://bl.ocks.org/mbostock/4183330
+
+ZOOMING: Map zooming (do this example! - learn zooming, streams)
+
+Animated world zoom
+https://www.jasondavies.com/maps/zoom/
+
+Academic
+https://www.win.tue.nl/~vanwijk/zoompan.pdf
+
+Inertia (easy to use)
+https://github.com/Fil/d3-inertia
