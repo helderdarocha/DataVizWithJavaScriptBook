@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JavaScript/p5.min.js"></script>
+</head>
+<body>
+<h1>Title</h1>
+<div id="container"></div>
+<h2>Footer</h2>
+<script>
+
+    let img = null;
+
+    function preload() {
+        img = loadImage('../Images/world.png');
+    }
+
+    function setup() {
+        const canvas = createCanvas(600,400)
+        canvas.parent("container")
+        image(img, 0, 0, 300, 300)
+    }
+
+    // see also id=p5_loading for loading screen
+    // see examples/loadingscreen/index.html
+
+</script>
+</body>
+</html>

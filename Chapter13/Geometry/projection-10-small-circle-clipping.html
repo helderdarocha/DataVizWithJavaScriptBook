@@ -6,9 +6,7 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <style>
-        svg {border: solid 1px gray;}
-    </style>
+
 </head>
 <body>
 <script>
@@ -62,7 +60,7 @@
 
         globe.append("path")
                 .attr("fill", 'blue')
-                .attr("fill-opacity", .3)
+                .attr("fill-opacity", .1)
                 .attr('d', refPath)
                 .attr("stroke", "white")
                 .attr('stroke-width', '.25');

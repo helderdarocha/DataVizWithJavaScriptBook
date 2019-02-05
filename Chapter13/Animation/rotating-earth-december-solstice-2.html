@@ -26,9 +26,8 @@
             .attr("stdDeviation", 5);
 
     // choose a projection
-    const projection = d3.geoOrthographic()
-            .fitExtent([[0,0+25],[width,height-25]], {type: 'Sphere'})
-            .rotate([-23.5,-23.5,23.5]);
+    const projection = d3.geoMercator().scale(150)
+            .rotate([-23.5,0,0]);
 
     // create a path generator function for the projection
     const geoPath = d3.geoPath()
@@ -52,7 +51,7 @@
                 let i = 0;
                 d3.interval(function(d) {
                     if(i == 180) i = -180;
-                    geoPath.projection().rotate([i++,-23.5,23.5])
+                    geoPath.projection().rotate([i++,0,0])
                     svg.select(".graticule path")
                             .datum(d3.geoGraticule10())
                             .attr('d', geoPath)

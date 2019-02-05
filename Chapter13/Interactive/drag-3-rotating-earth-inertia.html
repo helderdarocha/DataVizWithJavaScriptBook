@@ -54,13 +54,10 @@
 
     function render() {
         svg.select(".graticule")
-                .datum(d3.geoGraticule10())
                 .attr('d', geoPath)
         svg.selectAll(".land")
-                .datum(map.merged)
                 .attr('d', geoPath)
         svg.selectAll(".mesh")
-                .datum(map.mesh)
                 .attr('d', geoPath)
     }
 
