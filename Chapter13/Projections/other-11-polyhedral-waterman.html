@@ -6,9 +6,6 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <style>
-        svg {border: solid 1px gray;}
-    </style>
 </head>
 <body>
 <script>
@@ -98,8 +95,9 @@
         svg.append("path")
                 .datum({type: "Sphere"})
                 .attr('fill', 'none')
+                .attr("clip-path", "url(#clip)") // clipping for graticules
                 .attr('stroke', 'darkgreen')
-                .attr('stroke-width', 1)
+                .attr('stroke-width', 3)
                 .attr("d", geoPath);
     }
 
@@ -110,14 +108,31 @@
                 .datum({type: "Sphere"})
                 .attr("d", geoPath);
 
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr("clip-path", "url(#clip)")
+                .attr('stroke-width', 2)
+                .attr('stroke-opacity', .2);
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,-90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr("clip-path", "url(#clip)")
+                .attr('stroke-width', 2)
+                .attr('stroke-opacity', .2);
+
         svg.append("g").attr("class","graticule")
                 .datum(graticule())
                 .attr("fill", 'none')
-                .attr("clip-path", "url(#clip)") // clipping for graticules
                 .append("path")
                 .attr('d', geoPath)
                 .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .attr('stroke-width', .25)
+                .attr("clip-path", "url(#clip)");
     }
 </script>
 

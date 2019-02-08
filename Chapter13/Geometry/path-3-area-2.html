@@ -25,7 +25,7 @@
             .attr("width", width).attr("height", height);
 
     // reference
-    const projection = d3.geoMercator().fitExtent([[0,5],[width, height-10]], {type: "Sphere"});
+    const projection = d3.geoMercator().scale(100);
 
     // create a path generator function for the projection
     const geoPath = d3.geoPath()

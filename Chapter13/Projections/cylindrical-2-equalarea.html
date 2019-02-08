@@ -6,9 +6,6 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <style>
-        svg {border: solid 1px gray;}
-    </style>
 </head>
 <body>
 <script>
@@ -91,7 +88,30 @@
     }
 
     function drawGraticules() {
-        console.log(d3.geoGraticule10())
+        svg.append("path").attr("class","parallel-2")
+                .datum(d3.geoCircle().center([0,90]).radius(- projection.parallel()- 90))
+                .attr('d', geoPath)
+                .attr("fill", "orange")
+                .attr("fill-opacity", .5);
+
+        svg.append("path").attr("class","parallel-1")
+                .datum(d3.geoCircle().center([0,90]).radius(projection.parallel() - 90 + 1))
+                .attr('d', geoPath)
+                .attr("fill", 'white');
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 2)
+                .attr('stroke-opacity', .2);
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,-90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 2)
+                .attr('stroke-opacity', .2);
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
                 .attr("fill", 'none')

@@ -114,7 +114,7 @@
                 .attr('stroke-width', '.25')
 
         svg.selectAll("g.airport")
-                .data(airports)
+                .data(airports.filter(d => geoPath({type:"Point", coordinates: d.coordinates}))) // filter opposite
                 .enter()
                 .append("g")
                 .attr("class","airport")

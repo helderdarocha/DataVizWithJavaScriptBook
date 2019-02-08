@@ -102,6 +102,21 @@
                 .attr('d', geoPath)
                 .attr("fill", 'white');
 
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 2)
+                .attr('stroke-opacity', .2);
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,-90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 2)
+                .attr('stroke-opacity', .2);
+
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
                 .attr("fill", 'none')

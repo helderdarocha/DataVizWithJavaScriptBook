@@ -5,9 +5,6 @@
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
-    <style>
-        svg {border: solid 1px gray;}
-    </style>
 </head>
 <body>
 <script>
@@ -20,7 +17,10 @@
             .attr("width", width).attr("height", height);
 
     // choose a projection
-    const projection = d3.geoGnomonic();
+    const projection = d3.geoGnomonic()
+           // .clipAngle(60) // default
+           // .scale(140) // default
+            .rotate([0,-90,0]);
 
     // create a path generator function for the projection
     const geoPath = d3.geoPath()
@@ -91,7 +91,20 @@
     }
 
     function drawGraticules() {
-        console.log(d3.geoGraticule10())
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 3)
+                .attr('stroke-opacity', .2);
+        svg.append("path").attr("class","equator")
+                .datum(d3.geoCircle().center([0,-90]))
+                .attr('d', geoPath)
+                .attr("stroke", "blue")
+                .attr("fill", "none")
+                .attr('stroke-width', 3)
+                .attr('stroke-opacity', .2);
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
                 .attr("fill", 'none')
