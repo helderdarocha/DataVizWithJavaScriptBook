@@ -49,12 +49,12 @@
                 .append("g")
                 .on('click', showCoords)
                 .attr("class","country")
-                .attr("fill", 'gray')
-                .attr("fill-opacity", .9)
+                .style("fill", 'gray')
+                .style("fill-opacity", .9)
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     function showCoords(d) {
@@ -66,23 +66,23 @@
         svg.append("path").attr("class","background")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "hsl(240,100%,95%")
-                .attr('stroke-width', 2);
+                .style("stroke", "black")
+                .style("fill", "hsl(240,100%,95%")
+                .style('stroke-width', 2);
 
         svg.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
 
         svg.append("path").attr("class","outline")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "none")
-                .attr('stroke-width', 3);
+                .style("stroke", "black")
+                .style("fill", "none")
+                .style('stroke-width', 3);
     }
 
 </script>

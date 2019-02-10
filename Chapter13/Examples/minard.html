@@ -93,11 +93,11 @@
                 .on("mouseleave", hideTroops)
                 .append("path")
                 .attr('d', geoPath)
-                .attr("fill", 'none')
-                .attr("stroke", d => d.properties.direction > 0 ? d3.rgb("#996b30").brighter() : "gray")
-                .attr("stroke-linecap",(d,i) => i == 0 ? "butt" : "round")
-                .attr("stroke-width", d => armyScale(d.properties.survivors))
-                .attr("stroke-opacity", .95)
+                .style("fill", 'none')
+                .style("stroke", d => d.properties.direction > 0 ? d3.rgb("#996b30").brighter() : "gray")
+                .style("stroke-linecap",(d,i) => i == 0 ? "butt" : "round")
+                .style("stroke-width", d => armyScale(d.properties.survivors))
+                .style("stroke-opacity", .95)
 
     }
 
@@ -105,7 +105,7 @@
 
         d3.select(this)
                 .append("text")
-                .attr("fill", "brown")
+                .style("fill", "brown")
                 .style("font-size", 13)
                 .attr("transform", d => `translate(${[geoPath.centroid(d)[0], 50]})`)
                 .text(d => d.properties.survivors + " survivors")
@@ -117,19 +117,19 @@
     function drawMesh() {
         svg.append("g").attr("class","borders")
                 .datum(map.mesh)
-                .attr("fill", "none")
-                .attr("fill-opacity", .4)
+                .style("fill", "none")
+                .style("fill-opacity", .4)
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "white")
+                .style("stroke", "white")
                 .attr("strike-width", .25)
     }
 
     function drawShape() {
         svg.append("g").attr("class","country")
                 .datum(map.merged)
-                .attr("fill", '#eee')
-                .attr("fill-opacity", .8)
+                .style("fill", '#eee')
+                .style("fill-opacity", .8)
                 .append("path")
                 .attr('d', geoPath);
     }
@@ -140,12 +140,12 @@
                 .enter()
                 .append("g")
                 .attr("class","region")
-                .attr("fill", '#ccc')
-                .attr("fill-opacity", .5)
+                .style("fill", '#ccc')
+                .style("fill-opacity", .5)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "black")
-                    .attr("stroke-width", .25)
+                    .style("stroke", "black")
+                    .style("stroke-width", .25)
     }
 
     function drawCities(data) {
@@ -156,10 +156,10 @@
                 .attr("class","city")
                 .attr('transform', d => `translate(${geoPath.projection()(d.coordinates)})`);
         city.append("circle")
-                .attr("fill", 'green')
+                .style("fill", 'green')
                 .attr('r', 1)
-                .attr("stroke-width", 2)
-                .attr("stroke", "black");
+                .style("stroke-width", 2)
+                .style("stroke", "black");
         city.append('text')
                 .style('font-size', 12)
                 .attr('x', 5)
@@ -171,11 +171,11 @@
     function drawGraticules() {
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr('stroke-width', d => '.25');
+                .style("stroke", "gray")
+                .style('stroke-width', d => '.25');
     }
 
 </script>

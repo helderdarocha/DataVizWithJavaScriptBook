@@ -48,7 +48,7 @@
     function draw() {
         svg.append("path")
                 .datum({type: "Sphere"})
-                .attr('fill', '#244474')
+                .style('fill', '#244474')
                 .attr("d", geoPath);
 
         svg.selectAll("g.contours")
@@ -56,37 +56,37 @@
                 .enter()
                 .append("g")
                 .attr("class","contours")
-                .attr("fill", (d,i) => color(i))
+                .style("fill", (d,i) => color(i))
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", (d,i) => d3.rgb(linecolor(i)).darker())
-                    .attr("fill-opacity", .03)
-                    .attr("stroke-opacity", .2)
-                    .attr('stroke-width', '.25');
+                    .style("stroke", (d,i) => d3.rgb(linecolor(i)).darker())
+                    .style("fill-opacity", .03)
+                    .style("stroke-opacity", .2)
+                    .style('stroke-width', '.25');
     }
 
     function drawGraticules() {
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,90]))
                 .attr('d', geoPath)
-                .attr("stroke", "orange")
-                .attr("fill", "none")
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "orange")
+                .style("fill", "none")
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,-90]))
                 .attr('d', geoPath)
-                .attr("stroke", "orange")
-                .attr("fill", "none")
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "orange")
+                .style("fill", "none")
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25');
+                .style("stroke", "white")
+                .style('stroke-width', '.25');
     }
 </script>
 

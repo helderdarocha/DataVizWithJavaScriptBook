@@ -65,19 +65,19 @@
     function drawMesh() {
         svg.append("g").attr("class","borders")
                 .datum(map.mesh)
-                .attr("fill", "none")
-                .attr("fill-opacity", .4)
+                .style("fill", "none")
+                .style("fill-opacity", .4)
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "white")
+                .style("stroke", "white")
                 .attr("strike-width", .25)
     }
 
     function drawShape() {
         svg.append("g").attr("class","country")
                 .datum(map.merged)
-                .attr("fill", (d,i) => d3.rgb(color(i)).darker())
-                .attr("fill-opacity", .8)
+                .style("fill", (d,i) => d3.rgb(color(i)).darker())
+                .style("fill-opacity", .8)
                 .append("path")
                 .attr('d', geoPath);
     }
@@ -88,12 +88,12 @@
                 .enter()
                 .append("g")
                 .attr("class","region")
-                .attr("fill", (d,i) => color(i))
-                .attr("fill-opacity", .5)
+                .style("fill", (d,i) => color(i))
+                .style("fill-opacity", .5)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "black")
-                    .attr("stroke-width", .25)
+                    .style("stroke", "black")
+                    .style("stroke-width", .25)
     }
 
     function drawCities(data) {
@@ -106,21 +106,21 @@
                 .on('mouseover', showName)
                 .on('mouseout', hideName)
                 .append("circle")
-                .attr("fill", 'green')
-                .attr("fill-opacity", d => popScale(d.population) <= 1 ? 1 : .35)
+                .style("fill", 'green')
+                .style("fill-opacity", d => popScale(d.population) <= 1 ? 1 : .35)
                 .attr('r', d => popScale(d.population))
-                .attr("stroke-width", d => popScale(d.population) > 1 ? .25 : 0)
-                .attr("stroke", "black");
+                .style("stroke-width", d => popScale(d.population) > 1 ? .25 : 0)
+                .style("stroke", "black");
     }
 
     function drawGraticules() {
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr('stroke-width', d => '.25');
+                .style("stroke", "gray")
+                .style('stroke-width', d => '.25');
     }
 
     function showName(d) {

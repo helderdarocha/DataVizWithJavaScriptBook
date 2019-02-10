@@ -67,10 +67,10 @@
                 .append("path")
                 .attr("d", geoPath)
                 .attr("class","indicatrix")
-                .attr("fill", 'orange')
-                .attr("fill-opacity", .5)
-                .attr("stroke", "black")
-                .attr('stroke-width', .5);
+                .style("fill", 'orange')
+                .style("fill-opacity", .5)
+                .style("stroke", "black")
+                .style('stroke-width', .5);
     }
 
     function draw() {
@@ -79,12 +79,12 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", '#333')
-                .attr("fill-opacity", .6)
+                .style("fill", '#333')
+                .style("fill-opacity", .6)
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     function drawGraticules() {
@@ -92,36 +92,36 @@
         svg.append("path").attr("class","parallel-2")
                 .datum(d3.geoCircle().center([0,90]).radius(projection.parallels()[0] - 90))
                 .attr('d', geoPath)
-                .attr("fill", "orange")
-                .attr("fill-opacity", .5);
+                .style("fill", "orange")
+                .style("fill-opacity", .5);
 
         svg.append("path").attr("class","parallel-1")
                 .datum(d3.geoCircle().center([0,90]).radius(projection.parallels()[1] - 90 + 1))
                 .attr('d', geoPath)
-                .attr("fill", 'white');
+                .style("fill", 'white');
 
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,90]))
                 .attr('d', geoPath)
-                .attr("stroke", "blue")
-                .attr("fill", "none")
-                .attr('stroke-width', 2)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "blue")
+                .style("fill", "none")
+                .style('stroke-width', 2)
+                .style('stroke-opacity', .2);
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,-90]))
                 .attr('d', geoPath)
-                .attr("stroke", "blue")
-                .attr("fill", "none")
-                .attr('stroke-width', 2)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "blue")
+                .style("fill", "none")
+                .style('stroke-width', 2)
+                .style('stroke-opacity', .2);
 
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

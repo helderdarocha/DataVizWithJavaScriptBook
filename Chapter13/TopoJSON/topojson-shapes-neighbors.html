@@ -46,13 +46,13 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", (d,i) => color(i))
+                .style("fill", (d,i) => color(i))
                 .attr("opacity", .9)
                 .on('mouseover', showNeighbors)
                 .on('mouseout', showAll)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white");
+                    .style("stroke", "white");
 
     });
 

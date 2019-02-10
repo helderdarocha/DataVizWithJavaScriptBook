@@ -51,11 +51,11 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", (d,i) => d3.rgb(color(i)).darker())
+                .style("fill", (d,i) => d3.rgb(color(i)).darker())
                 .attr("opacity", .4)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
+                    .style("stroke", "white")
     }
 
     function drawRivers(data) {
@@ -65,12 +65,12 @@
                 .enter()
                 .append("g")
                 .attr("class","river")
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr("opacity", 1)
                 .append("path")
-                .attr('stroke-width', d => d.properties.StrokeWeig)
+                .style('stroke-width', d => d.properties.StrokeWeig)
                 .attr('d', geoPath)
-                .attr("stroke", "navy");
+                .style("stroke", "navy");
     }
 
     function drawCities(data) {
@@ -83,11 +83,11 @@
                 .on('mouseenter', showName)
                 .on('mouseleave', hideName)
                 .append("circle")
-                .attr("fill", 'red')
-                .attr("fill-opacity", d => popScale(d.population) <= 1 ? 1 : .25)
+                .style("fill", 'red')
+                .style("fill-opacity", d => popScale(d.population) <= 1 ? 1 : .25)
                 .attr('r', d => popScale(d.population))
-                .attr("stroke-width", d => popScale(d.population) > 1 ? .25 : 0)
-                .attr("stroke", "black");
+                .style("stroke-width", d => popScale(d.population) > 1 ? .25 : 0)
+                .style("stroke", "black");
     }
 
     function drawGraticules() {
@@ -95,27 +95,27 @@
                 .datum(d3.geoCircle().center([0,90]))
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "blue")
-                .attr("fill", "none")
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "blue")
+                .style("fill", "none")
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
 
         svg.append("g").attr("class","prime")
                 .datum(d3.geoCircle().center([90,0]))
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "red")
-                .attr("fill", "none")
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "red")
+                .style("fill", "none")
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
 
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr('stroke-width', d => '.25');
+                .style("stroke", "gray")
+                .style('stroke-width', d => '.25');
     }
 
     function showName(d) {

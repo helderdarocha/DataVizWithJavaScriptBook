@@ -53,11 +53,11 @@
     function drawLand() {
         svg.append("g").attr("class","land")
                 .datum(map.merge)
-                .attr("fill", "gray")
+                .style("fill", "gray")
                 .attr("opacity", .4)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
+                    .style("stroke", "white")
     }
 
     function drawSubway(data) {
@@ -66,9 +66,9 @@
                 .enter()
                 .append("g")
                 .attr("class","subway")
-                .attr("fill", "none")
-                .attr("stroke", d => lines.indexOf(d.properties.name) >= 0 ? colorScale(d.properties.name) : 'gray')
-                .attr("stroke-width", 2)
+                .style("fill", "none")
+                .style("stroke", d => lines.indexOf(d.properties.name) >= 0 ? colorScale(d.properties.name) : 'gray')
+                .style("stroke-width", 2)
                 .append("path")
                 .attr('d', geoPath)
     }
@@ -88,11 +88,11 @@
 
         svg.append("g").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr('stroke-width', d => .25);
+                .style("stroke", "gray")
+                .style('stroke-width', d => .25);
 
         // graticule labels
         svg.selectAll("text.parallels")

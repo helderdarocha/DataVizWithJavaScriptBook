@@ -103,11 +103,11 @@
                 .attr("class","country")
 
         globe.append("path")
-                .attr("fill", '#333')
-                .attr("fill-opacity", .6)
+                .style("fill", '#333')
+                .style("fill-opacity", .6)
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25')
+                .style("stroke", "white")
+                .style('stroke-width', '.25')
 
         svg.selectAll("g.airport")
                 .data(airports)
@@ -116,8 +116,8 @@
                 .attr("class","airport")
                 .attr("transform", d => `translate(${projection(d.coordinates)})`)
                 .append("circle")
-                            .attr("fill", 'yellow')
-                            .attr("stroke", "black")
+                            .style("fill", 'yellow')
+                            .style("stroke", "black")
                             .attr('r', 2);
 
         svg.selectAll("g.route")
@@ -128,10 +128,10 @@
                 .append("path")
                 .datum(lineString)
                 .attr("d", geoPath)
-                .attr("fill", 'none')
-                .attr("stroke-opacity", d => transparencyScale(d.properties.airlines))
-                .attr("stroke", d => colorScale(d.properties.airlines))
-                .attr('stroke-width', d => widthScale(d.properties.airlines));
+                .style("fill", 'none')
+                .style("stroke-opacity", d => transparencyScale(d.properties.airlines))
+                .style("stroke", d => colorScale(d.properties.airlines))
+                .style('stroke-width', d => widthScale(d.properties.airlines));
 
     }
 
@@ -142,24 +142,24 @@
         svg.append("path").attr("class","background")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath) // clip the path!
-                .attr("stroke", "black")
-                .attr("fill", "blue")
-                .attr("fill-opacity", .5)
-                .attr('stroke-width', 2);
+                .style("stroke", "black")
+                .style("fill", "blue")
+                .style("fill-opacity", .5)
+                .style('stroke-width', 2);
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', .25);
+                .style("stroke", "white")
+                .style('stroke-width', .25);
 
         svg.append("path").attr("class","outline")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "none")
-                .attr('stroke-width', 3);
+                .style("stroke", "black")
+                .style("fill", "none")
+                .style('stroke-width', 3);
     }
 
 </script>

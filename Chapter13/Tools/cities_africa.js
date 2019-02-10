@@ -3,7 +3,7 @@ const Promise = require('promise');
 const Papa = require('papaparse');
 
 const source = '../Data/worldcities.csv';
-const target = '../Data/africa-cities.csv';
+const target = '../Data/africa-1500-cities.csv';
 
 fs.readFile(source, 'utf8', (err, data) => {
     if(err) {

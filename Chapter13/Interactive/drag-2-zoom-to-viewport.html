@@ -52,10 +52,10 @@
                 zoomBox.point1 = [d3.event.x, d3.event.y];
                 globe.classed("dragging", true);
                 globe.append("rect").attr("class", "zoombox")
-                    .attr("stroke", "red")
-                    .attr("stroke-dasharray", "5 5")
-                    .attr("fill", "orange")
-                    .attr("fill-opacity", .2)
+                    .style("stroke", "red")
+                    .style("stroke-dasharray", "5 5")
+                    .style("fill", "orange")
+                    .style("fill-opacity", .2)
 
                 svg.style("cursor","crosshair");
             })
@@ -105,11 +105,11 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     svg.on("click", function() {
@@ -129,14 +129,14 @@
     function drawGraticules() {
         globe.append("path").attr("class","background")
                 .datum({type: 'Sphere'})
-                .attr("fill", 'lightblue')
+                .style("fill", 'lightblue')
                 .attr('d', geoPath);
         globe.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

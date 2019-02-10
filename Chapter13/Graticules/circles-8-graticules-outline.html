@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson-client"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<script>
+
+    const width = 960;
+    const height = 500;
+    const file = "world-medres.topojson";
+    const key  = "world";
+
+    const svg = d3.select("body").append("svg")
+            .attr("width", width).attr("height", height);
+
+    // choose a projection
+    const projection = d3.geoHammer();
+
+    // create a path generator function for the projection
+    const geoPath = d3.geoPath()
+            .projection(projection);
+
+    const map = {};
+
+    d3.json('../Data/' + file)
+            .then(function(topology) {
+                //console.log(topology); // TopoJSON topology
+
+                map.topology   = topology.objects[key];
+                map.geometries = map.topology.geometries;
+                map.features   = topojson.feature(topology, map.topology).features;
+
+                drawGraticules();
+                draw();
+                drawOutline();
+
+            });
+
+    function draw() {
+        svg.selectAll("g.country")
+                .data(map.features)
+                .enter()
+                .append("g")
+                .attr("class","country")
+                .style("fill", 'gray')
+                .style("fill-opacity", .9)
+                .append("path")
+                .attr('d', geoPath)
+                .style("stroke", "white")
+                .style('stroke-width', '.25');
+    }
+
+    function drawGraticules() {
+        svg.append("path").attr("class","background")
+                .datum({type:"Sphere"})
+                .attr('d', geoPath)
+                .style("fill", "hsl(240,100%,95%")
+                .style('stroke-width', 2);
+
+        svg.append("path").attr("class","graticule")
+                .datum(d3.geoGraticule().extent([[-90,-70],[90,70]]))
+                .style("fill", 'none')
+                .attr('d', geoPath)
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
+    }
+
+    function drawOutline() {
+        // Outline of the graticule
+        svg.append("path").attr("class","outline")
+                .datum(d3.geoGraticule().extent([[-90,-70],[90,70]]).outline())
+                .attr('d', geoPath)
+                .style("stroke", "red")
+                .style("fill", "green")
+                .style("fill-opacity", .1)
+                .style('stroke-width', 3);
+
+        // Outline of the globe
+        svg.append("path").attr("class","outline")
+                .datum({type:"Sphere"})
+                .attr('d', geoPath)
+                .style("stroke", "blue")
+                .style("fill", "none")
+                .style('stroke-width', 3);
+    }
+
+</script>
+
+</body>
+</html>

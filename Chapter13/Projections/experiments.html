@@ -54,20 +54,20 @@
     function draw() {
         svg.append("g").attr("class","background")
                 .datum(d3.geoGraticule().extent([[-180,-90],[179.9,90]]).outline())
-                //.attr("fill", 'url(#gradient)')
-                .attr("fill", 'hsl(240,100%,95%')
+                //.style("fill", 'url(#gradient)')
+                .style("fill", 'hsl(240,100%,95%')
                 .append("path")
-                .attr("stroke", "black")
+                .style("stroke", "black")
                 .attr('d', geoPath);
 /*
         svg.append("path").attr("class","parallel-2")
                 .datum(d3.geoCircle().center([0,90]).radius(70))
                 .attr('d', geoPath)
-                .attr("stroke", "orange")
-                .attr("fill", "orange")
-                .attr("fill-opacity", .2)
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', 1);
+                .style("stroke", "orange")
+                .style("fill", "orange")
+                .style("fill-opacity", .2)
+                .style('stroke-width', 3)
+                .style('stroke-opacity', 1);
 */
 
 
@@ -76,19 +76,19 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'hsl(240,100%,20%')
+                .style("fill", 'hsl(240,100%,20%')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25');
+                .style("stroke", "white")
+                .style('stroke-width', '.25');
 /*
         svg.append("path").attr("class","parallel-1")
                 .datum(d3.geoCircle().center([0,90]).radius(30))
                 .attr('d', geoPath)
-                .attr("stroke", "orange")
-                .attr("fill", 'none')
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', 1); */
+                .style("stroke", "orange")
+                .style("fill", 'none')
+                .style('stroke-width', 3)
+                .style('stroke-opacity', 1); */
 
 
     }
@@ -101,33 +101,33 @@
 
         svg.append("g").attr("class","graticule-20")
                 .datum(d3.geoGraticule().step([20,20]).extent([[-180,-90],[180,90]]))
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr('stroke-width', '1');
+                .style("stroke", "gray")
+                .style('stroke-width', '1');
 
         svg.append("path").attr("class","prime")
                 .datum(d3.geoCircle().center([90,0]))
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr("fill", "none")
-                .attr('stroke-width', 3);
+                .style("stroke", "gray")
+                .style("fill", "none")
+                .style('stroke-width', 3);
 
         svg.append("path").attr("class","prime")
                 .datum(d3.geoCircle().center([-90,0]))
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr("fill", "none")
-                .attr('stroke-width', 3);
+                .style("stroke", "gray")
+                .style("fill", "none")
+                .style('stroke-width', 3);
 
         svg.append("g").attr("class","graticule-90")
                 .datum(d3.geoGraticule().step([0,90]))
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "gray")
-                .attr('stroke-width', '3');
+                .style("stroke", "gray")
+                .style('stroke-width', '3');
 
 
     }

@@ -48,11 +48,11 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     // Trying to add a rectangle along the tropics
@@ -77,79 +77,79 @@
         svg.append("path").attr("class","background")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "white")
-                .attr('stroke-width', 2);
+                .style("stroke", "black")
+                .style("fill", "white")
+                .style('stroke-width', 2);
 
         // Using fix - see below
         svg.append("g").attr("class","tropics")
                 .datum(tropicalZone)
                 .append("path")
                 .attr('d', geoPath)
-                .attr("fill", "orange")
-                .attr('fill-opacity', .2);
+                .style("fill", "orange")
+                .style('fill-opacity', .2);
 
         svg.append("path").attr("class","tropic-cancer")
                 .datum(d3.geoCircle().center([0,90]).radius(66.5))
                 .attr('d', geoPath)
-                .attr("stroke", "purple")
+                .style("stroke", "purple")
                 .style("stroke-dasharray", "5 5")
-                .attr("fill", "none")
-                .attr('stroke-width', 1)
+                .style("fill", "none")
+                .style('stroke-width', 1)
 
         svg.append("path").attr("class","tropic-capricorn")
                 .datum(d3.geoCircle().center([0,-90]).radius(66.5))
                 .attr('d', geoPath)
-                .attr("stroke", "purple")
+                .style("stroke", "purple")
                 .style("stroke-dasharray", "5 5")
-                .attr("fill", "none")
-                .attr('stroke-width', 1)
+                .style("fill", "none")
+                .style('stroke-width', 1)
 
         svg.append("path").attr("class","antarctic-circle")
                 .datum(d3.geoCircle().center([0,-90]).radius(23.5))
                 .attr('d', geoPath)
-                .attr("stroke", "purple")
+                .style("stroke", "purple")
                 .style("stroke-dasharray", "5 5")
-                .attr("fill", "hsl(240,100%,95%")
-                .attr('stroke-width', 1);
+                .style("fill", "hsl(240,100%,95%")
+                .style('stroke-width', 1);
 
         svg.append("path").attr("class","arctic-circle")
                 .datum(d3.geoCircle().center([0,90]).radius(23.5))
                 .attr('d', geoPath)
-                .attr("stroke", "purple")
+                .style("stroke", "purple")
                 .style("stroke-dasharray", "5 5")
-                .attr("fill", "hsl(240,100%,95%")
-                .attr('stroke-width', 1);
+                .style("fill", "hsl(240,100%,95%")
+                .style('stroke-width', 1);
 
         svg.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
 
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,90]))
                 .attr('d', geoPath)
-                .attr("stroke", "blue")
-                .attr("fill", "none")
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "blue")
+                .style("fill", "none")
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
 
         svg.append("path").attr("class","prime")
                 .datum(d3.geoCircle().center([90,0]))
                 .attr('d', geoPath)
-                .attr("stroke", "red")
-                .attr("fill", "none")
-                .attr('stroke-width', 3)
-                .attr('stroke-opacity', .2);
+                .style("stroke", "red")
+                .style("fill", "none")
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
 
         svg.append("path").attr("class","outline")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "none")
-                .attr('stroke-width', 3);
+                .style("stroke", "black")
+                .style("fill", "none")
+                .style('stroke-width', 3);
 
     }
 

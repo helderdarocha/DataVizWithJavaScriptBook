@@ -35,11 +35,11 @@
         svg.append("g")
                 .datum(mergedGeoJSON)
                 .attr("class","country")
-                .attr("fill", (d,i) => color(i))
+                .style("fill", (d,i) => color(i))
                 .attr("opacity", .9)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
+                    .style("stroke", "white")
     })
 </script>
 

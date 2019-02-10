@@ -71,10 +71,10 @@
                 .append("path")
                 .attr("d", geoPath)
                 .attr("class","indicatrix")
-                .attr("fill", 'orange')
-                .attr("fill-opacity", .5)
-                .attr("stroke", "black")
-                .attr('stroke-width', .5)
+                .style("fill", 'orange')
+                .style("fill-opacity", .5)
+                .style("stroke", "black")
+                .style('stroke-width', .5)
                 .attr("clip-path", "url(#clip)") // clipping for circles
     }
 
@@ -84,19 +84,19 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25')
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25')
                     .attr("clip-path", "url(#clip)") // clipping for shapes
 
         // this creates an outline around the map
         svg.append("path")
                 .datum({type: "Sphere"})
-                .attr('fill', 'none')
-                .attr('stroke', 'darkgreen')
-                .attr('stroke-width', 1)
+                .style('fill', 'none')
+                .style('stroke', 'darkgreen')
+                .style('stroke-width', 1)
                 .attr("d", geoPath);
     }
 
@@ -104,28 +104,28 @@
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,90]))
                 .attr('d', geoPath)
-                .attr("stroke", "blue")
-                .attr("fill", "none")
+                .style("stroke", "blue")
+                .style("fill", "none")
                 .attr("clip-path", "url(#clip)")
-                .attr('stroke-width', 2)
-                .attr('stroke-opacity', .2);
+                .style('stroke-width', 2)
+                .style('stroke-opacity', .2);
         svg.append("path").attr("class","equator")
                 .datum(d3.geoCircle().center([0,-90]))
                 .attr('d', geoPath)
-                .attr("stroke", "blue")
-                .attr("fill", "none")
+                .style("stroke", "blue")
+                .style("fill", "none")
                 .attr("clip-path", "url(#clip)")
-                .attr('stroke-width', 2)
-                .attr('stroke-opacity', .2);
+                .style('stroke-width', 2)
+                .style('stroke-opacity', .2);
 
         svg.append("g").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr("clip-path", "url(#clip)") // clipping for graticules
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

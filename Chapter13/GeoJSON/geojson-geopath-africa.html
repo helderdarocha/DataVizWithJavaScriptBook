@@ -13,29 +13,23 @@
     const width = 960;
     const height = 500;
 
-
     d3.json('../Data/africa-simple-multipolygon.geojson')
             .then(function(data) {
 
         console.log(data);
 
-        const color = d3.scaleOrdinal(d3.schemeCategory10);
-
         const svg = d3.select("body").append("svg")
-                      .attr("width", width).attr("height", height);
+                .attr("width", width).attr("height", height);
 
-        const geoPath = d3.geoPath().projection(d3.geoMercator());
+        const geoPath = d3.geoPath()
+                .projection(d3.geoMercator());
 
-        svg.selectAll("g.continent")
+        svg.selectAll("path")
                 .data(data.features)
                 .enter()
-                .append("g")
-                .attr("class","continent")
-                .attr("fill", (d,i) => color(i))
-                .attr("opacity", .9)
                 .append("path")
-                    .attr('d', geoPath)
-                    .attr("stroke", "white")
+                .attr('d', geoPath)
+                .style("fill", "blue");
     })
 </script>
 

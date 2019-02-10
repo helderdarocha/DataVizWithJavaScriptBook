@@ -68,11 +68,11 @@
                 .attr("class","country")
 
         globe.append("path")
-                .attr("fill", '#333')
-                .attr("fill-opacity", .8)
+                .style("fill", '#333')
+                .style("fill-opacity", .8)
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25')
+                .style("stroke", "white")
+                .style('stroke-width', '.25')
 
         svg.selectAll("g.airport")
                 .data(airports)
@@ -81,9 +81,9 @@
                 .attr("class","airport")
                 .attr("transform", (d,i) => `translate(${projection(d.coordinates)})`)
                 .append("circle")
-                    .attr("fill", 'yellow')
-                    .attr("stroke", "black")
-                    .attr("stroke-width", .25)
+                    .style("fill", 'yellow')
+                    .style("stroke", "black")
+                    .style("stroke-width", .25)
                     .attr('r', 1.25);
     }
 
@@ -94,10 +94,10 @@
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', .25);
+                .style("stroke", "green")
+                .style('stroke-width', .25);
     }
 
 </script>

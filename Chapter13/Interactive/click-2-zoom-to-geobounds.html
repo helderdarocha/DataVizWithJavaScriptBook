@@ -71,11 +71,11 @@
                 .append("g")
                 .attr("class","country")
                 .on("click", d => zoom(d))
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     svg.on("dblclick", function() {
@@ -93,14 +93,14 @@
     function drawGraticules() {
         globe.append("path").attr("class","background")
                 .datum({type: 'Sphere'})
-                .attr("fill", 'lightblue')
+                .style("fill", 'lightblue')
                 .attr('d', geoPath);
         globe.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

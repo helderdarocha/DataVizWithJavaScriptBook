@@ -110,11 +110,11 @@
                 .attr("class","country")
 
         globe.append("path")
-                .attr("fill", '#333')
-                .attr("fill-opacity", .6)
+                .style("fill", '#333')
+                .style("fill-opacity", .6)
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25')
+                .style("stroke", "white")
+                .style('stroke-width', '.25')
 
         svg.selectAll("g.route")
                 .data(routes)
@@ -126,10 +126,10 @@
                 .on('mouseenter', showMeasure)
                 .on('mouseleave', hideMeasure)
                 .append("path").attr("d", geoPath)
-                .attr("fill", 'none')
-                .attr("stroke-opacity", d => transparencyScale(d.properties.airlines))
-                .attr("stroke", d => colorScale(d.properties.airlines))
-                .attr('stroke-width', d => widthScale(d.properties.airlines))
+                .style("fill", 'none')
+                .style("stroke-opacity", d => transparencyScale(d.properties.airlines))
+                .style("stroke", d => colorScale(d.properties.airlines))
+                .style('stroke-width', d => widthScale(d.properties.airlines))
 
         const airport = svg.selectAll("g.airport")
                 .data(airports.filter(d => routes.filter(k => k.id.split('-')[0] == d.id || k.id.split('-')[1] == d.id).length > 0))
@@ -138,8 +138,8 @@
                 .attr("class","airport")
                 .attr("transform", d => `translate(${projection(d.coordinates)})`)
         airport.append("circle")
-                            .attr("fill", 'yellow')
-                            .attr("stroke", "black")
+                            .style("fill", 'yellow')
+                            .style("stroke", "black")
                             .attr('r', 4);
         airport.append("text").text(d => d.id).attr("x", 7)
 
@@ -162,7 +162,7 @@
         d3.select(this).append("rect").attr("class", "bkg").attr("rx",5).attr("ry",5)
                 .attr("x",-30).attr("y",-15)
                 .attr("height",55).attr("width",60)
-                .attr("fill",'black').attr("fill-opacity",.5)
+                .style("fill",'black').style("fill-opacity",.5)
                 .attr("transform", `translate(${geoPath.centroid(d)})`)
 
         d3.select(this).raise()
@@ -175,7 +175,7 @@
                     d3.select(this).append("tspan").attr("x", 0).attr("dy", 15)
                             .text(d => format(km) + " km")
                 })
-                .attr("fill", "white")
+                .style("fill", "white")
                 .attr("text-anchor", "middle")
                 .attr("transform", `translate(${geoPath.centroid(d)})`);
 
@@ -195,24 +195,24 @@
         svg.append("path").attr("class","background")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath) // clip the path!
-                .attr("stroke", "black")
-                .attr("fill", "blue")
-                .attr("fill-opacity", .5)
-                .attr('stroke-width', 2);
+                .style("stroke", "black")
+                .style("fill", "blue")
+                .style("fill-opacity", .5)
+                .style('stroke-width', 2);
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', .25);
+                .style("stroke", "white")
+                .style('stroke-width', .25);
 
         svg.append("path").attr("class","outline")
                 .datum(d3.geoGraticule().outline())
                 .attr('d', geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "none")
-                .attr('stroke-width', 3);
+                .style("stroke", "black")
+                .style("fill", "none")
+                .style('stroke-width', 3);
     }
 
 </script>

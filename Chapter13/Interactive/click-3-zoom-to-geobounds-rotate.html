@@ -102,10 +102,10 @@
         d3.select(node)
                 .append("path").attr("id", "geoCentroid_" + d.id)
                 .datum({type: "Point", coordinates: d3.geoCentroid(d)})
-                .attr("fill", "white")
-                .attr("fill-opacity", .7)
-                .attr("stroke", "purple")
-                .attr("stroke-width", 2)
+                .style("fill", "white")
+                .style("fill-opacity", .7)
+                .style("stroke", "purple")
+                .style("stroke-width", 2)
                 .attr("d", geoPath);
     }
     function showProjectedBounds(node, d) {
@@ -115,9 +115,9 @@
                 .append("path").attr("id", "projBounds_" + d.id)
                 .datum(shape)
                 .attr("d", geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "aquamarine")
-                .attr("fill-opacity", .3)
+                .style("stroke", "black")
+                .style("fill", "aquamarine")
+                .style("fill-opacity", .3)
                 .attr("pointer-events", "none")
     }
 
@@ -142,13 +142,13 @@
                 .on("click", d => zoom(d))
                 .on('mouseenter', showProjectedBoundsAndCentroid)
                 .on('mouseleave', hideProjectedBoundsAndCentroid)
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                 .each(function(d) {
                     d3.select(this)
                             .append("path")
                             .attr('d', geoPath)
-                            .attr("stroke", "white")
-                            .attr('stroke-width', '.25');
+                            .style("stroke", "white")
+                            .style('stroke-width', '.25');
                     d3.select(this)
                             .append("text")
                             .attr("text-anchor", "middle")
@@ -167,7 +167,7 @@
                 .each(function(d) {
                     d3.select(this)
                         .select("path")
-                        .attr('fill', d.id == id ? 'orange' : 'gray')
+                        .style('fill', d.id == id ? 'orange' : 'gray')
                         .attr('d', geoPath);
                     d3.select(this)
                         .select('text')
@@ -185,14 +185,14 @@
     function drawGraticules() {
         globe.append("path").attr("class","background")
                 .datum({type: 'Sphere'})
-                .attr("fill", 'lightblue')
+                .style("fill", 'lightblue')
                 .attr('d', geoPath);
         globe.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

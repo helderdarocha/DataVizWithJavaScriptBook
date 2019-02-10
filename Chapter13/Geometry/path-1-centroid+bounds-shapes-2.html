@@ -58,11 +58,11 @@
                 .on('mouseleave', hideBoundsAndCentroid)
 
         globe.append("path")
-                .attr("fill", '#333')
-                .attr("fill-opacity", .8)
+                .style("fill", '#333')
+                .style("fill-opacity", .8)
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25')
+                .style("stroke", "white")
+                .style('stroke-width', '.25')
 
     }
 
@@ -76,10 +76,10 @@
         d3.select(node)
                 .append("circle").attr("id", "centroid_" + d.id)
                 .attr("r", 3)
-                .attr("fill", "white")
-                .attr("fill-opacity", .7)
-                .attr("stroke", "red")
-                .attr("stroke-width", 2)
+                .style("fill", "white")
+                .style("fill-opacity", .7)
+                .style("stroke", "red")
+                .style("stroke-width", 2)
                 .attr("transform", `translate(${geoPath.centroid(d)})`);
     }
 
@@ -99,9 +99,9 @@
                 .append("rect").attr("id", "bounds_" + d.id)
                 .attr("width", maxX - minX)
                 .attr("height", maxY - minY)
-                .attr("stroke", "red")
-                .attr("fill", "orange")
-                .attr("fill-opacity", .5)
+                .style("stroke", "red")
+                .style("fill", "orange")
+                .style("fill-opacity", .5)
                 .attr("transform", `translate(${[minX, minY]})`)
     }
 
@@ -124,10 +124,10 @@
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', .25);
+                .style("stroke", "green")
+                .style('stroke-width', .25);
     }
 
 </script>

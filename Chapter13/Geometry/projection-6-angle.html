@@ -55,22 +55,22 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     function drawGraticules() {
         console.log(d3.geoGraticule10())
         svg.append("g").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

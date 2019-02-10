@@ -43,7 +43,7 @@
             .scaleExtent([1, 40])
             .on('zoom', zoomMap);
 
-    const rect = svg.append("rect").attr("fill", "none")
+    const rect = svg.append("rect").style("fill", "none")
             .attr("pointer-events", "all")
             .attr("width", width)
             .attr("height", height)
@@ -59,24 +59,24 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     function drawGraticules() {
         globe.append("path").attr("class","background")
                 .datum({type: 'Sphere'})
-                .attr("fill", 'lightblue')
+                .style("fill", 'lightblue')
                 .attr('d', geoPath);
         globe.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

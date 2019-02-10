@@ -36,11 +36,11 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", (d,i) => d.geometry.type == 'LineString' || d.geometry.type == 'MultiLineString' ? 'none' : color(i))
+                .style("fill", (d,i) => d.geometry.type == 'LineString' || d.geometry.type == 'MultiLineString' ? 'none' : color(i))
                 .attr("opacity", .9)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
+                    .style("stroke", "white")
     })
 </script>
 

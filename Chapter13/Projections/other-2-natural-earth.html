@@ -70,10 +70,10 @@
                 .append("path")
                 .attr("d", geoPath)
                 .attr("class","indicatrix")
-                .attr("fill", 'orange')
-                .attr("fill-opacity", .5)
-                .attr("stroke", "black")
-                .attr('stroke-width', .5);
+                .style("fill", 'orange')
+                .style("fill-opacity", .5)
+                .style("stroke", "black")
+                .style('stroke-width', .5);
     }
 
     function draw() {
@@ -82,22 +82,22 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .attr("fill", 'gray')
+                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "white")
-                    .attr('stroke-width', '.25');
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
     }
 
     function drawGraticules() {
         console.log(d3.geoGraticule10())
         svg.append("g").attr("class","graticule")
                 .datum(d3.geoGraticule10())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .append("path")
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', '.25');
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
     }
 </script>
 

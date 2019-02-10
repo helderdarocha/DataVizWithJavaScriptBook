@@ -57,11 +57,11 @@
                 .on('mouseleave', hideProjectedBoundsAndCentroid)
 
         globe.append("path")
-                .attr("fill", '#333')
-                .attr("fill-opacity", .8)
+                .style("fill", '#333')
+                .style("fill-opacity", .8)
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25')
+                .style("stroke", "white")
+                .style('stroke-width', '.25')
     }
 
     function showProjectedBoundsAndCentroid(d) {
@@ -75,10 +75,10 @@
         d3.select(node)
                 .append("path").attr("id", "geoCentroid_" + d.id)
                 .datum({type: "Point", coordinates: d3.geoCentroid(d)})
-                .attr("fill", "white")
-                .attr("fill-opacity", .7)
-                .attr("stroke", "purple")
-                .attr("stroke-width", 2)
+                .style("fill", "white")
+                .style("fill-opacity", .7)
+                .style("stroke", "purple")
+                .style("stroke-width", 2)
                 .attr("d", geoPath);
     }
     function showProjectedBounds(node, d) {
@@ -100,9 +100,9 @@
                 .append("path").attr("id", "projBounds_" + d.id)
                 .datum(resample({type: 'Polygon', coordinates: [coords]}))
                 .attr("d", geoPath)
-                .attr("stroke", "black")
-                .attr("fill", "aquamarine")
-                .attr("fill-opacity", .3)
+                .style("stroke", "black")
+                .style("fill", "aquamarine")
+                .style("fill-opacity", .3)
                 .attr("pointer-events", "none")
     }
 
@@ -123,10 +123,10 @@
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', .25);
+                .style("stroke", "green")
+                .style('stroke-width', .25);
     }
 
 </script>

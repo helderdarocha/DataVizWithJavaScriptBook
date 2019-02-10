@@ -30,15 +30,15 @@
                 .enter()
                 .append("g")
                 .attr("class","continent")
-                //.attr("fill-rule", "evenodd") // use with <path>
-                .attr("fill", (d,i) => color(i))
+                //.style("fill-rule", "evenodd") // use with <path>
+                .style("fill", (d,i) => color(i))
                 .selectAll("polygon")
                 .data(d => d.geometry.type == 'MultiPolygon' ? d3.merge(d.geometry.coordinates) : d.geometry.coordinates)
                 .enter()
                     .append("polygon")
                     .attr('points', d => d3.merge(d.map(coord => [lonScale(coord[0]), latScale(coord[1])])))
 
-                    .attr("stroke", "white")
+                    .style("stroke", "white")
     })
 </script>
 

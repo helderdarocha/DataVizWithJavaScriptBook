@@ -28,17 +28,17 @@
 
         const geoPath = d3.geoPath().projection(d3.geoMercator());
 
-        const meshedGeoJSON = topojson.mesh(data, data.objects['border-example'])
+        const meshedGeoJSON = topojson.mesh(data)
         console.log(meshedGeoJSON)
 
         svg.append("g")
                 .datum(meshedGeoJSON)
                 .attr("class","country")
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr("opacity", .9)
                 .append("path")
                     .attr('d', geoPath)
-                    .attr("stroke", "black")
+                    .style("stroke", "black")
     })
 </script>
 

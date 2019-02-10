@@ -61,10 +61,10 @@
         globe.append("path")
                 .style("fill", d => d.id == 'GRL' || d.id == 'COD' ? "green" : '#333')
                // .style("fill", '#333')
-                .attr("fill-opacity", .6)
+                .style("fill-opacity", .6)
                 .attr('d', geoPath)
-                .attr("stroke", "white")
-                .attr('stroke-width', '.25')
+                .style("stroke", "white")
+                .style('stroke-width', '.25')
 
     }
 
@@ -86,7 +86,7 @@
                     d3.select(this).append("tspan").attr("x", 0).attr("dy", 12)
                             .text(d => format(sqkm) + " km2")
                 })
-                .attr("fill", "black")
+                .style("fill", "black")
                 .attr("text-anchor", "middle")
                 .attr("transform", `translate(${geoPath.centroid(d)})`);
         d3.select(this).select("path")
@@ -106,10 +106,10 @@
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
-                .attr("fill", 'none')
+                .style("fill", 'none')
                 .attr('d', geoPath)
-                .attr("stroke", "green")
-                .attr('stroke-width', .25);
+                .style("stroke", "green")
+                .style('stroke-width', .25);
     }
 
 </script>

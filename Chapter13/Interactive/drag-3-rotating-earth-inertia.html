@@ -65,27 +65,27 @@
         svg.append("path")
                 .datum({type: "Sphere"})
                 .attr("d", geoPath)
-                .attr('fill', 'darkblue')
-                .attr('fill-opacity',.5)
-                .attr('stroke', 'darkgreen')
-                .attr('stroke-width', 2);
+                .style('fill', 'darkblue')
+                .style('fill-opacity',.5)
+                .style('stroke', 'darkgreen')
+                .style('stroke-width', 2);
         svg.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
                 .attr('d', geoPath)
-                .attr("fill", 'none')
-                .attr("stroke", "lightgreen")
-                .attr('stroke-width', '.25');
+                .style("fill", 'none')
+                .style("stroke", "lightgreen")
+                .style('stroke-width', '.25');
         svg.append("path").attr("class","land")
                 .datum(map.merged)
                 .attr('d', geoPath)
-                .attr("fill", '#345434')
-                .attr('fill-opacity',.8);
+                .style("fill", '#345434')
+                .style('fill-opacity',.8);
         svg.append("path").attr("class","mesh")
                 .datum(map.mesh)
                 .attr('d', geoPath)
-                .attr("fill", 'none')
-                .attr("stroke", 'green')
-                .attr("stroke-width", .25);
+                .style("fill", 'none')
+                .style("stroke", 'green')
+                .style("stroke-width", .25);
     }
 
 </script>
