@@ -2,173 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Data/cities1000.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Examples/water-bodies.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Examples/world-cities-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Examples/world-cities.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa-canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-1-meridians.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-2-parallels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-3-graticules.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-4-graticules-extent.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-5-graticules-step.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-6-graticules-equator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-7-graticules-tropics-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-7-graticules-tropics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-9-hemispheres-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-merge-filter.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-4-extent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-8-clip.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Data/africa-cities.csv" afterPath="$PROJECT_DIR$/Chapter13/Data/africa-1500-cities.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Data/madagascar-simple-polygon.geojson" afterPath="$PROJECT_DIR$/Chapter13/Data/africa-madagascar-simple-polygon.geojson" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-1.html" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-2-meridians.html" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-9-hemispheres.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-3-step.html" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-10-linestrings.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-5-hemisphere-clipping.html" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-11-hemisphere-clipping.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-6-opposite-hemisphere.html" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-12-opposite-hemisphere.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/graticules-7-labels.html" afterPath="$PROJECT_DIR$/Chapter13/Graticules/circles-13-graticules-labels.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-quantized.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/topojson-mars-quantized.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-loxodrome-gnomonic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-loxodrome-mercator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/1-center-tokyo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/1-center-translate-default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/1-center-translate-left.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/1-center-translate-up.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/2-angle-90.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/2-angle.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/3-scale-1000.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/3-scale-160.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/3-scale-480.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/3-scale-75.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/3-scale-default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/4-translate-00.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/4-translate-default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/4-translate-half-top-left.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-no-transform-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-no-transform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-1-yaw-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-1-yaw.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-3-roll-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-3-roll.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-4-all-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-4-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-5-90-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-5-90.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-pitch-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-rotate-pitch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-tall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-wide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-tall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-wide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-tall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-wide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-globe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-tall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-wide.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/7-sphere-clipping.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/8-invert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-1-center-india.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-2-scale-india.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-3-angle-india.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-4-translate-india.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-8-invert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-9-fit-svg-clip.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-2.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-1-centroid+bounds-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-shapes-2.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-1-centroid+bounds-shapes-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-1-centroid+bounds-shapes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-1-centroid+bounds.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected-2.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-2-geobounds-projected-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-2-geobounds-projected-shapes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-2-geobounds-projected.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area-2.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-3-area-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area-image.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-3-area-image.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-3-area.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-2.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-measure-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-3.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-measure-3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-image.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-loxodrome-orthographic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-measure.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-5-contains.html" afterPath="$PROJECT_DIR$/Chapter13/Path-Geometry/path-5-contains.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping-2.html" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/7-small-circle-clipping-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping.html" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/7-small-circle-clipping.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping-2.html" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/7-viewport-clipping-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping.html" afterPath="$PROJECT_DIR$/Chapter13/Projection-Geometry/7-viewport-clipping.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-2-rotate.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/asia-1-rotate.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-3-scale.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/asia-2-scale.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-4-center.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/asia-3-center.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-5-translate.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/asia-4-translate.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-6-angle.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/asia-5-angle.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-7-filter.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/asia-6-filter.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-all-directions-2.html" afterPath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-all-directions-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-all-directions.html" afterPath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-all-directions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-december-solstice-2.html" afterPath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-december-solstice-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-december-solstice.html" afterPath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-december-solstice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-june-solstice-2.html" afterPath="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-june-solstice-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Animation/rotating-sphere-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/Animation/rotating-sphere-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/africa-simple.topojson" afterPath="$PROJECT_DIR$/Chapter13/Data/africa-simple.topojson" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/nyc.geojson" afterPath="$PROJECT_DIR$/Chapter13/Data/nyc.geojson" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/nyc.topojson" afterPath="$PROJECT_DIR$/Chapter13/Data/nyc.topojson" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/africa-chamberlin-trimetric.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/africa-chamberlin-trimetric.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/africa-mercator.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/africa-mercator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/airports.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/airports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/antarctica-orthographic.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/antarctica-orthographic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/flight-routes-2.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/flight-routes-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/flight-routes-3.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/flight-routes-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/flight-routes.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/flight-routes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/mars-orthographic.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/mars-orthographic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/mars-winkel-tripel.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/mars-winkel-tripel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/minard.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/minard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/ny-subway.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/ny-subway.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/russia-stereographic.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/russia-stereographic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/sky-conic-scorpius.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/sky-conic-scorpius.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/sky-ecliptic-planets.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/sky-ecliptic-planets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/sky-hammer-orion.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/sky-hammer-orion.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/sky-mercator-ecliptic.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/sky-mercator-ecliptic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/sky-mollweide.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/sky-mollweide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/sky-orthographic-ecliptic.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/sky-orthographic-ecliptic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/wgs84-issue.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/wgs84-issue.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa-countries.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa-countries.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-world.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-world.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-lines-africa.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-lines-africa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-points-africa.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-points-africa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-polygon-africa.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-polygon-africa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-polygon-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-polygon-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-2.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-shapes-2.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-shapes-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected-2.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-2-geobounds-projected.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area-2.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area-image.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area-image.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-3-area.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-2.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-3.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-image.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure-image.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-4-measure.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/path-5-contains.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/path-5-contains.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-1-invert.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-1-invert.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-2-rotate.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-2-rotate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-3-scale.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-3-scale.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-4-center.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-4-center.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-5-translate.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-5-translate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-6-angle.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-6-angle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-7-filter.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-7-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Geometry/projection-9-fit-svg-clip.html" afterPath="$PROJECT_DIR$/Chapter13/Geometry/projection-9-fit-svg-clip.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/click-1-zoom-to-bounds.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/click-1-zoom-to-bounds.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/click-2-zoom-to-geobounds.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/click-2-zoom-to-geobounds.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/click-3-zoom-to-geobounds-rotate.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/click-3-zoom-to-geobounds-rotate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/drag-1-clip-to-viewport.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/drag-1-clip-to-viewport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/drag-2-zoom-to-viewport.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/drag-2-zoom-to-viewport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/drag-3-rotating-earth-inertia-2.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/drag-3-rotating-earth-inertia-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/drag-3-rotating-earth-inertia.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/drag-3-rotating-earth-inertia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/drag-3-rotating-sphere-inertia-3.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/drag-3-rotating-sphere-inertia-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/mars-inertia.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/mars-inertia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/sky-ecliptic-planets-inertia.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/sky-ecliptic-planets-inertia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/wheel-1-zoom-svg-geometric.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/wheel-1-zoom-svg-geometric.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Interactive/wheel-2-zoom-svg-semantic.html" afterPath="$PROJECT_DIR$/Chapter13/Interactive/wheel-2-zoom-svg-semantic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/MapMaking/map-1-geojson.html" afterPath="$PROJECT_DIR$/Chapter13/MapMaking/map-1-geojson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/MapMaking/map-2-topojson.html" afterPath="$PROJECT_DIR$/Chapter13/MapMaking/map-2-topojson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/MapMaking/map-3-graticule.html" afterPath="$PROJECT_DIR$/Chapter13/MapMaking/map-3-graticule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant-pole.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant-pole.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-2-equalarea-pole.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-2-equalarea-pole.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-2-equalarea.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-2-equalarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-3-conformal-pole.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-3-conformal-pole.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-3-conformal.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-3-conformal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-4-orthographic-hemis.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-4-orthographic-hemis.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-4-orthographic-pole.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-4-orthographic-pole.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-4-orthographic-tilt.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-4-orthographic-tilt.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-5-gnomonic.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/azimuthal-5-gnomonic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-1-equidistant-tangent.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-1-equidistant-tangent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-1-equidistant.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-1-equidistant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-2-equalarea-tangent.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-2-equalarea-tangent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-2-equalarea.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-2-equalarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-3-conformal-secant.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-3-conformal-secant.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-3-conformal.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-3-conformal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-4-albers-usa.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-4-albers-usa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/world-lowres.geojson" afterPath="$PROJECT_DIR$/Chapter13/Data/world-lowres.geojson" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/world-lowres.topojson" afterPath="$PROJECT_DIR$/Chapter13/Data/world-lowres.topojson" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/world-medres.geojson" afterPath="$PROJECT_DIR$/Chapter13/Data/world-medres.geojson" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Data/world-medres.topojson" afterPath="$PROJECT_DIR$/Chapter13/Data/world-medres.topojson" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/world-cities-2.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/world-cities-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Examples/world-cities.html" afterPath="$PROJECT_DIR$/Chapter13/Examples/world-cities.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/conic-4-albers.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/conic-4-albers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-1-equidistant-plate-carree.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-1-equidistant-plate-carree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-1-equidistant-transverse.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-1-equidistant-transverse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea-berhmann.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea-berhmann.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea-gallpeters.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea-gallpeters.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea-tangent.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea-tangent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-2-equalarea.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-3-conformal-mercator-oblique.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-3-conformal-mercator-oblique.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-3-conformal-mercator-transverse.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-3-conformal-mercator-transverse.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-3-conformal-mercator.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/cylindrical-3-conformal-mercator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/experiments.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/experiments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-1-equal-earth.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-1-equal-earth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-10-peirce.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-10-peirce.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-11-polyhedral-waterman.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-11-polyhedral-waterman.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-2-natural-earth.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-2-natural-earth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-3-mollweide.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-3-mollweide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-4-satellite.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-4-satellite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-5-chamberlin-trimetric.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-5-chamberlin-trimetric.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-6-robinson.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-6-robinson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-7-hammer.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-7-hammer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-8-homolosine.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-8-homolosine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Projections/other-9-winkel-tripel.html" afterPath="$PROJECT_DIR$/Chapter13/Projections/other-9-winkel-tripel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/cities_africa.1.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/cities_africa.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/cities_africa.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/cities_africa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-axis/dist/d3-axis.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-axis/dist/d3-axis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-axis/dist/d3-axis.min.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-axis/dist/d3-axis.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-axis/src/axis.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-axis/src/axis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-brush/dist/d3-brush.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-brush/dist/d3-brush.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-brush/dist/d3-brush.min.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-brush/dist/d3-brush.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-brush/src/brush.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-brush/src/brush.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-selection/README.md" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3-selection/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3/dist/d3.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3/dist/d3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3/dist/d3.min.js" afterPath="$PROJECT_DIR$/Chapter13/Tools/node_modules/d3/dist/d3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-merge.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-merge.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-mesh.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-mesh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-mesh-filter.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-mesh-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-neighbors.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-neighbors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-merge.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-merge.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-mesh-filter.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-mesh-filter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-mesh.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-mesh.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-neighbors.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-neighbors.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes.html" afterPath="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -189,101 +104,101 @@
     <favorites_list name="DataVizWithJavaScriptBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="azimuthal-1-equidistant.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant.html">
+    <leaf>
+      <file leaf-file-name="6-fit-height-globe.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-globe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="azimuthal-5-gnomonic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Projections/azimuthal-5-gnomonic.html">
+      <file leaf-file-name="world-cities-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Examples/world-cities-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-extent-wide.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-wide.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-height-wide.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-wide.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-size-tall.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-tall.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-extent-tall.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-tall.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-width-tall.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-tall.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world-cities.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Examples/world-cities.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-width-wide.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-wide.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-fit-size-wide.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-wide.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cylindrical-1-equidistant-plate-carree.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Projections/cylindrical-1-equidistant-plate-carree.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projection-7-filter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-7-filter.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projection-6-angle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-6-angle.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circles-4-graticules-extent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-4-graticules-extent.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projection-5-translate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-5-translate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circles-8-graticules-outline.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="other-9-winkel-tripel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Projections/other-9-winkel-tripel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="other-3-mollweide.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter13/Projections/other-3-mollweide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
               <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
@@ -306,57 +221,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-points-africa.html" />
-        <option value="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa-countries.html" />
-        <option value="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-africa.html" />
-        <option value="$PROJECT_DIR$/Chapter13/GeoJSON/geojson-geopath-world.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Examples/africa-chamberlin-trimetric.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Data/africa-simple.topojson" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries.html" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-neighbors.html" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-quantized.html" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-mesh-filter.html" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-mesh.html" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-mesh.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/graticules-2-meridians.html" />
-        <option value="$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-merge-filter.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/graticules-1.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/graticules-2-meridians-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Projections/experiments-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/meridians.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/parallels.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/graticules.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-1-meridians.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-3-graticules.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-3-parallels.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-4-graticules-extent.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-4-graticules-step.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-6-graticules-multiple.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/circles-6-graticules-tropics.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-1-meridians.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-2-parallels.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-3-graticules.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-4-graticules-extent.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-10-linestrings.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Animation/rotating-earth-all-directions-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-6-graticules-multiple.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-6-graticules-equator.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-5-graticules-step.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-7-graticules-tropics-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-7-graticules-tropics.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-9-hemispheres-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-9-hemispheres.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping-2.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline-3.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline-e.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline-extent.html" />
-        <option value="$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-3-scale-75.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-7-center-translate-up.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-7-center-translate-left.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-7-center-translate-default.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-5-angle-90.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-5-angle.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-3-scale-default.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-4-translate-00.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-2-rotate-5-90.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-2-rotate-5-90-globe.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-1-no-transform.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-4-translate-default.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-4-translate-half-top-left.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Geometry/projection-5-angle-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-loxodrome-orthographic.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/center-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/scale-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/rotate-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/angle-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/translate-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-2-scale-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-3-angle-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/view-4-translate-india.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/fit-svg-clip.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/5-no-transform.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-portugal.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-italy.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-italy.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-italy.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-globe.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-italy.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-indonesia.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-indonesia.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-chile.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-argentina.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-argentina.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-argentina.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-globe.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-globe.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-globe.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Examples/world-cities.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Examples/world-cities-2.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-argentina.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-china.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-china.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-china.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-wide.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-wide.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-wide.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-wide.html" />
+        <option value="$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-tall.html" />
       </list>
     </option>
   </component>
@@ -370,8 +285,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1057" />
-    <option name="y" value="96" />
+    <option name="x" value="-1239" />
+    <option name="y" value="44" />
     <option name="width" value="1056" />
     <option name="height" value="794" />
   </component>
@@ -400,6 +315,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -442,68 +359,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter13" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Projections" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter13" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graticules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter13" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Geometry" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Chapter4" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,19 +378,19 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Chapter13/Graticules" />
-      <recent name="$PROJECT_DIR$/Chapter13/Geometry" />
-      <recent name="$PROJECT_DIR$/Chapter13/Projections" />
-      <recent name="$PROJECT_DIR$/Chapter13/TopoJSON" />
-      <recent name="$PROJECT_DIR$/Chapter13/Examples" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter13/Path-Geometry" />
+      <recent name="$PROJECT_DIR$/Chapter13/Examples" />
       <recent name="$PROJECT_DIR$/Chapter13/Graticules" />
       <recent name="$PROJECT_DIR$/Chapter13/Geometry" />
-      <recent name="$PROJECT_DIR$/Chapter13/Examples" />
       <recent name="$PROJECT_DIR$/Chapter13/Data" />
-      <recent name="$PROJECT_DIR$/Chapter16/Images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Chapter13/Projection-Geometry" />
+      <recent name="$PROJECT_DIR$/Chapter13/Path-Geometry" />
+      <recent name="$PROJECT_DIR$/Chapter13/Geometry" />
+      <recent name="$PROJECT_DIR$/Chapter13/Graticules" />
+      <recent name="$PROJECT_DIR$/Chapter13/Projections" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.graticules-3-step.html">
@@ -694,36 +555,37 @@
       <workItem from="1549546689606" duration="2520000" />
       <workItem from="1549561312862" duration="10364000" />
       <workItem from="1549585251086" duration="4185000" />
-      <workItem from="1549651902082" duration="48888000" />
+      <workItem from="1549651902082" duration="56222000" />
+      <workItem from="1549891455080" duration="26651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1841760000" />
+    <option name="totallyTimeSpent" value="1875745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1057" y="96" width="1056" height="794" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1239" y="44" width="1056" height="794" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24556214" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2504931" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -791,375 +653,111 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-mesh-filter.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-3-roll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="187">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/TopoJSON/topojson-shapes-neighbors.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-4-all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-4-all-globe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-3-scale-75.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-3-scale-160.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="66" selection-start-line="17" selection-start-column="4" selection-end-line="25" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-mesh-filter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-merge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Animation/rotating-earth-december-solstice-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Animation/rotating-sphere-shapes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1058">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Examples/mars-winkel-tripel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Animation/rotating-earth-june-solstice-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-3-scale-480.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="25" selection-end-column="37" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/TopoJSON/topojson-africa-countries-merge-filter.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-3-scale-1000.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/JavaScript/wgs84_resampling.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/path-1-centroid+bounds.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Examples/wgs84-issue.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/graticules-4-extent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Projections/experiments.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/graticules-3-step.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="114" column="39" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-11-hemisphere-clipping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-795">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-13-graticules-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/MapMaking/map-1-geojson.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/MapMaking/map-3-graticule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-10-linestrings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-533">
-          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Animation/rotating-earth-all-directions-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-1-meridians.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-2-parallels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-6-graticules-equator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-5-graticules-step.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
+        <state relative-caret-position="360">
           <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-5-graticules-step.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-5-90.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-7-graticules-tropics-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-5-90-globe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="330">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-7-graticules-tropics.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-1-yaw-globe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="225">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-9-hemispheres-2.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-2-pitch-globe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        <state relative-caret-position="442">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-9-hemispheres.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-3-graticules.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="40" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-1-yaw.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
-          <caret line="100" column="9" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-11-viewport-clipping-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="94" column="50" selection-start-line="94" selection-start-column="50" selection-end-line="94" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-10-small-circle-clipping-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-8-clip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-9-fit-svg-clip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-7-filter.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-2-rotate-3-roll-globe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-6-angle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-4-graticules-extent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Geometry/projection-5-translate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline-sphere.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="80" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Graticules/circles-8-graticules-outline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Projections/other-9-winkel-tripel.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-3-scale-default.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
@@ -1167,34 +765,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Projections/other-3-mollweide.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-4-translate-00.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-4-translate-default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-4-translate-half-top-left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-5-angle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-5-angle-90.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-5-angle-india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-6-center-tokyo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-7-center-translate-default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-7-center-translate-left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-7-center-translate-up.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-9-fit-svg-clip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/projection-1-no-transform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Path-Geometry/path-4-loxodrome-orthographic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="175" column="53" selection-start-line="175" selection-start-column="53" selection-end-line="175" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/view-1-center-india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/view-2-scale-india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/view-3-angle-india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/view-4-translate-india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="26" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/viewport-clipping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/fit-svg-clip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="76" column="51" selection-start-line="76" selection-start-column="51" selection-end-line="76" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/5-no-transform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/7-sphere-clipping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-indonesia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-tall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-globe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-indonesia.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-globe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="65" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-globe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-globe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Examples/world-cities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Examples/world-cities-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-wide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-wide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-wide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Projections/azimuthal-1-equidistant.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-height-wide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Projections/azimuthal-5-gnomonic.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-size-tall.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter13/Projections/cylindrical-1-equidistant-plate-carree.html">
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-extent-tall.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state relative-caret-position="195">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter13/Projection-Geometry/6-fit-width-tall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding />
         </state>
       </provider>

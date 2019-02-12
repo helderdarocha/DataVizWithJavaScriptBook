@@ -6,6 +6,7 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="../JavaScript/wgs84_resampling.js"></script>
     <style>
         svg {border: solid 1px gray;}
         text {
@@ -30,12 +31,10 @@
             .attr("width", width).attr("height", height);
 
     // reference
-    const projection = d3.geoAzimuthalEquidistant()
-            .rotate([60,-60,-20])
-            .center([0,0])
-            .scale(500);
+    const projection = d3.geoGnomonic()
+            .scale(400)
+            .rotate([60,-60,-20]);
 
-    // create a path generator function for the projection
     // create a path generator function for the projection
     const geoPath = d3.geoPath()
             .projection(projection)
@@ -62,10 +61,10 @@
                     return row;
                 })
             ])
-            .then( function([topology, airports, allRoutes]) {
+            .then( function([topology, airports, routes]) {
 
                 // at least 2 airlines per route
-                const filteredRoutes = allRoutes.filter(r => r.airlines > 9);
+                const filteredRoutes = routes.filter(r => r.airlines > 9);
 
                 // at least 10 million passengers per year
                 const filteredAirports = airports.filter(a => a.passengers > 10000000)
@@ -135,7 +134,7 @@
 
         const airport = svg.selectAll("g.airport")
                 .data(airports.filter(d => geoPath({type:"Point", coordinates: d.coordinates})
-                                           && routes.filter(k => k.id.split('-')[0] == d.id || k.id.split('-')[1] == d.id).length > 0))
+                     && routes.filter(k => k.id.split('-')[0] == d.id || k.id.split('-')[1] == d.id).length > 0))
                 .enter()
                 .append("g")
                 .attr("class","airport")
@@ -196,12 +195,12 @@
 
     function drawGraticules() {
         svg.append("path").attr("class","background")
-                .datum(d3.geoGraticule().extent([[-180,-90],[179,90]]).outline())
+                .datum({type: "Sphere" })
                 .attr('d', geoPath) // clip the path!
                 .style("stroke", "black")
                 .style("fill", "blue")
-                .style("fill-opacity", .5)
-                .style('stroke-width', 2);
+                .style("fill-opacity", .3)
+                .style('stroke-width', 1);
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
@@ -209,13 +208,6 @@
                 .attr('d', geoPath)
                 .style("stroke", "white")
                 .style('stroke-width', .25);
-
-        svg.append("path").attr("class","outline")
-                .datum(d3.geoGraticule().outline())
-                .attr('d', geoPath)
-                .style("stroke", "black")
-                .style("fill", "none")
-                .style('stroke-width', 3);
     }
 
 </script>

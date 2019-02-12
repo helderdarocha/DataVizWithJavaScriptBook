@@ -6,6 +6,7 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="../JavaScript/wgs84_resampling.js"></script>
     <style>
         svg {border: solid 1px gray;}
         text {
@@ -30,6 +31,11 @@
             .attr("width", width).attr("height", height);
 
     // reference
+   /* const projection = d3.geoAzimuthalEquidistant()
+            .rotate([60,-60,-20])
+            .center([0,0])
+            .scale(500); */
+
     const projection = d3.geoMercator()
             .scale(380)
             .center([-60,45]);
@@ -40,60 +46,41 @@
 
     const map = {};
 
-    const colorScale = d3.scaleLog().range(['yellow', 'red'])
-    const widthScale = d3.scaleLinear().range([2, 4])
-    const transparencyScale = d3.scaleLinear().range([.2, .5]);
+    const airports = [
+        {
+            "id":"LHR",
+            "name":"London Heathrow Airport",
+            "city":"London",
+            "passengers":78014598,
+            "coordinates":[-0.461941,51.4706]
+        },{
+            "id":"LAX",
+            "name":"Los Angeles International Airport",
+            "city":"Los Angeles",
+            "passengers":84557968,
+            "coordinates":[-118.4079971,33.94250107]
+        }];
 
-    Promise.all([
-                d3.json('../Data/' + file),
-                d3.csv('../Data/airports-busiest.csv', function(row) {
-                    return {
-                        id: row.iata,
-                        name: row.name,
-                        city: row.city,
-                        passengers: +row.passengers,
-                        coordinates: [+row.longitude, +row.latitude],
-                    };
-                }),
-                d3.csv('../Data/routes-busiest.csv', function(row) {
-                    row.airlines = +row.airlines;
-                    return row;
-                })
-            ])
-            .then( function([topology, airports, routes]) {
+    const route = {
+        "id":"LHR-LAX",
+        "source": airports[0],
+        "target": airports[1],
+    };
 
-                // at least 2 airlines per route
-                const filteredRoutes = routes.filter(r => r.airlines > 9);
+    d3.json('../Data/' + file).then( function(topology) {
 
-                // at least 10 million passengers per year
-                const filteredAirports = airports.filter(a => a.passengers > 10000000)
+        map.topology   = topology.objects[key];
+        map.geometries = map.topology.geometries;
+        map.features   = topojson.feature(topology, map.topology).features
 
-                filteredRoutes.forEach(function(filteredRoutes) {
-                    const s = filteredAirports.filter(a => a.id == filteredRoutes.source);
-                    const t = filteredAirports.filter(a => a.id == filteredRoutes.target);
-                    filteredRoutes.source = t ? t[0] : undefined;
-                    filteredRoutes.target = s ? s[0] : undefined;
-                })
+        drawGraticules();
+        draw();
 
-                colorScale.domain(d3.extent(filteredRoutes, d => d.airlines))
-                widthScale.domain(colorScale.domain())
-                transparencyScale.domain(colorScale.domain())
-
-                map.topology   = topology.objects[key];
-                map.geometries = map.topology.geometries;
-                map.features   = topojson.feature(topology, map.topology).features
-
-                drawGraticules();
-                draw(filteredAirports, filteredRoutes.filter((k,i) => k.source && k.target));
-
-            });
+    });
 
     function lineString(d) {
         return {
             id: d.id,
-            properties: {
-                airlines: d.airlines
-            },
             type: "LineString",
             coordinates: [
                     d.source.coordinates,
@@ -102,7 +89,7 @@
         }
     }
 
-    function draw(airports, routes) {
+    function draw() {
         const globe = svg.selectAll("g.country")
                 .data(map.features)
                 .enter()
@@ -110,39 +97,39 @@
                 .attr("class","country")
 
         globe.append("path")
-                .style("fill", '#333')
-                .style("fill-opacity", .6)
+                .style("fill", 'blue')
+                .style("fill-opacity", .3)
                 .attr('d', geoPath)
                 .style("stroke", "white")
                 .style('stroke-width', '.25')
 
-        svg.selectAll("g.route")
-                .data(routes)
-                .enter()
-                .append("g")
-                .attr("class","route")
-                .append("g")
-                .datum(lineString)
+        svg.append("g").attr("class","orthodrome")
+                .datum(lineString(route))
                 .on('mouseenter', showMeasure)
                 .on('mouseleave', hideMeasure)
                 .append("path").attr("d", geoPath)
                 .style("fill", 'none')
-                .style("stroke-opacity", d => transparencyScale(d.properties.airlines))
-                .style("stroke", d => colorScale(d.properties.airlines))
-                .style('stroke-width', d => widthScale(d.properties.airlines))
+                .style("stroke", 'blue')
+                .style('stroke-width', 5)
+
+        svg.append("g").attr("class","loxodrome")
+                .datum(resample(lineString(route)))
+                .on('mouseenter', showMeasure)
+                .on('mouseleave', hideMeasure)
+                .append("path").attr("d", geoPath)
+                .style("fill", 'none')
+                .style("stroke", 'red')
+                .style('stroke-width', 5)
 
         const airport = svg.selectAll("g.airport")
-                .data(airports.filter(d => routes.filter(k => k.id.split('-')[0] == d.id || k.id.split('-')[1] == d.id).length > 0))
-                .enter()
-                .append("g")
-                .attr("class","airport")
+                .data(airports).enter()
+                .append("g").attr("class","airport")
                 .attr("transform", d => `translate(${projection(d.coordinates)})`)
-        airport.append("circle")
-                            .style("fill", 'yellow')
-                            .style("stroke", "black")
-                            .attr('r', 4);
-        airport.append("text").text(d => d.id).attr("x", 7)
 
+        airport.append("circle")
+                .style("fill", 'yellow')
+                .style("stroke", "black")
+                .attr('r', 8);
 
 
     }
@@ -165,7 +152,7 @@
                 .style("fill",'black').style("fill-opacity",.5)
                 .attr("transform", `translate(${geoPath.centroid(d)})`)
 
-        d3.select(this).raise()
+        d3.select(this)
                 .append("text").attr("id", "measure_" + d.id)
                 .each(function() {
                     d3.select(this).append("tspan")
@@ -193,26 +180,20 @@
 
     function drawGraticules() {
         svg.append("path").attr("class","background")
-                .datum(d3.geoGraticule().outline())
+                .datum(d3.geoGraticule().extent([[-180,-90],[179,90]]).outline())
                 .attr('d', geoPath) // clip the path!
                 .style("stroke", "black")
                 .style("fill", "blue")
-                .style("fill-opacity", .5)
+                .style("fill-opacity", .1)
                 .style('stroke-width', 2);
 
         svg.append("path").attr("class","graticule")
                 .datum(graticule())
                 .style("fill", 'none')
                 .attr('d', geoPath)
-                .style("stroke", "white")
+                .style("stroke", "green")
                 .style('stroke-width', .25);
 
-        svg.append("path").attr("class","outline")
-                .datum(d3.geoGraticule().outline())
-                .attr('d', geoPath)
-                .style("stroke", "black")
-                .style("fill", "none")
-                .style('stroke-width', 3);
     }
 
 </script>

@@ -27,6 +27,8 @@
     const geoPath = d3.geoPath()
             .projection(projection);
 
+    console.log(projection.parallels())
+
     const map = {};
 
     d3.json('../Data/' + file)

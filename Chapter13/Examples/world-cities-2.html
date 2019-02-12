@@ -13,7 +13,7 @@
     const width = 960;
     const height = 500;
 
-    const scale = d3.scaleSqrt().range([.25,1])
+    const scale = d3.scaleSqrt().range([.1,.3])
     const color = d3.scaleOrdinal(d3.schemeCategory10)
 
     d3.csv('../Data/cities1000.csv', function(row) {
@@ -30,7 +30,7 @@
         const svg = d3.select("body").append("svg")
                       .attr("width", width).attr("height", height);
 
-        const geoPath = d3.geoPath().projection(d3.geoMercator());
+        const geoPath = d3.geoPath().projection(d3.geoNaturalEarth1());
 
         scale.domain([0,d3.max(data, d => d.population)]);
 
@@ -39,8 +39,9 @@
                 .enter()
                 .append("circle")
                 .attr("transform", d => `translate(${geoPath.projection()(d.coordinates)})`)
-                .attr("r", d => scale(d.population))
-                .style("fill", (d,i) => color(d.country))
+                .attr("r", d => scale(d.population) * 4)
+                .style("fill-opacity",  d => scale(d.population))
+                .style("fill", 'black')
                 .attr('d', geoPath)
     })
 </script>
