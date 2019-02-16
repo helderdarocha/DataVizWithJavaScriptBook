@@ -6,7 +6,19 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
     <style>
-        svg {border: solid 1px gray;}
+        svg {
+            border: solid 1px gray;
+        }
+        .country {
+            fill: gray;
+            stroke: white;
+            stroke-width: .5;
+        }
+        .graticule {
+            fill: none;
+            stroke: green;
+            stroke-width: .25
+        }
     </style>
 </head>
 <body>
@@ -23,8 +35,7 @@
     const projection = d3.geoMercator();
 
     // create a path generator function for the projection
-    const geoPath = d3.geoPath()
-            .projection(projection);
+    const geoPath = d3.geoPath().projection(projection);
 
     const map = {};
 
@@ -46,22 +57,15 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
-                    .style("stroke", "white")
-                    .style('stroke-width', '.25');
     }
 
     function drawGraticules() {
         console.log(d3.geoGraticule10())
-        svg.append("g").attr("class","graticule")
-                .datum(d3.geoGraticule10())
-                .style("fill", 'none')
-                .append("path")
-                .attr('d', geoPath)
-                .style("stroke", "green")
-                .style('stroke-width', '.25');
+        svg.append("path").attr("class","graticule")
+           .datum(d3.geoGraticule10())
+           .attr('d', geoPath)
     }
 </script>
 

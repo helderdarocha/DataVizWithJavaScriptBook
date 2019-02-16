@@ -129,6 +129,7 @@
     const format = d3.format(',.0f')
 
     function showMeasure(d) {
+        console.log(d)
         console.log('measure', geoPath.measure(d),
                                d3.geoLength(d), // same as geoLength, with GeoJSON
                                d3.geoDistance(d.coordinates[0], d.coordinates[1])) // same as geoLength (with points)

@@ -10,6 +10,7 @@
         text {
             font-family: "Yanone Kaffeesatz", sans-serif;
             fill: black;
+            pointer-events: none
         }
     </style>
 </head>
@@ -52,26 +53,42 @@
 
     const globe = svg.append("g").attr("class","globe");
 
+    // Check why this turns off double-click!
+    //const svgzoom = d3.zoom()
+    //        .scaleExtent([1, 40])
+    //        .on('zoom', globe.attr("transform", d3.event.transform));
+    //const rect = svg.append("rect").style("fill", "none")
+    //        .attr("pointer-events", "all")
+    //        .attr("width", width)
+    //        .attr("height", height)
+    //        .call(svgzoom);
+
+
     function zoom(object) {
         hideProjectedBoundsAndCentroid(object);
-        let rotation = rotateAndFit(object);
-        while(Math.abs(rotation[0]) >= .00001 || Math.abs(rotation[1]) >= .00001) {
-            rotation = rotateAndFit(object);
-        }
+
+        rotateToView(object);
+
+        projection.fitExtent([[50,50],[width-50, height-50]], computeShape(object));
         render(object.id);
     }
 
-    function rotateAndFit(object) {
-        let rotate = d3.geoRotation(projection.rotate());
-        let centroid = d3.geoCentroid(object);
-        let rotation = rotate(centroid);
-        let lambda  = projection.rotate()[0] - rotation[0];
-        let phi     = projection.rotate()[1] - rotation[1];
-        const gamma = projection.rotate()[2];
+    function rotateToView(object) {
+        const rotate = d3.geoRotation(projection.rotate()),
+              centroid = d3.geoCentroid(object);
+
+        const rotation = rotate(centroid);
+
+        const lambda  = projection.rotate()[0] - rotation[0],
+              phi     = projection.rotate()[1] - rotation[1],
+              gamma   = projection.rotate()[2];
 
         projection.rotate([lambda, phi, gamma]);
-        projection.fitExtent([[50,50],[width-50, height-50]], computeShape(object));
 
+        const epsilon = 1e-6;
+        if(Math.abs(rotation[0]) >= epsilon || Math.abs(rotation[1]) >= epsilon) {
+            return rotateToView(object);
+        }
         return rotation;
     }
 
@@ -116,8 +133,8 @@
                 .datum(shape)
                 .attr("d", geoPath)
                 .style("stroke", "black")
-                .style("fill", "aquamarine")
-                .style("fill-opacity", .3)
+                .style("fill", "orange")
+                .style("fill-opacity", .5)
                 .attr("pointer-events", "none")
     }
 

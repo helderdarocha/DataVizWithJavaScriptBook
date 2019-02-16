@@ -72,8 +72,14 @@
     }
 
     function showGeoCentroid(node, d) {
-        console.log('centroid', geoPath.centroid(d))
-        console.log('geo centroid', d3.geoCentroid(d))
+        const centroid     = geoPath.centroid(d); // pixels
+        const geoCentroid  = d3.geoCentroid(d);   // geoCoords
+        const centroid2    = projection(geoCentroid)
+        const geoCentroid2 = projection.invert(centroid); // geoCoords
+
+        console.log('centroid', centroid, centroid2)
+        console.log('geo centroid', geoCentroid, geoCentroid2)
+
         d3.select(node)
                 .append("path").attr("id", "geoCentroid_" + d.id)
                 .datum({type: "Point", coordinates: d3.geoCentroid(d)})

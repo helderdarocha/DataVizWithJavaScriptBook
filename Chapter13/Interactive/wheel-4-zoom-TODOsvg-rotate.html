@@ -5,34 +5,27 @@
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://unpkg.com/topojson-client"></script>
-    <style>
-        .dragging {
-
-        }
-    </style>
 </head>
 <body>
 <script>
     const width = 960;
     const height = 500;
-    const file = "world-medres.topojson";
+    const file = "world-lowres.topojson";
     const key  = "world";
 
     const svg = d3.select("body").append("svg")
             .attr("width", width).attr("height", height);
+    const globe = svg.append("g")
+            .attr("class","globe");
 
     // choose a projection
     const projection = d3.geoOrthographic();
-    const scale = projection.scale();
-    const translate = projection.translate();
 
     // create a path generator function for the projection
     const geoPath = d3.geoPath()
             .projection(projection);
 
     const map = {};
-    const zoomBox = {};
-    let dragged = false;
 
     d3.json('../Data/' + file)
             .then(function(topology) {
@@ -44,24 +37,21 @@
 
                 drawGraticules();
                 draw();
+
+                svg.append("rect").style("fill", "none")
+                        .attr("pointer-events", "all")
+                        .attr("width", width)
+                        .attr("height", height)
+                        .call(zoom);
             });
 
-    const globe = svg.append("g")
-            .attr("class","globe");
+    const zoom = d3.zoom()
+            .scaleExtent([1, 40])
+            .on('zoom', zoomMap);
 
-    function zoom(object) {
-        console.log(geoPath.bounds(object))
-        const boundingObject = {
-            type: 'MultiPoint',
-            coordinates: d3.geoBounds(object)
-        };
-        console.log(boundingObject)
-        projection.fitSize([width, height], boundingObject);
-
-        // Extra: filter data that is not visible (for removal)
-        // Extra: include extra details
-
-        render();
+    function zoomMap() {
+        globe.attr("transform", d3.event.transform);
+        d3.selectAll("g.country path").style("stroke-width", .25/d3.event.transform.k);
     }
 
     function draw() {
@@ -70,24 +60,11 @@
                 .enter()
                 .append("g")
                 .attr("class","country")
-                .on("click", d => zoom(d))
                 .style("fill", 'gray')
                     .append("path")
                     .attr('d', geoPath)
                     .style("stroke", "white")
-                    .style('stroke-width', '.25');
-    }
-
-    svg.on("dblclick", function() {
-        d3.event.stopPropagation();
-        projection.scale(scale).translate(translate);
-        render();
-    });
-
-    function render() {
-        globe.selectAll("g.country path").attr('d', geoPath);
-        globe.selectAll("path.graticule").attr('d', geoPath);
-        globe.selectAll("path.background").attr('d', geoPath);
+                    .style('stroke-width', .25);
     }
 
     function drawGraticules() {

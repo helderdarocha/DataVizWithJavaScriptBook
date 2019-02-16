@@ -9,6 +9,7 @@
         svg {border: solid 1px gray;}
         text {
             font-family: "Yanone Kaffeesatz", sans-serif;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -101,17 +102,21 @@
 
     }
 
-    function showTroops(d) {
 
-        d3.select(this)
-                .append("text")
+    function showTroops(d) {
+        const g = d.geometry;
+        const interpolate = d3.geoInterpolate(g.coordinates[0], g.coordinates[1]);
+
+        const middle = projection(interpolate(.5));
+        svg.append("text").attr("class", "tooltip")
                 .style("fill", "brown")
+                .style("text-anchor", "middle")
                 .style("font-size", 13)
-                .attr("transform", d => `translate(${[geoPath.centroid(d)[0], 50]})`)
-                .text(d => d.properties.survivors + " survivors")
+                .attr("transform", `translate(${middle})`)
+                .text(d.properties.survivors + " survivors")
     }
     function hideTroops(d) {
-        d3.select(this).select("text").remove();
+        d3.select(".tooltip").remove();
     }
 
     function drawMesh() {

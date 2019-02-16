@@ -14,32 +14,41 @@
             stroke: white;
             stroke-width: .5;
         }
+        .graticule {
+            fill: none;
+            stroke: green;
+            stroke-width: .25
+        }
     </style>
 </head>
 <body>
 <script>
     const width = 960;
     const height = 500;
-    const file = "world-lowres.geojson";
+    const FILE = "world-lowres.topojson";
+    const TOPOJSON_KEY  = "world";
 
     const svg = d3.select("body").append("svg")
             .attr("width", width).attr("height", height);
 
-    // choose a projection
     const projection = d3.geoMercator();
-
-    // create a path generator function for the projection
-    const geoPath = d3.geoPath()
-            .projection(projection);
+    const geoPath = d3.geoPath().projection(projection);
 
     const map = {};
 
-    d3.json('../Data/' + file)
-            .then(function(geodata) {
-                console.log(geodata); // GeoJSON topology
-                map.features = geodata.features;
-                draw();
-            });
+    Promise.all([
+         d3.json('../Data/' + FILE),
+
+    ]).then(function(shapes, thematic) {
+            console.log(shapes);   // TopoJSON topology
+            console.log(thematic); // Thematic data
+
+            map.topology   = shapes.objects[TOPOJSON_KEY];
+            map.features   = topojson.feature(shapes, map.topology).features;
+
+            drawGraticules();
+            draw();
+    });
 
     function draw() {
         svg.selectAll("g.country")
@@ -49,6 +58,13 @@
                 .attr("class","country")
                     .append("path")
                     .attr('d', geoPath)
+    }
+
+    function drawGraticules() {
+        console.log(d3.geoGraticule10())
+        svg.append("path").attr("class","graticule")
+           .datum(d3.geoGraticule10())
+           .attr('d', geoPath)
     }
 </script>
 

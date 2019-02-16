@@ -15,16 +15,9 @@
 
     const svg = d3.select("body").append("svg")
             .attr("width", width).attr("height", height);
-    const globe = svg.append("g")
-            .attr("class","globe");
-
-    // choose a projection
-    const projection = d3.geoOrthographic().precision(1);
-
-    // create a path generator function for the projection
-    const geoPath = d3.geoPath()
-            .projection(projection);
-
+    const globe = svg.append("g").attr("class","globe");
+    const projection = d3.geoOrthographic();
+    const geoPath = d3.geoPath().projection(projection);
     const map = {};
 
     d3.json('../Data/' + file)
@@ -37,42 +30,47 @@
 
                 drawGraticules();
                 draw();
+
+                svg.append("rect").style("fill", "none")
+                        .attr("pointer-events", "all")
+                        .attr("width", width)
+                        .attr("height", height)
+                        .call(zoom);
             });
 
     const zoom = d3.zoom()
             .scaleExtent([1, 40])
-            .on('zoom', globe.attr("transform", d3.event.transform));
+            .on('zoom', zoomMap);
 
-    const rect = svg.append("rect").style("fill", "none")
-            .attr("pointer-events", "all")
-            .attr("width", width)
-            .attr("height", height)
-            .call(zoom);
+    function zoomMap() {
+        globe.attr("transform", d3.event.transform);
+        d3.selectAll("path.country")
+                .style("stroke-width", .25/d3.event.transform.k);
+    }
 
     function draw() {
-        globe.selectAll("g.country")
+        globe.selectAll("path")
                 .data(map.features)
                 .enter()
-                .append("g")
+                .append("path")
                 .attr("class","country")
+                .attr("d", geoPath)
                 .style("fill", 'gray')
-                    .append("path")
-                    .attr('d', geoPath)
-                    .style("stroke", "white")
-                    .style('stroke-width', '.25');
+                .style("stroke", "white")
+                .style("stroke-width", .25);
     }
 
     function drawGraticules() {
         globe.append("path").attr("class","background")
                 .datum({type: 'Sphere'})
-                .style("fill", 'lightblue')
-                .attr('d', geoPath);
+                .attr("d", geoPath)
+                .style("fill", 'lightblue');
         globe.append("path").attr("class","graticule")
                 .datum(d3.geoGraticule10())
+                .attr("d", geoPath)
                 .style("fill", 'none')
-                .attr('d', geoPath)
                 .style("stroke", "green")
-                .style('stroke-width', '.25');
+                .style("stroke-width", '.25');
     }
 </script>
 

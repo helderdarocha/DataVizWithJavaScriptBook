@@ -67,6 +67,7 @@
     const format = d3.format(',.0f')
 
     function showArea(d) {
+        console.log(d)
         console.log('area', geoPath.area(d), d3.geoArea(d))
 
         const steradians = 4 * Math.PI; // steradians in a perfect sphere

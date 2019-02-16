@@ -74,7 +74,7 @@
                 .attr("d", geoPath);
 
         svg.append("g").attr("class","background")
-                .datum(d3.geoGraticule().outline())
+                .datum({type: "Sphere"})
                 .append("path")
                 .attr("clip-path", "url(#clip)") // clipping
                 .attr('d', geoPath)
