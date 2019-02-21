@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/topojson-client"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+</head>
+<body>
+<script>
+    const width = 960;
+    const height = 500;
+    const file = "world-medres.topojson";
+    const key  = "world";
+
+    const svg = d3.select("body").append("svg")
+            .attr("width", width).attr("height", height);
+
+    const defs = svg.append("defs");
+    defs.append("filter")
+            .attr("id","blur")
+            .append("feGaussianBlur")
+            .attr("in", "SourceGraphic")
+            .attr("stdDeviation", 2);
+
+    // choose a projection
+    const projection = d3.geoWinkel3();
+
+    // create a path generator function for the projection
+    const geoPath = d3.geoPath()
+            .projection(projection);
+
+    const map = {};
+
+    d3.json('../Data/' + file)
+            .then(function(topology) {
+                //console.log(topology); // TopoJSON topology
+
+                map.topology   = topology.objects[key];
+                map.geometries = map.topology.geometries;
+                map.features   = topojson.feature(topology, map.topology).features;
+
+                drawBackgroundCircle();
+                drawGraticules();
+                draw();
+                drawForegroundOutline();
+                drawShadow();
+
+            });
+
+    function drawShadow() {
+        svg.append("path").attr("class","west")
+                .datum(d3.geoCircle().center([-90,-23.5]))
+                .attr('d', geoPath)
+                .attr("filter", "url(#blur)")
+                .style("fill", "rgb(0%,0%,0%,.4)");
+    }
+
+    function drawBackgroundCircle() {
+        svg.append("path").attr("class","background")
+                .datum({type: "Sphere"})
+                .attr('d', geoPath)
+                .style("fill", "white");
+    }
+
+    function drawForegroundOutline() {
+        svg.append("path").attr("class","outline")
+                .datum({type: "Sphere"})
+                .attr('d', geoPath)
+                .style("stroke", "black")
+                .style("fill", "none")
+                .style('stroke-width', 3);
+    }
+
+    function draw() {
+        svg.selectAll("g.country")
+                .data(map.features)
+                .enter()
+                .append("g")
+                .attr("class","country")
+                .style("fill", 'gray')
+                .style("fill-opacity", .7)
+                    .append("path")
+                    .attr('d', geoPath)
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
+    }
+
+    function drawGraticules() {
+        // drawing parallels (hemispheres) using d3.geoCircle()
+
+        svg.append("path").attr("class","tropic-cancer")
+                .datum(d3.geoCircle().center([0,90]).radius(66.5))
+                .attr('d', geoPath)
+                .style("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .style("fill", "purple")
+                .style("fill-opacity", .2)
+                .style('stroke-width', 1)
+
+        svg.append("path").attr("class","tropic-capricorn")
+                .datum(d3.geoCircle().center([0,-90]).radius(66.5))
+                .attr('d', geoPath)
+                .style("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .style("fill", "purple")
+                .style("fill-opacity", .2)
+                .style('stroke-width', 1)
+
+        svg.append("path").attr("class","antarctic-circle")
+                .datum(d3.geoCircle().center([0,-90]).radius(23.5))
+                .attr('d', geoPath)
+                .style("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .style("fill", "hsl(240,100%,90%")
+                .style('stroke-width', 1)
+                .style('stroke-opacity', .6);
+
+        svg.append("path").attr("class","arctic-circle")
+                .datum(d3.geoCircle().center([0,90]).radius(23.5))
+                .attr('d', geoPath)
+                .style("stroke", "purple")
+                .style("stroke-dasharray", "5 5")
+                .style("fill", "hsl(240,100%,90%")
+                .style('stroke-width', 1)
+                .style('stroke-opacity', .6);
+
+        svg.append("path").attr("class","graticule")
+                .datum(d3.geoGraticule10())
+                .style("fill", 'none')
+                .attr('d', geoPath)
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
+
+        svg.append("path").attr("class","northern-hemisphere")
+                .datum(d3.geoCircle().center([0,90]))
+                .attr('d', geoPath)
+                .style("stroke", "blue")
+                .style("fill", "cyan")
+                .style("fill-opacity", .1)
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
+
+        svg.append("path").attr("class","western-hemisphere")
+                .datum(d3.geoCircle().center([-90,0]))
+                .attr('d', geoPath)
+                .style("stroke", "red")
+                .style("fill", "red")
+                .style("fill-opacity", .1)
+                .style('stroke-width', 3)
+                .style('stroke-opacity', .2);
+
+    }
+
+</script>
+
+</body>
+</html>

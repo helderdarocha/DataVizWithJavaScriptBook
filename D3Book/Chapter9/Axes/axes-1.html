@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        svg {
+            border: solid 1px lightgray;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const scale = d3.scaleLinear().range([0,250]);
+    const axis1 = d3.axisBottom(scale);
+    axis1(d3.select("body").append("svg").append("g"));
+</script>
+</body>
+</html>

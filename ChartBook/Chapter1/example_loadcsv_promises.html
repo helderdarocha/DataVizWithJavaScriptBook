@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    let dataArray = [];
+    $.ajax({
+        url: 'Data/file.csv',
+        success: function(data){
+            let values = data.split("\n")[1].split(",");
+            for(let i = 0; i < values.length; i++) {
+                dataArray.push(+values[i]);
+            }
+            showData(dataArray);
+        }
+    });
+
+    function showData(array) {
+        console.log(array);
+    }
+
+
+</script>
+
+
+<h1>File loading example using ES2015 Promises</h1>
+<p>Open a JavaScript console to see the results.</p>
+
+</body>
+</html>

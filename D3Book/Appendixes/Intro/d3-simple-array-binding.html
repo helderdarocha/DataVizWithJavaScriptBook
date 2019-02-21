@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <style>
+        circle {
+            stroke-width: 1;
+            opacity: .95;
+        }
+        text {
+            fill: white;
+            font-size: 8pt;
+            font-family: sans-serif;
+        }
+        svg {
+            background: black;
+            padding: 50px 50px 15px 0px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    var colors = [
+        "red",
+        "gold",
+        "blue",
+        "orangered",
+        "lightgray",
+        "goldenrod",
+        "coral",
+        "lightseagreen",
+        "deepskyblue",
+        "orange",
+        "brown",
+        "red",
+        "brown"
+    ];
+
+    var dataset = [
+        [
+            {"planet": "Mercury", "diameter": 4800},
+            {"planet": "Venus", "diameter": 12100},
+            {"planet": "Earth", "diameter": 12700},
+            {"planet": "Mars", "diameter": 6700}
+        ],
+        [
+            {"planet": "Ceres", "diameter": 1000}
+        ],
+        [
+            {"planet": "Jupiter", "diameter": 140000},
+            {"planet": "Saturn", "diameter": 116000},
+            {"planet": "Uranus", "diameter": 51000},
+            {"planet": "Neptune", "diameter": 49000}
+        ],
+        [
+            {"planet": "Pluto", "diameter": 2300},
+            {"planet": "Eris", "diameter": 2300},
+            {"planet": "Haumea", "diameter": 1900},
+            {"planet": "Makemake", "diameter": 1400}
+        ]
+    ];
+
+    var height = 250, width = 1000, space = 20;
+
+    sortedDataset = d3.merge(dataset).sort(function(a,b) {
+        return d3.ascending(a.diameter,b.diameter);
+    })
+
+    d3.select("body").append("ul").selectAll("li")
+            .data(d3.merge(dataset))
+            .enter()
+            .append("li")
+            .text(function(d) {
+                return d.planet;
+
+             });
+
+
+
+
+</script>
+
+
+</body>
+</html>

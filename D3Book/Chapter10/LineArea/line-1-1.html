@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Line</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width  = 900;
+    const height = 600;
+
+    const data = [
+        {source: {x: 0, y: 0}, target: {x: 100, y: 200}},
+        {source: {x: 100, y: 200}, target: {x: 200, y: 400}},
+        {source: {x: 200, y: 400}, target: {x: 300, y: 150}}
+    ]
+
+    const pairs = [];
+    data.forEach(function(d) {
+        pairs.push([d.source.x, d.source.y]);
+        if(pairs.length > 1 && ""+pairs[pairs.length-1] == ""+pairs[pairs.length-2]) {
+            pairs.pop();
+        }
+        pairs.push([d.target.x, d.target.y]);
+    });
+
+    console.log(pairs);
+
+    const line = d3.line();
+
+    const svg = d3.select("body").append("svg").attr("height",height).attr("width",width);
+    const g = svg.append("g").datum(pairs);
+    g.append("path")
+            .attr("d", line)
+            .attr("stroke", "red")
+            .attr("fill", "none")
+    g.selectAll("text")
+                .data(d => d)
+                .enter()
+                .append('text')
+                .text(d => d)
+                .attr('x',d => d[0] + 10)
+                .attr("y",d => d[1] + 10)
+
+
+</script>
+</body>
+</html>

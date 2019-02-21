@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v2.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    <style>
+        .bar-chart {
+            position: relative;
+            width: 800px;
+        }
+        .entry {
+            position: absolute;
+            width: 100%;
+        }
+        .bar {
+            height: 20px;
+            top: 1px;
+            left: 100px;
+            background-color: orange;
+            position: absolute;
+        }
+        .label {
+            padding: 4px 5px;
+            font-family: sans-serif;
+            font-size: 9pt;
+            position: absolute;
+            height: 20px;
+
+        }
+        .category {
+            text-align: right;
+            width: 80px;
+        }
+        .value {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>Distance from the Sun</h1>
+
+<script>
+
+    let distances = [
+        {name: "Mercury", distance: 0.387},
+        {name: "Venus", distance: 0.723},
+        {name: "Earth", distance: 1},
+        {name: "Mars", distance: 1.52},
+        {name: "Jupiter", distance: 5.2},
+        {name: "Saturn", distance: 9.54},
+        {name: "Uranus", distance: 19.2},
+        {name: "Neptune", distance: 30.1},
+        {name: "Ceres", distance: 2.765},
+        {name: "Pluto", distance: 39.481},
+        {name: "Eris", distance: 67.67},
+        {name: "Haumea", distance: 43},
+        {name: "Makemake", distance: 45.346}
+    ];
+
+    distances.sort(function(a,b) {
+        return d3.ascending(a.distance, b.distance);
+    });
+
+    let barScale = d3.scaleLinear();
+    barScale.domain([0, d3.max(distances, function(d) {
+        return d.distance;
+    })]);
+    barScale.range([0, 600]);
+
+    let format = d3.format(".2f");
+
+    let chart =
+        d3.select("body")
+            .append("div")
+            .attr("class", "bar-chart")
+            .style("height", function() {
+                return (distances.length * 22) + "px";
+            });
+
+    let entries = chart.selectAll("div")
+                .data(distances)
+                .enter()
+                .append("div")
+                    .attr("class", "entry")
+                    .style("top", function(d, i) {
+                        return (i * 22) + "px";
+                    });
+
+    entries.each(function(d,i) {
+        d3.select(this).append("div")
+                .attr("class", "label category")
+                .text(function(d) {
+                    return d.name;
+                });
+        d3.select(this).append("div")
+                .attr("class", "bar")
+                .style("width", function(d) {
+                    return barScale(d.distance) + "px";
+                });
+        d3.select(this).append("div")
+                .attr("class", "label value")
+                .style("left", function(d, i) {
+                    return (barScale(d.distance) + 100) + "px";
+                })
+                .text(function(d) {
+                    return format(d.distance) + " AU";
+                });
+    })
+
+
+
+</script>
+</body>
+</html>

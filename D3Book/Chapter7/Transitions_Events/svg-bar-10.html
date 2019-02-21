@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .bar-chart {
+            border: solid 1px gray;
+        }
+        .bar {
+            fill: orange;
+        }
+        .label {
+            font-size: 9pt;
+        }
+        #container {
+            width: 90vw;
+        }
+    </style>
+</head>
+<body>
+<h1><span id="option">Average</span> distance from the Sun</h1>
+<div id="container">
+    <svg class="bar-chart"></svg>
+</div>
+<form>
+    <button type="button" id="avg">Average</button>
+    <button type="button" id="max">Maximum</button>
+    <button type="button" id="min">Minimum</button>
+</form>
+
+<script>
+
+    const AVG = 0, MAX = 1, MIN = 2;
+    let keys = ["avg", "max", "min"];
+    let options = ["Average", "Maximum", "Minimum"];
+    let colors  = ["orange", "blue", "red"];
+
+    let current = AVG;
+
+    let barScale = d3.scaleLinear().range([0, 600]);
+    let colorScale = d3.scaleLinear().range([0, 1]);
+    let format = d3.format(".2f");
+
+    let planets = [];
+
+    let svg = d3.select("svg.bar-chart");
+
+    d3.selectAll("button")
+            .on("click", function() {
+                current = keys.indexOf(this.id);
+                draw(true);
+            });
+
+    function draw(update) {
+
+        //svg.selectAll("g").remove();
+        d3.selectAll("button").property("disabled", false);
+        d3.select("#"+keys[current]).property("disabled", true);
+
+        d3.select("#option").text(options[current]);
+
+        planets.sort(function (a, b) {
+            return d3.ascending(a[keys[current]], b[keys[current]]);
+        });
+
+        barScale.domain([0, d3.max(planets, function (d) {
+            return d[keys[current]];
+        })]);
+
+        colorScale.domain([0, d3.max(planets, function (d) {
+            return d[keys[current]];
+        })]);
+
+        svg.attr("viewBox", function() {
+            return "0 0 800 " + (planets.length * 21);
+        })
+        .style("width", '100%')
+        .style("height", function () {
+            return (planets.length * 21) + "px";
+        });
+
+        let entries = [];
+        if(!update) {
+            entries = svg.selectAll("g").data(planets).enter().append("g")
+                .attr("class", "entry")
+                .attr("transform", function (d, i) {
+                    return 'translate(0,' + (i * 21) + ')';
+                });
+        } else {
+            entries = svg.selectAll("g").data(planets);
+        }
+
+        entries.each(function (d, i) {
+            if (!update) {
+                d3.select(this).append("text")
+                    .attr("class", "label category")
+                    .attr("y", 15)
+                    .attr("x", 100 - 10)
+                    .attr("text-anchor", 'end')
+                    .text(function (d) {
+                        return d.name;
+                    });
+                d3.select(this).append("rect")
+                    .attr("class", "bar")
+                    .attr("x", 100)
+                    .attr("height", 20)
+                    .attr("width", function (d) {
+                        return barScale(d[keys[current]]);
+                    })
+                    .style("fill", function (d) {
+                        return d3.color(colors[current]).darker(colorScale(d[keys[current]]));
+                    });
+                d3.select(this).append("text")
+                    .attr("class", "label value")
+                    .attr("y", 15)
+                    .attr("x", function (d, i) {
+                        return barScale(d[keys[current]]) + 100 + 5;
+                    })
+                    .text(function (d) {
+                        return format(d[keys[current]]) + " AU";
+                    });
+            } else {
+                d3.select(this)
+                    .select(".label.category")
+                        .transition()
+                    .text(function (d) {
+                        return d.name;
+                     });
+                d3.select(this)
+                    .select(".bar")
+                        .transition()
+                    .attr("width", function (d) {
+                        return barScale(d[keys[current]]);
+                    })
+                    .style("fill", function (d) {
+                        return d3.color(colors[current]).darker(colorScale(d[keys[current]]));
+                    });
+                d3.select(this)
+                    .select(".label.value")
+                        .transition()
+                    .attr("x", function (d, i) {
+                        return barScale(d[keys[current]]) + 100 + 5;
+                    })
+                    .text(function (d) {
+                        return format(d[keys[current]]) + " AU";
+                    });
+            }
+        });
+    }
+
+    d3.json("../Data/sol_2016.json").then(function(data) {
+
+        data.planets.forEach(function(obj) {
+            planets.push({
+                name: obj.name,
+                avg: obj.semiMajorAxisAU,
+                max: obj.apheliumAU,
+                min: obj.periheliumAU});
+        });
+        draw(false);
+    });
+
+
+</script>
+</body>
+</html>

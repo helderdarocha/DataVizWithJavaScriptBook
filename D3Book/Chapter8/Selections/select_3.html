@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selection examples</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <style>
+        #workspace {
+            border: solid 1px red;
+            width: 200px;
+            height: 200px;
+        }
+        .large {
+            font-size: 200%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="workspace"></div>
+<p>One</p>
+<p>Two</p>
+<p>Three</p>
+
+<script>
+    var workspace = d3.select("#workspace");
+
+    var paras = d3.selectAll("p"); // allows illegal nesting!
+    paras.insert("p", "div")
+            .text("Clone para");
+
+    d3.select("p")
+            .insert("p", "div")
+            .text("Other")
+            .insert("p", "div")
+            .text("Boo");
+    workspace.append("p").text("Last");
+
+    console.log(workspace.node());
+    console.log(paras.node());
+
+    console.log(d3.version);
+</script>
+</body>
+</html>

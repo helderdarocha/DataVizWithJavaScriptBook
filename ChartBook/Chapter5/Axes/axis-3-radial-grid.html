@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.6.0/papaparse.min.js"></script>
+</head>
+<body>
+
+<canvas id="my-chart" width="900" height="500"></canvas>
+
+<script>
+    const dataset = [];
+    for(let i = 1; i <= 10; i+= 1) {
+        const n = Math.random() * i;
+        dataset.push(n);
+    }
+
+    const dataObj = {
+        labels: ['7-7', '7-8', '7-13', '7-16', '7-20', '7-26', '7-31', '8-4', '8-9', '8-12'],
+        datasets: [
+            {
+                data: dataset,
+                pointRadius: 5,
+                borderColor: 'hsla(0,100%,25%,1)',
+                backgroundColor: 'hsla(0,100%,75%,.5)'
+            }
+        ]
+    }
+
+    const chartObj = {
+        type: "radar",
+        data: dataObj,
+        options: {
+            scale: {
+                ticks: {
+                    backdropColor: 'white',
+                    stepSize: 1,
+                    showLabelBackdrop: true,
+                    display: true,
+                    reverse: true,
+
+                },
+                angleLines: {
+                    lineWidth: 2,
+                    color: 'rgba(0,0,255,.1)',
+                    //display: false
+                },
+                gridLines: {
+                    lineWidth: 2,
+                    color: 'rgba(0,255,0,.2)',
+                    //display: false,
+                    borderDash: [5,5],
+                    drawBorder: true,
+                    drawOnChartArea: true,
+                    drawTicks: true,
+                    tickMarkLength: 50,
+                    zeroLineWidth: 5,
+                    zeroLineBorderDash: [10,10],
+                    offsetGridLines: true,
+                },
+                pointLabels: {
+                    display: true,
+                    fontSize: 14,
+                    fontColor: 'blue'
+                }
+            }
+        }
+    };
+    new Chart("my-chart", chartObj);
+
+</script>
+
+</body>
+</html>

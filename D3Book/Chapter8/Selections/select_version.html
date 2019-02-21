@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1. Selection 1 - My examples</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        #workspace {
+            border: solid 1px red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="workspace"></div>
+<p>One</p>
+<p>Two</p>
+<p>Three</p>
+
+<script>
+    var workspace = d3.select("#workspace");
+    console.log(workspace);
+    console.log(d3.select("body").node().children[0]);
+
+    var paras = d3.selectAll("p");
+    console.log(paras.nodes().length);
+
+    paras.style("font-family", "sans-serif");
+    paras.style("color", function(d, i) {
+        if(i % 2 == 0) return "red";
+        console.log(d);
+    });
+
+    console.log(d3.version);
+</script>
+</body>
+</html>

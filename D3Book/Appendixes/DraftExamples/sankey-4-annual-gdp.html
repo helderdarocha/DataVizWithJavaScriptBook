@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/d3-sankey"></script>
+    <style>
+        text {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 10px;
+            alignment-baseline: middle;
+            text-anchor: middle;
+            fill: black;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const width = 1000;
+    const height = 600;
+    const margin = 100;
+
+    const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const links = [];
+    const nodes = [];
+    const annualGdpMap = new Map();
+
+    d3.json("../Data/annual_gdp_current_usd.json").then(function(data) {
+
+        for(let year = 1995; year <= 2015; year +=5) {
+            for(let rank = 1; rank <= 10; ++rank) {
+                nodes.push({year: year, rank: rank});
+            }
+            annualGdpMap.set(year, data.sort((a,b) =>
+                d3.descending(a.Values.filter(k => k.Year == year)[0].GDP,
+                              b.Values.filter(k => k.Year == year)[0].GDP)).filter((d,i) => i < 10));
+        }
+
+        for(let year = 1995; year <= 2010; year +=5) {
+            const annualData = annualGdpMap.get(year);
+            for(let rank = 1; rank <= 10; ++rank) {
+                const item = annualData[rank-1];
+                console.log((year+5) + ':' + (annualGdpMap.get(year+5).map(k => k.Country).indexOf(item.Country)+1))
+
+                const link = {
+                    source: nodes.map(k => k.year + ':' + k.rank).indexOf(year + ':' + rank),
+                    target: nodes.map(k => k.year + ':' + k.rank).indexOf((year+5) + ':' + (annualGdpMap.get(year+5).map(k => k.Country).indexOf(item.Country)+1)),
+                    value:  item.Values.filter(v => v.Year == year)[0].GDP
+                };
+
+                if(link.target >= 0) {
+                    links.push(link);
+                }
+            }
+        }
+
+        console.log(links)
+
+        color.domain([0, nodes.length]);
+
+        const sankey = d3.sankey()
+                .nodePadding(20)
+                .nodeWidth(30)
+                .extent([[margin/2, margin/2], [width-margin, height-margin]])
+                .nodeAlign(d3.sankeyRight)
+                .iterations(300);
+
+        const graph = sankey({nodes: nodes, links: links});
+        console.log(graph)
+
+        draw(graph);
+    });
+
+    function draw(graph) {
+        const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
+        const chart = svg.append("g");
+
+        chart.selectAll('path')
+            .data(graph.links)
+            .enter()
+            .append('path')
+            .attr('d', d3.sankeyLinkHorizontal())
+            .attr('stroke', 'red')
+            .attr("opacity", .5)
+            .attr('stroke-width', d => d.width)
+            .attr('stroke', d => color(d.source.index))
+            .attr('fill', 'none');
+
+        chart.selectAll('rect')
+            .data(graph.nodes)
+            .enter()
+            .append('rect')
+            .attr('x', d => d.x0)
+            .attr('y', d => d.y0)
+            .attr('width', d => d.x1 - d.x0)
+            .attr('height', d => d.y1 - d.y0)
+            .attr('fill', (d,i) => color(i));
+
+        chart.selectAll('text')
+            .data(graph.nodes)
+            .enter()
+            .append('text')
+            .attr('x', d => (d.x1 + d.x0)/2)
+            .attr('y', d => (d.y1 + d.y0)/2 + 2)
+            .text(d => d.year + "." + d.rank);
+
+    }
+
+    function contrast(color) {
+        const c = d3.rgb(color);
+        return (c.r * 0.299 + c.g * 0.587 + c.b * 0.114) > 130 ? 'black' : 'white';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML fetching and data</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+<p>See console for results.</p>
+
+<script>
+
+    fetch("../Data/things.csv")
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(data) {
+            console.log(data);
+
+            let parsed = d3.csvParse(data);
+            console.log(parsed);
+
+            var bars = d3.select("div").selectAll("p");
+            bars.data([5, 10, 15]);
+            bars.enter();
+
+            console.log(bars);
+            console.log(bars._groups[0][0].__data__);
+            console.log(bars._groups[0][1].__data__);
+            console.log(bars._groups[0][2].__data__);
+
+            console.log(d3.version);
+        });
+
+</script>
+</body>
+</html>

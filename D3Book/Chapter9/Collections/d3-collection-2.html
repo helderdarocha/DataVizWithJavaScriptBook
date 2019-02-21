@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+</head>
+<body>
+<p>See Console log for results</p>
+<script>
+    let esmap = new Map();
+    esmap.set("A", 108);
+    esmap.set("B", 109);
+    esmap.set("C", 110);
+
+    const entries = [['A',108],['B',109],['C',110]];
+
+    let esmap2 = new Map(entries);
+    esmap2.set("D", 111);
+
+    let d3map = d3.map();
+    d3map.set("A", 108);
+    d3map.set("B", 109);
+    d3map.set("C", 110);
+
+    const object = {A: 108, B: 109, C: 110};
+
+    let d3map2 = d3.map(object);
+    d3map2.set("D", 111);
+
+    const array = [3,7,5,3,2,3,4,3,2,3,6];
+    const set = d3.set(array);
+    console.log("set", set);
+    console.log("set", set.values());
+
+    console.log("ES Map 1", esmap);
+    console.log("ES Map 2", esmap2);
+
+    console.log("D3 Map 1", d3map);
+    console.log("D3 Map 2", d3map2);
+
+
+</script>
+</body>
+</html>

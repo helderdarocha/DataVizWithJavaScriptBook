@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>General Update</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        #workspace {
+            border: solid 1px red;
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="workspace">
+    <p>a</p>
+    <p>b</p>
+    <p>c</p>
+    <h1>A</h1>
+    <h1>B</h1>
+    <h1>C</h1>
+</div>
+
+
+<script>
+    var bars = d3.select("div").selectAll("p"); // exit is 3 (0 extra nodes)
+    var datasetp = bars.data([5, 10, 15, 9, 2]); // enter is 5 (2 extra nodes) - 5 to update
+
+    datasetp.enter().append("p").merge(datasetp).text(function(d) {
+        return d;
+    }).style("color", "red");
+
+    var titles = d3.select("div").selectAll("h1"); // exit is 3 (2 extra nodes)
+    var dataseth = titles.data(["Title"]); // enter is 1 (0 extra nodes) - 1 to update
+    dataseth.style("color", "blue").text(function(d) { return d; }).exit().remove();
+
+    console.log(d3.version);
+
+</script>
+</body>
+</html>

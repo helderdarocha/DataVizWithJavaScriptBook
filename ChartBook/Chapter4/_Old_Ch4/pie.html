@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js">
+    </script>
+</head>
+<body>
+
+<canvas id="my-pie-chart" width="400" height="200"></canvas>
+
+<script>
+    let dataObj = {
+        labels: ["Liquid fuels", "Solid fuels", "Gaseous fuels", "Cement production", "Cement production"],
+        datasets: [
+            {
+                data: [36,35,20,3,6],
+                backgroundColor: ['red', 'blue', 'yellow', 'green', 'gray'],
+            }
+        ]
+    }
+
+    let chartObj = {
+        type: "pie",
+        data: dataObj,
+        options: {
+            legend: {
+                position: 'right'
+            }
+        }
+    };
+    new Chart("my-pie-chart", chartObj);
+</script>
+
+</body>
+</html>

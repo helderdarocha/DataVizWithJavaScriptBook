@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <style>
+        svg {border: solid 1px gray;}
+    </style>
+</head>
+<body>
+<script>
+    const width = 960;
+    const height = 500;
+    const file = "world-medres.geojson";
+
+    const color = d3.scaleOrdinal(d3.schemeGreens[9]);
+
+    const svg = d3.select("body").append("svg")
+            .attr("width", width).attr("height", height);
+    const defs = svg.append("defs");
+
+    // choose a projection
+    const projection = d3.geoInterruptedHomolosine()
+            .fitExtent([[10,10], [width-20, height-20]], {type: "Sphere"});
+
+    // create a path generator function for the projection
+    const geoPath = d3.geoPath()
+            .projection(projection);
+
+    // configure graticule
+    const graticule = d3.geoGraticule().extent(d3.geoGraticule().extentMajor());
+
+    const map = {};
+
+    d3.json('../Data/' + file)
+            .then(function(data) {
+
+                map.features   = data.features
+
+                drawGraticules();
+                draw();
+            });
+
+    function draw() {
+        svg.selectAll("g.country")
+                .data(map.features)
+                .enter()
+                .append("g")
+                .attr("class","country")
+                .attr("clip-path", "url(#clip)") // clipping
+                .style("fill", (d,i) => d3.rgb(color(i)).darker())
+                .style("fill-opacity", .9)
+                    .append("path")
+                    .attr('d', geoPath)
+                    .style("stroke", "white")
+                    .style('stroke-width', '.25');
+
+        svg.append("path")
+                .datum({type: "Sphere"})
+                .style('fill', 'none')
+                .style('stroke', 'darkgreen')
+                .style('stroke-width', 2)
+                .attr("d", geoPath);
+    }
+
+    function drawGraticules() {
+
+        // clipping for interrupted projection
+        defs.append("clipPath").attr("id", "clip")
+                .append("path")
+                .datum({type: "Sphere"})
+                .attr("d", geoPath);
+
+        svg.append("g").attr("class","background")
+                .datum({type: "Sphere"})
+                .append("path")
+                .attr("clip-path", "url(#clip)") // clipping
+                .attr('d', geoPath)
+                .style("stroke", "black")
+                .style("fill", "aquamarine")
+                .style("fill-opacity", .2)
+                .style('stroke-width', 3);
+
+        svg.append("g").attr("class","equator")
+                .datum(d3.geoCircle().center([0,90]))
+                .append("path")
+                .attr('d', geoPath)
+                .style("stroke", "gray")
+                .style("fill", "none")
+                .style('stroke-width', 1)
+                .style('stroke-opacity', .5);
+
+        svg.append("g").attr("class","graticule")
+                .datum(graticule())
+                .style("fill", 'none')
+                .attr("clip-path", "url(#clip)") // clipping
+                .append("path")
+                .attr('d', geoPath)
+                .style("stroke", "green")
+                .style('stroke-width', '.25');
+    }
+</script>
+
+</body>
+</html>

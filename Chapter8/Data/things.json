@@ -1,7 +1,0 @@
-[
-  {"name": "Bat", "size": 15, "flies": true},
-  {"name": "Cat", "size": 3, "flies": false},
-  {"name": "Bird", "size": 9, "flies": true},
-  {"name": "Whale", "size": 87, "flies": false},
-  {"name": "Fly", "size": 1, "flies": true}
-]
