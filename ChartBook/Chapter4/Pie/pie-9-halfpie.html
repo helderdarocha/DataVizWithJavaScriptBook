@@ -14,7 +14,7 @@
 
 <script>
 
-    const numberOfEntries = 6;
+    const numberOfEntries = 2;
 
     fetch('../Data/WPP2017_UN.csv')
         .then(response => response.text())
@@ -64,7 +64,7 @@
             data: dataObj,
             options: {
                 circumference: Math.PI,
-                rotation: Math.PI / 2,
+                rotation: Math.PI/2,
                 title: {
                     display: true,
                     position: 'left',

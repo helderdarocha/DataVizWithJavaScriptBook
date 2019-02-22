@@ -11,49 +11,49 @@
 
 <script>
 
-        const dataset1 = [], dataset2 = [];
-        for(let i = 0; i <= 360; i+= 5) {
-            const point1 = {
-                x: i,
-                y: Math.sin(i * Math.PI / 180)
-            }
-            const point2 = {
-                x: i,
-                y: Math.cos(i * Math.PI / 180)
-            }
-            dataset1.push(point1);
-            dataset2.push(point2);
+    const dataset1 = [], dataset2 = [];
+    for(let i = 0; i <= 360; i+= 5) {
+        const point1 = {
+            x: i,
+            y: Math.sin(i * Math.PI / 180)
         }
-
-        const dataObj = {
-            datasets: [
-                {
-                    label: 'Sine function',
-                    data: dataset1,
-                    pointRadius: 2,
-                    backgroundColor: 'red'
-                },
-                {
-                    label: 'Cosine function',
-                    data: dataset2,
-                    pointRadius: 2,
-                    backgroundColor: 'blue'
-                }
-            ]
+        const point2 = {
+            x: i,
+            y: Math.cos(i * Math.PI / 180)
         }
+        dataset1.push(point1);
+        dataset2.push(point2);
+    }
 
-        const chartObj = {
-            type: "scatter",
-            data: dataObj,
-            options: {
-                legend: {
-                    display: false
-                },
-
-
+    const dataObj = {
+        datasets: [
+            {
+                label: 'Sine function',
+                data: dataset1,
+                pointRadius: 2,
+                backgroundColor: 'red'
+            },
+            {
+                label: 'Cosine function',
+                data: dataset2,
+                pointRadius: 2,
+                backgroundColor: 'blue'
             }
-        };
-        new Chart("my-scatter-chart", chartObj);
+        ]
+    }
+
+    const chartObj = {
+        type: "scatter",
+        data: dataObj,
+        options: {
+            legend: {
+                display: false
+            },
+
+
+        }
+    };
+    new Chart("my-scatter-chart", chartObj);
 
 </script>
 

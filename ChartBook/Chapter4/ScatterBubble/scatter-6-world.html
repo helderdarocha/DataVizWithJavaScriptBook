@@ -12,12 +12,9 @@
 <canvas id="my-scatter-chart" width="1000" height="500"></canvas>
 
 <script>
-    fetch('../Data/cities15000.csv')
-            .then(response => response.text())
-    .then((csv) => {
-        const data = Papa.parse(csv, {header: true});
-        drawData(data.data);
-    });
+    fetch('../Data/cities15000.csv').then(response => response.text())
+    .then(csv => drawData(Papa.parse(csv, {header: true}).data));
+
 
     function drawData(datasets) {
         const locations = [];
@@ -45,16 +42,10 @@
             type: "scatter",
             data: dataObj,
             options: {
-                animation: {
-                    duration: 0
-                },
-                title: {
-                    display: false
-                },
+                animation: { duration: 0 },
+                title: { display: false },
                 responsive: false,
-                legend: {
-                    display: false
-                },
+                legend: { display: false },
                 scales: {
                     xAxes: [
                         {

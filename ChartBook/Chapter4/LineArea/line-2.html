@@ -28,17 +28,18 @@
         labels: labels,
         datasets: [{
             data: values,
-            borderColor: 'hsla(300,100%,50%,1)'
+            borderColor: 'hsla(300,100%,50%,1)',
+            backgroundColor: 'transparent'
         }]
     }
 
-    Chart.defaults.global.elements.line.fill = false;
+    // Removes the fill under any lines - this is better than backgroundColor: 'transparent'
+    // Chart.defaults.global.elements.line.fill = false;
 
     const chartObj = {
         type: "line",
         data: dataObj,
         options:{
-            maintainAspectRatio: false,
             legend: {
                 display: false
             }

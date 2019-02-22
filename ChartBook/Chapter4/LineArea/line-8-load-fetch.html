@@ -13,12 +13,9 @@
 <canvas id="my-line-chart" width="400" height="200"></canvas>
 
 <script>
-    // make one dataset of months for each year
-    // filter each 10th year
 
     const months =
             ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-
 
     fetch('../Data/monthly_json.json')
         .then(response => response.text())
@@ -37,14 +34,14 @@
                         dataMap.set(year, [{year: year, month: month, value: d.Mean}]);
                     }
                 });
+                console.log(dataMap);
                 draw(dataMap);
         });
 
-    function draw(datasetMap) {
+    function draw(dataMap) {
 
         const datasets = [];
-        let labels = [];
-        datasetMap.forEach((entry, key) => {
+        dataMap.forEach((entry, key) => {
             const dataset = {
                 label: key,
                 data: entry.map(n => n.value),
@@ -54,13 +51,10 @@
                 pointRadius: 0
             };
             datasets.push(dataset);
-            if(labels.length == 0) {
-                labels = entry.map(n => months[+n.month - 1]);
-            }
         });
 
         const dataObj = {
-            labels: labels,
+            labels: months,
             datasets: datasets
         }
 

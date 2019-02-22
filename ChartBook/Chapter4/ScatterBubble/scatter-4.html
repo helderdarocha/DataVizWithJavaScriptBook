@@ -11,7 +11,7 @@
 <canvas id="my-scatter-chart" width="1000" height="500"></canvas>
 
 <script>
-    var canvas = document.getElementById("my-scatter-chart");
+    const canvas = document.getElementById("my-scatter-chart");
 
     const files = ['../Data/monthly_json.json', '../Data/co2_mm_mlo.csv'];
     var promises = files.map(file => fetch(file).then(resp => resp.text()));
@@ -24,9 +24,9 @@
 
     function combine(tempData, co2Data) {
         const entries = [];
-        co2Data.filter(n => +n.year >= 1959).forEach(measurement => {
-            const year = measurement.year;
-            const month = measurement.month;
+        co2Data.filter(n => +n.year >= 1959).forEach(measure => {
+            const year = measure.year;
+            const month = measure.month;
             let temperature = 0;
             tempData.filter(n => n.Source == 'GISTEMP' && +n.Date.split("-")[0] >= 1959)
                     .forEach(temp => {
@@ -35,7 +35,7 @@
                         }
             });
             const entry = {
-                co2: measurement.average,
+                co2: measure.average,
                 temp: temperature
             }
             entries.push(entry);

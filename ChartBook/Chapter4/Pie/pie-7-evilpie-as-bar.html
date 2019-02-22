@@ -13,7 +13,7 @@
 
 <script>
 
-    const numberOfEntries = 20;
+    const numberOfEntries = 50;
 
     fetch('../Data/cities15000.csv')
             .then(response => response.text())
@@ -69,7 +69,12 @@
                     xAxes: [{
                         ticks: {
                             min: 0
-                        }
+                        },
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            fontSize: 10
+                        },
                     }]
                 },
                 tooltips: {
