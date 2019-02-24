@@ -46,9 +46,10 @@
             datasets: [
                 {
                     data: entries,
+                    type: 'scatter', // default for this chart
                     pointRadius: 4,
                     pointBorderWidth: .5,
-                    pointBackgroundColor: 'rgba(255,0,0,.2)',
+                    pointBackgroundColor: 'rgba(255,0,0,.4)',
                     borderWidth: 1,
                 },
                 {
@@ -63,22 +64,16 @@
             ]
         }
 
-        Chart.scaleService.updateScaleDefaults('linear', {
-            ticks: {
-                min: 0
-            }
-        });
-
         const chartObj = {
             type: "scatter",
             data: dataObj,
             options: {
                 scales: {
                     xAxes: [{
-                        //type: 'logarithmic'
+                        //type: 'linear' // default
                     }],
                     yAxes: [{
-                        //type: 'logarithmic'
+                        type: 'logarithmic'
                     }]
                 },
                 legend: {

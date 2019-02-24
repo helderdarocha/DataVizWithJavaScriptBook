@@ -37,19 +37,16 @@ const dataObj = {
             data: dataset1,
             pointRadius: 2,
             backgroundColor: 'red',
-            yAxisID: 'y-axis-1',
         },
         {
             data: dataset2,
             pointRadius: 2,
             backgroundColor: 'blue',
-            yAxisID: 'y-axis-1',
         },
         {
             data: dataset3,
             pointRadius: 2,
             backgroundColor: 'green',
-            yAxisID: 'y-axis-2',
         }
     ]
 }
@@ -64,14 +61,8 @@ const chartObj = {
         scales: {
             yAxes: [{
                 id: 'y-axis-1',
-                ticks: {
-                    min: -2,
-                    max: 2
-                },
-                scaleLabel: {
-                    display: true,
-                    labelString: "Left Axis"
-                },
+                ticks: {min: -2,max: 2},
+                scaleLabel: {display: true, labelString: "Left Axis"},
                 gridLines: {
                     zeroLineWidth: 2,
                     zeroLineBorderDash: [20, 5],
@@ -81,21 +72,13 @@ const chartObj = {
             },{
                 id: 'y-axis-2',
                 ticks: {min: -2, max: 2},
-                scaleLabel: {
-                    display: true,
-                    labelString: "Right Axis"
-                },
-                gridLines: {
-                    display: false
-                },
-                position: 'right',
+                scaleLabel: {display: true,labelString: "Right Axis"},
+                gridLines: {display: false},
+                position: 'right'
             }],
             xAxes: [{
                 ticks: {min: -4, max: 4},
-                scaleLabel: {
-                    display: true,
-                    labelString: "Top Axis"
-                },
+                scaleLabel: {display: true,labelString: "Top Axis"},
                 position: 'top'
             }],
         }
