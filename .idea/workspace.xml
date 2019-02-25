@@ -2,44 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-10-area.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-11-area.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-1-position-evil.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-2-callbacks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-3-radial-callbacks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-4-scaleService.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-2-weight.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-3-scaleLabel.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-4-ticks-style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-5-ticks-minmax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-6-grid-styles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-7-grid-styles.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-1-many-to-many.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-2-one-to-many.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-3-minmax.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-4-linear-scatter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-1-pointLabels-hide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-2-pointLabels-polar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-pointLabels-callback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-4-ticks.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-5-grid-angle-lines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scales-1-cartesian-display.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scales-2-radial-display.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Time/time-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Time/time-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Time/time-3.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-2-cartesian-grid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-3-radial-grid.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-4-lin-cat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-5-lin-cat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scale-4-time.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-1-multi-lin.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-1-position.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-6-log-scatter.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-5-log-scatter.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Axes/axis-7-log-scatter.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-6-log-scatter.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scale-1-linear.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-1-linear.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scale-2-log.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-2-log.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scale-3-log.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-3-log.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Scales/scale-5-grid.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-8-grid-minimal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-10-ajax-jquery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-11-ajax-jquery-json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-12-fetch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-13-fetch-json.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-14-jsonparse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-15-csvparse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-16.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-17.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2-external.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-4.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-7-selectors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/JavaScript.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/continents.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/example_loadcsv.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/example_loadcsv_jquery.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/example_loadcsv_promises.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SVG/Example.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SVG_Examples.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePageDOM.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePageDOM_Events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/cylindricalMap2.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/PlanetDay.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/PlanetDiameters.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDiameters.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/PlanetYear.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetYear.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/SolarSystemData.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/SolarSystemData.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/ThreeVariablesPlanets.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/ThreeVariablesPlanets.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/continents.json" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/continents.xml" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/file.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/day.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-9-ajax.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/CSS_Selectors.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-5-selectors.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/HTML_Canvas_Examples.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-8-canvas.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePageDOM_HTML.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage_Events.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage_Events_CSS_JQuery.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-6.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/cylindricalMap.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-18.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM.js" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM_Events.js" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM_Events.js" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,101 +64,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="radial-3-pointLabels-callback.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-pointLabels-callback.html">
+      <file leaf-file-name="example1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cartesian-2-weight.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-2-weight.html">
+      <file leaf-file-name="example3.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adv-1-position-evil.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-1-position-evil.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radial-5-grid-angle-lines.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-5-grid-angle-lines.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radial-2-pointLabels-polar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-2-pointLabels-polar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radial-1-pointLabels-hide.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-1-pointLabels-hide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="radial-4-ticks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-4-ticks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adv-2-callbacks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-2-callbacks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="62" column="84" selection-start-line="62" selection-start-column="84" selection-end-line="62" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cartesian-1-position.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-1-position.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="62" column="31" selection-start-line="60" selection-start-column="8" selection-end-line="83" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category-2-one-to-many.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Category/category-2-one-to-many.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="44" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -177,36 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-axes-pointLabels.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-axes-display.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-axes.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-axes-pointLabels-callback.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-axes-pointLabels-polar.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Common/axes-weight.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Common/axes-callback.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Common/radial-axis-callbacks.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Common/axes-callbacks.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Common/axes-scaleService.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/axes-weight.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/axes-position.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-axis-pointLabels.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/pie-1.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/category-correlation.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/category-correlation-callback.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/category-correlation-one-to-one.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/category-correlation-one-to-many.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/category-correlation-many-to-many.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-2-log.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-1-linear.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-3-log.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-3-scaleLabel.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-1-position.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/_Old/radial-pointLabel-string.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-grid.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-7-grid-styles.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-xx7-grid-styles.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-6-grid-styles.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-4-ticks-minmax.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-5-ticks-style.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-4-ticks-style.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-correlation-one-to-many.html" />
@@ -228,6 +121,36 @@
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-ticks.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-2-pointLabels-callback.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-grid-angle-lines.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Scraping/xpath_scraping.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/JavaScript.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage_Events_CSS_JQuery2.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.csv" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/csvParse.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/examples-canvas.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/cylindricalMap2.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-17.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-5-selectors.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-7-selectors.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-1.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM.js" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-3.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM_Events.js" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-6.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-8-canvas.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/day.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv_jquery.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-10-ajax.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-11-fetch.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-18.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.json" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-11-ajax-jquery-json.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-12-fetch.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-13-fetch-json.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-16.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-15-csvparse.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-14-jsonparse.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/SimplePageDOM_HTML.html" />
       </list>
     </option>
   </component>
@@ -241,8 +164,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1669" />
-    <option name="y" value="112" />
+    <option name="x" value="-1824" />
+    <option name="y" value="94" />
     <option name="width" value="1439" />
     <option name="height" value="794" />
   </component>
@@ -272,6 +195,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,9 +228,26 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ChartBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -321,18 +262,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Examples" />
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2" />
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Data" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Advanced" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Category" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Numeric" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Time" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Examples" />
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Data" />
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript" />
+      <recent name="$PROJECT_DIR$/ChartBook/Chapter2" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Radial" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Time" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Advanced" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Common" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.radial-4-ticks.html">
@@ -511,18 +452,20 @@
       <workItem from="1550766054129" duration="5880000" />
       <workItem from="1550797343627" duration="12688000" />
       <workItem from="1550853552595" duration="16259000" />
-      <workItem from="1550931994481" duration="32959000" />
+      <workItem from="1550931994481" duration="32990000" />
+      <workItem from="1551022385382" duration="7119000" />
+      <workItem from="1551119503327" duration="4691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2094368000" />
+    <option name="totallyTimeSpent" value="2106209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1669" y="112" width="1439" height="794" extended-state="0" />
+    <frame x="-1824" y="94" width="1439" height="794" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26485327" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27201146" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,7 +482,7 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3224432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -613,71 +556,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Scales/scales-1-cartesian-display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Scales/scales-2-radial-display.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-3-pointStyle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-3-log.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="81" column="27" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/pie-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/example-position.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/example-scaleLabel.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/continents.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -685,338 +564,426 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/polar-area-2.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-8-canvas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
+        <state relative-caret-position="337">
+          <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/radar-2.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/radial.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/radial-pointLabel.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv_jquery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="524">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/_Old/radial-pointLabel-string.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="41" column="61" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+        <state relative-caret-position="375">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-6-log-scatter.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv_promises.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/axes.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/file.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/rotate-ticks.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDiameters.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-2.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetYear.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-xx7-grid-styles.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/SolarSystemData.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/xx.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-7-selectors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        <state relative-caret-position="264">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-6-ticks-callback.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-9-ajax.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="457">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <marker date="1551123232368" expanded="true" signature="1293:1575" placeholder="..." />
+            <marker date="1551123232368" expanded="false" signature="1397:1417" placeholder="..." />
+            <marker date="1551123232368" expanded="false" signature="1477:1504" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-3-scaleLabel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-5-ticks-minmax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="66" column="13" selection-start-line="51" selection-start-column="12" selection-end-line="66" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Category/category-3-minmax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="41" column="21" selection-start-line="32" selection-start-column="20" selection-end-line="41" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Category/category-3-minmax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="41" column="21" selection-start-line="32" selection-start-column="20" selection-end-line="41" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Time/time-1-time.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="49" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Time/time-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Category/category-1-many-to-many.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="63" column="0" selection-start-line="10" selection-start-column="4" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Time/time-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="47" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Time/time-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="54" column="3" selection-start-line="13" selection-start-column="0" selection-end-line="54" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-4-scaleService.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-3-radial-callbacks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-7-grid-styles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-5-log-scatter.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-18.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-4-linear-scatter.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-10-ajax-jquery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        <state relative-caret-position="337">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <marker date="1551123900948" expanded="true" signature="1365:1647" placeholder="..." />
+            <marker date="1551123900948" expanded="false" signature="1469:1489" placeholder="..." />
+            <marker date="1551123900948" expanded="false" signature="1549:1576" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-12-fetch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+          <folding>
+            <marker date="1551125603008" expanded="true" signature="1365:1647" placeholder="..." />
+            <marker date="1551125603008" expanded="false" signature="1469:1489" placeholder="..." />
+            <marker date="1551125603008" expanded="false" signature="1549:1576" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/ThreeVariablesPlanets.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-2-log.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-11-ajax-jquery-json.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="51" column="58" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
+        <state relative-caret-position="457">
+          <caret line="59" column="8" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="25" />
+          <folding>
+            <marker date="1551125555900" expanded="true" signature="1365:1647" placeholder="..." />
+            <marker date="1551125555900" expanded="false" signature="1469:1489" placeholder="..." />
+            <marker date="1551125555900" expanded="false" signature="1549:1576" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-13-fetch-json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <marker date="1551125671096" expanded="true" signature="1365:1647" placeholder="..." />
+            <marker date="1551125671096" expanded="false" signature="1469:1489" placeholder="..." />
+            <marker date="1551125671096" expanded="false" signature="1549:1576" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-11-area.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-1-linear.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Pie/pie-2-fetch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-8-grid-minimal.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-3-pointStyle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-6-grid-styles.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-4-tension.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-4-ticks-style.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-5-stepped.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Category/category-2-one-to-many.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-7-fill.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-1-position-evil.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-8-load-fetch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-9-load-jquery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/LineArea/line-10-filter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-1-position.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="62" column="31" selection-start-line="60" selection-start-column="8" selection-end-line="83" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-2-weight.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-4-ticks-style.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-2-callbacks.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-6-grid-styles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="62" column="84" selection-start-line="62" selection-start-column="84" selection-end-line="62" selection-end-column="84" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-gridlines.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart13.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-2-pointLabels-polar.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-4-ticks.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-1-pointLabels-hide.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="6" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-16.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+          <folding>
+            <marker date="1551126143402" expanded="true" signature="1465:1747" placeholder="..." />
+            <marker date="1551126143402" expanded="false" signature="1569:1589" placeholder="..." />
+            <marker date="1551126143402" expanded="false" signature="1649:1676" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-15-csvparse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2-external.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-pointLabels-callback.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-6.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-5-grid-angle-lines.html">
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/SimplePage_Events_CSS_JQuery2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-14-jsonparse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

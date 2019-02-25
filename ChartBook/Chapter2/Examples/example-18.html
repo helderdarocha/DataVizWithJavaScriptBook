@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="JavaScript/canvasmap.js" ></script>
+    <style>
+        canvas {
+            border: solid 1px blue;
+        }
+    </style>
+    <script src="../JavaScript/canvasmap.js" ></script>
 </head>
 <body>
 
@@ -14,16 +19,16 @@
     var ctx = canvas.getContext("2d");
 
     // Map ocean background
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'rgb(200,200,255)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // countries border and background
     ctx.lineWidth = .25;
     ctx.strokeStyle = 'white';
-    ctx.fillStyle = 'rgb(50,100,150)';
+    ctx.fillStyle = 'rgb(50,50,160';
 
     // load and draw map
-    fetch('Data/world.geojson')
+    fetch('../Data/world.geojson')
     .then(response => response.text())
     .then((jsonData) => {
         let object = JSON.parse(jsonData);

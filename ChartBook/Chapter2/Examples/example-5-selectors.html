@@ -66,21 +66,21 @@
 <div id="container">
     <div class="tab first" id="section1">
         <div class="contents">
-            <img class="illustration" src="images/jupiter.jpg" />
+            <img class="illustration" src="../Images/jupiter.jpg" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <h1>Tab 1: Jupiter</h1>
     </div>
     <div class="tab" id="section2">
         <div class="contents">
-            <img class="illustration" src="images/saturn.jpg" />
+            <img class="illustration" src="../Images/saturn.jpg" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <h1>Tab 2: Saturn</h1>
     </div>
     <div class="tab" id="section3">
         <div class="contents">
-            <img class="illustration" src="images/pluto.jpg" />
+            <img class="illustration" src="../Images/pluto.jpg" />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <h1>Tab 3: Pluto</h1>
@@ -88,22 +88,6 @@
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-    $(".tab").on("click", function() {
-
-        $(".tab h1").css("color", "gray");
-        $(".tab h1").css("background", "white");
-        $(".tab h1").css("font-weight", "normal");
-        $(".tab h1").css("z-index", "-1");
-        $("#" + $(this).attr("id") + " h1").css("color", "black");
-        $("#" + $(this).attr("id") + " h1").css("background", "whitesmoke");
-        $("#" + $(this).attr("id") + " h1").css("font-weight", "bold");
-        $("#" + $(this).attr("id") + " h1").css("z-index", "1");
-
-        $(".tab .contents").fadeOut();
-        $("#" + $(this).attr("id") + " .contents").fadeIn();
-    });
-    $("#section1").trigger("click");
-</script>
+<!-- TODO - scripting: see example-7.html -->
 
 </html>
