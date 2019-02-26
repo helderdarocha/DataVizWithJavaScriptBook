@@ -2,47 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-10-ajax-jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-11-ajax-jquery-json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-12-fetch.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-13-fetch-json.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-14-jsonparse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-15-csvparse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-16.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-17.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2-external.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-7-selectors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/JavaScript.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/continents.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/example_loadcsv.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/example_loadcsv_jquery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/example_loadcsv_promises.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SVG/Example.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SVG_Examples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePageDOM.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePageDOM_Events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/cylindricalMap2.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/PlanetDay.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/PlanetDiameters.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDiameters.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/PlanetYear.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetYear.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/SolarSystemData.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/SolarSystemData.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/ThreeVariablesPlanets.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/ThreeVariablesPlanets.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/continents.json" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/continents.xml" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/Data/file.csv" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter1/day.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-9-ajax.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/CSS_Selectors.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-5-selectors.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/HTML_Canvas_Examples.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-8-canvas.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePageDOM_HTML.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage_Events.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/SimplePage_Events_CSS_JQuery.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/cylindricalMap.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-18.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Extras/Data/co2_mm_mlo.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Extras/Data/monthly_json.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ChartBook/Extras/zoom-plugin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM.js" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM_Events.js" afterPath="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript/SimplePageDOM_Events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-4-scaleService.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-4-scaleService.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,28 +27,7 @@
     <favorites_list name="DataVizWithJavaScriptBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="example1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,8 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-5-ticks-style.html" />
-        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-4-ticks-style.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-correlation-one-to-many.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-correlation-many-to-many.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter5/Category/category-3-minmax.html" />
@@ -151,6 +92,8 @@
         <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-15-csvparse.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-14-jsonparse.html" />
         <option value="$PROJECT_DIR$/ChartBook/Chapter2/Examples/SimplePageDOM_HTML.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-4-scaleService.html" />
+        <option value="$PROJECT_DIR$/ChartBook/Extras/zoom-plugin.html" />
       </list>
     </option>
   </component>
@@ -164,8 +107,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1824" />
-    <option name="y" value="94" />
+    <option name="x" value="-1474" />
+    <option name="y" value="92" />
     <option name="width" value="1439" />
     <option name="height" value="794" />
   </component>
@@ -224,25 +167,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ChartBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChartBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter1" />
+              <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,11 +194,11 @@
       <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Advanced" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ChartBook/Extras/Data" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Examples" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Data" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter2/JavaScript" />
       <recent name="$PROJECT_DIR$/ChartBook/Chapter2" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter5/Radial" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.radial-4-ticks.html">
@@ -454,15 +379,15 @@
       <workItem from="1550853552595" duration="16259000" />
       <workItem from="1550931994481" duration="32990000" />
       <workItem from="1551022385382" duration="7119000" />
-      <workItem from="1551119503327" duration="4691000" />
+      <workItem from="1551119503327" duration="10512000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2106209000" />
+    <option name="totallyTimeSpent" value="2112030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1824" y="94" width="1439" height="794" extended-state="0" />
+    <frame x="-1474" y="92" width="1439" height="794" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27201146" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -556,70 +481,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/continents.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-8-canvas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="69" column="7" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/sample.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/PlanetDay.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv_jquery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example_loadcsv_promises.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Data/file.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -896,14 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="6" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ChartBook/Chapter2/Examples/example-16.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -981,6 +834,78 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ChartBook/Chapter1/example3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Advanced/adv-4-scaleService.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter7/Multiple/multiple-1-canvas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="33" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="94" selection-start-line="5" selection-start-column="94" selection-end-line="6" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="93" column="5" selection-start-line="6" selection-start-column="0" selection-end-line="93" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Extras/Data/monthly_json.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Extras/zoom-plugin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
