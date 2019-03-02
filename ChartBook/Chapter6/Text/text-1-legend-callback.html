@@ -9,7 +9,7 @@
 <canvas id="myChart" width="400" height="200"></canvas>
 
 <script>
-
+    Chart.defaults.global.defaultFontSize = 16;
     Chart.defaults.global.legend.labels.fontSize = 16;
     Chart.defaults.global.legend.labels.boxWidth = 20;
 
@@ -20,7 +20,7 @@
     const grayStroke = 'rgb(0,0,0,.8)';
 
     const datasets = [];
-    for(const i = 0; i < data.length; i++) {
+    for(let i = 0; i < data.length; i++) {
         datasets.push({
             label: 'Dataset ' + (i+1),
             data: data[i],

@@ -13,6 +13,8 @@
 <canvas id="my-radar-chart" width="300" height="200"></canvas>
 
 <script>
+    Chart.defaults.global.defaultFontSize = 16;
+
     fetch('../Data/monthly_json.json')
         .then(response => response.text())
         .then((json) => {
@@ -69,6 +71,9 @@
                 scale: {
                     ticks: {
                         max: 1.5
+                    },
+                    pointLabels: {
+                        fontSize: 16
                     }
                 },
                 legend: {

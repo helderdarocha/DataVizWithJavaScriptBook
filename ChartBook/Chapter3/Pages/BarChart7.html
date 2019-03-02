@@ -25,6 +25,8 @@
     const canvas = document.getElementById("ocean-volume-bar-chart");
     const ctx = canvas.getContext("2d");
 
+    Chart.defaults.global.defaultFontSize = 18;
+
     const ch = new Chart(ctx, {
         type: "bar",
         data: {

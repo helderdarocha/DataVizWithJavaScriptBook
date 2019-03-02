@@ -68,11 +68,7 @@
     }
 
     function zoom(object) {
-        const boundingObject = {
-            type: 'MultiPoint',
-            coordinates: d3.geoBounds(object)
-        };
-        projection.fitSize([width, height], boundingObject);
+        projection.fitSize([width, height], object);
         render();
     }
 
@@ -99,7 +95,8 @@
 
         const coords = [minLngLat, [minLng,maxLat], maxLngLat, [maxLng,minLat], minLngLat];
 
-        return resample({type: 'Polygon', coordinates: [coords]});
+        //return resample({type: 'Polygon', coordinates: [coords]});
+        return {type: 'Polygon', coordinates: [coords]}
     }
 
     function showProjectedBoundsAndCentroid(d) {

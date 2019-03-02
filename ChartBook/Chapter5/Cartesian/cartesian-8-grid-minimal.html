@@ -11,6 +11,9 @@
 <canvas id="my-chart" width="900" height="500"></canvas>
 
 <script>
+
+    Chart.defaults.global.defaultFontSize = 20;
+
     const dataset = [];
     for(let i = 1; i <= 10; i+= 1) {
         const n = Math.random() * i;

@@ -68,11 +68,7 @@
     }
 
     function zoom(object) {
-        const boundingObject = {
-            type: 'MultiPoint',
-            coordinates: d3.geoBounds(object)
-        };
-        projection.fitSize([width, height], boundingObject);
+        projection.fitSize([width, height], object);
         render();
     }
 

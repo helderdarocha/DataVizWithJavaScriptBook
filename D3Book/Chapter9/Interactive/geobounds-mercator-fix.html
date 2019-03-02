@@ -22,7 +22,7 @@
     const svg = d3.select("body").append("svg")
             .attr("width", width).attr("height", height);
 
-    const projection = d3.geoOrthographic(),
+    const projection = d3.geoMercator().scale(80),
             scale = projection.scale(),
             translate = projection.translate(),
             geoPath = d3.geoPath().projection(projection);
@@ -31,6 +31,8 @@
 
     const globe = svg.append("g")
             .attr("class","globe");
+
+    let zoomed = false;
 
     d3.json('../Data/' + file)
             .then(function(data) {
@@ -59,7 +61,7 @@
                 .append("path")
                 .attr("class","country")
                 .attr("d", geoPath)
-                .on("click", zoom)
+                .on("click", d => zoomed ? zoom(d) : unzoom())
                 .on('mouseenter', showProjectedBoundsAndCentroid)
                 .on('mouseleave', hideProjectedBoundsAndCentroid)
                 .style("stroke", "white")
@@ -68,15 +70,21 @@
     }
 
     function zoom(object) {
+        const boundingObject = {
+            type: 'MultiPoint',
+            coordinates: d3.geoBounds(object)
+        };
         projection.fitSize([width, height], object);
         render();
+        zoomed = true;
     }
 
-    svg.on("dblclick", function() {
+    function unzoom() {
         d3.event.stopPropagation();
         projection.scale(scale).translate(translate);
         render();
-    });
+        zoomed = false;
+    }
 
     function render() {
         globe.selectAll("path.country").attr('d', geoPath);

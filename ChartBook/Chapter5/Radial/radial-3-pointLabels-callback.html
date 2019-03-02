@@ -11,6 +11,8 @@
 
 <script>
 
+Chart.defaults.global.defaultFontSize = 14;
+
 const values = [], labels = []
 for(let i = 0; i <= 25; ++i) {
     labels.push(i)
@@ -29,7 +31,8 @@ const chartObj = {
         scale: {
             pointLabels: {
                 callback: (d) => 'Step ' + d,
-                fontColor: 'red'
+                fontColor: 'red',
+                fontSize: 16
             }
         }
     }

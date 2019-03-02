@@ -29,7 +29,7 @@
     const geoPath = d3.geoPath()
             .projection(projection);
 
-    d3.geoInertiaDrag(svg, function() { render(); }, projection);
+    d3.geoInertiaDrag(svg, () => render(), projection);
 
     const map = {};
 

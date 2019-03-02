@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Title example</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <style>
+        button {font-size: 14pt}
+    </style>
 </head>
 <body>
 <canvas id="myChart" width="400" height="200"></canvas>
@@ -12,7 +15,7 @@
 </form>
 
 <script>
-
+    Chart.defaults.global.defaultFontSize = 16;
     function square(chart) {
         const datasets = chart.config.data.datasets;
         for(let i = 0; i < datasets.length; i++) {

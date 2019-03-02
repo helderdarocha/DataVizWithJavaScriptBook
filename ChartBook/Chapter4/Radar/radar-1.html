@@ -13,6 +13,8 @@
 
 <script>
 
+    Chart.defaults.global.defaultFontSize = 18;
+
     const dataObj = {
         labels: ["Lisbon", "Paris", "Berlin", "Moscow", "Rome", "Barcelona"],
         datasets: [
@@ -45,6 +47,9 @@
                 ticks: {
                     beginAtZero: true,
                     stepSize: 1
+                },
+                pointLabels: {
+                    fontSize: 18
                 }
             }
         }

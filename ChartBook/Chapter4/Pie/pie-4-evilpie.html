@@ -9,9 +9,11 @@
 </head>
 <body>
 
-<canvas id="my-pie-chart" width="400" height="300"></canvas>
+<canvas id="my-pie-chart" width="400" height="100"></canvas>
 
 <script>
+
+    Chart.defaults.global.defaultFontSize = 16;
 
     const numberOfEntries = 36;
 
@@ -67,7 +69,7 @@
             data: dataObj,
             options: {
                 legend: {
-                    display: 'left'
+                    position: 'left'
                 },
                 tooltips: {
                     callbacks: {

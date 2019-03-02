@@ -7,20 +7,21 @@
     <script src="https://unpkg.com/b64-to-blob"></script>
     <script src="../JavaScript/chartback.js"></script>
     <style>
-        * {font-family: sans-serif;font-size: 12px}
+        * {font-family: sans-serif;font-size: 16px}
     </style>
 </head>
 <body>
 <canvas id="chart"></canvas>
-<div style="width: 150px; margin-top: 30px; padding: 5px; border: solid 1px lightgray">
+<div style="width: 250px; margin-top: 30px; padding: 5px; border: solid 1px lightgray">
     <a id="link" download="chart.png">
-    <img id="image" width="150" src="http://placehold.it/250x100"></img>
+    <img id="image" width="250" src="http://placehold.it/250x100"></img>
         Download chart as PNG
     </a>
 </div>
 <script>
 
     Chart.defaults.scale.ticks.beginAtZero = true;
+    Chart.defaults.global.defaultFontSize = 16;
 
     const chart = new Chart("chart", {
         type: 'bar',
@@ -30,12 +31,12 @@
                 {
                     data: [1,2,3],
                     label: 'Dataset 1',
-                    backgroundColor: 'orange',
+                    backgroundColor: 'yellow',
                 },
                 {
                     data: [4,5,6],
                     label: 'Dataset 2',
-                    backgroundColor: 'brown',
+                    backgroundColor: 'red',
                 }
             ]
         },
