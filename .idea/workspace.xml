@@ -2,180 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Animation/rotating-earth-equinox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Animation/rotating-earth.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/CSS/projections.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/CSS/tissot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/10-linestrings.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/11-east-west-hemispheres.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/5-graticules-step.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/6-graticules-equator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/7-graticules-tropics-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/7-graticules-tropics.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/8-graticules-outline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/9-hemispheres-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/9-hemispheres.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/drag-1-versor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/drag-2-versor-zoom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/JavaScript/projection-albers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/JavaScript/projections.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/JavaScript/quaternion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/JavaScript/tissot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/MapMaking/map-11-no-projection.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/1-centroid+bounds-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/1-centroid+bounds-shapes-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/1-centroid+bounds-shapes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/1-centroid+bounds.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/2-geobounds-projected-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/2-geobounds-projected-shapes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/2-geobounds-projected.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/3-area-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/3-area-image.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/3-area.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-loxodrome-gnomonic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-loxodrome-mercator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-loxodrome-orthographic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-measure-2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-measure-3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-measure-4-interpolate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-measure.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/5-contains.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/6-rotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/7-interpolate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projections/1-main-projections.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projections/2-conic-albers-usa.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projections/3-other-projections.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Tools/list-geom-objects.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-10-linestrings.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-11-hemisphere-clipping.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-5-graticules-step.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-6-graticules-equator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-7-graticules-tropics-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-7-graticules-tropics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-8-graticules-outline.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-9-hemispheres-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-9-hemispheres.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-1-centroid+bounds-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-1-centroid+bounds-shapes-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-1-centroid+bounds-shapes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-1-centroid+bounds.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-2-geobounds-projected-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-2-geobounds-projected-shapes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-2-geobounds-projected.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-3-area-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-3-area-image.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-3-area.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-loxodrome-gnomonic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-loxodrome-mercator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-loxodrome-orthographic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-measure-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-measure-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-measure-4-interpolate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-4-measure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-5-contains.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/path-6-rotation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-1-equidistant-pole.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-1-equidistant.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-2-equalarea-pole.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-2-equalarea.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-3-conformal-pole.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-3-conformal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-4-orthographic-hemis.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-4-orthographic-pole.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-4-orthographic-tilt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-5-gnomonic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-1-equidistant-tangent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-1-equidistant.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-2-equalarea-tangent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-2-equalarea.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-3-conformal-secant.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-3-conformal.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-4-albers-usa.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/conic-4-albers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-1-equidistant-transverse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-2-equalarea-berhmann.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-2-equalarea-gallpeters.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-2-equalarea-tangent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-2-equalarea.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-3-conformal-mercator-oblique.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-3-conformal-mercator-transverse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-3-conformal-mercator.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/experiments.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-1-equal-earth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-10-peirce.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-11-polyhedral-waterman.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-12-polyhedral-air-ocean.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-13-polyhedral-cubic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-14-polyhedral-dodecahedral.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-15-polyhedral-icosahedral.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-2-natural-earth.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-3-mollweide.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-4-satellite.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-5-chamberlin-trimetric.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-6-robinson.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-7-hammer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-8-homolosine.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/other-9-winkel-tripel.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Graticules/circles-1-meridians.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/1-meridians.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Graticules/circles-12-opposite-hemisphere.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/12-opposite-hemisphere.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Graticules/circles-13-graticules-labels.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/13-graticules-labels.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Graticules/circles-2-parallels.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/2-parallels.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Graticules/circles-3-graticules.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/3-graticules.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Graticules/circles-4-graticules-extent.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/4-graticules-extent.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/brush-1-zoom-to-viewport.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/2-brush+zoom.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-3-zoom-to-geobounds-mercator-fix.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/geobounds-mercator-fix.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/MoreExamples/africa-chamberlin-trimetric.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/_BookExamples/africa-chamberlin-trimetric.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-orthographic-clipping-3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-orthographic.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-small-circle-clipping-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-small-circle-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-small-circle-clipping.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-small-circle-.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-sphere-clipping.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-sphere.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-viewport-clipping-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-viewport-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-viewport-clipping.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-viewport.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/view-1-center-india.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/9-view-1-center-india.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/view-2-scale-india.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/9-view-2-scale-india.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/view-3-angle-india.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/9-view-3-angle-india.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/view-4-translate-india.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/9-view-4-translate-india.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Projections/cylindrical-1-equidistant-plate-carree.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Circles/14-tissot-indicatrix.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/1-topojson-africa-countries.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/2-features-africa-countries.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/1-topojson-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/1-features-africa-simple.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/2-merge-all-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/4-merge-africa.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/3-merge-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/6-merge-africa-regions.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/4-mesh-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/7-mesh-africa.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/5-mesh-borders-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/9-mesh-africa-borders.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/6-mesh-outline-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/10-mesh-africa-outline.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/7-neighbors-africa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/12-neighbors-africa.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/7-neighbors-shapes.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/13-neighbors-shapes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/topojson-shapes-merge.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/5-merge-shapes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/topojson-shapes-mesh-filter.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/11-mesh-shapes-outline.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/topojson-shapes-mesh.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/8-mesh-shapes.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/topojson-shapes.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/TopoJSON/3-features-shapes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter7/Images/mars.jpg" afterPath="$PROJECT_DIR$/ChartBook/Chapter7/Images/mars.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/1-brighter-darker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/2-rgb-color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/3-hsl-color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/4-lab-color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/5-gray.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/6-hcl-color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Color/7-cubehelix-color.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/1-format.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/2-format-locale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/3-format-default-locale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/4-format-default-locale-ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/5-time-format.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/6-time-format-locale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Format/7-time-format-locale-ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/1-interpolate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter_Transition/Ease/ease.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/LabTemp/z1_blocks.html" afterPath="$PROJECT_DIR$/D3Book/Extras/LabTemp/z1_blocks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/LabTemp/z2_blocks.html" afterPath="$PROJECT_DIR$/D3Book/Extras/LabTemp/z2_blocks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/LabTemp/z3_meeks.html" afterPath="$PROJECT_DIR$/D3Book/Extras/LabTemp/z3_meeks.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/LabTemp/z4_murray.html" afterPath="$PROJECT_DIR$/D3Book/Extras/LabTemp/z4_murray.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/LabTemp/z5_stack.html" afterPath="$PROJECT_DIR$/D3Book/Extras/LabTemp/z5_stack.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Extras/Drag/drag-1.html" afterPath="$PROJECT_DIR$/D3Book/Chapter_Transition/Drag/drag-1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart7.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter3/Pages/BarChart7.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/Pie/pie-4-evilpie.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/Pie/pie-4-evilpie.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/Pie/pie-5-evilpie-as-bar.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/Pie/pie-5-evilpie-as-bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-1.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-3.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-4.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-4.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-5.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter4/ScatterBubble/scatter-5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-8-grid-minimal.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Cartesian/cartesian-8-grid-minimal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-1-pointLabels-hide.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-1-pointLabels-hide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-pointLabels-callback.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-pointLabels-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter6/Animation/animation-1-update.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter6/Animation/animation-1-update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter6/Text/text-1-legend-callback.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter6/Text/text-1-legend-callback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter6/Text/text-3-title.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter6/Text/text-3-title.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter6/Text/text-4-datalabels.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter6/Text/text-4-datalabels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ChartBook/Chapter7/Extensions/ext-4-chartback.html" afterPath="$PROJECT_DIR$/ChartBook/Chapter7/Extensions/ext-4-chartback.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-1-zoom-to-bounds.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-1-zoom-to-bounds.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-mercator.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-mercator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-orthographic.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-orthographic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-3-zoom-to-geobounds-orthographic-fix.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-3-zoom-to-geobounds-orthographic-fix.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-1.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/wheel-4-zoom-rotate-naive-implementation.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Interactive/wheel-4-zoom-rotate-naive-implementation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter9/_OldExamples/inertia-mars.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/_OldExamples/inertia-mars.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -197,101 +46,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="geobounds-mercator-fix.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/geobounds-mercator-fix.html">
+      <file leaf-file-name="1-format.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/1-format.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+            <state relative-caret-position="142">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="59" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="click-4-zoom-to-geobounds-rotate-1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-1.html">
+      <file leaf-file-name="3-format-default-locale.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/3-format-default-locale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+            <state relative-caret-position="622">
+              <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10-linestrings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Circles/10-linestrings.html">
+      <file leaf-file-name="4-format-default-locale-ajax.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/4-format-default-locale-ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="click-2-zoom-to-geobounds-mercator.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-mercator.html">
+      <file leaf-file-name="1-interpolate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/1-interpolate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="click-4-zoom-to-geobounds-rotate-3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-3.html">
+      <file leaf-file-name="5-time-format.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/5-time-format.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="41" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-time-format-locale.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/6-time-format-locale.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="click-2-zoom-to-geobounds-orthographic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-orthographic.html">
+      <file leaf-file-name="7-time-format-locale-ajax.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/7-time-format-locale-ajax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
+            <state relative-caret-position="525">
+              <caret line="42" column="37" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7-clipping-sphere.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-sphere.html">
+      <file leaf-file-name="2-format-locale.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/2-format-locale.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="75" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="click-3-zoom-to-geobounds-orthographic-fix.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-3-zoom-to-geobounds-orthographic-fix.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7-interpolate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/7-interpolate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="click-1-zoom-to-bounds.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-1-zoom-to-bounds.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="622">
+              <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -302,9 +131,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -314,28 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-2-parallels.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-3-graticules.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-4-graticules-extent.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-5-graticules-step.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-6-graticules-equator.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-7-graticules-tropics.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-7-graticules-tropics-2.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-8-graticules-outline.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-9-hemispheres.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-9-hemispheres-2.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/circles-10-linestrings.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/11-hemisphere-clipping.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/12-opposite-hemisphere.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/13-graticules-labels.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/CSS/tissot.css" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/11-outline-clipping.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/JavaScript/tissot.js" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Circles/14-tissot-indicatrix.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-1-equidistant-pole.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/azimuthal-1-equidistant.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/4-conic-albers1.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/experiments.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/5-other.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/4-conic-albers.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter9/Projections/3-cylindrical.html" />
@@ -365,6 +172,28 @@
         <option value="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-3-zoom-to-geobounds-orthographic-fix.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-1.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-3.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/lab-color-gray.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/format-locale.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/format-default-locale.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Interpolate/interpolate.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter_Transition/Ease/ease.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/cubehelix-color.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/gray.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/hcl-color.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/hsl-color.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/lab-color.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/rgb-color.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/format-default-locale-ajax.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Color/brighter-darker.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/format.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/time-format.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/time-format-locale.html" />
+        <option value="$PROJECT_DIR$/D3Book/Extras/Format/time-format-locale-ajax.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Format/1-format.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Format/2-format-locale.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Format/3-format-default-locale.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Format/4-format-default-locale-ajax.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/interpolate.html" />
       </list>
     </option>
   </component>
@@ -378,8 +207,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1518" />
-    <option name="y" value="104" />
+    <option name="x" value="-1252" />
+    <option name="y" value="45" />
     <option name="width" value="1119" />
     <option name="height" value="794" />
   </component>
@@ -408,7 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -440,22 +268,8 @@
               <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
+              <option name="myItemId" value="Extras" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -470,55 +284,12 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Interactive" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter9" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_OldExamples" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ChartBook" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -535,18 +306,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter_Transition/Ease" />
+      <recent name="$PROJECT_DIR$/D3Book/Extras/Interpolate" />
+      <recent name="$PROJECT_DIR$/D3Book/Extras/Format" />
+      <recent name="$PROJECT_DIR$/D3Book/Extras/Color" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter9/Interactive" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter9/Animation" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter9/JavaScript" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter9/Projections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Extras" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter_Transition/Drag" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter_Transition" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter9/_BookExamples" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter9/Tools" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Examples" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter2" />
-      <recent name="$PROJECT_DIR$/ChartBook/Chapter2/Data" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.radial-4-ticks.html">
@@ -733,18 +504,20 @@
       <workItem from="1551276667583" duration="9955000" />
       <workItem from="1551311634540" duration="5557000" />
       <workItem from="1551362359258" duration="15278000" />
-      <workItem from="1551440374336" duration="6271000" />
+      <workItem from="1551440374336" duration="6926000" />
+      <workItem from="1551793840195" duration="13979000" />
+      <workItem from="1551880871876" duration="29482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2166125000" />
+    <option name="totallyTimeSpent" value="2210241000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1518" y="104" width="1119" height="794" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1252" y="45" width="1119" height="794" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32033426" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33147633" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -830,144 +603,11 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/other-2-natural-earth.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/other-5-chamberlin-trimetric.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/other-1-equal-earth.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Circles/6-graticules-equator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="55" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Circles/8-graticules-outline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="98" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/other-8-homolosine.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/experiments.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/2-conic.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/3-cylindrical.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/JavaScript/tissot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/CSS/projections.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/JavaScript/projection-albers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/CSS/tissot.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/2-conic-albers-usa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/JavaScript/projections.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/1-main-projections.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="129" column="11" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projections/3-other-projections.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/1-center-tokyo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-loxodrome-gnomonic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-loxodrome-mercator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Path-Geometry/4-loxodrome-orthographic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/6-fit-size-globe.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-698">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Animation/rotating-earth-june-solstice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/5-rotate-5-90.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-608">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/5-rotate-pitch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-623">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Animation/rotating-sphere-shapes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1035,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
           <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="64" column="24" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1067,31 +704,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/_OldExamples/inertia-mars.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Circles/10-linestrings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
+        <state relative-caret-position="1185">
           <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Projection-Geometry/7-clipping-sphere.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="945">
           <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="75" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1099,29 +725,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-1-zoom-to-bounds.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="810">
           <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-mercator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
+        <state relative-caret-position="1095">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/geobounds-mercator-fix.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
+        <state relative-caret-position="855">
           <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding />
         </state>
@@ -1129,33 +752,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-3-zoom-to-geobounds-orthographic-fix.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="1125">
           <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="825">
           <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-4-zoom-to-geobounds-rotate-2.html" />
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/Interactive/click-2-zoom-to-geobounds-orthographic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1035">
           <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,6 +776,209 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Extras/Examples/moons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/JavaScript/projections.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/JavaScript/tissot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/_OldExamples/inertia-mars.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-8-values.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-10-labels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter_Transition/Drag/drag-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/LineArea/curves.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter_Transition/Ease/ease.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/7-cubehelix-color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/6-hcl-color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/3-hsl-color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/4-lab-color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/1-brighter-darker.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/2-rgb-color.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Color/5-gray.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/6-time-format-locale.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/7-time-format-locale-ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="42" column="37" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/1-format.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="59" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/2-format-locale.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/3-format-default-locale.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/4-format-default-locale-ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Format/5-time-format.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="41" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/1-interpolate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="47" />
           <folding />
         </state>
       </provider>
