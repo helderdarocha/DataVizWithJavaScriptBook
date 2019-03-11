@@ -20,12 +20,11 @@ function makeSubtree(item, nesting) {
     if (item.values) {
         if (nesting) {
             if (item.values.length == 1) { // remove unnecessary nesting
-                object = makeSubtree(item.values[0]);
-                console.log("Area: " + object.data.area);
+                object = makeSubtree(item.values[0], nesting);
             } else {
                 object.children = [];
                 item.values.forEach(function (value) {
-                    const subtree = makeSubtree(value);
+                    const subtree = makeSubtree(value, nesting);
                     object.children.push(subtree);
                     object.data.population += subtree.data.population;
                     object.data.area += subtree.data.area;
@@ -34,7 +33,7 @@ function makeSubtree(item, nesting) {
         } else {
             object.children = [];
             item.values.forEach(function (value) {
-                const subtree = makeSubtree(value);
+                const subtree = makeSubtree(value, nesting);
                 object.children.push(subtree);
                 object.data.population += subtree.data.population;
                 object.data.area += subtree.data.area;

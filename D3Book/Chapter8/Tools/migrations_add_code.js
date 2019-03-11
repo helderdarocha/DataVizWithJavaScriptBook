@@ -2,9 +2,9 @@ const fs = require('fs');
 const Promise = require('promise');
 const Papa = require('papaparse');
 
-const source1 = '../Data/migration_2017.csv';
+const source1 = '../Data/migrations_50.csv';
 const source2 = '../Data/un_regions.csv';
-const target = '../Data/migrations_2017_continent.csv';
+const target = '../Data/migrations_50_code.csv';
 
 const files = [source1, source2].map(f => {
     return new Promise((resolve, reject) => {
@@ -36,11 +36,11 @@ Promise.all(files).then(data => {
         populations.forEach(function(p) {
             if (p.Country == m.Destination) {
                 match = true;
-                if(!m.Continent) {
-                    m.Continent = p.Continent;
-                    newData.push(p.Country);
+                if(!m.Code) {
+                    m.Code = p.Code;
+                    newData.push(p.Code);
                 } else {
-                    nothing.push(p.Country);
+                    nothing.push(p.Code);
                 }
             }
         });

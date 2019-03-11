@@ -7,112 +7,112 @@ const simpleHierarchy = {
             id: "group_1",
             name:"First Group",
             children: [
-{
-    id: "subg_1",
-    name:"First Subgroup",
-    children: [
-        {
-            id: "leaf_1",
-            name:"First Leaf",
-            values: [5,2]
-        },
-        {
-            id: "leaf_2",
-            name:"Second Leaf",
-            values: [1,7]
-        },
-        {
-            id: "leaf_3",
-            name:"Third Leaf",
-            values: [4,4]
-        }
-    ]
-},
-{
-    id: "subg_2",
-    name:"Second Subgroup",
-    children: [
-        {
-            id: "leaf_4",
-            name:"Fourth Leaf",
-            values: [9,3]
-        },
-        {
-            id: "leaf_5",
-            name:"Fifth Leaf",
-            values: [7,6]
-        }
-    ]
-}
+                {
+                    id: "subg_1",
+                    name:"First Subgroup",
+                    children: [
+                        {
+                            id: "leaf_1",
+                            name:"First Leaf",
+                            values: [5,2]
+                        },
+                        {
+                            id: "leaf_2",
+                            name:"Second Leaf",
+                            values: [1,7]
+                        },
+                        {
+                            id: "leaf_3",
+                            name:"Third Leaf",
+                            values: [4,4]
+                        }
+                    ]
+                },
+                {
+                    id: "subg_2",
+                    name:"Second Subgroup",
+                    children: [
+                        {
+                            id: "leaf_4",
+                            name:"Fourth Leaf",
+                            values: [9,3]
+                        },
+                        {
+                            id: "leaf_5",
+                            name:"Fifth Leaf",
+                            values: [7,6]
+                        }
+                    ]
+                }
             ]
         },
         {
             id: "group_2",
             name:"Second Group",
             children: [
-{
-    id: "subg_4",
-    name:"Fourth Subgroup",
-    children: [
-        {
-            id: "subsubg_1",
-            name:"First Sub-Subgroup",
-            children: [
-{
-    id: "leaf_13",
-    name:"Thirteeth Leaf",
-    values: [6,5]
-}
-            ]
-        }
-    ]
-},
-{
-    id: "subg_3",
-    name:"Third Subgroup",
-    children: [
-        {
-            id: "leaf_6",
-            name:"Sixth Leaf",
-            values: [8,3]
-        },
-        {
-            id: "leaf_7",
-            name:"Seventh Leaf",
-            values: [1,3]
-        },
-        {
-            id: "leaf_8",
-            name:"Eighth Leaf",
-            values: [7,4]
-        },
-        {
-            id: "leaf_9",
-            name:"Ninth Leaf",
-            values: [4,9]
-        },
-        {
-            id: "leaf_10",
-            name:"Tenth Leaf",
-            values: [1,1]
-        },
-        {
-            id: "leaf_11",
-            name:"Eleventh Leaf",
-            values: [6,1]
-        },
-        {
-            id: "leaf_12",
-            name:"Twelvth Leaf",
-            values: [1,5]
-        }
-    ]
-},
-{
-    id: "leaf_14",
-    name:"Fourteenth Leaf",
-    values: [4,1]
-}
+                {
+                    id: "subg_4",
+                    name:"Fourth Subgroup",
+                    children: [
+                        {
+                            id: "subsubg_1",
+                            name:"First Sub-Subgroup",
+                            children: [
+                                {
+                                    id: "leaf_13",
+                                    name:"Thirteeth Leaf",
+                                    values: [6,5]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: "subg_3",
+                    name:"Third Subgroup",
+                    children: [
+                        {
+                            id: "leaf_6",
+                            name:"Sixth Leaf",
+                            values: [8,3]
+                        },
+                        {
+                            id: "leaf_7",
+                            name:"Seventh Leaf",
+                            values: [1,3]
+                        },
+                        {
+                            id: "leaf_8",
+                            name:"Eighth Leaf",
+                            values: [7,4]
+                        },
+                        {
+                            id: "leaf_9",
+                            name:"Ninth Leaf",
+                            values: [4,9]
+                        },
+                        {
+                            id: "leaf_10",
+                            name:"Tenth Leaf",
+                            values: [1,1]
+                        },
+                        {
+                            id: "leaf_11",
+                            name:"Eleventh Leaf",
+                            values: [6,1]
+                        },
+                        {
+                            id: "leaf_12",
+                            name:"Twelvth Leaf",
+                            values: [1,5]
+                        }
+                    ]
+                },
+                {
+                    id: "leaf_14",
+                    name:"Fourteenth Leaf",
+                    values: [4,1]
+                }
             ]
         },
         {
