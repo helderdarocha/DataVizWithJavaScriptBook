@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        rect.bar {
+            fill: blue;
+        }
+        rect.border {
+            fill: rgba(255,0,0,0.1);
+            stroke-width: 3;
+        }
+        svg {
+            background-color: rgba(0,255,0,0.1);
+            border: solid 1px green;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        .border {
+            stroke: red;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    const width = 800, height = 600;
+    const margin = 100;
+
+    const svg = d3.select("body")
+            .append("svg")
+            .attr("height",height)
+            .attr("width",width)
+            .on("click", clicked);
+
+    const g = svg.append("g")
+                 .attr("transform", `translate(${[margin, height - margin]})`)
+                 .on("click", clicked);
+
+    const bar = g.append("rect").attr("class", "bar")
+            .attr("width", 100)
+            .attr("height", 200)
+            .attr("x", 50)
+            .attr("y", -200);
+
+    function clicked() {
+        const x = d3.mouse(this)[0], y = d3.mouse(this)[1];
+        svg.append("circle").attr("r", 5)
+                .attr("cx", x)
+                .attr("cy", y)
+    }
+
+    const dispatcher = d3.dispatch("dots", "squares");
+    dispatcher.on("dots",
+                  d => svg.append("circle")
+                          .attr("r", d.r)
+                          .attr("cx", d.x)
+                          .attr("cy", d.y))
+              .on("squares",
+                  d => svg.append("rect")
+                          .attr("x", d.x)
+                          .attr("y", d.y)
+                          .attr("width", d.s)
+                          .attr("height", d.s));
+
+    function placeDots() {
+        const randW = d3.randomUniform(0,width);
+        const randH = d3.randomUniform(0,height);
+        const randR = d3.randomUniform(0.5,10);
+        const randDots = d3.randomUniform(1,100000);
+        for(let i = 0; i < randDots(); i++) {
+            dispatcher.call("dots", this, {x: randW(), y: randH(), r: randR()})
+        }
+    }
+    function placeSquares() {
+        const randW = d3.randomUniform(0,width);
+        const randH = d3.randomUniform(0,height);
+        const randS = d3.randomUniform(1,20);
+        const randDots = d3.randomUniform(1,100000);
+        for(let i = 0; i < randDots(); i++) {
+            dispatcher.call("squares", this, {x: randW(), y: randH(), s: randS()})
+        }
+    }
+    placeDots()
+    placeSquares()
+
+</script>
+
+</body>
+</html>

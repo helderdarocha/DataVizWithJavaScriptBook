@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        #one {
+            color: red;
+            font-size: 16pt;
+        }
+        #two {
+            color: green;
+            font-size: 24pt;
+        }
+    </style>
+</head>
+<body>
+<h1 id="one">A</h1>
+<h1 id="two">B</h1>
+<script>
+
+
+    let count = 0;
+    const duration = 100;
+    const delay = 50;
+    const ease = d3.easeCubic;
+
+    console.log(count + ": " + 0)
+
+    d3.select("#one").transition().ease(ease).duration(duration).delay(500)
+            .tween("style.color", function() {
+                const interpolator = d3.interpolateRgb(d3.select(this).style("color"), "blue")
+                return function(t) {
+                    this.style.color = interpolator(t)
+                    console.log(++count + ": " + t)
+
+                }
+            })
+
+</script>
+</body>
+</html>

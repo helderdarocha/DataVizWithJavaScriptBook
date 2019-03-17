@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<script>
+    const width = 800, height = 600;
+    const margin = 100;
+
+    const svg = d3.select("body")
+            .append("svg")
+            .attr("height",height)
+            .attr("width",width)
+            .on("click", clicked);
+
+    const g = svg.append("g")
+                 .attr("transform", `translate(${[margin, height - margin]})`)
+                 .on("click", clicked);
+
+    const bar = g.append("rect").attr("class", "bar")
+            .attr("width", 100)
+            .attr("height", 200)
+            .attr("x", 50)
+            .attr("y", -200)
+            .on("click", clicked);
+
+</script>
+
+</body>
+</html>
