@@ -9,7 +9,7 @@
 <h1>Open JavaScript console to see results</h1>
 <script>
     // semi-colon separated
-    d3.dsv(";", "../Data/cities15000.csv")
+    d3.dsv(";", "../Data/cities15000.csv", d3.autoType)
       .then(function(data) {
           console.log(data);
       });

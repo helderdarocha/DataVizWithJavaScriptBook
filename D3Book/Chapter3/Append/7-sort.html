@@ -19,7 +19,8 @@
     const selection = d3.select("div").selectAll("p");
     console.log(selection.nodes());
 
-    const bound = selection.data([5,3,2,1,4])
+    const bound = selection
+                    .data([6,3,2,1,4])
                     .text((d,i,n) => d3.select(n[i]).text() + " " + d);
     console.log(bound);
 
