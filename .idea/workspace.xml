@@ -2,29 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest/5-TODO-rain-heatmap-d3-rollup.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/2-transforms.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/4-transforms.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/4-sort.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/2-sort.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/1-nesting.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/4-nesting.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/2-nesting-sort.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/6-nesting-sort.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/3-rollup.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/7-nesting-rollup.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/4-nesting-map.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/5-nesting-entries.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/5-d3-collection-objects.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/1-d3-collection-objects.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/6-d3-collection-maps.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/2-d3-collection-maps.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/7-d3-collection-sets.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Collections/3-d3-collection-sets.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/rain-1.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest/1-nest.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/rain-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest/2-html-table.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/rain-3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest/3-headers.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Collections/rain-4.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest/4-rain-heatmap.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Interpolate/2-interpolate-colors.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Interpolate/2-TODO-interpolate-colors.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Interpolate/3-interpolate-spline.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Interpolate/3-TODO-interpolate-spline.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/JavaScript/commonWords.js" afterPath="$PROJECT_DIR$/D3Book/Chapter5/JavaScript/commonWords.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/JavaScript/d3.layout.cloud.js" afterPath="$PROJECT_DIR$/D3Book/Chapter5/JavaScript/d3.layout.cloud.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-1.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-10.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-11.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-12.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-12.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-13.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-13.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-14.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-14.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-15.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-15.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-16.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-16.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-17.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-17.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-18.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-18.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-19.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-19.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-2.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-20.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-20.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-21.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-21.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-22.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-22.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-23.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-23.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-24.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-24.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-25.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-25.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-26.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-26.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-27.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-27.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-28.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-28.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-29.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-29.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-3.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-30.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-30.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-31.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-31.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-32.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-32.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-33.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-33.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-34.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-34.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-35.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-35.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-36.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-36.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-37.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-37.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-38.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-38.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-39.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-39.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-4.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-40.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-40.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-41.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-41.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-42.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-42.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-43.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-43.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-44.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-44.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-45.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-45.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-46.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-46.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-47.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-47.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-48.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-48.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-49.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-49.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-5.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-50.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-50.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-6.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-7.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-8.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-9.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/all-words.json" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/all-words.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/gdp_per_capita_worldbank.csv" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/gdp_per_capita_worldbank.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/un_regions.csv" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/un_regions.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/un_regions_gdp.csv" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/un_regions_gdp.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/1-statistics.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/1-statistics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/5-sequence.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/5-sequence.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/7-grouping-sort.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/7-grouping-sort.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/9-grouping-array.html" afterPath="$PROJECT_DIR$/D3Book/Chapter4/Arrays/9-grouping-array.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,7 +148,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commonWords.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="commonWords.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/JavaScript/commonWords.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -126,8 +158,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common-letters.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Data/common-letters.json">
+      <file leaf-file-name="all-words.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Extra/Data/all-words.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -136,11 +168,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all-words.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Data/all-words.json">
+      <file leaf-file-name="2-asteroid_histogram.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Examples/2-asteroid_histogram.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -290,22 +322,8 @@
               <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter4" />
+              <option name="myItemId" value="Extra" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,36 +338,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter4" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Examples" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter4" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Data" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,11 +358,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Extra/Data" />
+      <recent name="$PROJECT_DIR$/D3Book/Extra/Data/Books" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter5" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter8" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter4" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter3/Selection" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest" />
@@ -588,12 +576,12 @@
       <workItem from="1553629835797" duration="12863000" />
       <workItem from="1553778026902" duration="16338000" />
       <workItem from="1553861120152" duration="52545000" />
-      <workItem from="1554039901701" duration="9736000" />
+      <workItem from="1554039901701" duration="10253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2526116000" />
+    <option name="totallyTimeSpent" value="2526633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1100" y="95" width="1100" height="772" extended-state="0" />
@@ -700,13 +688,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Append/10-key-function.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/GUP/8-enter-append-merge.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-465">
@@ -1024,14 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Data/all-words.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Data/common-letters.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1100,6 +1073,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Extra/Data/all-words.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Examples/2-asteroid_histogram.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding />
         </state>
       </provider>
