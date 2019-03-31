@@ -53,12 +53,12 @@
 
     const array2 = [4,2,9,12,6,23,9,71,55,49];
     array2.sort((a,b) => a-b);
-    const quantile50 = d3.quantile(array2, .5);
-    console.log("Quantile .5", quantile50);
-    const quantile25 = d3.quantile(array2, .25);
-    console.log("Quantile .25", quantile25);
-    const quantile75 = d3.quantile(array2, .75);
-    console.log("Quantile .75", quantile75);
+    const quartile50 = d3.quantile(array2, .5);
+    console.log("Quartile .5", quartile50);
+    const quartile25 = d3.quantile(array2, .25);
+    console.log("Quartile .25", quartile25);
+    const quartile75 = d3.quantile(array2, .75);
+    console.log("Quartile .75", quartile75);
 
 </script>
 </body>

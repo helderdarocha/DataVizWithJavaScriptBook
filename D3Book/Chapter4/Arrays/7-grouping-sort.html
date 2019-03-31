@@ -38,6 +38,16 @@
 
     console.log(groupByYear);
 
+    const byYearAndDirector =
+                    d3.group(movies.sort((a,b) => d3.ascending(a.year, b.year)),
+            d => d.year, d => d.director);
+
+    console.log(byYearAndDirector);
+
+    // get iterator
+    const objectByYearAndDirector = byYearAndDirector.entries();
+    console.log(objectByYearAndDirector);
+
 </script>
 
 </body>

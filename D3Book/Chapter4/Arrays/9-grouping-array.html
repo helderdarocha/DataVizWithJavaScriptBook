@@ -28,18 +28,28 @@
         {title: 'Wonder Woman', director: 'Patty Jenkins', year: 2017},
     ];
 
-    const mapByYearAndDirector =
-        d3.group(movies.sort((a,b) => d3.ascending(a.year, b.year)),
-                 d => d.year, d => d.director);
+    const groupByDirector =
+            d3.group(movies, d => d.director);
 
-    console.log(mapByYearAndDirector);
+    const groupByYear =
+            d3.group(movies.sort((a,b) => d3.ascending(a.year, b.year)), d => d.year);
 
-    const objectByYearAndDirector = mapByYearAndDirector.entries();
-    console.log(objectByYearAndDirector);
+    const byYearAndDirector =
+                    d3.group(movies.sort((a,b) => d3.ascending(a.year, b.year)),
+                                             d => d.year, d => d.director);
 
-    const arrayByYearAndDirector = Array.from(mapByYearAndDirector);
-    console.log(arrayByYearAndDirector);
+    const array1 = Array.from(groupByYear);
+    console.log(array1);
 
+    const array2 = [...groupByYear];
+    console.log(array2);
+
+    // Shallow array conversion (only top-level was converted to array)
+    const arrayByYearAndDirector1 = Array.from(byYearAndDirector);
+    console.log(arrayByYearAndDirector1);
+
+    const arrayByYearAndDirector2 = [...byYearAndDirector];
+    console.log(arrayByYearAndDirector2);
 </script>
 
 </body>

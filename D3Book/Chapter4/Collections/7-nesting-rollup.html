@@ -33,9 +33,7 @@
               .key(d => d.director)
               .sortKeys((a,b) => d3.ascending(a, b))
               .sortValues((a,b) => d3.ascending(a.year, b.year))
-              .rollup(function(values) {
-                  return values.map(d => d.title + " (" + d.year + ")");
-              })
+              .rollup(values => values.map(d => `${d.title} (${d.year})`))
               .entries(movies);
 
     console.log(groupByDirector);
@@ -44,7 +42,7 @@
             d3.nest()
               .key(d => d.year)
               .sortKeys((a,b) => d3.ascending(a, b))
-              .rollup(v => v.map(d => d.title + " (" + d.director + ")"))
+              .rollup(v => v.map(d => `${d.title} (${d.director})`))
               .entries(movies);
 
     console.log(groupByYear);
