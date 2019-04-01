@@ -26,7 +26,7 @@
     const tickBleed = 10;
 
     const scaleX = d3.scaleLinear().range([marginX, width - marginX]);
-    const scaleY = d3.scaleLinear().range([height - marginY, marginY]);
+    const scaleY = d3.scaleLinear().range([marginY, height - marginY]);
 
     const axisX = d3.axisBottom(scaleX)
                     .tickSize(height - marginY*2 + tickBleed)

@@ -8,6 +8,9 @@
             fill-opacity: .1;
             fill: red;
         }
+        .tick line {
+            stroke-width: 0.5;
+        }
     </style>
 </head>
 <body>
@@ -16,7 +19,7 @@
     const data = d3.range(0,5000,1);
 
     const scaleX = d3.scaleLinear().domain([0,5000]).range([50,910]);
-    const scaleY = d3.scalePow().domain([0,5000]).range([500,0]);
+    const scaleY = d3.scalePow().domain([0,5000]).range([500,0]).ticks(5);
     scaleY.exponent(4);
 
     const xAxis = d3.axisBottom().scale(scaleX).tickSize(500);

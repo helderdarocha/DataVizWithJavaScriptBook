@@ -71,9 +71,11 @@
 
     var xAxis = d3.axisTop()
             .scale(xScale)
+            .tickPadding(10)
             .tickSize(height - margin * 3);
     var yAxis = d3.axisRight()
             .scale(yScale)
+            .tickPadding(15)
             .tickSize(width - margin * 3);
 
     var plotCircle = {
@@ -159,12 +161,12 @@
         svg.select("#x")
                 .append("text").attr("class", "scale")
                 .text("Volume in km3")
-                .attr("transform", "translate("+ (width/2) +","+ margin +")");
+                .attr("transform", "translate("+ (width/2) +","+ margin/2 +")");
 
         svg.select("#y")
                 .append("text").attr("class", "scale")
                 .text("Density in g/cm3")
-                .attr("transform", "rotate (-90, 0, 0) translate("+ -(height/2) +","+ -margin/2 +")");
+                .attr("transform", "rotate (-90, 0, 0) translate("+ -(height/2) +","+ -margin/3 +")");
 
         var entries = svg.selectAll(".entry")
                 .data(data)
