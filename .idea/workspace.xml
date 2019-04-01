@@ -2,60 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-1.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-10.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-10.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-11.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-11.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-12.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-12.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-13.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-13.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-14.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-14.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-15.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-15.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-16.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-16.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-17.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-17.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-18.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-18.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-19.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-19.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-2.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-20.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-20.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-21.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-21.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-22.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-22.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-23.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-23.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-24.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-24.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-25.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-25.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-26.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-26.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-27.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-27.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-28.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-28.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-29.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-29.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-3.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-30.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-30.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-31.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-31.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-32.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-32.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-33.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-33.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-34.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-34.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-35.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-35.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-36.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-36.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-37.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-37.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-38.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-38.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-39.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-39.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-4.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-4.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-40.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-40.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-41.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-41.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-42.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-42.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-43.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-43.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-44.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-44.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-45.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-45.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-46.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-46.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-47.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-47.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-48.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-48.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-49.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-49.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-5.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-5.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-50.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-50.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-6.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-6.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-7.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-7.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-8.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-8.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/Gutemberg/b-9.txt" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/Books/Gutemberg/b-9.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/all-words.json" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/all-words.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/gdp_per_capita_worldbank.csv" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/gdp_per_capita_worldbank.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/un_regions.csv" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/un_regions.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter4/Data/un_regions_gdp.csv" afterPath="$PROJECT_DIR$/D3Book/Extra/Data/un_regions_gdp.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling-cartesian.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-bleed.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-inner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-outer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-ticks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-scale-point.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/JavaScript/commonWords.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/JavaScript/d3.layout.cloud.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-2-pow-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-2-pow-4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-3-sqrt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-4-log-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-4-log.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-1-linear.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-10-quantile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-10-quantize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-11-threshold.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-12-ordinal-band.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-12-ordinal-colors-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-12-ordinal-colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-12-ordinal-point.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-12-ordinal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-2-linear-segmented.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-2-pow-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-2-pow-4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-3-sqrt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-4-log-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-4-log.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-5-identity-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-5-identity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-6-time-hours.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-6-time-utc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-6-time.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-7-sequential-rainbow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-7-sequential.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-8-diverging.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-9-quantize-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scales/scales-example.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-1.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/1-axis.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-10-labels.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/10-labels.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-11-cartesian-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/11-cartesian-2.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-11-cartesian.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/11-cartesian.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-12-cartesian-bleed.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/12-cartesian-bleed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/2-axis-call.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-3-all.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/3-axes-all.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-4-all-labelled.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/4-all-labelled.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-5-cartesian.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-cartesian.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-6-long-H.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/6-cartesian-grid-horizontal.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-7-long-HV.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/7-cartesian-grid.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-8-values.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/8-tick-values.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-9-invert-y.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Axes/9-invert-y.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/1-scatter-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/1-scatter-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/10-planetary-density.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Examples/planetary-density.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/2-scatter-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/2-scatter-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/3-scatter-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/3-scatter-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/4-scatter-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/4-scatter-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/5-scatter-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/5-scatter-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/6-scatter-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/6-scatter-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/7-bubble-pop-gdp_hdi.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/7-bubble-pop-gdp_hdi.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/8-giss-bar-year.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-bar-scale-band.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Examples/9-giss-bar.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-bar-full.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-1-diverging.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/1-diverging.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-2-singleHue.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/2-singleHue.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-3-multiHue.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/3-multiHue.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-4-cyclical.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/4-cyclical.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-5-categorical-div.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/5-categorical-div.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-5-categorical-multi-hue.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/5-categorical-multi-hue.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-5-categorical-single-hue.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/5-categorical-single-hue.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/d3-scale-chromatic-5-categorical.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Scale-Chromatic/5-categorical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
@@ -78,101 +95,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="1-histogram.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Histogram/1-histogram.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1-random.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Random/1-random.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2-uniform.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Random/2-uniform.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1-interpolate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Interpolate/1-interpolate.html">
+      <file leaf-file-name="5-cartesian.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-cartesian.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-TODO-interpolate-colors.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Interpolate/2-TODO-interpolate-colors.html">
+      <file leaf-file-name="5-ticks.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-ticks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="375">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3-TODO-interpolate-spline.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Interpolate/3-TODO-interpolate-spline.html">
+      <file leaf-file-name="5-styling.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="465">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1-format.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Format/1-format.html">
+      <file leaf-file-name="5-tick-size.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5-tick-size-outer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-outer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5-tick-bleed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-bleed.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="29" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commonWords.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/JavaScript/commonWords.js">
+      <file leaf-file-name="5-tick-size-inner.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-inner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="510">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all-words.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Extra/Data/all-words.json">
+      <file leaf-file-name="12-cartesian-bleed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/12-cartesian-bleed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="257">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-asteroid_histogram.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Examples/2-asteroid_histogram.html">
+      <file leaf-file-name="5-styling-cartesian.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling-cartesian.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="300">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4-all-labelled.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/4-all-labelled.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -195,22 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/moons-12.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/m-12-code.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/moons-1.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/moons-13.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/2-loading-data.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/1-page-setup.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/3-configuring-scales.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/4-drawing-planet.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/5-compute-moon-position.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/t.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/3-config-scales.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/11-updating-views.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/10-changing-views.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/15-tooltips.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/14-join.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/12-enter-append-merge.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/13-exit-remove.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/4-draw-planet.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter3/StepByStep/5-compute-moon-positions.html" />
@@ -246,6 +247,22 @@
         <option value="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest/5-TODO-rain-heatmap-d3-rollup.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter4/Interpolate/2-TODO-interpolate-colors.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter4/Interpolate/3-TODO-interpolate-spline.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-2.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/3-axes-all.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/2-axis-call.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/1-axis.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Examples/8-giss-bar-year.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-bar-year.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-scale-point.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-bar-full.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-ticks.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-inner-outer.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/12-cartesian-bleed.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-bleed.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-inner.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-outer.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling.html" />
       </list>
     </option>
   </component>
@@ -322,8 +339,22 @@
               <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Extra" />
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter5" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,6 +369,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter5" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Axes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,18 +397,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Scales" />
+      <recent name="$PROJECT_DIR$/D3Book/Extra/J" />
+      <recent name="$PROJECT_DIR$/D3Book/Extra" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5/StepByStep" />
       <recent name="$PROJECT_DIR$/D3Book/Extra/Data" />
-      <recent name="$PROJECT_DIR$/D3Book/Extra/Data/Books" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter5" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter8" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Axes" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Examples" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter4/StepByStepNest" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter4/Arrays" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter3/Append" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter3/StepByStep" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter3" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.radial-4-ticks.html">
@@ -576,18 +615,18 @@
       <workItem from="1553629835797" duration="12863000" />
       <workItem from="1553778026902" duration="16338000" />
       <workItem from="1553861120152" duration="52545000" />
-      <workItem from="1554039901701" duration="10253000" />
+      <workItem from="1554039901701" duration="20101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2526633000" />
+    <option name="totallyTimeSpent" value="2536481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1100" y="95" width="1100" height="772" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35916823" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35916823" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,14 +662,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/D3Book/Chapter5/Axes/axes-11-cartesian.html</url>
+          <url>file://$PROJECT_DIR$/D3Book/Chapter5/Axes/11-cartesian.html</url>
           <line>43</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/D3Book/Chapter5/Scales/nscales-8-diverging.html</url>
-          <line>31</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/D3Book/Extra/Tools/JSON_to_JSON2.html</url>
@@ -673,7 +707,7 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/D3Book/Chapter5/Examples/7-bubble-pop-gdp_hdi.html</url>
+          <url>file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/7-bubble-pop-gdp_hdi.html</url>
           <line>139</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
@@ -688,283 +722,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/GUP/8-enter-append-merge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/3-config-scales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="91" column="5" selection-start-line="64" selection-start-column="4" selection-end-line="91" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/4-draw-planet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="70" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/6-enter-moons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="122" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/7-sort-moons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="91" column="8" selection-start-line="91" selection-start-column="8" selection-end-line="92" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/8-text-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1935">
-          <caret line="129" column="8" selection-start-line="129" selection-start-column="8" selection-end-line="136" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/9-text-labels-each.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2010">
-          <caret line="134" column="15" selection-start-line="117" selection-start-column="8" selection-end-line="134" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/10-change-views.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" column="5" selection-start-line="66" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/11-update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/12-enter-append-merge.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="174" column="5" selection-start-line="135" selection-start-column="4" selection-end-line="174" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/13-exit-remove.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2610">
-          <caret line="174" column="8" selection-start-line="174" selection-start-column="8" selection-end-line="175" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/14-join.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="165" column="15" selection-start-line="145" selection-start-column="8" selection-end-line="165" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Selection/17-selection-multi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Parsing/1-parsing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Parsing/2-dom-fetching.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Parsing/3-csv-fetching.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Parsing/4-dsv-fetching.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Parsing/5-json-fetching.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/1-page-setup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/2-load-data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/5-compute-moon-positions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="109" column="33" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/StepByStep/15-tooltips.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/1-statistics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/2-sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/3-scan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/4-transforms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/5-sequence.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/6-grouping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/8-rollup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/7-grouping-sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/10-grouping-array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="43" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Arrays/9-grouping-array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Collections/4-nesting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Collections/6-nesting-sort.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Collections/5-nesting-entries.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Collections/7-nesting-rollup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1069,7 +826,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/JavaScript/commonWords.js">
+    <entry file="file://$PROJECT_DIR$/D3Book/Extra/J/JavaScript/commonWords.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1087,8 +844,288 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Examples/2-asteroid_histogram.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/3-axes-all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/7-cartesian-grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/8-tick-values.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/9-invert-y.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/11-cartesian-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Examples/planetary-density.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Examples/giss-line-years.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Behaviors/14-zoom-xy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Behaviors/15-zoom-x.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1558">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-bar-full.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/6-cartesian-grid-horizontal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-scale-point.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1082">
+          <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Examples/giss-line.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Examples/giss-bar-scale-band.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/11-cartesian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/10-labels.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-2-pow-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-2-pow-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-3-sqrt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/scales-example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-4-log-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/Cartesian/scales-4-log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/4-log-2-cartesian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/1-axis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/2-axis-call.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/4-all-labelled.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-cartesian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/12-cartesian-bleed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-outer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-ticks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-size-inner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-tick-bleed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Axes/5-styling-cartesian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>

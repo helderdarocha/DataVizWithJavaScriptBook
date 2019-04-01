@@ -17,6 +17,12 @@
         .zero-axis text, .zero-axis .domain {
             opacity: 0;
         }
+        .x-axis .domain {
+            opacity: 0;
+        }
+        .x-axis line {
+            opacity: .3;
+        }
     </style>
 </head>
 <body>
@@ -41,8 +47,9 @@
             .paddingOuter(.2);
 
     const axisX = d3.axisBottom(scaleX) // this scale doesn't implement ticks!
-            .tickPadding(5)
-            .tickFormat(d3.timeFormat("%b %Y"));
+            .tickSize(height - m/2)
+            .tickPadding(10)
+            .tickFormat(d3.timeFormat("%Y"));
 
     const axisY = d3.axisLeft(scaleY)
             .tickPadding(tickBleed)
@@ -54,16 +61,16 @@
             .tickSizeInner(width);
 
     // Axis rendering
-    const x = chart.append("g").attr("class", "x-axis")
-            .attr("transform", `translate(${[0, height]})`);
-    const y = chart.append("g").attr("class", "y-axis");
+    const xG = chart.append("g").attr("class", "x-axis")
+            .attr("transform", `translate(${[0, m/2]})`);
+    const yG = chart.append("g").attr("class", "y-axis");
     const zero = chart.append("g").attr("class", "zero-axis");
 
-    x.append("text")
+    xG.append("text")
             .attr("class","label")
             .text("Years")
-            .attr("transform", `translate(${[(width/2),(m - labelPaddingY)]})`)
-    y.append("text")
+            .attr("transform", `translate(${[(width/2),(height + m/2 - labelPaddingY)]})`)
+    yG.append("text")
             .attr("class","label")
             .text("Average global temperature anomaly (°C)")
             .attr("transform", `translate(${[-(m - labelPaddingX),(height/2)]}) rotate(90)`)
@@ -79,11 +86,12 @@
                 scaleX.domain(data.values.map(d => d3.isoParse(d.Date)))
 
                 // Axis configuration
-                const tickValues = data.values.filter((d,i) => i % 200 == 0)
+                const tickValues = data.values.filter((d,i) => i % 72 == 0)
                                               .map(d => d3.isoParse(d.Date));
+
                 axisX.tickValues(tickValues);
-                x.call(axisX);
-                y.call(axisY);
+                xG.call(axisX);
+                yG.call(axisY);
                 zero.call(axisZero);
 
                 // Bar chart

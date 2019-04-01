@@ -38,11 +38,12 @@
                 data.values = result
                                 .filter(d => d.Source == 'GISTEMP')
 
-                data.filteredValues = data.values.filter(d => d3.isoParse(d.Date).getFullYear() == 1937);
+                data.filteredValues = data.values.filter(d => d3.isoParse(d.Date).getFullYear() == year);
 
                 // Scales configuratoon
                 const scaleY = d3.scaleLinear()
-                                 .domain(d3.extent(data.values, d => d.Mean))
+                                 .domain([d3.min(data.filteredValues, d => d.Mean > 0 ? 0 : d.Mean),
+                                          d3.max(data.filteredValues, d => d.Mean < 0 ? 0 : d.Mean)])
                                  .range([height - margin/2, margin/2]);
 
                 const scaleX = d3.scaleBand()

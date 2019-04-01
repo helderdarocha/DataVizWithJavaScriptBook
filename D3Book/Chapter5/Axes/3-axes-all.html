@@ -19,9 +19,23 @@
     const axis3 = d3.axisLeft(scale);
     const axis4 = d3.axisRight(scale);
 
-    const svg = d3.select("body").append("svg").attr("width", 500).attr("height",50);
+    const svg = d3.select("body").append("svg").attr("width", 500).attr("height",350);
 
-    svg.append("g").call(axis1);
+    svg.append("g")
+            .attr("transform", "translate(10,100)")
+            .call(axis1);
+
+    svg.append("g")
+            .attr("transform", "translate(10,250)")
+            .call(axis2);
+
+    svg.append("g")
+            .attr("transform", "translate(350,50)")
+            .call(axis3);
+
+    svg.append("g")
+            .attr("transform", "translate(400,50)")
+            .call(axis4);
 </script>
 </body>
 </html>
