@@ -24,6 +24,8 @@
     console.log(700, scaleBuckets(700));
     console.log(900, scaleBuckets(900));
 
+    console.log("invert", scaleBuckets.invertExtent("red"));
+
     const axisScale = d3.scaleIdentity()
             .domain(d3.extent(data));
 
@@ -37,8 +39,7 @@
 
     d3.select("svg").append("g")
             .selectAll("ellipse")
-            .data(data).enter()
-            .append("ellipse")
+            .data(data).join("ellipse")
             .attr("rx", 3).attr("ry",6)
             .attr("cx", d => d + 25)
             .attr("cy", 25)

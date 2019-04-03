@@ -19,7 +19,8 @@
     const [a,b] = [-300, 150];
     const interpolator = d3.interpolate(a,b);
 
-    const scale = d3.scaleSequential(interpolator).domain([a,b]);
+    const scale = d3.scaleDiverging(interpolator)
+                    .domain([a,0,b]);  // [a,-75,b] is center
 
     const axisScale = d3.scaleLinear()
             .domain([a,b])

@@ -13,14 +13,6 @@
             font-size: 9pt;
             text-anchor: middle;
         }
-        .domain {
-            opacity: 0;
-        }
-        .y-axis line, .x-axis line {
-            stroke-width: .25;
-            stroke: rgba(114, 138, 74, 0.5);
-        }
-
     </style>
 </head>
 <body>
@@ -31,13 +23,9 @@
     const scaleX = d3.scaleLinear().range([marginW, w-marginW]);
     const scaleY = d3.scaleLinear().range([h-marginH, marginH]);
 
-    const axisX = d3.axisBottom(scaleX)
-            .tickSize(h - marginH*2 + 10)
-            .tickPadding(2);
+    const axisX = d3.axisBottom(scaleX);
     const axisY = d3.axisLeft(scaleY)
-            .tickSize(w - marginW*2 + 10)
-            .tickPadding(2)
-            .ticks(8, ',f');
+            //.ticks(8,"d");
 
     const data = {}
 
@@ -63,12 +51,12 @@
     });
 
     function drawAxes() {
-        const x = d3.select("svg").append("g").attr("class", "x-axis")
-                .attr("transform", `translate(${[0,marginH]})`)
+        const xG = d3.select("svg").append("g").attr("class", "x-axis")
+                .attr("transform", `translate(${[0,h-marginH]})`)
                 .call(axisX);
 
-        const y = d3.select("svg").append("g").attr("class", "y-axis")
-                .attr("transform", `translate(${[w-marginW,0]})`)
+        const yG = d3.select("svg").append("g").attr("class", "y-axis")
+                .attr("transform", `translate(${[marginW,0]})`)
                 .call(axisY);
 
         d3.select("svg").append("text").attr("class","label")
@@ -83,8 +71,7 @@
     function draw() {
         d3.select("svg").selectAll("circle.dot")
                 .data(data.countries)
-                .enter()
-                .append("circle").attr("class", "dot")
+                .join("circle").attr("class", "dot")
                 .attr("r", 1.5)
                 .attr("cx", d => scaleX(d.hdi))
                 .attr("cy", d => scaleY(d.gdp))

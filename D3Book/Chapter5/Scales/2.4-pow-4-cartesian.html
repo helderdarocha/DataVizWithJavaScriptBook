@@ -19,19 +19,11 @@
     const data = d3.range(0,5000,1);
 
     const scaleX = d3.scaleLinear().domain([0,5000]).range([50,910]);
-    const scaleY = d3.scalePow().domain([0,5000]).range([500,0]).ticks(5);
+    const scaleY = d3.scalePow().domain([0,5000]).range([500,0]);
     scaleY.exponent(4);
 
-    const xAxis = d3.axisBottom().scale(scaleX).tickSize(500);
-    const yAxis = d3.axisRight().scale(scaleY).tickSize(860);
-
-    console.log("y", 0, scaleY(0));
-    console.log("y", 500, scaleY(500));
-    console.log("y", 1000, scaleY(1000));
-    console.log("y", 2000, scaleY(2000));
-    console.log("y", 4000, scaleY(4000));
-    console.log("y", 4500, scaleY(4500));
-    console.log("y", 5000, scaleY(5000));
+    const xAxis = d3.axisBottom().scale(scaleX).tickSize(500).tickPadding(10);
+    const yAxis = d3.axisRight().scale(scaleY).tickSize(860).tickPadding(10);
 
     d3.select("body")
             .append("svg").attr("height", 550).attr("width", 960)
@@ -43,14 +35,15 @@
     .attr("cy", d=>scaleY(d)+25);
 
     d3.select("svg")
-            .append("g")
+            .append("g").attr("class", "y-axis")
             .attr("transform","translate(50,25)")
             .call(yAxis)
     d3.select("svg")
             .append("g")
             .attr("transform","translate(0,25)")
             .call(xAxis)
-    
+
+    d3.selectAll(".y-axis .tick").attr("opacity", (d,i) => i > 2 ? 1 : 0)
 </script>
 
 </body>

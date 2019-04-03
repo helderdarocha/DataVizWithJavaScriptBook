@@ -29,6 +29,10 @@
     console.log(20, scale(20));
     console.log(25, scale(25));
 
+    const colors = d3.scaleLinear().domain([0,100]).range(["red","green"]);
+    console.log(colors(50))
+
+
     d3.select("body").append("svg")
             .append("g")
             .attr("transform","translate(25,25)")

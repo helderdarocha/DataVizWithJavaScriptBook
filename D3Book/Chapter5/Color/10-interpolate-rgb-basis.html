@@ -32,8 +32,8 @@
     const interBasisClosed = d3.interpolateRgbBasisClosed(["red","yellow","green","blue"]);
 
     drawScale(1, interRgb, 'd3.interpolateRgb("red","blue")');
-    drawScale(2, interRgbBasis, 'd3.interpolateRgbBasis("red","blue")');
-    drawScale(3, interBasisClosed, 'd3.interpolateRgbBasisClosed("red","blue")');
+    drawScale(2, interRgbBasis, 'd3.interpolateRgbBasis(["red","yellow","green","blue"])');
+    drawScale(3, interBasisClosed, 'd3.interpolateRgbBasisClosed(["red","yellow","green","blue"])');
 
     function drawScale(order, func, label) {
         const g = d3.select("svg").append("g").call(axis)

@@ -35,7 +35,8 @@
             .selectAll("rect")
             .data(data).enter()
             .append("rect")
-            .attr("x", d => bandScale(d)).attr("y",22)
+            .attr("x", d => bandScale(d))
+            .attr("y",22)
             .attr("width", d => bandScale.bandwidth())
             .attr("height", d => Math.random() * 200)
             .attr("fill", (d,i) => colorScale(i));

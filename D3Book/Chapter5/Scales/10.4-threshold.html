@@ -88,8 +88,7 @@
 
     d3.select("svg").append("g").attr("id","grades")
             .selectAll("text")
-            .data(storms).enter()
-            .append("text")
+            .data(storms).join("text")
             .text(d=>d.name)
     .attr("x", d=>scaleX(d.maxSpeed)+25)
     .attr("y", (d,i) => 50 + i * 25)

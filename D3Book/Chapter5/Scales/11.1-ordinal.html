@@ -13,9 +13,9 @@
 <body>
 
 <script>
-    let data = d3.range(0,10.1,.25);
+    let data = d3.range(0,5.1,.25);
 
-    const colorScale = d3.scaleOrdinal().domain(data).range(['#000','#ccc','#777','#ccc']);
+    const colorScale = d3.scaleOrdinal().domain(data).range(['#000','#00d','#d00','#0a0']);
     const sizeScale  = d3.scaleOrdinal().domain(data).range([12,8,10,8]);
     const boldScale  = d3.scaleOrdinal().domain(data).range(['bold','normal']);
 
@@ -44,14 +44,13 @@
 
     const axisScale = d3.scaleLinear()
             .domain(d3.extent(data))
-            .range([0,800]);
+            .range([0,400]);
 
     d3.select("body").append("svg").attr("height", 650).attr("width", 850);
 
     d3.select("svg").append("g")
             .selectAll("text")
-            .data(data).enter()
-            .append("text")
+            .data(data).join("text")
             .attr("x", d => axisScale(d) + 22)
             .attr("y",22)
             .style("font-weight", d => boldScale(d))

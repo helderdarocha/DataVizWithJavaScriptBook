@@ -38,8 +38,7 @@
     function draw() {
         d3.select("svg").selectAll("circle.dot")
             .data(data.countries)
-            .enter()
-            .append("circle").attr("class", "dot")
+            .join("circle").attr("class", "dot")
             .attr("r", 1.5)
             .attr("cx", d => scaleX(d.hdi))
             .attr("cy", d => scaleY(d.gdp))

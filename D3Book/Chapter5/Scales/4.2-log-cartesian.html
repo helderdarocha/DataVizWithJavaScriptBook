@@ -8,6 +8,9 @@
             fill-opacity: .1;
             fill: red;
         }
+        .tick line {
+            stroke-width: .5
+        }
     </style>
 </head>
 <body>
@@ -23,13 +26,6 @@
 
     const xAxis = d3.axisBottom().scale(scaleX).tickSize(500);
     const yAxis = d3.axisRight().scale(scaleY).tickSize(860);
-
-    console.log("y", 0, scaleY(0));
-    console.log("y", 1, scaleY(1));
-    console.log("y", 10, scaleY(10));
-    console.log("y", 100, scaleY(100));
-    console.log("y", 1000, scaleY(1000));
-    console.log("y", 5000, scaleY(5000));
 
     d3.select("body")
             .append("svg").attr("height", 550).attr("width", 960)

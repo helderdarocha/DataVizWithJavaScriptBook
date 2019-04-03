@@ -10,6 +10,7 @@
         }
         text {
             font-size: 10pt;
+            text-anchor: end;
         }
     </style>
 </head>
@@ -19,7 +20,8 @@
     const [a,b] = [-300, 150];
     const interpolator = d3.interpolate(a,b);
 
-    const scale = d3.scaleSequential(interpolator).domain([a,b]);
+    const scale = d3.scaleDivergingSymlog(interpolator).constant(10)
+                    .domain([a,0,b]);  // [a,-75,b] is center
 
     const axisScale = d3.scaleLinear()
             .domain([a,b])
@@ -30,9 +32,10 @@
             .scale(axisScale)
             .tickValues(tickValues);
 
-    d3.select("body").append("svg").attr("height", 50).attr("width", 550)
+    d3.select("body").append("svg").attr("height", 100).attr("width", 550)
             .append("g").attr("transform","translate(25,25)")
             .call(axis);
+    d3.selectAll(".tick text").attr("transform"," translate(-15,10) rotate(-90)")
 
 </script>
 

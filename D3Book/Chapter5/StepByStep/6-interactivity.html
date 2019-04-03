@@ -105,11 +105,11 @@
     }
 
     function drawAxes() {
-        const x = d3.select("svg").append("g").attr("class", "x-axis")
+        const xG = d3.select("svg").append("g").attr("class", "x-axis")
                 .attr("transform", `translate(${[0,marginH]})`)
                 .call(axisX);
 
-        const y = d3.select("svg").append("g").attr("class", "y-axis")
+        const yG = d3.select("svg").append("g").attr("class", "y-axis")
                 .attr("transform", `translate(${[w-marginW,0]})`)
                 .call(axisY);
 
@@ -125,8 +125,7 @@
     function draw() {
         d3.select("svg").selectAll("circle.dot")
                 .data(data.countries)
-                .enter()
-                .append("circle").attr("class", "dot")
+                .join("circle").attr("class", "dot")
                 .attr("r", 1.5)
                 .attr("cx", d => scaleX(d.hdi))
                 .attr("cy", d => scaleY(d.gdp))
@@ -140,8 +139,7 @@
 
         legend.selectAll("g.item")
                 .data(data.continents)
-                .enter()
-                .append("g").attr("class", "item")
+                .join("g").attr("class", "item")
                 .on("mouseenter", showContinents)
                 .on("mouseleave", clearContinents)
                 .each(function(d, i) {
@@ -166,7 +164,7 @@
         d3.selectAll(".dot").classed("show", k => k.continent == d);
     }
 
-    function clearContinents(d) {
+    function clearContinents() {
         d3.selectAll(".item").classed("fade", false)
         d3.selectAll(".dot").classed("show", false);
     }
