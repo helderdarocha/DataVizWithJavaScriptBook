@@ -49,14 +49,12 @@
     const svg = d3.select("body").append("svg").attr("width", 1200)
 
     svg.selectAll("g")
-        .data(stackedData).enter()
-        .append("g")
+        .data(stackedData).join("g")
         .style("fill", colorScale)
         .each(function(d) {
             d3.select(this)
             .selectAll("rect")
-            .data(d).enter()
-            .append("rect")
+            .data(d).join("rect")
             .attr('width', t => t[1] - t[0])
             .attr('height', 18)
             .attr('x', t => t[0] + 65)

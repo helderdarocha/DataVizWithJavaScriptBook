@@ -20,9 +20,7 @@
 <body>
 <h1>Population growth (1950 to 2000)</h1>
 <script>
-    const width  = 800;
-    const height = 600;
-    const margin = 50;
+    const width  = 800, height = 600, margin = 50;
 
     const populations = [
         {"year":1950,"Argentina":17150,"Bolivia":3090,"Brazil":53975,"Chile":6188,"Colombia":12341,"Ecuador":3470,"Guianas":647,"Paraguay":1473,"Peru":7728,"Uruguay":2239,"Venezuela":5482},
@@ -36,7 +34,7 @@
     // Selecting and sorting the keys
     const keys = Object.entries(populations[0])
                     .sort((a,b) => d3.descending(a[1],b[1]))
-                    .filter(d => d[0] != 'year')
+                    .filter(d => d[0] != "year")
                     .map(d => d[0]);
 
     // Selecting data for the horizontal axis

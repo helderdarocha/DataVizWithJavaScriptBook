@@ -39,8 +39,7 @@
         .style("fill", "none");
 
     g.selectAll("text")
-        .data(d => d).enter()      // binds each [x,y] to a <text> element
-        .append("text")
+        .data(d => d).join("text")  // binds each [x,y] to a <text> element
         .text(d => d)
         .attr("x", d => d[0] + 10)  // positions the text near (x,y)
         .attr("y", d => d[1] + 10)

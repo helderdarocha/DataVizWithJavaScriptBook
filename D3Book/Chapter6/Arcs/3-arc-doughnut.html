@@ -34,8 +34,7 @@
 
     svg.selectAll("path.arc")
             .data(slices)
-            .enter()
-            .append("path").attr("class", "arc")
+            .join("path").attr("class", "arc")
             .attr("d", d => d)
             .style("fill", (d,i) => colorScale(i))
             .attr("transform", "translate(120,120)");

@@ -41,8 +41,7 @@
             .style("fill", "none")
 
     g.selectAll("text")
-            .data(d => d).enter()
-            .append('text')
+            .data(d => d).join('text')
             .text(d => `${d.source.x},${d.source.y}`)
                 .attr('x',d => d.source.x + 10)
                 .attr("y",d => d.source.y + 10);

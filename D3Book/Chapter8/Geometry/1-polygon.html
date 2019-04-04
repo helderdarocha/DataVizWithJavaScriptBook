@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arc</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        circle.point { fill: red }
+        circle.centroid { fill: blue }
+        circle.p1 { fill: purple }
+        circle.p2 { fill: black }
+        polygon {
+            fill: none;
+            stroke: green;
+            stroke-width: 2;
+            stroke-opacity: .7
+        }
+    </style>
+</head>
+<body>
+<h1>Open console for more information</h1>
+<script>
+    const width  = 400;
+    const height = 400;
+
+    // Generate random points
+    const randomY = d3.randomUniform(100, height - 100);
+    const randomX = d3.randomUniform(100, width - 100);
+    const points = []
+    for(let i = 0; i < 50; i++) {
+        points.push([randomX(), randomY()]);
+    }
+
+    // generated points
+    console.log("points", points);
+
+    const svg = d3.select("body").append("svg").attr("height",400).attr("width",width);
+
+    // draw points
+    svg.selectAll("circle").data(points).join("circle").attr("class", "point")
+            .attr("r", 1.5)
+            .attr("cx", d => d[0])
+    .attr("cy", d => d[1]);
+
+    // Use convex hull to generate a polygon from points
+    const hull = d3.polygonHull(points);
+    console.log("hull", hull);
+
+    svg.append("polygon").attr("points", hull);
+
+    const area = d3.polygonArea(hull);
+    console.log("area", area);
+
+    const centroid = d3.polygonCentroid(hull);
+    console.log("centroid", centroid);
+
+    svg.append("circle")
+            .attr("class","centroid")
+            .attr("r", 5)
+            .attr("cx", centroid[0])
+            .attr("cy", centroid[1]);
+
+    const perimeter = d3.polygonLength(hull);
+    console.log("perimeter", perimeter);
+
+    const p1 = [130,280];
+    const p2 = [120,120];
+
+    const contains = d3.polygonContains(hull, p1);
+    console.log("contains "+p1, contains);
+
+    const containsNot = d3.polygonContains(hull, p2);
+    console.log("contains "+p2, containsNot);
+
+    svg.append("circle")
+            .attr("class","p1")
+            .attr("r", 5)
+            .attr("cx", p1[0])
+            .attr("cy", p1[1]);
+
+    svg.append("circle")
+            .attr("class","p2")
+            .attr("r", 5)
+            .attr("cx", p2[0])
+            .attr("cy", p2[1]);
+
+
+
+
+</script>
+</body>
+</html>

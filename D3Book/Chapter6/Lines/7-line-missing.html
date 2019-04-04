@@ -48,8 +48,7 @@
             .attr("transform", "translate("+[margin, 0]+")");
 
     svg.selectAll("path.dataset")
-            .data(data).enter()
-            .append("path")
+            .data(data).join("path")
             .attr("class", "dataset")
             .attr("d", line)
             .style("stroke", colorScale)

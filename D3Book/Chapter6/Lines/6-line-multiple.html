@@ -5,7 +5,10 @@
     <title>Line</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
-        .dataset {stroke-width: 3px;}
+        .dataset {
+            stroke-width: 3px;
+            fill: none;
+        }
     </style>
 </head>
 <body>
@@ -39,20 +42,18 @@
     const yAxis = d3.axisLeft(scaleY);
 
     const svg = d3.select("body").append("svg").attr("height",height).attr("width",width);
-    const axes = svg.append('g').attr("class", "axes");
+    const axes = svg.append("g").attr("class", "axes");
 
-    axes.append('g').call(xAxis)
-            .attr("transform", "translate("+[0, height - margin]+")");
-    axes.append('g').call(yAxis)
-            .attr("transform", "translate("+[margin, 0]+")");
+    axes.append("g").call(xAxis)
+            .attr("transform", `translate(${[0, height - margin]})`);
+    axes.append("g").call(yAxis)
+            .attr("transform", `translate(${[margin, 0]})`);
 
     svg.selectAll("path.dataset")
-        .data(data).enter()
-        .append("path")
+        .data(data).join("path")
         .attr("class", "dataset")
         .attr("d", line)
-        .style("stroke", colorScale)
-        .style("fill", "none");
+        .style("stroke", colorScale);
 
 
 </script>

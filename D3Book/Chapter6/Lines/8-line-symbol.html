@@ -46,8 +46,7 @@
             .attr("transform", "translate("+[margin, 0]+")");
 
     svg.selectAll("g.line")
-        .data(data).enter()
-        .append("g").attr("class", "line")
+        .data(data).join("g").attr("class", "line")
         .each(function(d,i) {
             d3.select(this)
                 .append("path")
@@ -56,8 +55,7 @@
                     .style("fill", "none");
             d3.select(this)
                .selectAll("path.point")
-               .data(d).enter()
-               .append("path").attr("class", "point")
+               .data(d).join("path").attr("class", "point")
                     .attr("d", star)
                     .style("fill", colorScale(d))
                     .attr("transform", k => `translate(${[scaleX(k[0]), scaleY(k[1])]})`);

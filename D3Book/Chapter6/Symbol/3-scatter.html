@@ -138,8 +138,7 @@
 
         d3.select("svg").selectAll("path.dot")
                 .data(data.countries)
-                .enter()
-                .append("path").attr("class", "dot")
+                .join("path").attr("class", "dot")
                 .attr("d", d => d3.symbol().type(d3[symbolScale(d.continent)]).size(12)(d))
                 .attr("transform", d => `translate(${[scaleX(d.hdi), scaleY(d.gdp)]})`)
                 .style("fill", d => color(d.continent))
@@ -152,8 +151,7 @@
 
         legend.selectAll("g.item")
                 .data(data.continents)
-                .enter()
-                .append("g").attr("class", "item")
+                .join("g").attr("class", "item")
                 .on("mouseenter", showContinents)
                 .on("mouseleave", clearContinents)
                 .each(function(d, i) {
