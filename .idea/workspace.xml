@@ -2,21 +2,96 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Canvas/5-canvas-pie-labels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Canvas/6-canvas-to-svg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter8/Geometry/1-polygon.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/1-element-handler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/10-d3.event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/11-d3.mouse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/12-d3.mouse-coords.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/13-cartesian.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/14-selection-dispatch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/15-d3-dispatch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/16-custom-event.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/2-root-handler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/3-bubbling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/4-stop-bubbling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/5-prevent-default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/6-pointer-events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/7-pointer-events-none.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/8-pointer-events-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Events/9-d3-pointer-events-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Examples/brush-dashboard-TODO.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/1-transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/10-attr-tween.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/11-tween.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/12-fadein-out.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/13-cross-fade.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/15-sequential.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/16-interrupted.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/17-interrupted-delay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/18-sequential-delay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/19-transitions-simultaneous-names.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/2-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/20-transitions-simultaneous-selections.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/21-multiple-simultaneous-delay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/26-repeat-count.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/27-interrupt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/28-cross-fade-delay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/3-dynamics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/4-chain-delay.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/5-chain-reference.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/7-attr-transform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/8-style.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/9-style-attr.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/13-zoom-x.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/custom-event-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/custom-event-3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/custom-event.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/events-2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/events-dom-1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/events-group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Events/selection-dispatch.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/chain-delay.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/chain-reference.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/on-end.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/tween.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/10-fadein-out.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/11-cross-fade.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/19-cross-fade-end.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/20-chain-colors.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/21-chain-interrupt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/22-chain-count.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/3-attr-transform.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/3-attr-value.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/5-style-attr.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/1-drag.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Drag/1-drag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/10-zoom-translate-to.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/8-translate-to.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/11-zoom-translate-extent.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/9-translate-extent.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/12-zoom-extent.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/10-extent.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/13-zoom-transforms.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/11-transforms.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/14-zoom-xy.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/12-zoom-xy.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/15-zoom-x.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Examples/zoom-panning-TODO.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/2-brush-x.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Brush/1-brush-x.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/3-brush-xy-move.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Brush/3-brush-xy-move.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/3-brush-xy.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Brush/2-brush-xy.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/4-zoom-basic.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/1-basic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/5-zoom-events.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/2-events.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/6-zoom-no-dblclick.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/3-events-no-dblclick.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/6-zoom-no-wheel.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/4-events-wheel.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/7-zoom-scale-by.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/5-scale-by.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/8-zoom-translate-by.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/6-translate-by.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Behaviors/9-zoom-scale-to.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Zoom/7-scale-to.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Ease/1-ease-animations-TODO.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Ease/2-ease-animations-TODO.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/1-update-chart.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Updates/1-chart.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/2-update-bar.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Updates/2-bars.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/3-update-axes.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Updates/3-axes.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/4-update-transition.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Updates/4-transition.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/attr-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/14-ease.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/attr-tween.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/6-attr-value.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/style-1.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/29-error-on.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/transition-lifecycle-names.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/24-transition-lifecycle-names.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/transition-lifecycle-selections.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/25-transition-lifecycle-selections.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter7/Transition/transition-lifecycle.html" afterPath="$PROJECT_DIR$/D3Book/Chapter7/Transitions/23-transition-lifecycle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Arcs/3-arc-doughnut.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Arcs/3-arc-doughnut.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Lines/2-line-labels.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Lines/2-line-labels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Lines/5-line-objects.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Lines/5-line-objects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Lines/6-line-multiple.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Lines/6-line-multiple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Lines/7-line-missing.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Lines/7-line-missing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Lines/8-line-symbol.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Lines/8-line-symbol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Lines/9-line-curve.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Lines/9-line-curve.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/SVG/2-svg-path-d3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/SVG/2-svg-path-d3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Stacks/10-area-sa.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Stacks/10-area-sa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Stacks/5-simple-bar.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Stacks/5-simple-bar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter6/Symbol/3-scatter.html" afterPath="$PROJECT_DIR$/D3Book/Chapter6/Symbol/3-scatter.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,101 +113,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="4-area-baselines.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Areas/4-area-baselines.html">
+      <file leaf-file-name="26-repeat-count.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/26-repeat-count.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-115">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="28-cross-fade-delay.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/28-cross-fade-delay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="21-multiple-simultaneous-delay.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/21-multiple-simultaneous-delay.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
+              <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="23-transition-lifecycle.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/23-transition-lifecycle.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-128">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="27-interrupt.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/27-interrupt.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-160">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1-array.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/1-array.html">
+      <file leaf-file-name="1-transition.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/1-transition.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-object.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/2-object.html">
+      <file leaf-file-name="2-selection.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/2-selection.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5-simple-bar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/5-simple-bar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10-area-sa.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/10-area-sa.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1-radial-line.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Radial/1-radial-line.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2-radial-line.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Radial/2-radial-line.html">
+      <file leaf-file-name="8-style.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/8-style.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3-arc-doughnut.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Arcs/3-arc-doughnut.html">
+      <file leaf-file-name="29-error-on.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/29-error-on.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6-canvas-to-svg.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Canvas/6-canvas-to-svg.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2-curves-tension.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Curves/2-curves-tension.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="455">
+              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="47" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -155,57 +220,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/6-tick-size-inner-outer.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/7-tick-bleed-2.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/9-ticks.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/10-tick-formatting.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/14-cartesian.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/15-cartesian-grid.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/17-cartesian-labels.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/21-radial-axis-backdrop.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/20-radial-axis.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Axes/22-radial-axis-grid.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/1.3-invert-clamp.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/2.4-pow-4-cartesian.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/4.2-log-cartesian.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/5.1-symlog.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.1-diverging.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.1-diverging-symlog.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.1-sequential-sqrt.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.4-sequential-pow-rainbow.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.1-sequential-pow.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/9.2-diverging-rainbow.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/9.4-diverging-symlog-rainbow.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/1.1-linear.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.1-sequential.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/8.2-sequential-rainbow.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/10.1-quantize.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/10.3-quantile.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/10.4-threshold.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/11.1-ordinal.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/Scales/11.2-band.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/1-scatter.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/2-axes-labels.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/3-axis-tick-styles.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/4-log-scale.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/5-category-colors.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/6-interactivity.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStep/7-bubble.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Canvas/5-canvas-to-svg.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Canvas/6-canvas-pie-labels.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Geometry/1-polygon.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/SVG/2-svg-path-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Lines/2-line-labels.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Lines/5-line-objects.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Lines/6-line-multiple.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Lines/7-line-missing.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Symbol/3-scatter.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Lines/8-line-symbol.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Lines/9-line-curve.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Stacks/5-simple-bar.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Stacks/10-area-sa.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Arcs/3-arc-doughnut.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter6/Canvas/6-canvas-to-svg.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/multiple-simultaneous-names.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/17-transitions-simultaneous-selections.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/multiple-simultaneous-delay.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/transition-lifecycle-selections.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/transition-lifecycle-names.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/chain-colors.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/chain-count.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/transition-lifecycle.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/chain-interrupt.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/cross-fade-event.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/23-on-end.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/23-on-start.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/7-tween.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/9-chain-reference.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/8-chain-delay.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/10-fadein-out.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/11-cross-fade.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/5-prevent-default.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/6-pointer-events-all.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/6-d3-event.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/4-stop-bubbling.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/2-root-handler.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/3-bubbling.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/6-d3-event-dom.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/9-d3-pointer-events-all.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/7-pointer-events-none.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/1-element-handler.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/6-pointer-events.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/8-pointer-events-all.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/10-d3.event.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/11-d3.mouse.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/12-coordinates.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/12-d3.mouse-coords.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/17-custom-event.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/16-custom-event.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/14-selection-dispatcher.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Events/15-d3-dispatcher.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transition/1-transition.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/1-transition.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/2-transition-selection.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/3-dynamics.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/-6-attr-tween.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/12-tween.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/13-fadein-out.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/15-transitions-sequential.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/14-cross-fade.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/-19-cross-fade-event.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/-19-cross-fade-end.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/22-cross-fade-delay.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/17-interrupted-delay.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter7/Transitions/29-error-on.html" />
       </list>
     </option>
   </component>
@@ -219,10 +284,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1068" />
-    <option name="y" value="92" />
-    <option name="width" value="1068" />
-    <option name="height" value="836" />
+    <option name="x" value="-1018" />
+    <option name="y" value="23" />
+    <option name="width" value="1018" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -249,6 +314,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,22 +347,8 @@
               <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter6" />
+              <option name="myItemId" value="Extra" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,19 +365,49 @@
               <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter6" />
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Curves" />
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter7" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter7" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Updates" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,18 +423,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Updates" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Drag" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Brush" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter8" />
       <recent name="$PROJECT_DIR$/D3Book/Extra/Data" />
-      <recent name="$PROJECT_DIR$/D3Book/Extra" />
-      <recent name="$PROJECT_DIR$/D3Book/Extra/Tools" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Scales" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Transitions" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Transition" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Events" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter7/Examples" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter6/Canvas" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter6/Geometry" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Scales" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Axes" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter4/Interpolate" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.radial-4-ticks.html">
@@ -565,36 +648,41 @@
       <workItem from="1554267911051" duration="82000" />
       <workItem from="1554292395437" duration="13182000" />
       <workItem from="1554338895461" duration="4146000" />
-      <workItem from="1554351337950" duration="4000" />
+      <workItem from="1554351337950" duration="32000" />
+      <workItem from="1554384272348" duration="1971000" />
+      <workItem from="1554396358552" duration="13044000" />
+      <workItem from="1554426352500" duration="2654000" />
+      <workItem from="1554437242635" duration="8024000" />
+      <workItem from="1554481414256" duration="48856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2599794000" />
+    <option name="totallyTimeSpent" value="2674371000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1068" y="92" width="1068" height="836" extended-state="0" />
+    <frame x="-1018" y="23" width="1018" height="717" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27387914" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28790984" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32111436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914772" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -666,384 +754,426 @@
           <line>148</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/D3Book/Chapter7/Events/12-d3.mouse-coords.html</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/10.2-quantize-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/10.1-quantize.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/10.3-quantile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="48" selection-start-line="13" selection-start-column="4" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/10.4-threshold.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/11.1-ordinal.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/11-cross-fade.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Scales/11.2-band.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/12-transitions-sequential.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="435">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/1-scatter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/2-axes-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/3-axis-tick-styles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/4-log-scale.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/5-category-colors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="89" column="21" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/6-interactivity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStep/7-bubble.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="141" column="48" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Selection/17-selection-multi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="6" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Canvas/5-canvas-pie-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Pies/3-pie-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Canvas/3-canvas-line.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Canvas/4-canvas-radial-area.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter9/JavaScript/dvj-all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1050">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Arcs/1-arc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Random/2-uniform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="5" selection-start-line="27" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter4/Random/1-random.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter8/Geometry/1-polygon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Canvas/1-canvas-path.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/SVG/2-svg-path-d3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="26" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/SVG/1-svg-path.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/1-line.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/2-line-labels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/3-line-axes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/4-line-scales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/5-line-objects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/6-line-multiple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/7-line-missing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Symbol/2-symbol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Symbol/1-symbols.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Symbol/3-scatter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="149" column="42" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/8-line-symbol.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Lines/9-line-curve.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Areas/1-area.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Areas/2-area-scales.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Areas/3-area-axes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Areas/4-area-baselines.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/1-array.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/2-object.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/5-simple-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Stacks/10-area-sa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Radial/1-radial-line.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Radial/2-radial-line.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/23-transition-lifecycle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Arcs/3-arc-doughnut.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/24-transition-lifecycle-names.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Canvas/6-canvas-to-svg.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/25-transition-lifecycle-selections.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Curves/2-curves-tension.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/2-root-handler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/3-bubbling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/5-prevent-default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/1-element-handler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="40" column="81" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/7-pointer-events-none.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/9-d3-pointer-events-all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="46" column="42" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/6-pointer-events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/8-pointer-events-all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/4-stop-bubbling.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/11-d3.mouse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/16-custom-event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/13-cartesian.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/15-d3-dispatch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/14-selection-dispatch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/12-d3.mouse-coords.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/16-custom-event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/3-attr-value.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/3-dynamics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/4-chain-delay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/5-chain-reference.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="36" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/6-attr-value.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/7-attr-transform.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/10-attr-tween.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/11-tween.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/12-fadein-out.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/14-ease.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/19-transitions-simultaneous-names.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="28" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Updates/1-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/13-cross-fade.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/-19-cross-fade-end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/9-style-attr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/15-sequential.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/16-interrupted.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/17-interrupted-delay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/20-transitions-simultaneous-selections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/21-multiple-simultaneous-delay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/-23-repeat-colors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/23-transition-lifecycle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/26-repeat-count.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/28-cross-fade-delay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/27-interrupt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/1-transition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="30" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/2-selection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/8-style.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Events/10-d3.event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="31" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter7/Transitions/29-error-on.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="47" selection-end-column="65" />
           <folding />
         </state>
       </provider>
