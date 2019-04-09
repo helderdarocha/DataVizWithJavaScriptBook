@@ -26,12 +26,8 @@
 <body>
 <div id="panel"></div>
 <script>
-    const width  = 800;
-    const height = 600;
-    const margin = 100;
-    const labelPaddingX = 5;
-    const labelPaddingY = 5;
-    const tickBleed = 5;
+    const width  = 800, height = 600, margin = 100;
+    const labelPaddingX = 5, labelPaddingY = 5, tickBleed = 5;
 
     const data = {};
 
@@ -40,9 +36,11 @@
                   .attr("height",height)
                   .attr("width",width);
 
+    // Control buttons
     const prev = d3.select("#panel").append("button").text("Previous");
     const next = d3.select("#panel").append("button").text("Next");
 
+    // Scales and axes
     const scaleX = d3.scaleBand().range([margin/2, width - margin/2]);
     const scaleY = d3.scaleLinear().range([height - margin/2, margin/2]);
 
@@ -59,53 +57,61 @@
             .tickSizeOuter(0)
             .tickSizeInner(width - margin);
 
-    const x = svg.append("g").attr("class", "x-axis")
+    const xG = svg.append("g").attr("class", "x-axis")
                  .attr("transform", `translate(${[0, height - margin/2]})`);
-    const y = svg.append("g").attr("class", "y-axis")
+    const yG = svg.append("g").attr("class", "y-axis")
                  .attr("transform", `translate(${[margin/2,0]})`);
 
+    // The year that will be shown first
     let year = 1890;
 
+    // Load file, filter data
     d3.json('../Data/monthly_json.json')
-            .then(function(result) {
-                data.values = result.filter(d => d.Source == 'GISTEMP')
+        .then(function(result) {
+            data.values = result.filter(d => d.Source == 'GISTEMP');
+            data.filteredValues = data.values
+                            .filter(d => d3.isoParse(d.Date).getFullYear() == year);
 
-                data.filteredValues = data.values.filter(d => d3.isoParse(d.Date).getFullYear() == year);
+            // Setup view, scales and axes
+            init();
+            // Draw the bar chart;
+            draw();
+        });
 
-                // Scales configuratoon
-                scaleY.domain(d3.extent(data.values, d => d.Mean));
-                scaleX.domain(data.filteredValues.map(d => d3.isoParse(d.Date)))
-                      .paddingInner(.1)  // 10% of bar is padding
-                      .paddingOuter(.2); // before and after chart
+    // scales and axes configuration
+    function init() {
+        // Event handlers for buttons
+        prev.on("click", prevYear);
+        next.on("click", nextYear);
 
-                // Axis configuration
-                const tickValues = data.filteredValues.map(d => d3.isoParse(d.Date));
-                axisX.tickValues(tickValues)
+        // Scales configuratoon
+        scaleY.domain(d3.extent(data.values, d => d.Mean));
+        scaleX.domain(data.filteredValues.map(d => d3.isoParse(d.Date)))
+              .paddingInner(.1)  // 10% of bar is padding
+              .paddingOuter(.2); // before and after chart
 
-                // Axis rendering
-                x.call(axisX);
-                y.call(axisY);
+        // Axis configuration
+        const tickValues = data.filteredValues.map(d => d3.isoParse(d.Date));
+        axisX.tickValues(tickValues)
 
-                svg.append("g").attr("class", "zero-axis")
-                        .attr("transform", `translate(${[margin/2,0]})`)
-                        .call(axisZero);
+        // Axis rendering
+        xG.call(axisX);
+        yG.call(axisY);
 
-                x.append("text")
-                        .attr("class","x label")
-                        .text(year)
-                        .attr("transform", `translate(${[(width/2),(margin/2 - labelPaddingY)]})`)
-                y.append("text")
-                        .attr("class","y label")
-                        .text("Average global temperature anomaly (°C)")
-                        .attr("transform", `translate(${[-(margin/2 - labelPaddingX),(height/2)]}) rotate(90)`)
+        svg.append("g").attr("class", "zero-axis")
+            .attr("transform", `translate(${[margin/2,0]})`)
+            .call(axisZero);
 
-                // Bar chart;
-                draw();
+        xG.append("text")
+            .attr("class","x label")
+            .text(year)
+            .attr("transform", `translate(${[(width/2),(margin/2 - labelPaddingY)]})`)
+        yG.append("text")
+            .attr("class","y label")
+            .text("Average global temperature anomaly (°C)")
+            .attr("transform", `translate(${[-(margin/2 - labelPaddingX),(height/2)]}) rotate(90)`)
 
-                prev.on("click", prevYear)
-                next.on("click", nextYear)
-
-            });
+    }
 
     function prevYear() {
         if(year <= 1880) {
@@ -125,12 +131,19 @@
     }
 
     function redraw() {
-        data.filteredValues = data.values.filter(d => d3.isoParse(d.Date).getFullYear() == year);
-        scaleX.domain(data.filteredValues.map(d => d3.isoParse(d.Date)))
+        // get data for selected year
+        data.filteredValues =
+                data.values.filter(d => d3.isoParse(d.Date).getFullYear() == year);
+
+        // update scale domain
+        scaleX.domain(data.filteredValues.map(d => d3.isoParse(d.Date)));
+
+        // update x-axis
         const tickValues = data.filteredValues.map(d => d3.isoParse(d.Date));
         axisX.tickValues(tickValues);
-        x.call(axisX);
+        xG.call(axisX);
 
+        // update selection
         svg.selectAll("rect.bar")
            .data(data.filteredValues)
            .attr("height", d => Math.abs(scaleY(d.Mean) - scaleY(0)))
@@ -138,6 +151,7 @@
            .attr("y", d => d.Mean < 0 ? scaleY(0) : scaleY(d.Mean))
            .style("fill", d => d.Mean < 0 ? "blue" : "red");
 
+        // update x-scale label
         d3.select(".label.x").text(year)
     }
 

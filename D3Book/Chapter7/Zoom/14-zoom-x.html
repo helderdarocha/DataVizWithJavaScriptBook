@@ -96,6 +96,7 @@
 
     function zoomed() {
         const t = d3.event.transform;
+        //console.log(t.x,t.y,t.k)
 
         // rescale scales and axes
         const newScaleX = t.rescaleX(scaleX)

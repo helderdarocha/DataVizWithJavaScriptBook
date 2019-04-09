@@ -18,50 +18,34 @@
 </head>
 <body>
 <script>
-    const width = 800;
-    const height = 600;
+    const width = 800, height = 600;
 
     const svg = d3.select("body").append("svg")
             .attr("width", width).attr("height", height);
 
     const rect = svg.append("rect")
-            .attr("x",300)
-            .attr("y",200)
-            .attr("width", 100)
-            .attr("height", 100)
+            .attr("x",300).attr("y",200)
+            .attr("width", 100).attr("height", 100)
 
     const exes = d3.range(0,width+1,50).map(d => [[d,0],[d,height]]);
     const wyes = d3.range(0,height+1,50).map(d => [[0,d],[width,d]]);
 
-    console.log(exes, wyes)
-
     const line = d3.line();
-
     const grid = svg.selectAll(".grid")
             .data(d3.merge([exes, wyes]))
-            .enter()
-            .append("path").attr("class","grid")
+            .join("path").attr("class","grid")
             .attr("d", line)
-            .style("stroke-width", d => d[0][0] == width/2 || d[1][1] == height/2 ? 3 : 1)
-
+            .style("stroke-width", d => d[0][0] == width/2 || d[1][1] == height/2 ? 3 : 1);
 
     const zoomBehavior = d3.zoom()
+            .duration(1000) // duration for double-click zooming
             .on('zoom', function() {
-                console.log("xoom")
+                console.log(d3.event.transform.toString())
                 rect.attr("transform", d3.event.transform);
-                grid.attr("transform", d3.event.transform);
-            })
-            .on('end', function() {
-                console.log("zoom.end", d3.event.transform, d3.zoomIdentity)
+                //grid.attr("transform", d3.event.transform);
             })
 
-    svg.transition().duration(1000).delay(500)
-            .call(zoomBehavior.scaleBy, 2)
-            .transition().delay(500)
-            .call(zoomBehavior.scaleBy, 2)
-            .transition().delay(500)
-            .call(zoomBehavior.scaleBy, .25);
-
+    svg.call(zoomBehavior);
 
 </script>
 

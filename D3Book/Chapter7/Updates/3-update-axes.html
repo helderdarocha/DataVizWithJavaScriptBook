@@ -26,12 +26,8 @@
 <body>
 <div id="panel"></div>
 <script>
-    const width  = 800;
-    const height = 600;
-    const margin = 100;
-    const labelPaddingX = 5;
-    const labelPaddingY = 5;
-    const tickBleed = 5;
+    const width  = 800, height = 600, margin = 100;
+    const labelPaddingX = 5, labelPaddingY = 5, tickBleed = 5;
 
     const data = {};
 
@@ -62,11 +58,11 @@
             .tickSizeOuter(0)
             .tickSizeInner(width - margin);
 
-    const x = svg.append("g").attr("class", "x-axis")
+    const xG = svg.append("g").attr("class", "x-axis")
                  .attr("transform", `translate(${[0, height - margin/2]})`);
-    const y = svg.append("g").attr("class", "y-axis")
+    const yG = svg.append("g").attr("class", "y-axis")
                  .attr("transform", `translate(${[margin/2,0]})`);
-    const z = svg.append("g").attr("class", "zero-axis")
+    const zG = svg.append("g").attr("class", "zero-axis")
                  .attr("transform", `translate(${[margin/2,0]})`)
                  .call(axisZero);
 
@@ -88,9 +84,11 @@
 
                 data.filteredValues = data.values.filter(dateFilter)
                         .sort((a,b) => d3.descending(d3.isoParse(a.Date), d3.isoParse(b.Date)));
-
                 // Scales configuration
-                scaleY.domain(d3.extent(data.values, d => d.Mean));
+                const max = d3.max(data.filteredValues, d => d.Mean);
+                const min = d3.min(data.filteredValues, d => d.Mean);
+
+                scaleY.domain([min > 0 ? 0 : min, max < 0 ? 0 : max]);
                 scaleX.domain(data.filteredValues.map(d => d3.isoParse(d.Date)))
                       .paddingInner(.1)  // 10% of bar is padding
                       .paddingOuter(.2); // before and after chart
@@ -100,14 +98,16 @@
                 axisX.tickValues(tickValues)
 
                 // Axis rendering
-                x.call(axisX);
-                y.call(axisY);
+                xG.call(axisX);
+                yG.call(axisY);
 
-                x.append("text")
+
+
+                xG.append("text")
                         .attr("class","x label")
                         .text(month > 0 ? `${year}-${year+1}` : year)
                         .attr("transform", `translate(${[(width/2),(margin/2 - labelPaddingY)]})`)
-                y.append("text")
+                yG.append("text")
                         .attr("class","y label")
                         .text("Average global temperature anomaly (°C)")
                         .attr("transform", `translate(${[-(margin/2 - labelPaddingX),(height/2)]}) rotate(90)`)
@@ -176,15 +176,17 @@
         data.filteredValues = data.values.filter(dateFilter)
                         .sort((a,b) => d3.descending(d3.isoParse(a.Date), d3.isoParse(b.Date)));
         console.log(data.filteredValues)
-        scaleY.domain(d3.extent(data.values, d => d.Mean));
+        const max = d3.max(data.filteredValues, d => d.Mean);
+        const min = d3.min(data.filteredValues, d => d.Mean);
+        scaleY.domain([min > 0 ? 0 : min, max < 0 ? 0 : max]);
 
         scaleX.domain(data.filteredValues.map(d => d3.isoParse(d.Date)))
 
         const tickValues = data.filteredValues.map(d => d3.isoParse(d.Date));
         axisX.tickValues(tickValues);
-        x.call(axisX);
-        y.call(axisY);
-        z.call(axisZero);
+        xG.call(axisX);
+        yG.call(axisY);
+        zG.call(axisZero);
 
         svg.selectAll("rect.bar")
            .data(data.filteredValues)

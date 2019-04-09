@@ -30,20 +30,31 @@
     const exes = d3.range(0,width+1,50).map(d => [[d,0],[d,height]]);
     const wyes = d3.range(0,height+1,50).map(d => [[0,d],[width,d]]);
 
+    const line = d3.line();
     const grid = svg.selectAll(".grid")
             .data(d3.merge([exes, wyes]))
             .join("path").attr("class","grid")
-            .attr("d", d3.line())
+            .attr("d", line)
             .style("stroke-width", d => d[0][0] == width/2 || d[1][1] == height/2 ? 3 : 1);
 
+
     const zoomBehavior = d3.zoom()
-            .duration(1000) // duration for double-click zooming
             .on('zoom', function() {
-                console.log(d3.event.transform.toString())
-                svg.attr("transform", d3.event.transform);
+                console.log("xoom")
+                rect.attr("transform", d3.event.transform);
+                grid.attr("transform", d3.event.transform);
+            })
+            .on('end', function() {
+                console.log("zoom.end", d3.event.transform, d3.zoomIdentity)
             })
 
-    svg.call(zoomBehavior);
+    svg.transition().duration(1000).delay(500)
+            .call(zoomBehavior.scaleBy, 2)
+            .transition().delay(500)
+            .call(zoomBehavior.scaleBy, 2)
+            .transition().delay(500)
+            .call(zoomBehavior.scaleBy, .25);
+
 
 </script>
 

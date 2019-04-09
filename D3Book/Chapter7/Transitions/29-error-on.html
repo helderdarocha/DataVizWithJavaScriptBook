@@ -30,7 +30,12 @@
          .style("fill","blue")  //   applied to selection
          .transition()          // Transition
          .style("fill","red")   //   applied to transition
-         .on("start", () => console.log(d3.event)); // d3.event is null
+         .on("start", () => console.log(d3.event)); // d3.event is nulld3.select("rect")               // Selection
+.attr("fill","blue")    //   applied to selection
+        .transition()           // Transition
+        .attr("fill","red")     //   applied to transition
+        .selection()            // Selection
+        .on("click", () => console.log(d3.event)); // MouseEvent
 
 // WRONG: no 'click' event in transition
  d3.select("rect")               // Selection
@@ -40,12 +45,7 @@
          .on("click", () => {}); // Error: no 'click' event in transition
 
 // OK: selection
- d3.select("rect")               // Selection
-         .attr("fill","blue")    //   applied to selection
-         .transition()           // Transition
-         .attr("fill","red")     //   applied to transition
-         .selection()            // Selection
-         .on("click", () => console.log(d3.event)); // MouseEvent
+
 
 
 </script>
