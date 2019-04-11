@@ -94,12 +94,12 @@
         const chart = svg.append("g");
 
         const sim = d3.forceSimulation(nodes)
-        .force('charge', d3.forceManyBody().strength(-350))
-        .force('center', d3.forceCenter().x(width*.5).y(height*.5))
-        .force('y', d3.forceY().y(d => height * yScale(d.group)).strength(.8))
-        .force('x', d3.forceX().x(d => width  * xScale(d.group)).strength(.8))
-        .force('link', d3.forceLink(links).strength(2))
-        .force('collide', d3.forceCollide(d => radius(d.value) + 1).iterations(5))
+        .force("manybody", d3.forceManyBody().strength(-350))
+        .force("center", d3.forceCenter().x(width*.5).y(height*.5))
+        .force("y", d3.forceY().y(d => height * yScale(d.group)).strength(.8))
+        .force("x", d3.forceX().x(d => width  * xScale(d.group)).strength(.8))
+        .force("link", d3.forceLink(links).strength(2))
+        .force("collide", d3.forceCollide(d => radius(d.value) + 1).iterations(5))
         .alphaDecay(.38);
 
         for(let i = 0; i < 150; i++) {
@@ -112,19 +112,19 @@
     });
 
     function draw(chart, nodes) {
-        const node = chart.selectAll('g')
+        const node = chart.selectAll("g")
                           .data(nodes).enter()
-                          .append('g')
+                          .append("g")
                           .attr("transform", d => `translate(${[d.x, d.y]})`);
 
         node.append("circle")
-            .attr('r', d => radius(d.value))
-            .attr('fill', (d,i) => color(d.group))
-            .attr('opacity', d => d.value == 0 ? 0 : 1)
+            .attr("r", d => radius(d.value))
+            .style("fill", (d,i) => color(d.group))
+            .style("opacity", d => d.value == 0 ? 0 : 1)
 
-        node.append('text').attr("class", "name").attr("id", d => d.code)
+        node.append("text").attr("class", "name").attr("id", d => d.code)
             .text(d => d.node)
-            .attr('y', d => radius(d.value)*.1)
+            .attr("y", d => radius(d.value)*.1)
             .style("font-size", function(d,i) {
                 const r = radius(d.value);
                 const scale = (d.node.length <= 3 ? 1.6 : 2.5) * r;
@@ -136,16 +136,16 @@
                 return size > 9 ? size : 0;
             });
 
-        node.append('text').attr("class", "total")
+        node.append("text").attr("class", "total")
             .text((d,i) => i <= 52 ? format(d.value) : '')
-            .attr('y', d => .8 * radius(d.value))
-            .style('alignment-baseline', 'baseline')
+            .attr("y", d => .8 * radius(d.value))
+            .style("alignment-baseline", 'baseline')
             .style("font-size", d => .25 * radius(d.value));
 
-        node.append('text').attr("class", "rank")
+        node.append("text").attr("class", "rank")
             .text((d,i) => i <= 52 ? ordinal(i-2) : '')
-            .attr('y', d => -radius(d.value) + 4)
-            .style('alignment-baseline', 'hanging')
+            .attr("y", d => -radius(d.value) + 4)
+            .style("alignment-baseline", 'hanging')
             .style("font-size", d => radius(d.value)/3);
     }
 

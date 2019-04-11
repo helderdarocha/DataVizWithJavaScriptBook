@@ -63,8 +63,8 @@
     const width = 1000;
     const height = 800;
     const margin = 100;
-    const svg = d3.select('body').append('svg').attr('width',width).attr('height',height);
-    const chart = svg.append('g').attr('transform', `translate(${[width/2 + margin/2, height/2 + margin/2]})`);
+    const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
+    const chart = svg.append("g").attr("transform", `translate(${[width/2 + margin/2, height/2 + margin/2]})`);
 
     const color = d3.scaleSequential(d3.interpolateSinebow).domain([1,12]);
 
@@ -76,12 +76,12 @@
 
         const ribbon = d3.ribbon().radius(height/2 - margin/2);
 
-        chart.selectAll('path')
+        chart.selectAll("path")
                 .data(chords)
-                .enter().append('path')
-                .attr('d', ribbon)
-                .attr('opacity', .3)
-                .attr('fill', d => color(d.target.index));
+                .enter().append("path")
+                .attr("d", ribbon)
+                .style("opacity", .3)
+                .style("fill", d => color(d.target.index));
     }
 
 </script>

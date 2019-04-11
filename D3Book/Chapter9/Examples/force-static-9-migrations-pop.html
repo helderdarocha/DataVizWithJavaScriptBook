@@ -68,9 +68,9 @@
         const chart = svg.append("g").attr("transform", `translate(${[width * .5,height * .5]})`);
 
         const sim = d3.forceSimulation(nodes);
-        sim.force('center', d3.forceCenter());
-        sim.force('manyBody', d3.forceManyBody().strength(30));
-        sim.force('x', d3.forceY().strength(.1))
+        sim.force("center", d3.forceCenter());
+        sim.force("manybody", d3.forceManyBody().strength(30));
+        sim.force("x", d3.forceY().strength(.1))
         sim.force('collision', d3.forceCollide(d => scaleRadius(Math.sqrt(d.total/d.pop))+1).iterations(10))
 
         for(let i = 0; i < 300; i++) { sim.tick(); }
@@ -81,21 +81,21 @@
     function draw(chart, data) {
         const node = chart.selectAll('g.location')
                 .data(nodes).enter()
-                .append('g')
-                .attr('class', 'location')
+                .append("g")
+                .attr("class", 'location')
                 .attr("transform", d => `translate(${[d.x,d.y]})`);
 
-        node.append('circle')
-                .attr('r', d => scaleRadius(Math.sqrt(d.total/d.pop)))
-                .attr('fill', (d,i) => nodeColors(i))
-                .attr('stroke','black')
-                .attr("stroke-width", .5)
-                .attr("opacity", .75)
+        node.append("circle")
+                .attr("r", d => scaleRadius(Math.sqrt(d.total/d.pop)))
+                .style("fill", (d,i) => nodeColors(i))
+                .style("stroke",'black')
+                .style("stroke-width", .5)
+                .style("opacity", .75)
 
-        node.append('text').attr("class", "name").attr("id", d => d.code)
+        node.append("text").attr("class", "name").attr("id", d => d.code)
                 .text(d => d.node)
-                .attr('y', d => scaleRadius(Math.sqrt(d.total/d.pop))*.1)
-                .style('fill', (d,i) => contrast(nodeColors(i)))
+                .attr("y", d => scaleRadius(Math.sqrt(d.total/d.pop))*.1)
+                .style("fill", (d,i) => contrast(nodeColors(i)))
                 .style("font-size", function(d,i) {
                    const r = scaleRadius(Math.sqrt(d.total/d.pop));
                     const scale = (d.node.length <= 3 ? 1.6 : 2.5) * r;
@@ -107,18 +107,18 @@
                     return size > 9 ? size : 0;
                 });
 
-        node.append('text').attr("class", "total")
+        node.append("text").attr("class", "total")
                 .text((d,i) => i <= 50 ? format(d.total/d.pop) : '')
-                .attr('y', d => .8 * scaleRadius(Math.sqrt(d.total/d.pop)))
-                .style('alignment-baseline', 'baseline')
-                .style('fill', (d,i) => contrast(nodeColors(i)))
+                .attr("y", d => .8 * scaleRadius(Math.sqrt(d.total/d.pop)))
+                .style("alignment-baseline", 'baseline')
+                .style("fill", (d,i) => contrast(nodeColors(i)))
                 .style("font-size", d => .25 * scaleRadius(Math.sqrt(d.total/d.pop)));
 
-        node.append('text').attr("class", "rank")
+        node.append("text").attr("class", "rank")
                 .text((d,i) => i <= 50 ? ordinal(i+1) : '')
-                .attr('y', d => -scaleRadius(Math.sqrt(d.total/d.pop)) + 4)
-                .style('alignment-baseline', 'hanging')
-                .style('fill', (d,i) => contrast(nodeColors(i)))
+                .attr("y", d => -scaleRadius(Math.sqrt(d.total/d.pop)) + 4)
+                .style("alignment-baseline", 'hanging')
+                .style("fill", (d,i) => contrast(nodeColors(i)))
                 .style("font-size", d => scaleRadius(Math.sqrt(d.total/d.pop)/3));
     }
 

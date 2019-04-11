@@ -71,12 +71,12 @@
         const chart = svg.append("g").attr("transform", `translate(${[width * .5,height * .5]})`);
 
         const sim = d3.forceSimulation(nodes);
-        sim.force('center', d3.forceCenter());
-        sim.force('manyBody', d3.forceManyBody().strength(d => -scaleDistance(d.connections)));
-        sim.force('link', d3.forceLink(links).iterations(2).distance(90))
+        sim.force("center", d3.forceCenter());
+        sim.force("manybody", d3.forceManyBody().strength(d => -scaleDistance(d.connections)));
+        sim.force("link", d3.forceLink(links).iterations(2).distance(90))
         sim.force('collision', d3.forceCollide(d => scaleRadius(d.total)))
 
-        sim.on('tick', redraw);
+        sim.on("tick", redraw);
 
         // Dragging behavior - using fixed nodes
         nodeDragged.on('drag', function(d) {
@@ -100,33 +100,33 @@
     function draw(chart, data) {
         chart.selectAll('line.border')
                 .data(links).enter()
-                .append('line').attr('class', 'border')
-                .attr('x1', d => d.source.x)
-                .attr('x2', d => d.target.x)
-                .attr('y1', d => d.source.y)
-                .attr('y2', d => d.target.y)
-                .attr('fill', 'none')
-                .attr('stroke', d => isCoastline(d) ? 'blue' : 'black')
-                .attr('stroke-opacity', d => scaleOpacity(d.value))
-                .attr('stroke-width', d => scaleWidth(d.value))
+                .append('line').attr("class", 'border')
+                .attr("x1", d => d.source.x)
+                .attr("x2", d => d.target.x)
+                .attr("y1", d => d.source.y)
+                .attr("y2", d => d.target.y)
+                .style("fill", 'none')
+                .style("stroke", d => isCoastline(d) ? 'blue' : 'black')
+                .style("stroke-opacity", d => scaleOpacity(d.value))
+                .style("stroke-width", d => scaleWidth(d.value))
 
         const bubble = chart.selectAll('g.bubble')
                 .data(nodes).enter()
-                .append('g').attr('class', 'bubble')
-                .attr('transform', d => `translate(${[d.x, d.y]})`)
+                .append("g").attr("class", 'bubble')
+                .attr("transform", d => `translate(${[d.x, d.y]})`)
                 .call(nodeDragged);
 
-        bubble.append('circle')
-                .attr('r', d => scaleRadius(d.total))
-                .attr('fill', (d,i) => colors[i])
-                .attr('stroke', 'black')
-                .attr('stroke-width', .5)
-                .on('mouseover', highlightNode)
-                .on('mouseout', d => d3.selectAll("circle, line").classed('faded highlight', false));
+        bubble.append("circle")
+                .attr("r", d => scaleRadius(d.total))
+                .style("fill", (d,i) => colors[i])
+                .style("stroke", 'black')
+                .style("stroke-width", .5)
+                .on("mouseover", highlightNode)
+                .on("mouseout", d => d3.selectAll("circle, line").classed('faded highlight', false));
 
-        bubble.append('text')
+        bubble.append("text")
                 .text(d => d.node)
-                .style('fill', (d,i) => contrast(colors[i]))
+                .style("fill", (d,i) => contrast(colors[i]))
                 .style("font-size", function(d) {
                     const size = Math.min(2.2*scaleRadius(d.total), (2.2*scaleRadius(d.total)-8) / this.getComputedTextLength() * 9);
                     return size > 5 ? size : 0;
@@ -134,12 +134,12 @@
     }
 
     function redraw() {
-        d3.selectAll('.bubble').attr('transform', d => `translate(${[d.x, d.y]})`);
+        d3.selectAll('.bubble').attr("transform", d => `translate(${[d.x, d.y]})`);
 
-        d3.selectAll('.border').attr('x1', d => d.source.x)
-                            .attr('x2', d => d.target.x)
-                            .attr('y1', d => d.source.y)
-                            .attr('y2', d => d.target.y)
+        d3.selectAll('.border').attr("x1", d => d.source.x)
+                            .attr("x2", d => d.target.x)
+                            .attr("y1", d => d.source.y)
+                            .attr("y2", d => d.target.y)
     }
 
     function contrast(color) {

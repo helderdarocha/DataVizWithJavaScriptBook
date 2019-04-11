@@ -96,7 +96,7 @@
             .attr("transform", `translate(${[-labelPadding,(height/2)]}) rotate(90)`)
 
     // Brush configuration
-    let domain = {}; // saves current domain
+    const domain = {}; // saves current domain
     const extent = [[0,0],[width, height]];
     const brush = d3.brushX()
             .on("start", () => svg.style("cursor", "pointer !important"))

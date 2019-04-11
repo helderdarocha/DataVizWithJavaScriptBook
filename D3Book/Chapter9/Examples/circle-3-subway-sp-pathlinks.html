@@ -54,39 +54,39 @@
         const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
         const chart = svg.append("g").attr("transform", `translate(${[width/2 + margin/4,height/2 + margin/8]})`);
 
-        chart.selectAll('path')
+        chart.selectAll("path")
                 .data(data.links())
                 .enter()
-                .append('path')
-                .attr('d', radialLink)
-                .attr('stroke-width', d => d.lines[0] == d.lines[1] ? 4 : 10)
-                .attr('stroke', d => d.lines[0] != d.lines[1] ? 'black' :colorScale(d.target.node.split(':')[1]))
-                .attr('stroke-opacity', d => d.lines[0] == d.lines[1] ? 1 : .1)
-                .attr('fill', 'none');
+                .append("path")
+                .attr("d", radialLink)
+                .style("stroke-width", d => d.lines[0] == d.lines[1] ? 4 : 10)
+                .style("stroke", d => d.lines[0] != d.lines[1] ? 'black' :colorScale(d.target.node.split(':')[1]))
+                .style("stroke-opacity", d => d.lines[0] == d.lines[1] ? 1 : .1)
+                .style("fill", 'none');
 
-        chart.selectAll('circle')
+        chart.selectAll("circle")
                 .data(data.nodes())
                 .enter()
-                .append('circle')
+                .append("circle")
                 .attr("id", d => d.node)
-                .attr('cx', d => d3.pointRadial(d.angle, d.radius)[0])
-                .attr('cy', d => d3.pointRadial(d.angle, d.radius)[1])
-                .attr('r', 5)
-                .attr('fill', d => colorScale(d.node.split(':')[1]))
-                .on('mouseover', highlight)
-                .on('mouseout', d => d3.selectAll("path, circle, text").classed('faded', false));
+                .attr("cx", d => d3.pointRadial(d.angle, d.radius)[0])
+                .attr("cy", d => d3.pointRadial(d.angle, d.radius)[1])
+                .attr("r", 5)
+                .style("fill", d => colorScale(d.node.split(':')[1]))
+                .on("mouseover", highlight)
+                .on("mouseout", d => d3.selectAll("path, circle, text").classed('faded', false));
 
         chart.selectAll('text.location')
                 .data(data.nodes())
                 .enter()
-                .append('text').attr('class','location')
-                .attr('x', d => d3.pointRadial(d.angle, d.radius + 25)[0])
-                .attr('y', d => d3.pointRadial(d.angle, d.radius + 25)[1])
-                .attr('transform',d => `rotate(${-90 + d.angle * 180 / Math.PI},${[d3.pointRadial(d.angle, d.radius + 25)]})`)
-                .style('fill', d => d3.rgb(colorScale(d.node.split(':')[1])).darker(.5))
+                .append("text").attr("class",'location')
+                .attr("x", d => d3.pointRadial(d.angle, d.radius + 25)[0])
+                .attr("y", d => d3.pointRadial(d.angle, d.radius + 25)[1])
+                .attr("transform",d => `rotate(${-90 + d.angle * 180 / Math.PI},${[d3.pointRadial(d.angle, d.radius + 25)]})`)
+                .style("fill", d => d3.rgb(colorScale(d.node.split(':')[1])).darker(.5))
                 .text(d => d.node.split(':')[0])
-                .on('mouseover', highlight)
-                .on('mouseout', d => d3.selectAll("path, circle, text").classed('faded', false));
+                .on("mouseover", highlight)
+                .on("mouseout", d => d3.selectAll("path, circle, text").classed('faded', false));
     }
 
     function highlight(d) {

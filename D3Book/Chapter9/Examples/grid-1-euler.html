@@ -32,10 +32,10 @@
         {source: 'A', target: 'B', value: 'a'},
         {source: 'B', target: 'A', value: 'b'},
         {source: 'A', target: 'C', value: 'c'},
-        {source: 'C', target: 'A', value: 'd'},
+        {source: 'C', target: 'A', value: "d"},
         {source: 'A', target: 'D', value: 'e'},
         {source: 'C', target: 'D', value: 'f'},
-        {source: 'D', target: 'B', value: 'g'},
+        {source: 'D', target: 'B', value: "g"},
     ];
 
     const grid  = dvj.squareGrid()
@@ -61,31 +61,31 @@
             .curvature(.8)
             .symmetric(true);
 
-    chart.selectAll('path')
+    chart.selectAll("path")
             .data(data.edges())
             .enter()
-            .append('path')
-            .attr('d', line)
-            .attr('stroke', 'blue')
-            .attr('fill', 'none')
-            .attr("stroke-width", 10)
-            .attr('stroke-opacity', .5)
+            .append("path")
+            .attr("d", line)
+            .style("stroke", 'blue')
+            .style("fill", 'none')
+            .style("stroke-width", 10)
+            .style("stroke-opacity", .5)
 
-    chart.selectAll('circle')
+    chart.selectAll("circle")
             .data(data.nodes())
             .enter()
-            .append('circle')
-            .attr('cx', d => d.x)
-            .attr('cy', d => d.y)
-            .attr('fill', (d,i) => 'red')
-            .attr('r', 30);
+            .append("circle")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .style("fill", (d,i) => 'red')
+            .attr("r", 30);
 
-    chart.selectAll('text')
+    chart.selectAll("text")
             .data(data.nodes())
             .enter()
-            .append('text')
-            .attr('x', d => d.x)
-            .attr('y', d => d.y)
+            .append("text")
+            .attr("x", d => d.x)
+            .attr("y", d => d.y)
             .text(d => d.node);
 
 

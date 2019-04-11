@@ -73,24 +73,24 @@
 
         const curve = dvj.curve().size([width-margin*4, height*4]);
 
-        chart.selectAll('path')
+        chart.selectAll("path")
                 .data(data.links())
                 .enter()
-                .append('path')
-                .attr('d', curve)
-                .attr('stroke-width', d => widthScale(d.value))
-                .attr('stroke', (d,i) => d.direction > 0 ? "#c97b20" : "#252523")
-                .attr('stroke-opacity', .3)
-                .attr('fill', 'none');
+                .append("path")
+                .attr("d", curve)
+                .style("stroke-width", d => widthScale(d.value))
+                .style("stroke", (d,i) => d.direction > 0 ? "#c97b20" : "#252523")
+                .style("stroke-opacity", .3)
+                .style("fill", 'none');
 
-        chart.selectAll('circle')
+        chart.selectAll("circle")
                 .data(data.nodes())
                 .enter()
-                .append('circle')
+                .append("circle")
                 .attr("id", d => d.node)
-                .attr('cx', d => d.x)
-                .attr('fill', (d,i) => d.direction > 0 ? "#c97b20" : "#252523")
-                .attr('r', function(d) {
+                .attr("cx", d => d.x)
+                .style("fill", (d,i) => d.direction > 0 ? "#c97b20" : "#252523")
+                .attr("r", function(d) {
                    const target = data.links().filter(k => k.target.node == d.node)[0];
                    const source = data.links().filter(k => k.source.node == d.node)[0];
                    if(target && source) {
@@ -99,25 +99,25 @@
                    if(target) return .5 * widthScale(target.value);
                    else return .5 * widthScale(source.value);
                 })
-                .on('mouseover', highlight)
-                .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
+                .on("mouseover", highlight)
+                .on("mouseout", d => d3.selectAll("path, circle").classed('faded', false));;
 
         chart.selectAll('text.location')
                 .data(data.nodes())
                 .enter()
-                .append('text').attr('class','location')
-                .attr('x', d => d.x)
-                .attr('y', d => d.node == 'Polotsk' ? 30 : d.direction * (25 + +d3.select("#"+d.node).attr("r")))
+                .append("text").attr("class",'location')
+                .attr("x", d => d.x)
+                .attr("y", d => d.node == 'Polotsk' ? 30 : d.direction * (25 + +d3.select("#"+d.node).attr("r")))
                 .text(d => d.node.length > 3 ? d.node : '');
 
         chart.selectAll('text.value')
                 .data(data.links())
                 .enter()
-                .append('text').attr('class','value')
-                .attr('x', d => 0.5 * (d.source.x + d.target.x))
-                .attr('y', d => 1.25 * (d.source.x - d.target.x) - d.direction * (10 + widthScale(d.value/2)))
-                .style('font-size', 18)
-                .style('fill', '#555')
+                .append("text").attr("class",'value')
+                .attr("x", d => 0.5 * (d.source.x + d.target.x))
+                .attr("y", d => 1.25 * (d.source.x - d.target.x) - d.direction * (10 + widthScale(d.value/2)))
+                .style("font-size", 18)
+                .style("fill", '#555')
                 .text(d => d.value);
     }
 

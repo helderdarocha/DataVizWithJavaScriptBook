@@ -61,49 +61,49 @@
     const sim = d3.forceSimulation(nodes).stop();
 
     const manyBody = d3.forceManyBody();
-    sim.force('manybody', manyBody);
-    sim.force('center', d3.forceCenter());
+    sim.force("manybody", manyBody);
+    sim.force("center", d3.forceCenter());
 
     for(let i = 0; i < 45; i++) { sim.tick(); } // start separated
 
     manyBody.strength(100);
-    sim.force('collide', d3.forceCollide(d => radius(d.value)).iterations(10));
+    sim.force("collide", d3.forceCollide(d => radius(d.value)).iterations(10));
 
     // dynamic part
     sim.alpha(1);
     sim.restart();
-    sim.on('tick', redraw);
+    sim.on("tick", redraw);
 
     draw(chart);
 
     function draw() {
-        chart.selectAll('circle')
+        chart.selectAll("circle")
                 .data(nodes).enter()
-                .append('circle')
-                .attr('r', d => radius(d.value))
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y)
-                .attr('fill', (d,i) => color(i))
-                .attr('stroke', 'black')
-                .attr('fill-opacity',.5)
+                .append("circle")
+                .attr("r", d => radius(d.value))
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y)
+                .style("fill", (d,i) => color(i))
+                .style("stroke", 'black')
+                .style("fill-opacity",.5)
 
-        chart.selectAll('text')
+        chart.selectAll("text")
                 .data(nodes).enter()
-                .append('text')
+                .append("text")
                 .text(d => d.node)
-                .attr('x', d => d.x)
-                .attr('y', d => d.y)
-                .attr('font-size', d => radius(d.value))
+                .attr("x", d => d.x)
+                .attr("y", d => d.y)
+                .style("font-size", d => radius(d.value))
     }
 
     function redraw() {
-        chart.selectAll('circle')
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y);
+        chart.selectAll("circle")
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
 
-        chart.selectAll('text')
-                .attr('x', d => d.x)
-                .attr('y', d => d.y);
+        chart.selectAll("text")
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
     }
 
 </script>

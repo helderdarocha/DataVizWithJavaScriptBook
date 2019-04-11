@@ -23,14 +23,14 @@
     const width = 800;
     const height = 800;
     const margin = 100;
-    const svg = d3.select('body').append('svg').attr('width',width).attr('height',height);
-    const chart = svg.append('g').attr('transform', `translate(${[width/2 + margin/4, height/2 + margin/4]})`);
+    const svg = d3.select("body").append("svg").attr("width",width).attr("height",height);
+    const chart = svg.append("g").attr("transform", `translate(${[width/2 + margin/4, height/2 + margin/4]})`);
 
     const color = d3.scaleSequential(d3.interpolateRainbow);
 
-    chart.append('text').attr("id","loading")
-            .style('font-size',25)
-            .style('fill','black')
+    chart.append("text").attr("id","loading")
+            .style("font-size",25)
+            .style("fill",'black')
             .text('Loading...');
 
     d3.csv("../Data/migration_2017.csv", function(row) {
@@ -92,27 +92,27 @@
 
         chart.selectAll('path.ribbon')
                 .data(chords)
-                .enter().append('path').attr('class','ribbon')
-                .attr('d', ribbon)
-                .attr('opacity', .5)
-                .attr('fill', d => color(d.target.index));
+                .enter().append("path").attr("class",'ribbon')
+                .attr("d", ribbon)
+                .style("opacity", .5)
+                .style("fill", d => color(d.target.index));
 
         const arc = d3.arc().innerRadius(radius+2).outerRadius(radius+20);
 
         chart.selectAll('path.arc')
                 .data(chords.groups)
-                .enter().append('path').attr('class','arc')
-                .attr('d', arc)
-                .attr('fill', d => color(d.index));
+                .enter().append("path").attr("class",'arc')
+                .attr("d", arc)
+                .style("fill", d => color(d.index));
 
-        chart.selectAll('text')
+        chart.selectAll("text")
                 .data(chords.groups)
-                .enter().append('text')
-                .attr('x', d => arc.centroid(d)[0])
-                .attr('y', d => arc.centroid(d)[1])
+                .enter().append("text")
+                .attr("x", d => arc.centroid(d)[0])
+                .attr("y", d => arc.centroid(d)[1])
                 .text(d => d.value > 3000000 ? headers[d.index] : '')
                 .style("fill", d => contrast(color(d.index)))
-                .attr('transform',d => `rotate(${(arc.endAngle()(d) + arc.startAngle()(d))*90/Math.PI},${arc.centroid(d)})`);
+                .attr("transform",d => `rotate(${(arc.endAngle()(d) + arc.startAngle()(d))*90/Math.PI},${arc.centroid(d)})`);
 
         chart.selectAll("#loading").remove();
     }

@@ -81,54 +81,54 @@
         chart.selectAll('path.link')
                 .data(graph.links)
                 .enter()
-                .append('path').attr("class", 'link')
-                .attr('d', d3.sankeyLinkHorizontal())
-                .attr("stroke-opacity", .4)
-                .attr('stroke-width', d => d.width)
-                .attr('stroke', d => d.target.Id == 'DEU' || d.target.Id.indexOf('EU') == 0 ? color(d.source.index) : color(d.target.index))
-                .attr('fill', 'none')
-                .on('mouseover', highlightPath)
-                .on('mouseout', d => d3.selectAll("rect, path, text").classed('faded', false));
+                .append("path").attr("class", "link")
+                .attr("d", d3.sankeyLinkHorizontal())
+                .style("stroke-opacity", .4)
+                .style("stroke-width", d => d.width)
+                .style("stroke", d => d.target.Id == 'DEU' || d.target.Id.indexOf('EU') == 0 ? color(d.source.index) : color(d.target.index))
+                .style("fill", 'none')
+                .on("mouseover", highlightPath)
+                .on("mouseout", d => d3.selectAll("rect, path, text").classed('faded', false));
 
         chart.selectAll('g.node')
                 .data(graph.nodes)
                 .enter()
-                .append('g').attr("class", 'node')
+                .append("g").attr("class", 'node')
                 .attr("transform", d => `translate(${[d.x0,d.y0]})`)
                 .each(function(d,i) {
-                    d3.select(this).append('rect')
-                        .attr('y', function() {
+                    d3.select(this).append("rect")
+                        .attr("y", function() {
                             if(d.y1 - d.y0 < 12) {
                                 return (d.y1 - d.y0)/2 - 5;
                             }
                             return 0;
                         })
-                        .attr('width', d.x1 - d.x0)
-                        .attr('height', function() {
+                        .attr("width", d.x1 - d.x0)
+                        .attr("height", function() {
                             if(d.y1 - d.y0 < 12) {
                                 return 10;
                             }
                             return d.y1 - d.y0;
                         })
-                        .attr('rx', d.y1 - d.y0 < 4?10:0).attr('ry', d.y1 - d.y0 < 4?5:0)
-                        .attr('fill', d3.rgb(color(i)).darker(.5))
+                        .attr("rx", d.y1 - d.y0 < 4?10:0).attr("ry", d.y1 - d.y0 < 4?5:0)
+                        .style("fill", d3.rgb(color(i)).darker(.5))
                         .style('fill-opacity', 1);
 
-                    d3.select(this).append('text')
-                        .attr('x', (d.x1 - d.x0)/2)
-                        .attr('y', (d.y1 - d.y0)/2 + 1)
+                    d3.select(this).append("text")
+                        .attr("x", (d.x1 - d.x0)/2)
+                        .attr("y", (d.y1 - d.y0)/2 + 1)
                         .text(d.Country)
                         .style("fill", contrast(d3.rgb(color(i)).darker(.5)))
-                        .style('text-anchor', 'middle')
-                        .style('font-size', function() {
+                        .style("text-anchor", 'middle')
+                        .style("font-size", function() {
                             if(d.y1 - d.y0 < 15) {
                                 return 10;
                             }
                             return 16;
                         });
              })
-            .on('mouseover', highlightNode)
-            .on('mouseout', fade)
+            .on("mouseover", highlightNode)
+            .on("mouseout", fade)
             .call(d3.drag()
                     .on('start', dragStart)
                     .on('drag', dragging)
@@ -162,7 +162,7 @@
 
     function dragStart(d) {
         d.dy = d3.event.y - d.y0;
-        d3.selectAll(".link, .node").style('pointer-events', 'none');
+        d3.selectAll(".link, .node").style("pointer-events", 'none');
         d3.select(this).raise().classed("active", true);
     }
 
@@ -174,7 +174,7 @@
     }
 
     function dragEnd(d) {
-        d3.selectAll(".link, .node").style('pointer-events', 'auto')
+        d3.selectAll(".link, .node").style("pointer-events", 'auto')
         d3.select(this).classed("active", false);
     }
 </script>

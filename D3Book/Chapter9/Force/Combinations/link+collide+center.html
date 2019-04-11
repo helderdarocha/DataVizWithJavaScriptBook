@@ -94,41 +94,41 @@
 
     const sim = d3.forceSimulation(nodes);
 
-    sim.force('center', d3.forceCenter()); // without center, the forces will pull the nodes out of view
-    sim.force('link', d3.forceLink(links).iterations(100));
-    sim.force('collide', d3.forceCollide(20).iterations(10));
+    sim.force("center", d3.forceCenter()); // without center, the forces will pull the nodes out of view
+    sim.force("link", d3.forceLink(links).iterations(100));
+    sim.force("collide", d3.forceCollide(20).iterations(10));
 
-    sim.on('tick', redraw);
+    sim.on("tick", redraw);
 
     draw();
 
     function draw() {
-        chart.selectAll('circle')
+        chart.selectAll("circle")
                 .data(nodes).enter()
-                .append('circle')
-                .attr('r', 15)
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y)
-                .attr('fill', (d,i) => d3.rgb(color(i)).darker())
-                .attr('stroke', 'black')
-                .attr('fill-opacity',.5)
+                .append("circle")
+                .attr("r", 15)
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y)
+                .style("fill", (d,i) => d3.rgb(color(i)).darker())
+                .style("stroke", 'black')
+                .style("fill-opacity",.5)
 
-        chart.selectAll('text')
+        chart.selectAll("text")
                 .data(nodes).enter()
-                .append('text')
+                .append("text")
                 .text(d => d.node)
-                .attr('x', d => d.x)
-                .attr('y', d => d.y)
+                .attr("x", d => d.x)
+                .attr("y", d => d.y)
     }
 
     function redraw() {
-        chart.selectAll('circle')
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y);
+        chart.selectAll("circle")
+                .attr("cx", d => d.x)
+                .attr("cy", d => d.y);
 
-        chart.selectAll('text')
-                .attr('x', d => d.x)
-                .attr('y', d => d.y);
+        chart.selectAll("text")
+                .attr("x", d => d.x)
+                .attr("y", d => d.y);
     }
 
 </script>

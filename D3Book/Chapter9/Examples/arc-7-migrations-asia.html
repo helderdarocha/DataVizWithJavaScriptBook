@@ -77,31 +77,31 @@
         const curve = dvj.curve()
                          .size([width-margin, height]);
 
-        chart.selectAll('path')
+        chart.selectAll("path")
                 .data(data.links())
                 .enter()
-                .append('path')
-                .attr('d', curve)
-                .attr('stroke-width', d => widthScale(d.value))
-                .attr('stroke', d => d3.rgb(color(d.source.i)).darker(.5))
-                .attr('stroke-opacity', .6)
-                .attr('fill', 'none');
+                .append("path")
+                .attr("d", curve)
+                .style("stroke-width", d => widthScale(d.value))
+                .style("stroke", d => d3.rgb(color(d.source.i)).darker(.5))
+                .style("stroke-opacity", .6)
+                .style("fill", 'none');
 
-        chart.selectAll('circle')
+        chart.selectAll("circle")
                 .data(data.nodes())
                 .enter()
-                .append('circle')
-                .attr('cx', d => d.x)
-                .attr('fill', (d,i) => d3.rgb(color(i)).darker(.5))
-                .attr('r', 10)
-                .on('mouseover', highlight)
-                .on('mouseout', d => d3.selectAll("path, circle").classed('faded', false));;
+                .append("circle")
+                .attr("cx", d => d.x)
+                .style("fill", (d,i) => d3.rgb(color(i)).darker(.5))
+                .attr("r", 10)
+                .on("mouseover", highlight)
+                .on("mouseout", d => d3.selectAll("path, circle").classed('faded', false));;
 
-        chart.selectAll('text')
+        chart.selectAll("text")
                 .data(data.nodes())
                 .enter()
-                .append('text')
-                .attr('x', d => d.x)
+                .append("text")
+                .attr("x", d => d.x)
                 .text(d => d.node)
                 .style("font-size", function() {
                     return 20 * 10 / this.getComputedTextLength();
