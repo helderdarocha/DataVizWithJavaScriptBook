@@ -128,7 +128,7 @@ const simpleHierarchy = {
     ]
 };
 
-// Simple tabular with reference (can be stratified)
+// Simple tabular with references (can be stratified)
 const refTable = `Id,Name,Context,Value1,Value2
 root,Root,,,,
 group_1,First Group,root,,,
@@ -154,22 +154,3 @@ leaf_13,Thirteenth Leaf,subsubg_1,6,5
 leaf_14,Fourteenth Leaf,group_2,4,1
 leaf_15,Fifteenth Leaf,root,8,8
 leaf_16,Sixteenth Leaf,root,3,9`;
-
-// Simple tabular with categories (can be nested)
-const catTable = `Id,Category,Subcategory,Group,Name,Value1,Value2
-leaf_1,First Group,First Subgroup,,First Leaf,5,2
-leaf_2,First Group,First Subgroup,,Second Leaf,1,7
-leaf_3,First Group,First Subgroup,,Third Leaf,4,4
-leaf_4,First Group,Second Subgroup,,Fourth Leaf,9,3
-leaf_5,First Group,Second Subgroup,,Fifth Leaf,7,6
-leaf_6,Second Group,Third Subgroup,,Sixth Leaf,8,3
-leaf_7,Second Group,Third Subgroup,,Seventh Leaf,1,3
-leaf_8,Second Group,Third Subgroup,,Eighth Leaf,7,4
-leaf_9,Second Group,Third Subgroup,,Ninth Leaf,4,9
-leaf_10,Second Group,Third Subgroup,,Tenth Leaf,1,1
-leaf_11,Second Group,Third Subgroup,,Eleventh Leaf,6,1
-leaf_12,Second Group,Third Subgroup,,Twelvth Leaf,1,5
-leaf_13,Second Group,Fourth Subgroup,First-Sub-Subgroup,Thirteenth Leaf,6,5
-leaf_14,Second Group,,,Fourteenth Leaf,4,1
-leaf_15,,,,Fifteenth Leaf,root,8,8
-leaf_16,,,,Sixteenth Leaf,root,3,9`;
