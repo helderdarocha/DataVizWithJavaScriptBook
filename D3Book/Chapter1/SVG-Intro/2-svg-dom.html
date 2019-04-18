@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        svg {border: solid 1px gray}
+    </style>
+</head>
+<body>
+<h2>An SVG viewport created with the DOM API</h2>
+<script>
+    const svg = document.createElement("svg");
+    svg.setAttribute("width", "300");
+    svg.setAttribute("height", "300");
+    document.body.appendChild(svg);
+</script>
+</body>
+</html>

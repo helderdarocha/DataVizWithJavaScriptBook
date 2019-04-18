@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
-    <rect x="50" y="50" height="50" width="50" fill="red" stroke="blue" stroke-width="10" stroke-opacity="0.5"/>
-    <path id="path1" d="M150,200 L150,150 L100,150 C100,200 150,250 200,250 L200,200 Z"
-          stroke-dasharray="5 2 1 2" stroke-width="2" stroke="blue" fill="none"/>
-</svg>
