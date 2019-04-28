@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
 </head>
 <style>
     svg {
@@ -11,16 +12,11 @@
 </style>
 <body>
 <h2>SVG lines and stroke using D3</h2>
-<svg width="600" height="200">
-    <line x2="200" style="stroke-width: 20px" stroke="red"   stroke-width="5"/>
-    <line y2="150" style="stroke-width: 20px" stroke="blue"  stroke-width="5"/>
-    <line x2="200" y2="150" style="stroke-width: 20px" stroke="black" stroke-width="1"/>
-</svg>
 <script>
     const svg = d3.select("body")
             .append("svg")
-            .attr("width", 400)
-            .attr("height", 300);
+            .attr("width", 600)
+            .attr("height", 200);
 
     svg.append("line")
             .attr("x2", 200)
