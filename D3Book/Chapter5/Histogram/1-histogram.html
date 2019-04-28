@@ -8,6 +8,9 @@
 <body>
 <svg width="100%" height="100%" viewBox="0 0 500 300"/>
 <script>
+
+    // d3.histogram() was replaced with d3.bin() in a newer version of d3-array
+
     const w = 500, h = 300, marginH = 40, marginW = 50;
 
     const scaleX = d3.scaleLinear().range([marginW, w-marginW]);

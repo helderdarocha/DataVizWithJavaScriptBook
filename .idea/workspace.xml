@@ -2,19 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/1-svg.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/2-svg-dom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/3-svg-d3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/4-svg-square.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/5-svg-css.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/6-fill.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/7-stroke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/8-text.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/D3_SVG/1-viewport-d3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/1-viewport.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/D3_SVG/2-circle-d3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/2-circle.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/D3_SVG/29-example.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/29-example.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/D3_SVG/4-lines-css-d3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/4-lines-css.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Chord/8-canvas.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/4-max-sort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/6-entries.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/7-entries-each.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/8-colors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/2-polygon-map-scales.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/2-interpolate-discrete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/3-interpolate-spline.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/4-interpolate-zoom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/5-interpolate-piecewise.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter8/Zoom/18-interpolate-zoom-2.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Chord/8-canvas-TODO.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Data/MapZoomingNotes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/3-zoom-to-object-mercator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/4-rotate-and-zoom-to-object-centroids.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/loxo-click-2-zoom-to-geobounds-mercator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/loxo-click-2-zoom-to-geobounds-orthographic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/wheel-3-zoom-scale.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/click-4-zoom-to-geobounds-rotate-3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/drag-2-versor-zoom-gnomonic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/drag-2-versor-zoom-mercator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/2-TODO-interpolate-discrete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/3-TODO-interpolate-spline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/4-TODO-interpolate-zoom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/5-TODO-interpolate-piecewise.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Canvas/2-canvas-zoom-TOREV.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Canvas/2-canvas-zoom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive-TOREV/1-highlight.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/1-highlight.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive-TOREV/2-drag.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/2-drag.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive-TOREV/3-drag-fix.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/3-drag-fix.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive-TOREV/4-edit.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/4-edit.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive-TOREV/5-find.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/5-find.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive-TOREV/6-zoom.html" afterPath="$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/6-zoom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/click-1-zoom-to-bounds.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/3-zoom-to-object-clean.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/drag-1-versor-mercator.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/6-versor-drag-mercator.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/wheel-2-zoom-svg-semantic.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Interactive/1-zoom-svg-semantic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/9-load-json.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/9-load-json.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-1.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/2-bar-width.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/1-bar-chart.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/3-scales.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-4.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/5-labels.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter5/StepByStepNest/5-TODO-rain-heatmap-d3-rollup.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/StepByStepNest/5-rain-heatmap-d3-rollup.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter8/Drag/2-drag-zoom-TODO.html" afterPath="$PROJECT_DIR$/D3Book/Chapter8/Drag/2-drag-zoom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter8/Ease/2-ease-animations-TODO.html" afterPath="$PROJECT_DIR$/D3Book/Chapter8/Ease/2-ease-animations.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter8/Zoom/17-interpolate-zoom-TODO.html" afterPath="$PROJECT_DIR$/D3Book/Chapter8/Zoom/17-interpolate-zoom.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Examples/TODO-partition-2-world-sunburst.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Examples/partition-2-world-sunburst.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter9/Examples/TODO-partition-3-world-icicle.html" afterPath="$PROJECT_DIR$/D3Book/Chapter9/Examples/partition-3-world-icicle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/4-max-sort.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/4-max-sort.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/5-labels.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/5-labels.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/1-polygon-map.html" afterPath="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/1-polygon-map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter5/Histogram/1-histogram.html" afterPath="$PROJECT_DIR$/D3Book/Chapter5/Histogram/1-histogram.html" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,98 +76,7 @@
     <favorites_list name="DataVizWithJavaScriptBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="19-translate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/19-translate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="17-groups-style.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/17-groups-style.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="18-groups-transforms.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/18-groups-transforms.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="es6.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/ES6/es6.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="46" column="43" selection-start-line="27" selection-start-column="4" selection-end-line="46" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14-text.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/14-text.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="9-polyline.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/9-polyline.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10-polygon.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/10-polygon.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="41" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="8-ellipse.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/8-ellipse.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20-scale-rotate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/20-scale-rotate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -143,35 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/Canvas/canvas-example.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/D3/2-intro-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/D3/1-intro-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/D3/3-intro-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/D3/4-transition.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/1-svg.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/2-svg-dom.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/3-svg-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG-Intro/4-svg-square.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG-Intro/4-svg-css.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG-Intro/5-svg-css.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/1-viewport-svg.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/Canvas/2-canvas-map.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/1-viewport.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/1-viewport-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/2-circle.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/2-circle-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/3-lines-stroke.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/4-lines-css.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/4-lines-css-d3.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/A_SVG/4-lines-css-inline.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/4-rect-css-class.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/rect.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/5-ellipse.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/11-text-2.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/11-text.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/1-viewport.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/3-lines-stroke.html" />
-        <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/4-lines-css.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/4-lines-css-inline.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/6-rect-css-class.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/7-rect-opacity.html" />
@@ -194,6 +115,35 @@
         <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/9-polyline.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter1/SVG/10-polygon.html" />
         <option value="$PROJECT_DIR$/D3Book/Chapter1/ES6/es6.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter8/Ease/2-ease-animations-TODO.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter8/Zoom/17-interpolate-zoom-TODO.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter8/Zoom/18-interpolate-zoom-2.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter8/Zoom/17-interpolate-zoom.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter8/Drag/2-drag-zoom-TODO.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter9/Examples/TODO-partition-3-world-icicle.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter9/Examples/partition-3-world-icicle.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter9/Examples/drag-to-rotate.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter10/Chord/8-canvas-TODO.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/1-polygon-map.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/2-polygon-map-scales.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Histogram/2-bin.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/StepByStepNest/5-TODO-rain-heatmap-d3-rollup.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/4-TODO-interpolate-zoom.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/2-TODO-interpolate-discrete.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/2-interpolate-discrete.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Histogram/1-histogram.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/3-TODO-interpolate-spline.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter5/Interpolate/5-interpolate-piecewise.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/8-colors.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/7-entries-each.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/6-entries.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/5-labels.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/5-labels.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/1-bar-chart.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/2-bar-width.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/3-scales.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/4-max-sort.html" />
+        <option value="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/4-max-sort.html" />
       </list>
     </option>
   </component>
@@ -207,7 +157,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2041" />
+    <option name="x" value="-1920" />
     <option name="y" value="92" />
     <option name="width" value="1189" />
     <option name="height" value="793" />
@@ -255,6 +205,60 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SVG-with-D3" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -273,19 +277,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/D3Book/Chapter2" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/D3_SVG" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/SVG-Intro2" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/A_SVG" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/SVG" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/SVG" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/A_SVG" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/SVG-Intro" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/D3" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter1/Data" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Interpolate" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter5/Histogram" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter8/Zoom" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter9/Examples" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter2" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.radial-4-ticks.html">
@@ -509,17 +513,20 @@
       <workItem from="1555070005196" duration="81230000" />
       <workItem from="1555330567702" duration="69741000" />
       <workItem from="1555687988921" duration="3492000" />
+      <workItem from="1556106276824" duration="1107000" />
+      <workItem from="1556313151458" duration="2714000" />
+      <workItem from="1556375565845" duration="22919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2922802000" />
+    <option name="totallyTimeSpent" value="2949542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2041" y="92" width="1189" height="793" extended-state="0" />
+    <frame x="-1920" y="92" width="1189" height="793" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.255449" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3190933" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -635,306 +642,410 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/4-svg-square.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive/6-versor-drag-mercator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/drag-2-versor-zoom-gnomonic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/drag-2-versor-zoom-mercator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/3-zoom-to-object-mercator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="121" column="42" selection-start-line="121" selection-start-column="42" selection-end-line="121" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive/versor-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV/wheel-3-zoom-scale.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Interactive/1-zoom-svg-semantic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Chord/8-canvas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/1-polygon-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter6/Axes/1-axis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Map/2-polygon-map-scales.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/5-svg-css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/A_SVG/2-viewport.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/Canvas/2-canvas-map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/1-viewport.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/2-circle.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/1-highlight.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/2-drag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/3-drag-fix.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/4-lines-css.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/4-edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="88" />
+        <state relative-caret-position="255">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/5-rect-stroke.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/5-find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Interactive/6-zoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Force/Canvas/2-canvas-zoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Arrays/6-grouping.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/coordinates3.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/fills.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/29-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/shapes-strokes.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/shapes.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/8-text.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/7-stroke.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-Intro/6-fill.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG-Intro2/-lines-1.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/1-viewport.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/2-circle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/3-lines-stroke.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/4-lines-css-inline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/4-lines-css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/6-rect-css-class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/7-rect-opacity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/11-path-arc-config.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/13-path-arc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/12-path-curve.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/11-path-line.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/15-text-align.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/16-tspan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/coordinates.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/coordinates2.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/20-structure-none.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter1/SVG/20-structure-board.html" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/29-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/29-example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="71" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/25-filter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/24-clipping.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/23-gradient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="31" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/22-defs-use.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/21-skew.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/19-translate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/17-groups-style.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Histogram/2-bin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/18-groups-transforms.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/StepByStepNest/5-rain-heatmap-d3-rollup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="315">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/Canvas/1-canvas-svg-compare.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter8/Zoom/17-interpolate-zoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter8/Zoom/13-transforms-canvas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Chord/7-highlight-tooltip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="7" selection-start-column="8" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/1-interpolate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/4-interpolate-zoom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="17" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Histogram/1-histogram.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="31" column="30" selection-start-line="21" selection-start-column="0" selection-end-line="121" selection-end-column="15" />
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/14-text.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/2-interpolate-discrete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/3-interpolate-spline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter5/Interpolate/5-interpolate-piecewise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/8-colors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/9-load-json.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="30" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-7.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="75" />
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/9-polyline.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/8-colors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="180">
+          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="93" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/10-polygon.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/7-entries-each.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="41" selection-end-column="6" />
+        <state relative-caret-position="128">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="55" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/8-ellipse.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="-684">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG/20-scale-rotate.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/6-entries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="64" />
+        <state relative-caret-position="231">
+          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/ES6/es6.html">
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE/svg-bar-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="46" column="43" selection-start-line="27" selection-start-column="4" selection-end-line="46" selection-end-column="43" />
+        <state relative-caret-position="-564">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="21" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/7-entries-each.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/6-entries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="77" column="43" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/3-scales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/2-bar-width.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/1-bar-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/1-bar-chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/2-bar-width.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/4-max-sort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/3-scales.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/4-max-sort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="48" column="26" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/HTML_Bar/5-labels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar/5-labels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>

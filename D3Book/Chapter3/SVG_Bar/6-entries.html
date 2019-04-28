@@ -6,26 +6,28 @@
     <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
     <script src="https://d3js.org/d3-scale.v2.min.js"></script>
     <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-format.v1.min.js"></script>
     <style>
+        * {
+            font-family: sans-serif;
+        }
         .bar-chart {
             border: solid 1px gray;
-            position: relative;
             width: 800px;
         }
         .bar {
             height: 20px;
-            left: 100px;
-            background-color: orange;
-            position: absolute;
-            text-align: right;
-            padding: 0 5px;
-            font-family: sans-serif;
+            fill: orange;
+        }
+        .label {
             font-size: 9pt;
+        }
+        .category {
+            text-anchor: end;
         }
     </style>
 </head>
 <body>
-
 <script>
 
     const distances = [
@@ -50,15 +52,30 @@
 
     distances.sort((a,b) => d3.ascending(a.distance, b.distance));
 
-    d3.select("body")
-        .append("div").attr("class", "bar-chart")
-        .style("height", distances.length * 21 + "px")
-        .selectAll("div").data(distances)
-        .enter().append("div")
-        .attr("class", "bar")
-        .style("top", (d,i) => i * 21 + "px")
-        .style("width", d => barScale(d.distance) + "px")
-        .text(d => d.distance); // insert text with distance in <div>
+    // selects the entire chart (one node)
+    const svg = d3.select("body")
+            .append("svg").attr("class", "bar-chart")
+            .style("height", distances.length * 21);
+
+    // selects each entry (a nodelist)
+    const entries = svg.selectAll("g").data(distances)
+                    .enter().append("g")
+                    .attr("class", "entry")
+                    .attr("transform", (d,i) => `translate(0, ${i * 21})`); // use attr instead of style
+
+    entries.append("text").attr("class", "label category")
+            .attr("y", 15)
+            .attr("x", 90)
+            .text(d => d.name);
+
+    entries.append("rect").attr("class", "bar")
+            .attr("x", 100)
+            .style("width", d => barScale(d.distance) + "px")
+
+    entries.append("text").attr("class", "label value")
+            .attr("y", 15)
+            .attr("x", d => barScale(d.distance) + 105)
+            .text(d => d.distance + " AU");
 
 </script>
 </body>

@@ -47,13 +47,13 @@
     distances.sort((a,b) => d3.ascending(a.distance, b.distance));
 
     d3.select("body")
-            .append("div").attr("class", "bar-chart")
-            .style("height", distances.length * 21 + "px")
-            .selectAll("div").data(distances)
+        .append("div").attr("class", "bar-chart")
+        .style("height", distances.length * 21 + "px")
+        .selectAll("div").data(distances)
             .enter().append("div")
-            .attr("class", "bar")
-            .style("top", (d,i) => i * 21 + "px")
-            .style("width", d => barScale(d.distance) + "px");
+                .attr("class", "bar")
+                .style("top", (d,i) => i * 21 + "px")
+                .style("width", d => barScale(d.distance) + "px");
 
 </script>
 </body>

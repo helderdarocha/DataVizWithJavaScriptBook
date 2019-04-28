@@ -64,6 +64,15 @@
             console.log("this", this)
         });
 
+    const zoomBehavior = d3.zoom()
+            .duration(1000) // duration for double-click zooming
+            .on('zoom', function() {
+                console.log(d3.event.transform.toString())
+                svg.attr("transform", d3.event.transform);
+            })
+
+    svg.call(zoomBehavior);
+
     // Rectangles
     svg.selectAll("rect.square")
         .data(data)

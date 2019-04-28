@@ -9,6 +9,12 @@
             font-family: 'Yanone Kaffeesatz', sans-serif;
             font-size: 12pt;
         }
+        .line-dot {
+            fill: red;
+        }
+        .free-dot {
+            fill: blue;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +96,24 @@
                 .attr("text-anchor", "middle")
                 .attr("x", width/(cols * 2))
                 .attr("y", height/rows - margin/2 + 10);
+
+        g.append("circle")
+                .attr("class", "line-dot")
+                .attr("r", 3)
+                .attr("cy", d => scaleY(0))
+                .attr("cx", d => scaleX(0))
+                .transition().duration(3000).delay(500)
+                .attrTween("cx", d => d => scaleX(d))
+                .attrTween("cy", d => d => scaleY(d3[easeType](d)));
+
+        g.append("circle")
+                .attr("class", "free-dot")
+                .attr("r", 3)
+                .attr("cy", d => scaleY(0))
+                .attr("cx", d => scaleX(1)+10)
+                .transition().duration(3000).delay(500)
+                .attr("cx", d => scaleX(1)+10)
+                .attrTween("cy", d => d => scaleY(d3[easeType](d)));
     }
 
 </script>

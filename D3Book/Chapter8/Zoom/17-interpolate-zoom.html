@@ -15,6 +15,9 @@
         .grid {
             stroke: gray;
         }
+        circle {
+            opacity: .3;
+        }
     </style>
 </head>
 <body>
@@ -49,47 +52,21 @@
             .attr("d", line)
             .style("stroke-width", d => d[0][0] == chartWidth/2 || d[1][1] == chartHeight/2 ? 3 : 1)
 
-    const extent = [[0,0],[chartWidth,chartHeight]];
+    // Interpolate Zoom
+    const inter = d3.interpolateZoom([150,150,50],[450,350,50]);
+    console.log(inter.duration)
 
-    const zoomBehavior = d3.zoom()
-            .extent(extent)
-            .translateExtent(extent)
-            .scaleExtent([0.5,5])
-            .on('zoom', function() {
-                rect.attr("transform", d3.event.transform);
-                grid.attr("transform", d3.event.transform);
-            })
+    // Using a circle to visualize the interpolator's generated data
+    const c = svg.append("circle").attr("r", 50).style("fill", "blue").attr("cx", 150).attr("cy", 150)
 
-
-
-    // 3x scale + (-300,-200)
-    const transform1 = d3.zoomTransform(svg.node)
-            .translate(-300,-200) // translate first, scale second!
-            .scale(3);
-
-    const point1 = transform1.apply([-100,50]);
-    console.log(point1.toString());
-    transform1.scale(3);
-
-    // .75 scale + (-100,0)
-    const point2 = transform1.applyX(-100);
-    console.log(transform1.toString())
-
-          //  .scale(0.75);
-
-    // zoom identity
-    const transform3 = d3.zoomIdentity;
-/*
-    // initial transform (identity)
-    svg.call(zoomBehavior.transform, d3.zoomTransform(svg.node));
-    // transforms
-    const t = svg.transition().delay(1000).duration(1000)
-            .call(zoomBehavior.transform, transform1)
-            .transition().delay(1000)
-            .call(zoomBehavior.transform, transform2)
-            .transition().delay(1000)
-            .call(zoomBehavior.transform, transform3);
-*/
+    // The circle will show the smooth zooming effect
+    svg.transition().duration(inter.duration).delay(500).attrTween("zoom", function(d) {
+        return function(t) {
+            const z = inter(t);
+            console.log(t, z)
+            c.attr("cx", z[0]).attr("cy", z[1]).attr("r", z[2])
+        }
+    })
 
 </script>
 

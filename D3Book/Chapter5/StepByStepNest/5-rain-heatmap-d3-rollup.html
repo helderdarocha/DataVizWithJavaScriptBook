@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
     <style>
         * {
             font-family: "Yanone Kaffeesatz", "Arial Narrow", sans-serif;
@@ -30,8 +31,6 @@
 <table></table>
 <p>source: inmet.gov.br</p>
 <script>
-    // TODO: replace d3.nest() with d3.rollup()
-
     const color = d3.scalePow().exponent(.75);
 
     d3.csv("../Data/rain_sao_paulo.csv")
@@ -40,18 +39,17 @@
             });
 
     function process(data) {
-        // nest by year, and month
-        const entries = d3.nest()
-                .key(function (d) {
-                    return +d.Month;
-                })
-                .key(function (d) {
-                    return +d.Year;
-                })
-                .rollup(function (d) {
-                    return +d[0].Rain_mm;
-                })
-                .entries(data);
+        // nest by year, and month using d3.rollup() instead of d3.nest()
+        const rollup = d3.rollup(data, d => +d[0].Rain_mm, d => +d.Month, d => +d.Year);
+
+        // convert to d3.nest() 'entries' format (which is used in rest of code)
+        const entries = [...rollup].map(d => ({
+                                        key: d[0],
+                                        values: [...d[1]].map(k => ({
+                                            key: k[0],
+                                            value: k[1]
+                                        }))
+                                    }));
 
         const numbers = d3.merge(entries.map((v,k)=> v.values.map(d=>d.value)));
         color.domain(d3.extent(numbers));
