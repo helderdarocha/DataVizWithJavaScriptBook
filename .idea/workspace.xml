@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/airports-selected.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/airports.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/mars.topojson" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/routes-selected.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/airports.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/airports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure-2.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure-2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure-3.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure-3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure-4-interpolate.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure-4-interpolate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-measure.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/5-contains.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/5-contains.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/7-interpolate.html" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/7-interpolate.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter11/Data/countries-hires.geojson" afterPath="" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,18 +23,7 @@
     <favorites_list name="DataVizWithJavaScriptBook" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="airports.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/airports.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="38" column="102" selection-start-line="38" selection-start-column="102" selection-end-line="38" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -509,18 +487,18 @@
       <workItem from="1556375565845" duration="26197000" />
       <workItem from="1556497263155" duration="4334000" />
       <workItem from="1556642326545" duration="1351000" />
-      <workItem from="1556794348469" duration="1800000" />
+      <workItem from="1556794348469" duration="1900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2960305000" />
+    <option name="totallyTimeSpent" value="2960405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1478" y="98" width="1189" height="793" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33391455" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33391455" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -636,13 +614,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/13-path-arc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter3/Updating/4-transitions.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1770">
@@ -979,6 +950,11 @@
           <caret line="38" column="102" selection-start-line="38" selection-start-column="102" selection-end-line="38" selection-end-column="102" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/countries-hires.geojson">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
       </provider>
     </entry>
   </component>
