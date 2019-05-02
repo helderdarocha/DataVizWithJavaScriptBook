@@ -35,27 +35,16 @@
 
     Promise.all([
                 d3.json('../Data/' + file),
-                d3.csv('../Data/airports-busiest.csv', function(row) {
-                    return {
-                        id: row.iata,
-                        name: row.name,
-                        city: row.city,
-                        passengers: +row.passengers,
-                        coordinates: [+row.longitude, +row.latitude],
-                    };
-                })
+                d3.json('../Data/airports-selected.json')
             ])
             .then( function([topology, airports]) {
-
-                // at least 10 million passengers per year
-                const filteredAirports = airports.filter(a => a.passengers > 10000000)
 
                 map.topology   = topology.objects[key];
                 map.geometries = map.topology.geometries;
                 map.features   = topojson.feature(topology, map.topology).features
 
                 drawGraticules();
-                draw(filteredAirports);
+                draw(airports);
 
             });
 

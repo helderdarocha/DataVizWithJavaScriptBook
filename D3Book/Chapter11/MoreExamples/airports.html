@@ -36,7 +36,7 @@
 
     Promise.all([
                 d3.json('../Data/' + file),
-                d3.csv('../Data/airports.csv', function(row) {
+                d3.csv('../Data/airports.csv', function(row) { // Source: http://ourairports.com/data/
                     if(!row.IATA || row.IATA.length != 3)
                         return undefined;
 
