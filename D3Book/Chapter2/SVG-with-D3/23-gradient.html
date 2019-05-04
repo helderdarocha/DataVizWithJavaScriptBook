@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+</head>
+<style>
+    svg {
+        border: solid 1px lightgray;
+    }
+</style>
+<body>
+<h2>SVG gradients with D3</h2>
+<script>
+    const svg = d3.select("body")
+            .append("svg")
+            .attr("width", 600)
+            .attr("height", 300);
+
+    const defs = svg.append("defs");
+
+    const lin = defs.append("linearGradient").attr("id","rainbow").attr("x2", 1)
+    lin.append("stop").attr("offset", 0).attr("stop-color", "rgb(255,0,0)");
+    lin.append("stop").attr("offset", 0.25).attr("stop-color", "rgb(255,255,64)");
+    lin.append("stop").attr("offset", 0.5).attr("stop-color", "rgb(64,255,64)");
+    lin.append("stop").attr("offset", 0.75).attr("stop-color", "rgb(64,64,255)");
+    lin.append("stop").attr("offset", 1).attr("stop-color", "rgb(128,0,255)");
+
+    const rad = defs.append("radialGradient")
+            .attr("id","glow")
+            .attr("cx", 0.35)
+            .attr("cy", 0.35)
+            .attr("r", 1)
+    rad.append("stop").attr("offset", 0).attr("stop-color", "rgb(255,255,255)");
+    rad.append("stop").attr("offset", 0.5).attr("stop-color", "rgb(0,128,255)");
+    rad.append("stop").attr("offset", 1).attr("stop-color", "rgb(128,0,255)");
+
+    svg.append("rect")
+            .attr("transform", "translate(50,50)")
+            .attr("fill", "url(#rainbow)")
+            .attr("width", 200)
+            .attr("height", 200);
+
+    svg.append("circle")
+            .attr("cx", 100)
+            .attr("cy", 100)
+            .attr("r", 100)
+            .attr("fill", "url(#glow)")
+            .attr("transform", "translate(300,50)");
+
+
+</script>
+</body>
+</html>
