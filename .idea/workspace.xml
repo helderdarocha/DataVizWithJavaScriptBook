@@ -2,42 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80786fba-a4b6-4708-85be-05315c5c23c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/14-text.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/17-groups-style.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/18-groups-transforms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/19-translate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/20-scale-rotate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/21-skew.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/22-defs-use.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/23-gradient.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/25-filter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/26-viewBox-default.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/27-viewBox-center.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/28-viewBox-scaled.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/14-text.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/17-groups-style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/18-groups-transforms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/19-translate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/20-scale-rotate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/21-skew.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/22-defs-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/23-gradient.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/25-filter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/26-viewBox-default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/27-viewBox-center.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/28-viewBox-scaled.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/1-viewport.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/1-viewport.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/10-polygon.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/10-polygon.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/11-path-line.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/11-path-line.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/12-path-curve.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/12-path-curve.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/13-path-arc.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/13-path-arc.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/2-circle.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/2-circle.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/29-example.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/29-example.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/4-lines-css.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/4-lines-css.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/6-rect-css-class.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/6-rect-css-class.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/8-ellipse.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/8-ellipse.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/9-polyline.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/9-polyline.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3-TODO/TODO/24-clipping.html" afterPath="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/24-clipping.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/minard-cities.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/minard-temperatures.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/D3Book/Chapter11/Data/minard-troops.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DataVizWithJavaScriptBook.iws" />
@@ -60,41 +27,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="26-viewBox-default.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/26-viewBox-default.html">
+      <file leaf-file-name="radar-4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="27-viewBox-center.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/27-viewBox-center.html">
+      <file leaf-file-name="africa-chamberlin-trimetric.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/africa-chamberlin-trimetric.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="270">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="28-viewBox-scaled.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/28-viewBox-scaled.html">
+      <file leaf-file-name="choropleth-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/choropleth-2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-circle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/2-circle.html">
+      <file leaf-file-name="choropleth-1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/choropleth-1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="180">
+              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graduated-dots.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/graduated-dots.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="network-minard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/network-minard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="network-ny-subway.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/network-ny-subway.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="russia-stereographic.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/russia-stereographic.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="world-cities.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/world-cities.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="radar-2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -181,8 +208,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1200" />
-    <option name="y" value="100" />
+    <option name="x" value="-1237" />
+    <option name="y" value="107" />
     <option name="width" value="1189" />
     <option name="height" value="793" />
   </component>
@@ -211,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,26 +269,8 @@
               <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataVizWithJavaScriptBook" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="D3Book" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter2" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SVG-with-D3" />
+              <option name="myItemId" value="Chapter11" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,13 +288,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chapter2" />
+              <option name="myItemId" value="Chapter11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MoreExamples" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Chapter11" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Examples" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataVizWithJavaScriptBook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="D3Book" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,19 +350,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Data" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV" />
+      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter3/SVG_Bar_UPDATE" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter5/Interpolate" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter5/Histogram" />
       <recent name="$PROJECT_DIR$/D3Book/Chapter3/SVG_Map" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Data" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra-Examples-TOREV" />
-      <recent name="$PROJECT_DIR$/D3Book/Chapter11/Interactive-Extra" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.11-path-line.html">
@@ -543,18 +592,19 @@
       <workItem from="1556497263155" duration="4334000" />
       <workItem from="1556642326545" duration="1351000" />
       <workItem from="1556794348469" duration="2117000" />
-      <workItem from="1556929960292" duration="6462000" />
+      <workItem from="1556929960292" duration="6688000" />
+      <workItem from="1557063192668" duration="1436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2967084000" />
+    <option name="totallyTimeSpent" value="2968746000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1200" y="100" width="1189" height="793" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1237" y="107" width="1189" height="793" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34001744" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34612033" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -670,102 +720,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/flight-routes-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/flight-routes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/airports.csv" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/airports-busiest.csv" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/World_Cities_Location_table.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/routes-busiest.csv" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/minard-cities.csv" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter10/Data/minard-steps.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/africa-chamberlin-trimetric.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/africa-1500-cities.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/africa-10-cities.geojson">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/routes.csv" />
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/NY_subway.geojson">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/network-ny-subway.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="119" column="0" selection-start-line="38" selection-start-column="28" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Data/worldcities.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-loxodrome-gnomonic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/mars.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Animation/rotating-mars.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Path-Geometry/4-loxodrome-mercator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -876,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="34" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="44" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="30" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,14 +935,156 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/D3Book/Chapter2/SVG-with-D3/26-viewBox-default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="5" selection-end-column="67" />
+        <state relative-caret-position="135">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter7/Multiple/multiple-1-canvas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-3-pointLabels-callback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Radial/radial-5-grid-angle-lines.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Numeric/numeric-5-log-scatter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Scales/scales-2-radial-display.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter5/Time/time-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/PolarArea/polar-area-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChartBook/Chapter4/Radar/radar-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/africa-chamberlin-trimetric.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/choropleth-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/choropleth-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/graduated-dots.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/network-minard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/Examples/network-ny-subway.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/russia-stereographic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/D3Book/Chapter11/MoreExamples/world-cities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
