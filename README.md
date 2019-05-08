@@ -1,3 +1,3 @@
 # DataVizWithJavaScriptBook
 
-This repopsitory contains tutorial files about SVG, Chart.js, D3.js (v5) and P5.js used by, or created for the upcoming book Hands-on Data Visualization with JavaScript.
+This repopsitory contains files used as examples and exercises in my books "Learn Chart.js" and "Learn D3.js" published by Packt in 2019.
