@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+</head>
+<style>
+    svg {
+        border: solid 1px lightgray;
+    }
+</style>
+<body>
+<h2>SVG clip-path with D3</h2>
+
+<svg width="425" height="425"
+    <!-- Original image (not clipped) -->
+    <image x="25" y="25"
+           height="350" width="350"
+           xlink:href="../Data/Images/pluto.jpg"/>
+</svg>
+
+<script>
+    const svg = d3.select("body")
+            .append("svg")
+            .attr("width", 425)
+            .attr("height", 425);
+
+    const defs = svg.append("defs");
+
+    const clipPath = defs.append("clipPath").attr("id","poly");
+    clipPath.append("circle").attr("r", 139).attr("cx", 200).attr("cy", 199);
+
+    svg.append("image")
+            .attr("x", 25)
+            .attr("y", 25)
+            .attr("width", 350)
+            .attr("height", 350)
+            .attr("xlink:href", "../Data/Images/pluto.jpg")
+            .attr("clip-path", "url(#poly)");
+
+</script>
+</body>
+</html>

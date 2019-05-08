@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+</head>
+<style>
+    svg {
+        border: solid 1px lightgray;
+    }
+</style>
+<body>
+<h2>SVG reusing objects with D3</h2>
+<script>
+    const svg = d3.select("body")
+            .append("svg")
+            .attr("width", 600)
+            .attr("height", 300);
+
+    const defs = svg.append("defs");
+
+    defs.append("rect").attr("id","black")
+            .attr("width", 20)
+            .attr("height", 20)
+            .attr("fill", "rgb(64,32,32)");
+    defs.append("rect").attr("id","white")
+            .attr("width", 20)
+            .attr("height", 20)
+            .attr("fill", "rgb(255,225,200)");
+
+    const g = svg.append("g").attr("transform", "translate(10,10) scale(3)");
+    g.append("use").attr("xlink:href", "#black");
+    g.append("use").attr("xlink:href", "#white")
+            .attr("transform", "translate(20)");
+    g.append("use").attr("xlink:href", "#white")
+            .attr("transform", "translate(0,20)");
+    g.append("use").attr("xlink:href", "#black")
+            .attr("transform", "translate(20,20)");
+
+
+</script>
+</body>
+</html>
